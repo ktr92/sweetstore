@@ -1,0 +1,147 @@
+
+
+@include large-screen {
+  .productpage__right {
+    width: calc(100% - 500px);
+  }
+  .detailslider__wrapper {
+    width: 500px;
+  }
+  .headermain__logo {
+    max-width: 115px;
+  }
+
+  .errorpage__code {
+    font-size: 100px;
+  }
+
+  .cataloglist__item {
+    width: 33.3333%;
+  }
+
+  .headermenu {
+    width: 100%;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  .footer__catalog ul {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+
+  .footer__col {
+    padding: 0 5px;
+  }
+
+  .footer__items {
+    margin: 0 -5px;
+    width: 100%;
+  }
+
+  .headermain__descr {
+    display: none;
+  }
+
+  .mainmenubtn {
+    width: 165px;
+
+    span {
+      font-size: 14px;
+    }
+  }
+
+  .contacts__text {
+    font-size: 13px;
+  }
+
+  .headermain__left {
+    padding-right: 15px;
+  }
+
+  .blockslider-button-next,
+  .blockslider-button-prev {
+    z-index: 999;
+  }
+
+  .footer__menu ul li a {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .footer__copy {
+    width: initial;
+    max-width: 320px;
+  }
+
+  .searchinput {
+  }
+
+  .mainswiperpreview {
+    display: none;
+  }
+
+  .headermenu__items {
+    margin: 15px 0;
+  }
+
+  .imgslider__container.slider-wrapper {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .footer__bottom {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .footer__title {
+    font-size: 22px;
+    line-height: 1.2;
+  }
+
+  .footer__contacts .contacts__phone a {
+    font-size: 22px;
+  }
+
+  /*   .customblock__right_contacts {
+    max-width: initial;
+    order: 2 !important;
+    margin: 0 -18px;
+    width: calc(100% + 36px);
+    margin-bottom: 0 !important;
+  } */
+
+  .cols__col_w3 {
+    max-width: 320px;
+    min-width: 320px;
+  }
+
+  .cols__col_w9 {
+    max-width: calc(100% - 320px);
+    min-width: calc(100% - 320px);
+  }
+
+  .blockabout__main {
+    width: 520px;
+  }
+
+  .fitchescard__title {
+    font-size: 14px;
+  }
+}
+@include large-screen {
+  .contactline__messenger {
+    margin-right: 22px;
+  }
+  .topmenu__items ul li a{
+    font-size: 14px;
+  }
+  .phonelink {
+    font-size: 16px;
+  }
+}

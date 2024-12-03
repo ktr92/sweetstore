@@ -40,7 +40,7 @@
 <div class="jsbackdrop "></div>
 
 
-<div class="mobilemenu">
+<div class="mobilemenu" data-menu="mainmenu">
   <div class="mobilemenu__wrapper">
     <div class="mobilemenu__block">
       <div class="mobilemenu__menu">
@@ -168,24 +168,22 @@
         <div class="headermain">
           <div class="headermain__left">
             <div class="headermain__logo"><a href="#" class='logo'><img src="img/logo.svg" alt=""></a></div>
-            <!--    <div class="headermain__descr"><span></span></div> -->
 
-           
           </div>
           <!-- /.headermain__left-->
           <div class="headermain__right">
-            <div class="headermain__search">
+            <div class="headermain__search onlyDesktop">
               <form action="">
                 <div class="searchinput">
                   <button type="submit"><img src="img/Search.svg" alt=""></button>
 
-                  <input type="text" placeholder='Я ищу...' id='title-search-input_fixed'>
+                  <input type="text" placeholder='Я ищу' id='title-search-input_fixed'>
 
                   <!-- <input type="text" placeholder='' id='title-search-input_fixed'> -->
                 </div>
               </form>
             </div>
-            <div class="headermain__contacts">
+            <div class="headermain__contacts onlyDesktop">
               <div class="contactline">
                 <div class="contactline__phone">
                   <a href="tel:+7 (495) 799 70 07" class='phonelink'>+7 (495) 799 70 07</a>
@@ -203,7 +201,7 @@
             <!-- /.headermain__contacts -->
             <div class="headermain__iconlinks">
               <div class="iconlinks">
-                
+
                 <div class="iconlinks__item">
                   <a href="#" class="iconlinks__link">
                     <span class="iconlinks__badge">2</span>
@@ -219,6 +217,13 @@
                     <span class="iconlinks__icon">
                       <img src="img/icnCart.svg" alt="">
                     </span>
+                  </a>
+                </div>
+                <div class="iconlinks__item onlyMobile">
+                  <a href="#" data-menutoggle="mainmenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                   </a>
                 </div>
               </div>
@@ -237,15 +242,18 @@
 
             <button class='mainmenubtn'>
               <span>
-                <img class="burgericon icon--white" src="img/burger.svg" alt="">
-                <!-- <img class="closeicon" src="img/closemenu.svg" alt="">     -->
+                <img class="burgericon icon--white onlyDesktop" src="img/burger.svg" alt="">
+                <img class="burgericon icon--white onlyMobile" src="img/burger2.svg" alt="">
                 <span>Каталог</span>
               </span>
-              <span><img src="img/expand.svg" alt=""></span>
+              <span>
+                <img src="img/expand.svg" alt="" class='onlyDesktop'>
+                <img src="img/expand2.svg" alt="" class='onlyMobile'>
+              </span>
 
             </button>
 
-            <div class="mainmenu">
+            <div class="mainmenu" data-menu="mainmenu">
               <div class="mainmenu__wrapper">
                 <div class="mainmenu__items">
                   <div class="mainmenu__level_1">
@@ -408,7 +416,18 @@
           </div>
           <!-- /.headermain__menu -->
         </div><!-- /.headermenu__catalog -->
-        <div class="headermenu__topmenu">
+        <div class="headermain__search onlyMobile">
+          <form action="">
+            <div class="searchinput">
+              <button type="submit"><img src="img/Search.svg" alt=""></button>
+
+              <input type="text" placeholder='Я ищу' id='title-search-input_fixed'>
+
+              <!-- <input type="text" placeholder='' id='title-search-input_fixed'> -->
+            </div>
+          </form>
+        </div>
+        <div class="headermenu__topmenu onlyDesktop">
           <div class="topmenu">
             <div class="topmenu__items">
               <ul>
@@ -417,7 +436,7 @@
                 <li><a href="">О нас</a></li>
                 <li><a href="">Оплата и доставка</a></li>
                 <li><a href="">Контакты</a></li>
-              </ul> 
+              </ul>
             </div><!-- /.topmenu__items -->
           </div><!-- /.topmenu -->
         </div><!-- /.headermenu__topmenu -->
@@ -441,325 +460,7 @@
   
   <div class="indexblock">
     <div class="container">
-      <div class="cols">
-        <div class="cols__col cols__col_w3">
-          <div class="pagemenu">
-            <div class="mainmenu__wrapper">
-              <div class="mainmenu__items">
-                <div class="mainmenu__level_1">
-                  <ul class="mainmenuLevelOne">
-                    <li class="mainmenuLevelOne__item ">
-                      <a href="" class="mainmenuLevelOne__link">
-                      <span class="mainmenu__icon"><img src="img/menuFire.svg" alt=""></span>
-                      <span class="mainmenu__name">Акции</span> 
-                      </a>
-                    </li>
-                    <li class="mainmenuLevelOne__item ">
-                      <a href="" class="mainmenuLevelOne__link">
-                      <span class="mainmenu__icon"><img src="img/menuDiamond.svg" alt=""></span>
-                      <span class="mainmenu__name">Новинки</span> 
-                      </a>
-                    </li>
-                    <li class="mainmenuLevelOne__item ">
-                      <a href="" class="mainmenuLevelOne__link">
-                      <span class="mainmenu__icon"><img src="img/menuCaviar.svg" alt=""></span>
-                      <span class="mainmenu__name">Икра</span> 
-                      </a>
-                    </li>
-                    <li class="mainmenuLevelOne__item mainmenuLevelOne__parent">
-                      <a href="" class="mainmenuLevelOne__link">
-                      <span class="mainmenu__icon"><img src="img/menuBream.svg" alt=""></span>
-                      <span class="mainmenu__name">Горячее копчение</span>
-                      </a>
-                      <div class="mainmenu__level_2">
-                        <ul class="mainmenuLevelTwo">
-                          <li class="mainmenuLevelTwo__item">
-                            <a class="mainmenuLevelTwo__link" href="">
-                            <span>Подкатегория </span>
-                            </a>
-                          </li>
-                          <li class="mainmenuLevelTwo__item">
-                            <a class="mainmenuLevelTwo__link" href="">
-                            <span>Подкатегория </span>
-                            </a>
-                          </li>
-                          <li class="mainmenuLevelTwo__item">
-                            <a class="mainmenuLevelTwo__link" href="">
-                            <span>Подкатегория </span>
-                            </a>
-                          </li>
-                         
-                        </ul>
-                      </div>
-                    </li>
-
-                    <li class="mainmenuLevelOne__item">
-                      <a href="" class="mainmenuLevelOne__link">
-                      <span class="mainmenu__icon"><img src="img/menufish.svg" alt=""></span>
-                      <span class="mainmenu__name">Холодное копчение</span>
-                      </a>
-                    </li>
-                   
-                    <li class="mainmenuLevelOne__item">
-                      <a href="" class="mainmenuLevelOne__link">
-                      <span class="mainmenu__icon"><img src="img/menugrilled.svg" alt=""></span>
-                      <span class="mainmenu__name">Рыба соленая</span>
-                      </a>
-                    </li>
-
-                    <li class="mainmenuLevelOne__item mainmenuLevelOne__parent">
-                      <a href="" class="mainmenuLevelOne__link">
-                      <span class="mainmenu__icon"><img src="img/menusalting.svg" alt=""></span>
-                      <span class="mainmenu__name">Рыба вяленая / Сушеная</span>
-                      </a>
-                      <div class="mainmenu__level_2">
-                        <ul class="mainmenuLevelTwo">
-                          <li class="mainmenuLevelTwo__item">
-                            <a class="mainmenuLevelTwo__link" href="">
-                            <span>Подкатегория </span>
-                            </a>
-                          </li>
-                          <li class="mainmenuLevelTwo__item">
-                            <a class="mainmenuLevelTwo__link" href="">
-                            <span>Подкатегория </span>
-                            </a>
-                          </li>
-                          <li class="mainmenuLevelTwo__item">
-                            <a class="mainmenuLevelTwo__link" href="">
-                            <span>Подкатегория </span>
-                            </a>
-                          </li>
-                         
-                        </ul>
-                      </div>
-                    </li>
-
-                    <li class="mainmenuLevelOne__item">
-                      <a href="" class="mainmenuLevelOne__link">
-                      <span class="mainmenu__icon"><img src="img/menufish1.svg" alt=""></span>
-                      <span class="mainmenu__name">Рыба замороженная</span>
-                      </a>
-                    </li>
-
-                    <li class="mainmenuLevelOne__item mainmenuLevelOne__parent">
-                      <a href="" class="mainmenuLevelOne__link">
-                      <span class="mainmenu__icon"><img src="img/menushrimp.svg" alt=""></span>
-                      <span class="mainmenu__name">Морепродукты</span>
-                      </a>
-                      <div class="mainmenu__level_2">
-                        <ul class="mainmenuLevelTwo">
-                          <li class="mainmenuLevelTwo__item">
-                            <a class="mainmenuLevelTwo__link" href="">
-                            <span>Подкатегория </span>
-                            </a>
-                          </li>
-                          <li class="mainmenuLevelTwo__item">
-                            <a class="mainmenuLevelTwo__link" href="">
-                            <span>Подкатегория </span>
-                            </a>
-                          </li>
-                          <li class="mainmenuLevelTwo__item">
-                            <a class="mainmenuLevelTwo__link" href="">
-                            <span>Подкатегория </span>
-                            </a>
-                          </li>
-                         
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="mainmenuLevelOne__item mainmenuLevelOne__parent">
-                      <a href="" class="mainmenuLevelOne__link">
-                      <span class="mainmenu__icon"><img src="img/pagemenuCapa.svg" alt=""></span>
-                      <span class="mainmenu__name">Полуфабрикаты</span>
-                      </a>
-                      <div class="mainmenu__level_2">
-                        <ul class="mainmenuLevelTwo">
-                          <li class="mainmenuLevelTwo__item">
-                            <a class="mainmenuLevelTwo__link" href="">
-                            <span>Подкатегория </span>
-                            </a>
-                          </li>
-                          <li class="mainmenuLevelTwo__item">
-                            <a class="mainmenuLevelTwo__link" href="">
-                            <span>Подкатегория </span>
-                            </a>
-                          </li>
-                          <li class="mainmenuLevelTwo__item">
-                            <a class="mainmenuLevelTwo__link" href="">
-                            <span>Подкатегория </span>
-                            </a>
-                          </li>
-                         
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="mainmenuLevelOne__item mainmenuLevelOne__parent">
-                      <a href="" class="mainmenuLevelOne__link">
-                      <span class="mainmenu__icon"><img src="img/menucanned-food.svg" alt=""></span>
-                      <span class="mainmenu__name">Консервы</span>
-                      </a>
-                      <div class="mainmenu__level_2">
-                        <ul class="mainmenuLevelTwo">
-                          <li class="mainmenuLevelTwo__item">
-                            <a class="mainmenuLevelTwo__link" href="">
-                            <span>Подкатегория </span>
-                            </a>
-                          </li>
-                          <li class="mainmenuLevelTwo__item">
-                            <a class="mainmenuLevelTwo__link" href="">
-                            <span>Подкатегория </span>
-                            </a>
-                          </li>
-                          <li class="mainmenuLevelTwo__item">
-                            <a class="mainmenuLevelTwo__link" href="">
-                            <span>Подкатегория </span>
-                            </a>
-                          </li>
-                         
-                        </ul>
-                      </div>
-                    </li>
-                   
-                  </ul>
-                </div>
-                <!-- /.mainmenu__level_1 -->
-              </div>
-              <!-- /.mainmenu__items -->
-            </div>
-          </div><!-- /.pagemenu -->
-        </div><!-- /.cols__col cols__col_w3 -->
-        <div class="cols__col cols__col_w9">
-          <div class="mainblock">
-            <div class="mainblock__menu">
-              <div class="headermenu">
-                <div class="headermenu__wrapper">
-                  <div class="headermenu__items" id="dmenu">
-                    <ul>
-                      <li class="headermenu__item">
-                        <a href="#" class="headermenu__link">
-                        <img src="img/topmenuFire.svg" alt="" class="headermenu__icon">
-                        <span class="headermenu__title">Акции</span>
-                        </a>
-                      </li>
-                      <li class="headermenu__item">
-                        <a href="#" class="headermenu__link">
-                        <img src="img/topmenuChristmas.svg" alt="" class="headermenu__icon">
-                        <span class="headermenu__title">Новый год</span>
-                        </a>
-                      </li>
-                      <li class="headermenu__item">
-                        <a href="#" class="headermenu__link">
-                        <img src="img/topmenuStack.svg" alt="" class="headermenu__icon">
-                        <span class="headermenu__title">Масленница</span>
-                        </a>
-                      </li>
-                      <li class="headermenu__item">
-                        <a href="#" class="headermenu__link">
-                        <span class="headermenu__title">Уценка</span>
-                        </a>
-                      </li>
-                      <li class="headermenu__item">
-                        <a href="#" class="headermenu__link">
-                        <span class="headermenu__title">Изделия из краба</span>
-                        </a>
-                      </li>
-                      <li class="headermenu__item">
-                        <a href="#" class="headermenu__link">
-                        <span class="headermenu__title">Камчатские морперподукты</span>
-                        </a>
-                      </li>
-                      <li class="headermenu__item">
-                        <a href="#" class="headermenu__link">
-                        <span class="headermenu__title">Консервы до 500 руб.</span>
-                        </a>
-                      </li>
-                      <li class="headermenu__item">
-                        <a href="#" class="headermenu__link">
-                        <span class="headermenu__title">Консервы до 1500 руб.</span>
-                        </a>
-                      </li>
-                      <li class="headermenu__item">
-                        <a href="#" class="headermenu__link">
-                        <span class="headermenu__title">Консервы до 2500 руб.</span>
-                        </a>
-                      </li>
-                
-                     
-                    
-                    </ul>
-                  </div>
-                  <!-- /.headermenu__items -->
-                </div>
-                <!-- /.headermenu__wrapper -->
-                <div class="arrowmenu">
-                  <div class="arrowmenu__bg"></div><!-- /.arrowmenu__bg -->
-                  <div class="arrowmenu__icon">                 
-                     <img src="img/arrowmenu.svg" alt="">
-                  </div><!-- /.arrowmenu__icon -->
-                </div>
-                <div class="arrowmenu arrowmenu_left">
-                  <div class="arrowmenu__bg"></div><!-- /.arrowmenu__bg -->
-                  <div class="arrowmenu__icon">                 
-                     <img src="img/arrowmenu.svg" alt="">
-                  </div><!-- /.arrowmenu__icon -->
-                </div>
-              </div>
-            </div><!-- /.mainblock__menu -->
-            <div class="mainblock__slider">
-              <div class="mainslider">
-                <div class="mainslider__container" data-slidercontainer="mainslider">
-                  <div class="mainslider__slider swiper" data-slider="mainslider">
-                    <div class="swiper-wrapper">
-                      <div class="mainslider__slide swiper-slide">
-                        <div class="mainslide">
-                          <img src="img/mainslide1.jpg" alt="">
-                        </div><!-- /.mainslide -->
-                      </div><!-- /.mainslider__slide -->
-                      <div class="mainslider__slide swiper-slide">
-                        <div class="mainslide">
-                          <img src="img/mainslide1.jpg" alt="">
-                        </div><!-- /.mainslide -->
-                      </div><!-- /.mainslider__slide -->
-                      <div class="mainslider__slide swiper-slide">
-                        <div class="mainslide">
-                          <img src="img/mainslide1.jpg" alt="">
-                        </div><!-- /.mainslide -->
-                      </div><!-- /.mainslider__slide -->
-                      <div class="mainslider__slide swiper-slide">
-                        <div class="mainslide">
-                          <img src="img/mainslide1.jpg" alt="">
-                        </div><!-- /.mainslide -->
-                      </div><!-- /.mainslider__slide -->
-                      <div class="mainslider__slide swiper-slide">
-                        <div class="mainslide">
-                          <img src="img/mainslide1.jpg" alt="">
-                        </div><!-- /.mainslide -->
-                      </div><!-- /.mainslider__slide -->
-                      <div class="mainslider__slide swiper-slide">
-                        <div class="mainslide">
-                          <img src="img/mainslide1.jpg" alt="">
-                        </div><!-- /.mainslide -->
-                      </div><!-- /.mainslider__slide -->
-                    </div><!-- /.swiper-wrapper -->
-                    <div class="slider__arrow slider__right mainslider__right">
-                      <img src="img/slider__right.svg" alt="">
-                    </div>
-                    <div class="slider__arrow slider__left mainslider__left">
-                      <img src="img/slider__left.svg" alt="">
-                    </div>
-                    <div class="mainslider__dotsblock">
-                      <div class="slider__dots mainslider__dots">
-                     
-                      </div><!-- /.slider__dots mainslider__dots -->
-                    </div><!-- /.mainslider__dotsblock -->
-                   
-                  </div><!-- /.mainslider__slider -->
-                </div><!-- /.mainslider__container -->
-              </div><!-- /.mainslider -->
-            </div><!-- /.mainblock__slider -->
-          </div><!-- /.mainblock -->
-        </div><!-- /.cols__col cols__col_w9 -->
-      </div><!-- /.cols -->
+      
     </div><!-- /.container -->
   </div><!-- /.indexblock -->
 

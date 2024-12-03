@@ -22,7 +22,7 @@
 
 
 @mixin xlarge-screen() {
-  @media only screen and (max-width: 1540px) {
+  @media only screen and (max-width: 1700px) {
     @content;
   }
 }

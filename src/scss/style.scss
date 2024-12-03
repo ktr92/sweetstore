@@ -218,15 +218,7 @@ img {
   }
 }
 
-@include medium-screen {
-  .onlyMobile {
-    display: initial;
-  }
 
-  .onlyDesktop {
-    display: none !important;
-  }
-}
 
 .container {
   @include container;
@@ -344,7 +336,8 @@ img {
     justify-content: space-around;
 
     li {
-      margin-left: 49px;
+      /* margin-left: 49px; */
+      padding: 0 10px;
 
       &:first-child {
         margin-left: 0;
@@ -359,6 +352,7 @@ img {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
+        white-space: nowrap;
 
         &:hover {
           color: $main;
@@ -538,6 +532,8 @@ border-radius: 5555px;
 }
 .contactline__messenger {
   margin-right: 41px;
+  min-width: 42px;
+  max-width: 42px;
 }
 .contactline {
   display: flex;
@@ -571,6 +567,10 @@ white-space: nowrap;
 
 .headermain__contacts {
  margin: 0 50px;
+}
+
+#header  {
+  margin-bottom: 29px;
 }
 
 /* .contacts {
@@ -693,7 +693,8 @@ white-space: nowrap;
 
 .searchinput {
   /*   background: #F2F4F6; */
-  border-radius: 8px;
+  border-radius: 5555px;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -705,18 +706,19 @@ white-space: nowrap;
 
   input {
     width: 100%;
-    padding: 0 4px 0 24px;
-    background: #f2f4f6;
+    padding: 0 20px 0 57px;
+    background: #f8f8f8;
     border: none;
     color: #283647;
     transition: all 0.3s ease;
-    font-size: 18px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     width: 100%;
-    height: 50px;
-    border: 2px solid #f2f4f6;
+    height: 56px;
+    border: 2px solid #f8f8f8;
+    border-radius: 5555px;
 
     &:focus {
       border: 2px solid $main;
@@ -725,54 +727,48 @@ white-space: nowrap;
   }
 
   button {
-    border-radius: 5px;
     align-items: center;
     justify-content: center;
     display: flex;
-    width: 63px;
-    height: 42px;
+    width: 23px;
+    height: 23px;
     position: absolute;
-    top: 4px;
-    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    background: none;
+    padding: 0;
     border: none;
-    background: $main;
+
   }
 }
 
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: #283647;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  font-weight: 400;
+font-size: 15px;
+color: rgba(35, 31, 32, 0.4);
 }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: #283647;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: rgba(35, 31, 32, 0.4);
 }
 
 :-ms-input-placeholder {
   /* IE 10+ */
-  color: #283647;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: rgba(35, 31, 32, 0.4);
 }
 
 :-moz-placeholder {
   /* Firefox 18- */
-  color: #283647;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: rgba(35, 31, 32, 0.4);
 }
 
 .headermain__search {
@@ -4540,6 +4536,7 @@ p {
   line-height: normal;
 }
 
+
 #header.fix {
   position: fixed;
   width: 100%;
@@ -6489,13 +6486,13 @@ a.location_icon {
 }
 
 .sliderarrows__left {
-  left: -32px;
-  transform: translateX(-100%) translateY(-50%);
+  left: 0;
+  transform:  translateY(-50%);
 }
 
 .sliderarrows__right {
-  right: -32px;
-  transform: translateX(100%) translateY(-50%);
+  right: 0;
+  transform:  translateY(-50%);
 }
 
 [data-slidercontainer] {
@@ -7639,242 +7636,8 @@ h4 {
     }
   }
 }
-@include xlarge-screen {
-  .pagedetail__aside {
-    max-width: 330px;
-    min-width: 330px;
-  }
-  .pageaside {
-    padding: 32px 20px;
-  }
-  .pagedetail__main {
-    width: calc(100% - 330px);
-    padding-right: 30px;
-  }
-  .blockhalf__col_left {
-    padding-right: 30px;
-  }
-  .fitchesblock_large .fitchcard {
-    height: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .fitchescard__content {
-    margin-left: 15px;
-  }
-  .contentpage__col_image {
-    max-width: 50%;
-    min-width: 50%;
-  }
-  .contentpage__col_left {
-    margin-right: 30px;
-  }
-  .blockabout__wrapper {
-    height: unset;
-  }
 
-  .footer__col_right {
-    margin-left: 0;
-  }
 
-  .sliderarrows__left {
-    left: -32px;
-    transform: none;
-  }
-
-  .sliderarrows__right {
-    right: -32px;
-    transform: none;
-  }
-
-  .detailslider__wrapper {
-    width: 700px;
-  }
-  .productpage__right {
-    width: calc(100% - 700px);
-    padding-left: 30px;
-  }
-
-  /* .cartblock__aside {
-    min-width: 300px;
-  }
-  .infocard.carttotal.fixed {
-    width: 300px;
-  }
-  .inputtime {
-    max-width: 100%;
-  }
-  .cartblock__main {
-    margin-right: 24px;
-    width: calc(100% - 300px);
-  }
-  .errorpage__code {
-    font-size: 200px;
-  }
-
-  .recipeparams {
-    padding: 15px;
-  }
-  .recipedetail__right {
-    padding-left: 30px;
-  }
-  .footer__col.footer__catalog {
-    width: 50%;
-  }
-  .container {
-    padding: 0 10px;
-  }
-  .headermain__descr {
-    font-size: 14px;
-  }
-  .footer__col {
-    padding: 0 20px;
-  }
-  .footer__items {
-    margin: 0 -20px;
-  }
-  .productcard__wrapper {
-    padding: 15px 10px;
-  }
-  .category__items_full .category__item {
-    width: 33.333%;
-  } */
-}
-
-@include large-screen {
-  .productpage__right {
-    width: calc(100% - 500px);
-  }
-  .detailslider__wrapper {
-    width: 500px;
-  }
-  .headermain__logo {
-    max-width: 320px;
-  }
-
-  .errorpage__code {
-    font-size: 100px;
-  }
-
-  .cataloglist__item {
-    width: 33.3333%;
-  }
-
-  .headermenu {
-    width: 100%;
-  }
-
-  .container {
-    padding: 0 10px;
-  }
-
-  .footer__catalog ul {
-    -webkit-column-count: 1;
-    -moz-column-count: 1;
-    column-count: 1;
-  }
-
-  .footer__col {
-    padding: 0 5px;
-  }
-
-  .footer__items {
-    margin: 0 -5px;
-    width: 100%;
-  }
-
-  .headermain__descr {
-    display: none;
-  }
-
-  .mainmenubtn {
-    width: 165px;
-
-    span {
-      font-size: 14px;
-    }
-  }
-
-  .contacts__text {
-    font-size: 13px;
-  }
-
-  .headermain__left {
-    padding-right: 15px;
-  }
-
-  .blockslider-button-next,
-  .blockslider-button-prev {
-    z-index: 999;
-  }
-
-  .footer__menu ul li a {
-    font-size: 14px;
-    font-weight: 600;
-  }
-
-  .footer__copy {
-    width: initial;
-    max-width: 320px;
-  }
-
-  .searchinput {
-  }
-
-  .mainswiperpreview {
-    display: none;
-  }
-
-  .headermenu__items {
-    margin: 15px 0;
-  }
-
-  .imgslider__container.slider-wrapper {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
-
-  .footer__bottom {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .footer__title {
-    font-size: 22px;
-    line-height: 1.2;
-  }
-
-  .footer__contacts .contacts__phone a {
-    font-size: 22px;
-  }
-
-  /*   .customblock__right_contacts {
-    max-width: initial;
-    order: 2 !important;
-    margin: 0 -18px;
-    width: calc(100% + 36px);
-    margin-bottom: 0 !important;
-  } */
-
-  .cols__col_w3 {
-    max-width: 320px;
-    min-width: 320px;
-  }
-
-  .cols__col_w9 {
-    max-width: calc(100% - 320px);
-    min-width: calc(100% - 320px);
-  }
-
-  .blockabout__main {
-    width: 520px;
-  }
-
-  .fitchescard__title {
-    font-size: 14px;
-  }
-}
 
 .itemslists__items {
   display: -webkit-box;
@@ -8136,6 +7899,13 @@ h4 {
 
 .pageheader h2 {
   margin-top: 0;
+}
+
+[data-menu] {
+  display: none;
+}
+[data-menu].active {
+  display: block;
 }
 
 @media (max-width: 1280px) {

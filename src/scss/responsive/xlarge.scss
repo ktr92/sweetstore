@@ -1,0 +1,113 @@
+@include xlarge-screen {
+  .pagedetail__aside {
+    max-width: 330px;
+    min-width: 330px;
+  }
+  .pageaside {
+    padding: 32px 20px;
+  }
+  .pagedetail__main {
+    width: calc(100% - 330px);
+    padding-right: 30px;
+  }
+  .blockhalf__col_left {
+    padding-right: 30px;
+  }
+  .fitchesblock_large .fitchcard {
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .fitchescard__content {
+    margin-left: 15px;
+  }
+  .contentpage__col_image {
+    max-width: 50%;
+    min-width: 50%;
+  }
+  .contentpage__col_left {
+    margin-right: 30px;
+  }
+  .blockabout__wrapper {
+    height: unset;
+  }
+
+  .footer__col_right {
+    margin-left: 0;
+  }
+
+  .sliderarrows__left {
+/*     left: -32px; */
+    transform: none;
+  }
+
+  .sliderarrows__right {
+/*     right: -32px; */
+    transform: none;
+  }
+
+  .detailslider__wrapper {
+    width: 700px;
+  }
+  .productpage__right {
+    width: calc(100% - 700px);
+    padding-left: 30px;
+  }
+
+  /* .cartblock__aside {
+    min-width: 300px;
+  }
+  .infocard.carttotal.fixed {
+    width: 300px;
+  }
+  .inputtime {
+    max-width: 100%;
+  }
+  .cartblock__main {
+    margin-right: 24px;
+    width: calc(100% - 300px);
+  }
+  .errorpage__code {
+    font-size: 200px;
+  }
+
+  .recipeparams {
+    padding: 15px;
+  }
+  .recipedetail__right {
+    padding-left: 30px;
+  }
+  .footer__col.footer__catalog {
+    width: 50%;
+  }
+  .container {
+    padding: 0 10px;
+  }
+  .headermain__descr {
+    font-size: 14px;
+  }
+  .footer__col {
+    padding: 0 20px;
+  }
+  .footer__items {
+    margin: 0 -20px;
+  }
+  .productcard__wrapper {
+    padding: 15px 10px;
+  }
+  .category__items_full .category__item {
+    width: 33.333%;
+  } */
+}
+@include xlarge-screen {
+  .headermain__search {
+    margin-right: 10px;
+  }
+  .headermain__contacts{
+    margin: 0 10px;
+  }
+  .headermenu__topmenu {
+    width: calc(100% - 185px);
+  }
+
+}

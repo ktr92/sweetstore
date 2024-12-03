@@ -1,7 +1,7 @@
 <div class="jsbackdrop "></div>
 
 
-<div class="mobilemenu">
+<div class="mobilemenu" data-menu="mainmenu">
   <div class="mobilemenu__wrapper">
     <div class="mobilemenu__block">
       <div class="mobilemenu__menu">
@@ -129,24 +129,22 @@
         <div class="headermain">
           <div class="headermain__left">
             <div class="headermain__logo"><a href="#" class='logo'><img src="img/logo.svg" alt=""></a></div>
-            <!--    <div class="headermain__descr"><span></span></div> -->
 
-           
           </div>
           <!-- /.headermain__left-->
           <div class="headermain__right">
-            <div class="headermain__search">
+            <div class="headermain__search onlyDesktop">
               <form action="">
                 <div class="searchinput">
                   <button type="submit"><img src="img/Search.svg" alt=""></button>
 
-                  <input type="text" placeholder='Я ищу...' id='title-search-input_fixed'>
+                  <input type="text" placeholder='Я ищу' id='title-search-input_fixed'>
 
                   <!-- <input type="text" placeholder='' id='title-search-input_fixed'> -->
                 </div>
               </form>
             </div>
-            <div class="headermain__contacts">
+            <div class="headermain__contacts onlyDesktop">
               <div class="contactline">
                 <div class="contactline__phone">
                   <a href="tel:+7 (495) 799 70 07" class='phonelink'>+7 (495) 799 70 07</a>
@@ -164,7 +162,7 @@
             <!-- /.headermain__contacts -->
             <div class="headermain__iconlinks">
               <div class="iconlinks">
-                
+
                 <div class="iconlinks__item">
                   <a href="#" class="iconlinks__link">
                     <span class="iconlinks__badge">2</span>
@@ -180,6 +178,13 @@
                     <span class="iconlinks__icon">
                       <img src="img/icnCart.svg" alt="">
                     </span>
+                  </a>
+                </div>
+                <div class="iconlinks__item onlyMobile">
+                  <a href="#" data-menutoggle="mainmenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                   </a>
                 </div>
               </div>
@@ -198,15 +203,18 @@
 
             <button class='mainmenubtn'>
               <span>
-                <img class="burgericon icon--white" src="img/burger.svg" alt="">
-                <!-- <img class="closeicon" src="img/closemenu.svg" alt="">     -->
+                <img class="burgericon icon--white onlyDesktop" src="img/burger.svg" alt="">
+                <img class="burgericon icon--white onlyMobile" src="img/burger2.svg" alt="">
                 <span>Каталог</span>
               </span>
-              <span><img src="img/expand.svg" alt=""></span>
+              <span>
+                <img src="img/expand.svg" alt="" class='onlyDesktop'>
+                <img src="img/expand2.svg" alt="" class='onlyMobile'>
+              </span>
 
             </button>
 
-            <div class="mainmenu">
+            <div class="mainmenu" data-menu="mainmenu">
               <div class="mainmenu__wrapper">
                 <div class="mainmenu__items">
                   <div class="mainmenu__level_1">
@@ -369,7 +377,18 @@
           </div>
           <!-- /.headermain__menu -->
         </div><!-- /.headermenu__catalog -->
-        <div class="headermenu__topmenu">
+        <div class="headermain__search onlyMobile">
+          <form action="">
+            <div class="searchinput">
+              <button type="submit"><img src="img/Search.svg" alt=""></button>
+
+              <input type="text" placeholder='Я ищу' id='title-search-input_fixed'>
+
+              <!-- <input type="text" placeholder='' id='title-search-input_fixed'> -->
+            </div>
+          </form>
+        </div>
+        <div class="headermenu__topmenu onlyDesktop">
           <div class="topmenu">
             <div class="topmenu__items">
               <ul>
@@ -378,7 +397,7 @@
                 <li><a href="">О нас</a></li>
                 <li><a href="">Оплата и доставка</a></li>
                 <li><a href="">Контакты</a></li>
-              </ul> 
+              </ul>
             </div><!-- /.topmenu__items -->
           </div><!-- /.topmenu -->
         </div><!-- /.headermenu__topmenu -->

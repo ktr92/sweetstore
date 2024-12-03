@@ -76,6 +76,21 @@ $(document).ready(function() {
       $('.jsbackdrop').toggleClass('active')
       $('.mainmenu').toggleClass('active')
   })
+
+      $("[data-menutoggle]").on("click", function (e) {
+        e.preventDefault();
+        let menu = $(this).data("menutoggle");
+        $(`[data-menu=${menu}]`).toggleClass("active");
+        $(this).toggleClass("active");
+        $(".jsbackdrop").toggleClass("active");
+      });
+      $(".jsbackdrop").on("click", function (e) {
+        $(this).removeClass("active");
+        $("[data-menu]").removeClass("active");
+        $("[data-menutoggle]").removeClass("active");
+      });
+
+
   $('.jscatalog .js-toggler').on('click', function(e) {
       $(this).closest('.jscatalog').toggleClass('active')
       $(this).closest('.jscatalog').siblings('.mobilemenu__level2').toggleClass('active')
@@ -85,22 +100,22 @@ $(document).ready(function() {
       $(this).closest('.mobilemenu__item').find('.mobilemenu__level3').slideToggle()
   })
 
-  $('.menubutton').on('click', function(e) {
+  /* $('.menubutton').on('click', function(e) {
       $(this).toggleClass('active')
       $('.mobilemenu').toggleClass('active')
       $('.jsbackdrop').toggleClass('active')
       $('.mobilemenu__level2').removeClass('active')
       $('.mobilemenu__content').removeClass('active')
 
-  })
-  $('.jsbackdrop').on('click', function(e) {
+  }) */
+/*   $('.jsbackdrop').on('click', function(e) {
       $(this).removeClass('active')
       $('.mobilemenu').removeClass('active')
       $('.menubutton').removeClass('active')
       $('.mobilemenu__level2').removeClass('active')
       $('.mobilemenu__content').removeClass('active')
 
-  })
+  }) */
   $('.haederbanner__close').on('click', function(e) {
         e.preventDefault();
       $(this).closest('.haederbanner').hide()
