@@ -1,0 +1,1696 @@
+<% var data = { title: "MAIN", author: "" }; %> <%= _.template(require('../includes/head.html').default)(data) %> <%= _.template(require('../includes/header.html').default)(data) %>
+<main>
+  <div class="breadcrumbs">
+    <div class="container">
+      <div class="breadcrumbs__items">
+        <ul>
+          <li>
+            <a href="/">
+            <span>
+            Рыбспецпродукт
+            </span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+            <span>Каталог</span>
+            </a>
+          </li>
+          <li>
+            <span>Рыба мороженная</span>
+          </li>
+        </ul>
+      </div>
+      <!-- /.breadcrumbs__items -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.breadcrumbs -->
+  <div class="page ">
+
+
+    <div class="productpage detail">
+      <div class="container">
+        <div class="productpage__main flex content-between">
+          
+          <div class="productpage__left">
+            <div class="productcard__stickers">
+              <div class="productcard__sticker">
+                <div class="productsticker productsticker_yellow">
+                  <span class="productsticker__text">Акция</span>
+                </div>
+              </div>
+              <div class="productcard__sticker">
+                <div class="productsticker productsticker_green">
+                  <span class="productsticker__text">Новинка</span>
+                </div>
+              </div>
+             
+            </div>
+            <div class="productpage__images detailslider">
+              <div class="detailslider__wrapper">
+                <div thumbsSlider="" class="swiper detailswiperpreview">
+                  <div class="swiper-scrollbar"></div>
+                  <div class="swiper-wrapper">
+                    
+                    <div class="swiper-slide">
+                      <img src="img/detail2.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/detail1.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/detail2.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/detail1.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/detail2.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/detail1.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/detail2.jpg" />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper detailswiper">
+                  <div class="swiper-wrapper">
+                   
+                    <div class="swiper-slide">
+                      <div class="zoom-box"><img src="img/detail2.jpg" /></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="zoom-box"><img src="img/detail1.jpg" /></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="zoom-box"><img src="img/detail2.jpg" /></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="zoom-box"><img src="img/detail1.jpg" /></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="zoom-box"><img src="img/detail2.jpg" /></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="zoom-box"><img src="img/detail1.jpg" /></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="zoom-box"><img src="img/detail2.jpg" /></div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="mainslider__dotsblock mainslider__dotsblock_detail onlyMobile">
+                <div class="slider__dots mainslider__dots detail__dots"></div>
+              </div>            
+            </div>
+            <!-- /.productpage__images -->
+          </div>
+          <!-- /.productpage__left -->
+          <div class="productpage__right">
+            <div class="productpage__info detailinfo">
+              <div class="detailinfo__header ">
+                <div v class="detailinfo__headerleft">
+                  <div class="detailinfo__sku">Артикул: 591949</div>
+                    <div class="detailinfo__reviews">
+                      <div class="productcard__blockrating">
+                        <div class="cproductcard__blockrating__star">
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                        </div><!-- /.cardrating__star -->
+                        <div class="productcard__blockrating__value">
+                          <span>4,92</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /.detailinfo__reviews -->
+                </div><!-- /.detailinfo__headerleft -->
+                
+                <div class="detailinfo__wishlist">
+                  <div class="productcard__fav">
+                    <a href="#" tabindex="0" class="detail-fav " data-item="2676" data-step="0.1" data-entity="add-wish-list"> 
+                      <div class="fav__wrapper">
+                        <span class="fav-default">
+                          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                            <path d="M10.9989 19.8413C10.4546 19.4104 9.77189 18.9541 9.03747 18.4635C7.39201 17.3617 5.5329 16.1131 4.07629 14.5294C2.63341 12.9606 1.62891 11.1088 1.62891 8.79999C1.62891 6.06029 3.85921 3.82999 6.59891 3.82999C8.08799 3.82999 9.48205 4.49268 10.4214 5.62621L10.9989 6.32303L11.5764 5.62621C12.5158 4.49268 13.9098 3.82999 15.3989 3.82999C18.1386 3.82999 20.3689 6.06029 20.3689 8.79999C20.3689 11.1088 19.3644 12.9606 17.9215 14.5294C16.4649 16.1131 14.6058 17.3617 12.9603 18.4635C12.2259 18.9541 11.5432 19.4104 10.9989 19.8413Z" stroke="black" />
+                            </g>
+                            </svg>
+                            
+                        </span>
+                      <div class="favtext">В избранное</div>
+                    </div>
+
+                    </a>
+                  </div>
+                </div>
+                <!-- /.detailinfo__washlist -->
+              </div>
+              <!-- /.detailinfo__header -->
+              <div class="detailinfo__title ">
+                <h1>Филе краба северного варено-мороженый, 70/90 1000 г</h1>
+              </div>
+              <!-- /.detailinfo__title -->
+            
+              <div class="detailinfo__content">
+                <div class="detailinfo__text">
+                  <span class='gray'>Состав:</span> Филе краба, оливковое масло, соль морская, перец
+                </div><!-- /.detailinfo__text -->     
+                <div class="detailinfo__moreinfo">
+                  <div class="detailtable">
+                      <div class="detailtable__row">
+                        <div class="detailtable__col">
+                          <div class="detailtable__content">
+                            <div class="detailtable__value">120</div>
+                            <div class="detailtable__text">кКал</div>
+                          </div><!-- /.detailtable__content -->
+                        </div>
+                        <div class="detailtable__col">
+                          <div class="detailtable__content">
+                            <div class="detailtable__value">3,5г</div>
+                            <div class="detailtable__text">Белки</div>
+                          </div><!-- /.detailtable__content -->
+                        </div>
+                        <div class="detailtable__col">
+                          <div class="detailtable__content">
+                            <div class="detailtable__value">27г</div>
+                            <div class="detailtable__text">Жиры</div>
+                          </div><!-- /.detailtable__content -->
+
+                        </div>
+                        <div class="detailtable__col">
+                          <div class="detailtable__content">
+                            <div class="detailtable__value">5,5г</div>
+                            <div class="detailtable__text">Углеводы</div>
+                          </div><!-- /.detailtable__content -->
+                        </div>
+                       
+                      </div>
+                      <!-- /.detailtable__row -->
+                   
+                    
+                  </div>
+                  <!-- /.detailtable -->
+                              
+                </div>
+                <!-- /.detailinfo__moreinfo -->
+                <div class="detailinfo__buyblock">
+                  <div class="detailbuy">
+                    
+                      <div class="detailbuy__buyblock">
+                        <div class="buyblock">
+                          <div class="productcard__buy">
+                            <div class="productcard__prices">
+                              <div class="productcard__topprice">
+                                <div class="productcard__oldprice">762.92</div>
+                                <div class="productcard__infotext">Экономия -30%</div>
+                              </div>
+                              <!-- /.productcard__oldprice -->
+                              <div class="productcard__mainprice">
+                                <div class="productcard__price">
+                                  <div class="productcard__pricevalue">322,99 <span class="rouble">₽</span>/шт. </div>
+                                </div>
+                                <!-- /.productcard__price -->
+                              </div>
+                              <div class="productcard__pricecaption">322,99 <span class="rouble">₽</span>/кг</div>
+                              <!-- /.productcard__mainprice -->
+                            </div>
+                            <!-- /.productcard__prices -->
+                            <div class="buyblock__buttons flex items-center">
+                              <div class="buyblock__quantity">
+                                <div class="quantity">
+                                  <input type="button" value="" class="quantity-minus" data-field="quantity" />
+                                  <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field" />
+                                  <input type="button" value="" class="quantity-plus" data-field="quantity" />
+                                </div>
+                              </div>
+                              <div class="productcard__cart">
+                                <!-- <button class="tocart btn btn_main js-addmodal active">
+                                  <div class="tocart__content tocart__after">
+                                    <span>В корзине</span>
+                                  </div>
+                                </button> -->
+                                <!-- <button class="tocart btn btn_main js-addmodal active">
+                                  <div class="tocart__content tocart__before">
+                                    <span>Купить</span>
+                                  </div>
+                                </button> -->
+                                
+                                <button class="tocart btn btn_main ">
+                                  <div class="tocart__content tocart__before">
+                                    <span class='btn__icon'><img src="img/addtocart.svg" alt=""></span>
+                                    <span class='btn_text'>В корзину</span>
+                                  </div>
+                                  <div class="tocart__content tocart__after">
+                                    <span class='btn__icon'><img src="img/addtocart_active.svg" alt=""></span>
+                                    <span class='btn_text'>В корзине</span>
+                                  </div>
+                                </button>
+                              </div>
+                            </div>
+                            <!-- /.buyblock__buttons -->
+                          </div>
+                        </div>
+                        <!-- /.buyblock -->
+                      </div>
+                      <!-- /.detailbuy__buyblock -->
+                    </form>
+                  </div>
+                  <!-- /.detailbuy -->
+                </div>
+                <!-- /.detailinfo__buyblock -->
+               
+              </div>
+              <!-- /.detailinfo__content -->
+            </div>
+            <!-- /.detailinfo -->
+          </div>
+          <!-- /.productpage__right -->
+        </div>
+        <!-- /.productpage__main -->
+        <div class="productpage__content">
+          <div class="productpage__columns">
+            <div class="productpage__columnleft">
+              <div class="productpage__block">
+                <div class="productpage__title">
+                  <h2 class="wave">Описание</h2>
+                </div><!-- /.productpage__title -->
+                <div class="productpage__description">
+                  <p>Красная икра нерки 130 г – частый атрибут праздничного стола. Это полностью натуральный свежий продукт.
+                    Красная икра имеет нежный, слабосоленый вкус и естественный оттенок. Продукт станет отличным дополнением к бутербродам, блинам, салатам и другим блюдам.</p>
+                    
+                    <p>Деликатес богат полезными веществами. Он содержит калий, кальций, магний, железо, лецитин, цинк, медь и Омега-3 жирные кислоты. Витамины и микроэлементы укрепляют сердце и сосуды, способствуют активизации защитных сил организма, улучшают мозговую деятельность и избавляют от токсинов.</p>
+                    
+                    <p> В нашем интернет-магазине клиенты из Москвы и других городов могут купить красную икру нерки 130 г с гарантией качества.</p>
+                </div><!-- /.productpage__description -->
+              </div><!-- /.productpage__block -->
+
+              <div class="productpage__block">
+                <div class="productpage__title">
+                  <h2 class="wave">Характеристики</h2>
+                </div><!-- /.productpage__title -->
+                <div class="pruductfacts">
+                  <div class="pruductfacts__row">
+                    <div class="pruductfacts__title">Вес</div><!-- /.pruductfacts__title -->
+                    <div class="pruductfacts__value">100г</div><!-- /.pruductfacts__value -->
+                  </div><!-- /.pruductfacts__row -->
+                  <div class="pruductfacts__row">
+                    <div class="pruductfacts__title">Состав</div><!-- /.pruductfacts__title -->
+                    <div class="pruductfacts__value">Филе краба, оливковое масло, соль морская, перец</div><!-- /.pruductfacts__value -->
+                  </div><!-- /.pruductfacts__row -->
+                  <div class="pruductfacts__row">
+                    <div class="pruductfacts__title">Упаковка</div><!-- /.pruductfacts__title -->
+                    <div class="pruductfacts__value">Железная банка</div><!-- /.pruductfacts__value -->
+                  </div><!-- /.pruductfacts__row -->
+                  <div class="pruductfacts__row">
+                    <div class="pruductfacts__title">Изготовитель</div><!-- /.pruductfacts__title -->
+                    <div class="pruductfacts__value">Рыбспецпродукт</div><!-- /.pruductfacts__value -->
+                  </div><!-- /.pruductfacts__row -->
+                  <div class="pruductfacts__row">
+                    <div class="pruductfacts__title">Условия хранения</div><!-- /.pruductfacts__title -->
+                    <div class="pruductfacts__value">12 месяцев при температуре -5 С</div><!-- /.pruductfacts__value -->
+                  </div><!-- /.pruductfacts__row -->
+                  <div class="pruductfacts__row">
+                    <div class="pruductfacts__title">Пищевая ценность</div><!-- /.pruductfacts__title -->
+                    <div class="pruductfacts__value">58 кКал</div><!-- /.pruductfacts__value -->
+                  </div><!-- /.pruductfacts__row -->
+                  
+                </div>
+              </div><!-- /.productpage__block -->
+            </div><!-- /.productpage__columnleft -->
+            <div class="productpage__columnright">
+              <div class="reviewsblock norating">
+                <div class="reviewsblock__wrapper ">
+                  <div class="reviewsblock__stars">
+                    <div class="reviesblock__stars_off">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div><!-- /.reviesblock__stars_off -->
+                    
+                  </div><!-- /.reviewsblock__stars -->
+                  <div class="reviewsblock__title">У этого товара еще нет отзывов</div><!-- /.reviewsblock__title -->
+                  <div class="reviewsblock__text">Ваше мнение очень важное для нас!</div><!-- /.reviewsblock__text -->
+                  <div class="reviewsblock__button">
+                    <a href="#popup_review" data-toggle="modal" class='btn_border btn_border_black'>Оставить отзыв</a>
+                  </div><!-- /.reviewsblock__button -->
+            
+                </div><!-- /.reviewsblock__wrapper -->
+              </div><!-- /.reviewsblock -->
+            </div><!-- /.productpage__columnright -->
+          </div><!-- /.productpage__columns -->
+               
+             
+             
+        </div>
+        <!-- /.productpage__content -->
+      </div>
+      <!-- /.container -->
+      <div class="productpage__footer">
+        <div class="pageblocksl productslider">
+          <div class="container">
+            <div class="blockheader flex items-center content-between">
+              <div class="blockheader__left">
+                <h2>С этим покупают</h2>
+              </div>
+              <!-- /.blockheader__left -->
+              <div class='onlyDesktop'>
+                <a href="#" class='btn_link'>
+                  <span>Смотреть все</span>
+                 </a>   
+              </div>
+            </div>
+            <!-- /.blockheader -->
+            <div class="productslider__wrapper">
+              <div class="productslider__container " data-slidercontainer="slider_sale">
+                <div class="sliderarrows flex">
+                  <div class="sliderarrows__left slider__arrow slider__left">
+                    <img src="img/default_left.svg" alt="">
+                  </div>
+                  <!-- /.sliderarrows__left -->
+                  <div class="sliderarrows__right slider__arrow slider__right">
+                    <img src="img/default_right.svg" alt="">
+                  </div>
+                  <!-- /.sliderarrows__right -->
+                </div>
+                <!-- /.sliderarrows -->
+                
+                <div class="productslider__slider " id='slider_sale' data-slider="slider_sale">
+                  <div class="productslider__slide ">
+                    <div class="productslider__item">
+                      <div class="productcard">
+                        <div class="productcard__wrapper">
+                          
+                          <a href="#" class="productcard__images ">
+                            <div class="productcard__img">
+                              <img src="img/product1.jpg" >
+                            </div>
+                          </a>
+                          <div class="productcard__blockwrapper">
+                            <div class="productcard__blockinfo">
+                              <div class="productcard__blockrating">
+                                  <div class="cproductcard__blockrating__star">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                  </div><!-- /.cardrating__star -->
+                                  <div class="productcard__blockrating__value">
+                                    <span>4,92</span>
+                                  </div>
+                              </div><!-- /.productcard__blockrating -->
+                              <div class="productcard__blockside">
+                                <div class="productcard__blockprice">322,99 ₽/кг</div><!-- /.productcard__blockprice -->
+                                <div class="productcard__blockfav onlyDesktop">
+                                  <a href="#" tabindex="0" class="catalog-fav " data-item="2676" data-step="0.1" data-entity="add-wish-list"> 
+                                    <div>
+                                      <span class="fav-default">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                          <g opacity="1">
+                                          <path d="M12.9991 24.5964L12.6659 24.3202C12.0342 23.792 11.1791 23.2192 10.1878 22.557C6.32641 19.9713 1.03906 16.4328 1.03906 10.4C1.03906 6.67267 4.07172 3.64001 7.79906 3.64001C9.82422 3.64001 11.7214 4.54189 12.9991 6.08361C14.2767 4.54189 16.1739 3.64001 18.1991 3.64001C21.9264 3.64001 24.9591 6.67267 24.9591 10.4C24.9591 16.4328 19.6717 19.9713 15.8103 22.557C14.8191 23.2192 13.9639 23.792 13.3322 24.3202L12.9991 24.5964Z" />
+                                          </g>
+                                          </svg>
+                                      </span>
+                                    </div>
+                                  </a>
+                                </div><!-- /.productcard__blockfav -->
+                              </div><!-- /.productcard__blockside -->
+                            </div><!-- /.productcard__blockinfo -->
+                           
+                          <div class="productcard__title">
+                            <a href="">Филе краба северного варено-мороженый, 70/90 1000 г</a>
+                          </div>
+                          <div class="productcard__buy">
+                            <div class="productcard__prices">
+                              <div class="productcard__topprice">
+                                <div class="productcard__oldprice">762.92 <span class=" rouble">₽</span>
+                                </div>
+                               <!--  <div class="productcard__badge">12%</div> -->
+                              </div>
+                              <!-- /.productcard__oldprice -->
+                              <div class="productcard__mainprice">
+                                <div class="productcard__price">
+                                  <div class="productcard__pricevalue">322,99</div>
+                                  <div class="productcard__priceunit rouble">₽</div>
+                                </div>
+                                <!-- /.productcard__price -->
+                              </div>
+                              <!-- /.productcard__mainprice -->
+                            </div>
+                            <!-- /.productcard__prices -->
+                            <div class="productcard__button">
+                              <button class="productcard__addtocart btn "></button>
+                              <!-- <button class="productcard__addtocart btn active"></button> -->
+                            </div>
+                          </div>
+                          <!-- /.productcard__buy -->
+                          <div class="productcard__info">
+                           <!--  <div class="productcard__infoicon">
+                              <img src="img/productcard__info.svg" alt="">
+                            </div> -->
+                            <div class="productcard__infotext">Экономия -30%</div>
+                          </div>
+                          <!-- /\.productcard__info -->
+      <div class="productcard__mobfav favmobile onlyMobile">
+                            <a href="#" tabindex="0" class="catalog-fav " data-item="2676" data-step="0.1" data-entity="add-wish-list"> 
+                              <div class='favmobile__wrapper'>
+                                <span class="fav-default">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <g opacity="0.15">
+                                    <path d="M12.8847 10.4284C11.8445 11.5593 10.5132 12.4545 9.31331 13.2581L9.30941 13.2607C8.83409 13.5782 8.38047 13.8812 8.00063 14.1711C7.62078 13.8812 7.16716 13.5782 6.69183 13.2607L6.68793 13.2581C5.48803 12.4545 4.15673 11.5593 3.11654 10.4284C2.09009 9.31236 1.39062 8.01271 1.39062 6.39999C1.39062 4.52045 2.92109 2.98999 4.80062 2.98999C5.82236 2.98999 6.77861 3.44455 7.42315 4.22231L8.00062 4.91913L8.5781 4.22231C9.22264 3.44455 10.1789 2.98999 11.2006 2.98999C13.0802 2.98999 14.6106 4.52045 14.6106 6.39999C14.6106 8.01271 13.9112 9.31236 12.8847 10.4284Z" stroke-width="1.5"/>
+                                    </g>
+                                    </svg>
+                                </span>
+                              <div class="favtext">В избранное</div>
+                            </div>
+      
+                            </a>
+                          </div><!-- /.productcard__blockfav -->
+      
+                        </div><!-- /.productcard__blockwrapper -->
+      
+                        </div>
+                        <!-- /.productcard__wrapper -->
+                      </div>
+                      <!-- /.productcard -->
+                    </div>
+                    <!-- /.productslider__item -->
+                  </div>
+                  <!-- /.productslider__slide  -->
+                  <div class="productslider__slide ">
+                    <div class="productslider__item">
+                      <div class="productcard">
+                        <div class="productcard__wrapper">
+                          <div class="productcard__stickers">
+                            <div class="productcard__sticker">
+                              <div class="productsticker productsticker_yellow">
+                                <span class="productsticker__text">Акция</span>
+                              </div>
+                            </div>
+                            <!-- /.productcard__sticker -->
+                          </div>
+      
+                          <a href="#" class="productcard__images ">
+                            <div class="productcard__img">
+                              <img src="img/product2.jpg" >
+                            </div>
+                          </a>
+                          <div class="productcard__blockwrapper">
+                            <div class="productcard__blockinfo">
+                              <div class="productcard__blockrating">
+                                  <div class="cproductcard__blockrating__star">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                  </div><!-- /.cardrating__star -->
+                                  <div class="productcard__blockrating__value">
+                                    <span>4,92</span>
+                                  </div>
+                              </div><!-- /.productcard__blockrating -->
+                              <div class="productcard__blockside">
+                                <div class="productcard__blockprice">322,99 ₽/кг</div><!-- /.productcard__blockprice -->
+                                <div class="productcard__blockfav onlyDesktop">
+                                  <a href="#" tabindex="0" class="catalog-fav active" data-item="2676" data-step="0.1" data-entity="add-wish-list"> 
+                                    <div>
+                                      <span class="fav-default">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                          <g opacity="1">
+                                          <path d="M12.9991 24.5964L12.6659 24.3202C12.0342 23.792 11.1791 23.2192 10.1878 22.557C6.32641 19.9713 1.03906 16.4328 1.03906 10.4C1.03906 6.67267 4.07172 3.64001 7.79906 3.64001C9.82422 3.64001 11.7214 4.54189 12.9991 6.08361C14.2767 4.54189 16.1739 3.64001 18.1991 3.64001C21.9264 3.64001 24.9591 6.67267 24.9591 10.4C24.9591 16.4328 19.6717 19.9713 15.8103 22.557C14.8191 23.2192 13.9639 23.792 13.3322 24.3202L12.9991 24.5964Z" />
+                                          </g>
+                                          </svg>
+                                      </span>
+                                    </div>
+                                  </a>
+                                </div><!-- /.productcard__blockfav -->
+                              </div><!-- /.productcard__blockside -->
+                            </div><!-- /.productcard__blockinfo -->
+                           
+                          <div class="productcard__title">
+                            <a href="">Филе краба северного варено-мороженый, 70/90 1000 г</a>
+                          </div>
+                          <div class="productcard__buy">
+                            <div class="productcard__prices">
+                              <div class="productcard__topprice">
+                                <div class="productcard__oldprice">762.92 <span class=" rouble">₽</span>
+                                </div>
+                               <!--  <div class="productcard__badge">12%</div> -->
+                              </div>
+                              <!-- /.productcard__oldprice -->
+                              <div class="productcard__mainprice">
+                                <div class="productcard__price">
+                                  <div class="productcard__pricevalue">322,99</div>
+                                  <div class="productcard__priceunit rouble">₽</div>
+                                </div>
+                                <!-- /.productcard__price -->
+                              </div>
+                              <!-- /.productcard__mainprice -->
+                            </div>
+                            <!-- /.productcard__prices -->
+                            <div class="productcard__button">
+                              <button class="productcard__addtocart btn active"></button>
+                            </div>
+                          </div>
+                          <!-- /.productcard__buy -->
+                          <div class="productcard__info">
+                           <!--  <div class="productcard__infoicon">
+                              <img src="img/productcard__info.svg" alt="">
+                            </div> -->
+                            <div class="productcard__infotext">Экономия -30%</div>
+                          </div>
+                          <!-- /\.productcard__info -->
+      <div class="productcard__mobfav favmobile onlyMobile">
+                            <a href="#" tabindex="0" class="catalog-fav active" data-item="2676" data-step="0.1" data-entity="add-wish-list"> 
+                              <div class='favmobile__wrapper'>
+                                <span class="fav-default">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <g opacity="0.15">
+                                    <path d="M12.8847 10.4284C11.8445 11.5593 10.5132 12.4545 9.31331 13.2581L9.30941 13.2607C8.83409 13.5782 8.38047 13.8812 8.00063 14.1711C7.62078 13.8812 7.16716 13.5782 6.69183 13.2607L6.68793 13.2581C5.48803 12.4545 4.15673 11.5593 3.11654 10.4284C2.09009 9.31236 1.39062 8.01271 1.39062 6.39999C1.39062 4.52045 2.92109 2.98999 4.80062 2.98999C5.82236 2.98999 6.77861 3.44455 7.42315 4.22231L8.00062 4.91913L8.5781 4.22231C9.22264 3.44455 10.1789 2.98999 11.2006 2.98999C13.0802 2.98999 14.6106 4.52045 14.6106 6.39999C14.6106 8.01271 13.9112 9.31236 12.8847 10.4284Z" stroke-width="1.5"/>
+                                    </g>
+                                    </svg>
+                                </span>
+                              <div class="favtext">В избранном</div>
+                            </div>
+      
+                            </a>
+                          </div><!-- /.productcard__blockfav -->
+      
+                        </div><!-- /.productcard__blockwrapper -->
+      
+                        </div>
+                        <!-- /.productcard__wrapper -->
+                      </div>
+                      <!-- /.productcard -->
+                    </div>
+                    <!-- /.productslider__item -->
+                  </div>
+                  <!-- /.productslider__slide  --><div class="productslider__slide ">
+                    <div class="productslider__item">
+                      <div class="productcard">
+                        <div class="productcard__wrapper">
+                          <div class="productcard__stickers">
+                            <div class="productcard__sticker">
+                              <div class="productsticker productsticker_yellow">
+                                <span class="productsticker__text">Акция</span>
+                              </div>
+                            </div>
+                            <!-- /.productcard__sticker -->
+                          </div>
+      
+                          <a href="#" class="productcard__images ">
+                            <div class="productcard__img">
+                              <img src="img/product1.jpg" >
+                            </div>
+                          </a>
+                          <div class="productcard__blockwrapper">
+                            <div class="productcard__blockinfo">
+                              <div class="productcard__blockrating">
+                                  <div class="cproductcard__blockrating__star">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                  </div><!-- /.cardrating__star -->
+                                  <div class="productcard__blockrating__value">
+                                    <span>4,92</span>
+                                  </div>
+                              </div><!-- /.productcard__blockrating -->
+                              <div class="productcard__blockside">
+                                <div class="productcard__blockprice">322,99 ₽/кг</div><!-- /.productcard__blockprice -->
+                                <div class="productcard__blockfav onlyDesktop">
+                                  <a href="#" tabindex="0" class="catalog-fav " data-item="2676" data-step="0.1" data-entity="add-wish-list"> 
+                                    <div>
+                                      <span class="fav-default">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                          <g opacity="1">
+                                          <path d="M12.9991 24.5964L12.6659 24.3202C12.0342 23.792 11.1791 23.2192 10.1878 22.557C6.32641 19.9713 1.03906 16.4328 1.03906 10.4C1.03906 6.67267 4.07172 3.64001 7.79906 3.64001C9.82422 3.64001 11.7214 4.54189 12.9991 6.08361C14.2767 4.54189 16.1739 3.64001 18.1991 3.64001C21.9264 3.64001 24.9591 6.67267 24.9591 10.4C24.9591 16.4328 19.6717 19.9713 15.8103 22.557C14.8191 23.2192 13.9639 23.792 13.3322 24.3202L12.9991 24.5964Z" />
+                                          </g>
+                                          </svg>
+                                      </span>
+                                    </div>
+                                  </a>
+                                </div><!-- /.productcard__blockfav -->
+                              </div><!-- /.productcard__blockside -->
+                            </div><!-- /.productcard__blockinfo -->
+                           
+                          <div class="productcard__title">
+                            <a href="">Филе краба северного варено-мороженый, 70/90 1000 г</a>
+                          </div>
+                          <div class="productcard__buy">
+                            <div class="productcard__prices">
+                              <div class="productcard__topprice">
+                                <div class="productcard__oldprice">762.92 <span class=" rouble">₽</span>
+                                </div>
+                               <!--  <div class="productcard__badge">12%</div> -->
+                              </div>
+                              <!-- /.productcard__oldprice -->
+                              <div class="productcard__mainprice">
+                                <div class="productcard__price">
+                                  <div class="productcard__pricevalue">322,99</div>
+                                  <div class="productcard__priceunit rouble">₽</div>
+                                </div>
+                                <!-- /.productcard__price -->
+                              </div>
+                              <!-- /.productcard__mainprice -->
+                            </div>
+                            <!-- /.productcard__prices -->
+                            <div class="productcard__button">
+                              <button class="productcard__addtocart btn "></button>
+                            </div>
+                          </div>
+                          <!-- /.productcard__buy -->
+                          <div class="productcard__info">
+                           <!--  <div class="productcard__infoicon">
+                              <img src="img/productcard__info.svg" alt="">
+                            </div> -->
+                            <div class="productcard__infotext">Экономия -30%</div>
+                          </div>
+                          <!-- /\.productcard__info -->
+      <div class="productcard__mobfav favmobile onlyMobile">
+                            <a href="#" tabindex="0" class="catalog-fav " data-item="2676" data-step="0.1" data-entity="add-wish-list"> 
+                              <div class='favmobile__wrapper'>
+                                <span class="fav-default">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <g opacity="0.15">
+                                    <path d="M12.8847 10.4284C11.8445 11.5593 10.5132 12.4545 9.31331 13.2581L9.30941 13.2607C8.83409 13.5782 8.38047 13.8812 8.00063 14.1711C7.62078 13.8812 7.16716 13.5782 6.69183 13.2607L6.68793 13.2581C5.48803 12.4545 4.15673 11.5593 3.11654 10.4284C2.09009 9.31236 1.39062 8.01271 1.39062 6.39999C1.39062 4.52045 2.92109 2.98999 4.80062 2.98999C5.82236 2.98999 6.77861 3.44455 7.42315 4.22231L8.00062 4.91913L8.5781 4.22231C9.22264 3.44455 10.1789 2.98999 11.2006 2.98999C13.0802 2.98999 14.6106 4.52045 14.6106 6.39999C14.6106 8.01271 13.9112 9.31236 12.8847 10.4284Z" stroke-width="1.5"/>
+                                    </g>
+                                    </svg>
+                                </span>
+                              <div class="favtext">В избранное</div>
+                            </div>
+      
+                            </a>
+                          </div><!-- /.productcard__blockfav -->
+      
+                        </div><!-- /.productcard__blockwrapper -->
+      
+                        </div>
+                        <!-- /.productcard__wrapper -->
+                      </div>
+                      <!-- /.productcard -->
+                    </div>
+                    <!-- /.productslider__item -->
+                  </div>
+                  <!-- /.productslider__slide  --><div class="productslider__slide ">
+                    <div class="productslider__item">
+                      <div class="productcard">
+                        <div class="productcard__wrapper">
+                          <div class="productcard__stickers">
+                            <div class="productcard__sticker">
+                              <div class="productsticker productsticker_yellow">
+                                <span class="productsticker__text">Акция</span>
+                              </div>
+                            </div>
+                            <!-- /.productcard__sticker -->
+                          </div>
+      
+                          <a href="#" class="productcard__images ">
+                            <div class="productcard__img">
+                              <img src="img/product1.jpg" >
+                            </div>
+                          </a>
+                          <div class="productcard__blockwrapper">
+                            <div class="productcard__blockinfo">
+                              <div class="productcard__blockrating">
+                                  <div class="cproductcard__blockrating__star">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                  </div><!-- /.cardrating__star -->
+                                  <div class="productcard__blockrating__value">
+                                    <span>4,92</span>
+                                  </div>
+                              </div><!-- /.productcard__blockrating -->
+                              <div class="productcard__blockside">
+                                <div class="productcard__blockprice">322,99 ₽/кг</div><!-- /.productcard__blockprice -->
+                                <div class="productcard__blockfav onlyDesktop">
+                                  <a href="#" tabindex="0" class="catalog-fav " data-item="2676" data-step="0.1" data-entity="add-wish-list"> 
+                                    <div>
+                                      <span class="fav-default">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                          <g opacity="1">
+                                          <path d="M12.9991 24.5964L12.6659 24.3202C12.0342 23.792 11.1791 23.2192 10.1878 22.557C6.32641 19.9713 1.03906 16.4328 1.03906 10.4C1.03906 6.67267 4.07172 3.64001 7.79906 3.64001C9.82422 3.64001 11.7214 4.54189 12.9991 6.08361C14.2767 4.54189 16.1739 3.64001 18.1991 3.64001C21.9264 3.64001 24.9591 6.67267 24.9591 10.4C24.9591 16.4328 19.6717 19.9713 15.8103 22.557C14.8191 23.2192 13.9639 23.792 13.3322 24.3202L12.9991 24.5964Z" />
+                                          </g>
+                                          </svg>
+                                      </span>
+                                    </div>
+                                  </a>
+                                </div><!-- /.productcard__blockfav -->
+                              </div><!-- /.productcard__blockside -->
+                            </div><!-- /.productcard__blockinfo -->
+                           
+                          <div class="productcard__title">
+                            <a href="">Филе краба северного варено-мороженый, 70/90 1000 г</a>
+                          </div>
+                          <div class="productcard__buy">
+                            <div class="productcard__prices">
+                              <div class="productcard__topprice">
+                                <div class="productcard__oldprice">762.92 <span class=" rouble">₽</span>
+                                </div>
+                               <!--  <div class="productcard__badge">12%</div> -->
+                              </div>
+                              <!-- /.productcard__oldprice -->
+                              <div class="productcard__mainprice">
+                                <div class="productcard__price">
+                                  <div class="productcard__pricevalue">322,99</div>
+                                  <div class="productcard__priceunit rouble">₽</div>
+                                </div>
+                                <!-- /.productcard__price -->
+                              </div>
+                              <!-- /.productcard__mainprice -->
+                            </div>
+                            <!-- /.productcard__prices -->
+                            <div class="productcard__button">
+                              <button class="productcard__addtocart btn "></button>
+                            </div>
+                          </div>
+                          <!-- /.productcard__buy -->
+                          <div class="productcard__info">
+                           <!--  <div class="productcard__infoicon">
+                              <img src="img/productcard__info.svg" alt="">
+                            </div> -->
+                            <div class="productcard__infotext">Экономия -30%</div>
+                          </div>
+                          <!-- /\.productcard__info -->
+      <div class="productcard__mobfav favmobile onlyMobile">
+                            <a href="#" tabindex="0" class="catalog-fav " data-item="2676" data-step="0.1" data-entity="add-wish-list"> 
+                              <div class='favmobile__wrapper'>
+                                <span class="fav-default">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <g opacity="0.15">
+                                    <path d="M12.8847 10.4284C11.8445 11.5593 10.5132 12.4545 9.31331 13.2581L9.30941 13.2607C8.83409 13.5782 8.38047 13.8812 8.00063 14.1711C7.62078 13.8812 7.16716 13.5782 6.69183 13.2607L6.68793 13.2581C5.48803 12.4545 4.15673 11.5593 3.11654 10.4284C2.09009 9.31236 1.39062 8.01271 1.39062 6.39999C1.39062 4.52045 2.92109 2.98999 4.80062 2.98999C5.82236 2.98999 6.77861 3.44455 7.42315 4.22231L8.00062 4.91913L8.5781 4.22231C9.22264 3.44455 10.1789 2.98999 11.2006 2.98999C13.0802 2.98999 14.6106 4.52045 14.6106 6.39999C14.6106 8.01271 13.9112 9.31236 12.8847 10.4284Z" stroke-width="1.5"/>
+                                    </g>
+                                    </svg>
+                                </span>
+                              <div class="favtext">В избранное</div>
+                            </div>
+      
+                            </a>
+                          </div><!-- /.productcard__blockfav -->
+      
+                        </div><!-- /.productcard__blockwrapper -->
+      
+                        </div>
+                        <!-- /.productcard__wrapper -->
+                      </div>
+                      <!-- /.productcard -->
+                    </div>
+                    <!-- /.productslider__item -->
+                  </div>
+                  <!-- /.productslider__slide  --><div class="productslider__slide ">
+                    <div class="productslider__item">
+                      <div class="productcard">
+                        <div class="productcard__wrapper">
+                          <div class="productcard__stickers">
+                            <div class="productcard__sticker">
+                              <div class="productsticker productsticker_yellow">
+                                <span class="productsticker__text">Акция</span>
+                              </div>
+                            </div>
+                            <!-- /.productcard__sticker -->
+                          </div>
+      
+                          <a href="#" class="productcard__images ">
+                            <div class="productcard__img">
+                              <img src="img/product1.jpg" >
+                            </div>
+                          </a>
+                          <div class="productcard__blockwrapper">
+                            <div class="productcard__blockinfo">
+                              <div class="productcard__blockrating">
+                                  <div class="cproductcard__blockrating__star">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                  </div><!-- /.cardrating__star -->
+                                  <div class="productcard__blockrating__value">
+                                    <span>4,92</span>
+                                  </div>
+                              </div><!-- /.productcard__blockrating -->
+                              <div class="productcard__blockside">
+                                <div class="productcard__blockprice">322,99 ₽/кг</div><!-- /.productcard__blockprice -->
+                                <div class="productcard__blockfav onlyDesktop">
+                                  <a href="#" tabindex="0" class="catalog-fav " data-item="2676" data-step="0.1" data-entity="add-wish-list"> 
+                                    <div>
+                                      <span class="fav-default">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                          <g opacity="1">
+                                          <path d="M12.9991 24.5964L12.6659 24.3202C12.0342 23.792 11.1791 23.2192 10.1878 22.557C6.32641 19.9713 1.03906 16.4328 1.03906 10.4C1.03906 6.67267 4.07172 3.64001 7.79906 3.64001C9.82422 3.64001 11.7214 4.54189 12.9991 6.08361C14.2767 4.54189 16.1739 3.64001 18.1991 3.64001C21.9264 3.64001 24.9591 6.67267 24.9591 10.4C24.9591 16.4328 19.6717 19.9713 15.8103 22.557C14.8191 23.2192 13.9639 23.792 13.3322 24.3202L12.9991 24.5964Z" />
+                                          </g>
+                                          </svg>
+                                      </span>
+                                    </div>
+                                  </a>
+                                </div><!-- /.productcard__blockfav -->
+                              </div><!-- /.productcard__blockside -->
+                            </div><!-- /.productcard__blockinfo -->
+                           
+                          <div class="productcard__title">
+                            <a href="">Филе краба северного варено-мороженый, 70/90 1000 г</a>
+                          </div>
+                          <div class="productcard__buy">
+                            <div class="productcard__prices">
+                              <div class="productcard__topprice">
+                                <div class="productcard__oldprice">762.92 <span class=" rouble">₽</span>
+                                </div>
+                               <!--  <div class="productcard__badge">12%</div> -->
+                              </div>
+                              <!-- /.productcard__oldprice -->
+                              <div class="productcard__mainprice">
+                                <div class="productcard__price">
+                                  <div class="productcard__pricevalue">322,99</div>
+                                  <div class="productcard__priceunit rouble">₽</div>
+                                </div>
+                                <!-- /.productcard__price -->
+                              </div>
+                              <!-- /.productcard__mainprice -->
+                            </div>
+                            <!-- /.productcard__prices -->
+                            <div class="productcard__button">
+                              <button class="productcard__addtocart btn "></button>
+                            </div>
+                          </div>
+                          <!-- /.productcard__buy -->
+                          <div class="productcard__info">
+                           <!--  <div class="productcard__infoicon">
+                              <img src="img/productcard__info.svg" alt="">
+                            </div> -->
+                            <div class="productcard__infotext">Экономия -30%</div>
+                          </div>
+                          <!-- /\.productcard__info -->
+      <div class="productcard__mobfav favmobile onlyMobile">
+                            <a href="#" tabindex="0" class="catalog-fav " data-item="2676" data-step="0.1" data-entity="add-wish-list"> 
+                              <div class='favmobile__wrapper'>
+                                <span class="fav-default">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <g opacity="0.15">
+                                    <path d="M12.8847 10.4284C11.8445 11.5593 10.5132 12.4545 9.31331 13.2581L9.30941 13.2607C8.83409 13.5782 8.38047 13.8812 8.00063 14.1711C7.62078 13.8812 7.16716 13.5782 6.69183 13.2607L6.68793 13.2581C5.48803 12.4545 4.15673 11.5593 3.11654 10.4284C2.09009 9.31236 1.39062 8.01271 1.39062 6.39999C1.39062 4.52045 2.92109 2.98999 4.80062 2.98999C5.82236 2.98999 6.77861 3.44455 7.42315 4.22231L8.00062 4.91913L8.5781 4.22231C9.22264 3.44455 10.1789 2.98999 11.2006 2.98999C13.0802 2.98999 14.6106 4.52045 14.6106 6.39999C14.6106 8.01271 13.9112 9.31236 12.8847 10.4284Z" stroke-width="1.5"/>
+                                    </g>
+                                    </svg>
+                                </span>
+                              <div class="favtext">В избранное</div>
+                            </div>
+      
+                            </a>
+                          </div><!-- /.productcard__blockfav -->
+      
+                        </div><!-- /.productcard__blockwrapper -->
+      
+                        </div>
+                        <!-- /.productcard__wrapper -->
+                      </div>
+                      <!-- /.productcard -->
+                    </div>
+                    <!-- /.productslider__item -->
+                  </div>
+                  <!-- /.productslider__slide  -->
+                  <div class="productslider__slide ">
+                    <div class="productslider__item">
+                      <div class="productcard">
+                        <div class="productcard__wrapper">
+                          <div class="productcard__stickers">
+                            <div class="productcard__sticker">
+                              <div class="productsticker productsticker_yellow">
+                                <span class="productsticker__text">Акция</span>
+                              </div>
+                            </div>
+                            <!-- /.productcard__sticker -->
+                          </div>
+      
+                          <a href="#" class="productcard__images ">
+                            <div class="productcard__img">
+                              <img src="img/product1.jpg" >
+                            </div>
+                          </a>
+                          <div class="productcard__blockwrapper">
+                            <div class="productcard__blockinfo">
+                              <div class="productcard__blockrating">
+                                  <div class="cproductcard__blockrating__star">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                  </div><!-- /.cardrating__star -->
+                                  <div class="productcard__blockrating__value">
+                                    <span>4,92</span>
+                                  </div>
+                              </div><!-- /.productcard__blockrating -->
+                              <div class="productcard__blockside">
+                                <div class="productcard__blockprice">322,99 ₽/кг</div><!-- /.productcard__blockprice -->
+                                <div class="productcard__blockfav onlyDesktop">
+                                  <a href="#" tabindex="0" class="catalog-fav " data-item="2676" data-step="0.1" data-entity="add-wish-list"> 
+                                    <div>
+                                      <span class="fav-default">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                          <g opacity="1">
+                                          <path d="M12.9991 24.5964L12.6659 24.3202C12.0342 23.792 11.1791 23.2192 10.1878 22.557C6.32641 19.9713 1.03906 16.4328 1.03906 10.4C1.03906 6.67267 4.07172 3.64001 7.79906 3.64001C9.82422 3.64001 11.7214 4.54189 12.9991 6.08361C14.2767 4.54189 16.1739 3.64001 18.1991 3.64001C21.9264 3.64001 24.9591 6.67267 24.9591 10.4C24.9591 16.4328 19.6717 19.9713 15.8103 22.557C14.8191 23.2192 13.9639 23.792 13.3322 24.3202L12.9991 24.5964Z" />
+                                          </g>
+                                          </svg>
+                                      </span>
+                                    </div>
+                                  </a>
+                                </div><!-- /.productcard__blockfav -->
+                              </div><!-- /.productcard__blockside -->
+                            </div><!-- /.productcard__blockinfo -->
+                           
+                          <div class="productcard__title">
+                            <a href="">Филе краба северного варено-мороженый, 70/90 1000 г</a>
+                          </div>
+                          <div class="productcard__buy">
+                            <div class="productcard__prices">
+                              <div class="productcard__topprice">
+                                <div class="productcard__oldprice">762.92 <span class=" rouble">₽</span>
+                                </div>
+                               <!--  <div class="productcard__badge">12%</div> -->
+                              </div>
+                              <!-- /.productcard__oldprice -->
+                              <div class="productcard__mainprice">
+                                <div class="productcard__price">
+                                  <div class="productcard__pricevalue">322,99</div>
+                                  <div class="productcard__priceunit rouble">₽</div>
+                                </div>
+                                <!-- /.productcard__price -->
+                              </div>
+                              <!-- /.productcard__mainprice -->
+                            </div>
+                            <!-- /.productcard__prices -->
+                            <div class="productcard__button">
+                              <button class="productcard__addtocart btn "></button>
+                            </div>
+                          </div>
+                          <!-- /.productcard__buy -->
+                          <div class="productcard__info">
+                           <!--  <div class="productcard__infoicon">
+                              <img src="img/productcard__info.svg" alt="">
+                            </div> -->
+                            <div class="productcard__infotext">Экономия -30%</div>
+                          </div>
+                          <!-- /\.productcard__info -->
+      <div class="productcard__mobfav favmobile onlyMobile">
+                            <a href="#" tabindex="0" class="catalog-fav " data-item="2676" data-step="0.1" data-entity="add-wish-list"> 
+                              <div class='favmobile__wrapper'>
+                                <span class="fav-default">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <g opacity="0.15">
+                                    <path d="M12.8847 10.4284C11.8445 11.5593 10.5132 12.4545 9.31331 13.2581L9.30941 13.2607C8.83409 13.5782 8.38047 13.8812 8.00063 14.1711C7.62078 13.8812 7.16716 13.5782 6.69183 13.2607L6.68793 13.2581C5.48803 12.4545 4.15673 11.5593 3.11654 10.4284C2.09009 9.31236 1.39062 8.01271 1.39062 6.39999C1.39062 4.52045 2.92109 2.98999 4.80062 2.98999C5.82236 2.98999 6.77861 3.44455 7.42315 4.22231L8.00062 4.91913L8.5781 4.22231C9.22264 3.44455 10.1789 2.98999 11.2006 2.98999C13.0802 2.98999 14.6106 4.52045 14.6106 6.39999C14.6106 8.01271 13.9112 9.31236 12.8847 10.4284Z" stroke-width="1.5"/>
+                                    </g>
+                                    </svg>
+                                </span>
+                              <div class="favtext">В избранное</div>
+                            </div>
+      
+                            </a>
+                          </div><!-- /.productcard__blockfav -->
+      
+                        </div><!-- /.productcard__blockwrapper -->
+      
+                        </div>
+                        <!-- /.productcard__wrapper -->
+                      </div>  
+                      <!-- /.productcard -->
+                    </div>
+                    <!-- /.productslider__item -->
+                  </div>
+                  <!-- /.productslider__slide  -->
+                </div>
+                <!-- /.productslider__slide r -->
+              </div>
+              <!-- /.productslider__container -->
+              <div class='onlyMobile '>
+                <a href="#" class='btn_link'>
+                  <span>Смотреть все</span>
+                 </a>   
+              </div>
+            </div>
+            <!-- /.productslider__wrapper -->
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.pageblock -->
+
+        <div class="pageblocksl productslider">
+          <div class="container">
+            <div class="blockheader flex items-center content-between">
+              <div class="blockheader__left">
+                <h2>Похожие товары</h2>
+              </div>
+              <!-- /.blockheader__left -->
+              <div class='onlyDesktop'>
+                <a href="#" class='btn_link'>
+                  <span>Смотреть все</span>
+                 </a>   
+              </div>
+            </div>
+            <!-- /.blockheader -->
+            <div class="productslider__wrapper">
+              <div class="productslider__container " data-slidercontainer="slider_sale">
+                <div class="sliderarrows flex">
+                  <div class="sliderarrows__left slider__arrow slider__left">
+                    <img src="img/default_left.svg" alt="">
+                  </div>
+                  <!-- /.sliderarrows__left -->
+                  <div class="sliderarrows__right slider__arrow slider__right">
+                    <img src="img/default_right.svg" alt="">
+                  </div>
+                  <!-- /.sliderarrows__right -->
+                </div>
+                <!-- /.sliderarrows -->
+                
+                <div class="productslider__slider " id='slider_sale' data-slider="slider_sale">
+                  <div class="productslider__slide ">
+                    <div class="productslider__item">
+                      <div class="productcard">
+                        <div class="productcard__wrapper">
+                         
+      
+                          <a href="#" class="productcard__images ">
+                            <div class="productcard__img">
+                              <img src="img/product1.jpg" >
+                            </div>
+                          </a>
+                          <div class="productcard__blockwrapper">
+                            <div class="productcard__blockinfo">
+                              <div class="productcard__blockrating">
+                                  <div class="cproductcard__blockrating__star">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                  </div><!-- /.cardrating__star -->
+                                  <div class="productcard__blockrating__value">
+                                    <span>4,92</span>
+                                  </div>
+                              </div><!-- /.productcard__blockrating -->
+                              <div class="productcard__blockside">
+                                <div class="productcard__blockprice">322,99 ₽/кг</div><!-- /.productcard__blockprice -->
+                                <div class="productcard__blockfav onlyDesktop">
+                                  <a href="#" tabindex="0" class="catalog-fav " data-item="2676" data-step="0.1" data-entity="add-wish-list"> 
+                                    <div>
+                                      <span class="fav-default">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                          <g opacity="1">
+                                          <path d="M12.9991 24.5964L12.6659 24.3202C12.0342 23.792 11.1791 23.2192 10.1878 22.557C6.32641 19.9713 1.03906 16.4328 1.03906 10.4C1.03906 6.67267 4.07172 3.64001 7.79906 3.64001C9.82422 3.64001 11.7214 4.54189 12.9991 6.08361C14.2767 4.54189 16.1739 3.64001 18.1991 3.64001C21.9264 3.64001 24.9591 6.67267 24.9591 10.4C24.9591 16.4328 19.6717 19.9713 15.8103 22.557C14.8191 23.2192 13.9639 23.792 13.3322 24.3202L12.9991 24.5964Z" />
+                                          </g>
+                                          </svg>
+                                      </span>
+                                    </div>
+                                  </a>
+                                </div><!-- /.productcard__blockfav -->
+                              </div><!-- /.productcard__blockside -->
+                            </div><!-- /.productcard__blockinfo -->
+                           
+                          <div class="productcard__title">
+                            <a href="">Филе краба северного варено-мороженый, 70/90 1000 г</a>
+                          </div>
+                          <div class="productcard__buy">
+                            <div class="productcard__prices">
+                              <div class="productcard__topprice">
+                                <div class="productcard__oldprice">762.92 <span class=" rouble">₽</span>
+                                </div>
+                               <!--  <div class="productcard__badge">12%</div> -->
+                              </div>
+                              <!-- /.productcard__oldprice -->
+                              <div class="productcard__mainprice">
+                                <div class="productcard__price">
+                                  <div class="productcard__pricevalue">322,99</div>
+                                  <div class="productcard__priceunit rouble">₽</div>
+                                </div>
+                                <!-- /.productcard__price -->
+                              </div>
+                              <!-- /.productcard__mainprice -->
+                            </div>
+                            <!-- /.productcard__prices -->
+                            <div class="productcard__button">
+                              <button class="productcard__addtocart btn "></button>
+                              <!-- <button class="productcard__addtocart btn active"></button> -->
+                            </div>
+                          </div>
+                          <!-- /.productcard__buy -->
+                          <div class="productcard__info">
+                           <!--  <div class="productcard__infoicon">
+                              <img src="img/productcard__info.svg" alt="">
+                            </div> -->
+                            <div class="productcard__infotext">Экономия -30%</div>
+                          </div>
+                          <!-- /\.productcard__info -->
+      <div class="productcard__mobfav favmobile onlyMobile">
+                            <a href="#" tabindex="0" class="catalog-fav " data-item="2676" data-step="0.1" data-entity="add-wish-list"> 
+                              <div class='favmobile__wrapper'>
+                                <span class="fav-default">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <g opacity="0.15">
+                                    <path d="M12.8847 10.4284C11.8445 11.5593 10.5132 12.4545 9.31331 13.2581L9.30941 13.2607C8.83409 13.5782 8.38047 13.8812 8.00063 14.1711C7.62078 13.8812 7.16716 13.5782 6.69183 13.2607L6.68793 13.2581C5.48803 12.4545 4.15673 11.5593 3.11654 10.4284C2.09009 9.31236 1.39062 8.01271 1.39062 6.39999C1.39062 4.52045 2.92109 2.98999 4.80062 2.98999C5.82236 2.98999 6.77861 3.44455 7.42315 4.22231L8.00062 4.91913L8.5781 4.22231C9.22264 3.44455 10.1789 2.98999 11.2006 2.98999C13.0802 2.98999 14.6106 4.52045 14.6106 6.39999C14.6106 8.01271 13.9112 9.31236 12.8847 10.4284Z" stroke-width="1.5"/>
+                                    </g>
+                                    </svg>
+                                </span>
+                              <div class="favtext">В избранное</div>
+                            </div>
+      
+                            </a>
+                          </div><!-- /.productcard__blockfav -->
+      
+                        </div><!-- /.productcard__blockwrapper -->
+      
+                        </div>
+                        <!-- /.productcard__wrapper -->
+                      </div>
+                      <!-- /.productcard -->
+                    </div>
+                    <!-- /.productslider__item -->
+                  </div>
+                  <!-- /.productslider__slide  -->
+                  <div class="productslider__slide ">
+                    <div class="productslider__item">
+                      <div class="productcard">
+                        <div class="productcard__wrapper">
+                          <div class="productcard__stickers">
+                            <div class="productcard__sticker">
+                              <div class="productsticker productsticker_yellow">
+                                <span class="productsticker__text">Акция</span>
+                              </div>
+                            </div>
+                            <!-- /.productcard__sticker -->
+                          </div>
+      
+                          <a href="#" class="productcard__images ">
+                            <div class="productcard__img">
+                              <img src="img/product2.jpg" >
+                            </div>
+                          </a>
+                          <div class="productcard__blockwrapper">
+                            <div class="productcard__blockinfo">
+                              <div class="productcard__blockrating">
+                                  <div class="cproductcard__blockrating__star">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                  </div><!-- /.cardrating__star -->
+                                  <div class="productcard__blockrating__value">
+                                    <span>4,92</span>
+                                  </div>
+                              </div><!-- /.productcard__blockrating -->
+                              <div class="productcard__blockside">
+                                <div class="productcard__blockprice">322,99 ₽/кг</div><!-- /.productcard__blockprice -->
+                                <div class="productcard__blockfav onlyDesktop">
+                                  <a href="#" tabindex="0" class="catalog-fav active" data-item="2676" data-step="0.1" data-entity="add-wish-list"> 
+                                    <div>
+                                      <span class="fav-default">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                          <g opacity="1">
+                                          <path d="M12.9991 24.5964L12.6659 24.3202C12.0342 23.792 11.1791 23.2192 10.1878 22.557C6.32641 19.9713 1.03906 16.4328 1.03906 10.4C1.03906 6.67267 4.07172 3.64001 7.79906 3.64001C9.82422 3.64001 11.7214 4.54189 12.9991 6.08361C14.2767 4.54189 16.1739 3.64001 18.1991 3.64001C21.9264 3.64001 24.9591 6.67267 24.9591 10.4C24.9591 16.4328 19.6717 19.9713 15.8103 22.557C14.8191 23.2192 13.9639 23.792 13.3322 24.3202L12.9991 24.5964Z" />
+                                          </g>
+                                          </svg>
+                                      </span>
+                                    </div>
+                                  </a>
+                                </div><!-- /.productcard__blockfav -->
+                              </div><!-- /.productcard__blockside -->
+                            </div><!-- /.productcard__blockinfo -->
+                           
+                          <div class="productcard__title">
+                            <a href="">Филе краба северного варено-мороженый, 70/90 1000 г</a>
+                          </div>
+                          <div class="productcard__buy">
+                            <div class="productcard__prices">
+                              <div class="productcard__topprice">
+                                <div class="productcard__oldprice">762.92 <span class=" rouble">₽</span>
+                                </div>
+                               <!--  <div class="productcard__badge">12%</div> -->
+                              </div>
+                              <!-- /.productcard__oldprice -->
+                              <div class="productcard__mainprice">
+                                <div class="productcard__price">
+                                  <div class="productcard__pricevalue">322,99</div>
+                                  <div class="productcard__priceunit rouble">₽</div>
+                                </div>
+                                <!-- /.productcard__price -->
+                              </div>
+                              <!-- /.productcard__mainprice -->
+                            </div>
+                            <!-- /.productcard__prices -->
+                            <div class="productcard__button">
+                              <button class="productcard__addtocart btn active"></button>
+                            </div>
+                          </div>
+                          <!-- /.productcard__buy -->
+                          <div class="productcard__info">
+                           <!--  <div class="productcard__infoicon">
+                              <img src="img/productcard__info.svg" alt="">
+                            </div> -->
+                            <div class="productcard__infotext">Экономия -30%</div>
+                          </div>
+                          <!-- /\.productcard__info -->
+      <div class="productcard__mobfav favmobile onlyMobile">
+                            <a href="#" tabindex="0" class="catalog-fav active" data-item="2676" data-step="0.1" data-entity="add-wish-list"> 
+                              <div class='favmobile__wrapper'>
+                                <span class="fav-default">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <g opacity="0.15">
+                                    <path d="M12.8847 10.4284C11.8445 11.5593 10.5132 12.4545 9.31331 13.2581L9.30941 13.2607C8.83409 13.5782 8.38047 13.8812 8.00063 14.1711C7.62078 13.8812 7.16716 13.5782 6.69183 13.2607L6.68793 13.2581C5.48803 12.4545 4.15673 11.5593 3.11654 10.4284C2.09009 9.31236 1.39062 8.01271 1.39062 6.39999C1.39062 4.52045 2.92109 2.98999 4.80062 2.98999C5.82236 2.98999 6.77861 3.44455 7.42315 4.22231L8.00062 4.91913L8.5781 4.22231C9.22264 3.44455 10.1789 2.98999 11.2006 2.98999C13.0802 2.98999 14.6106 4.52045 14.6106 6.39999C14.6106 8.01271 13.9112 9.31236 12.8847 10.4284Z" stroke-width="1.5"/>
+                                    </g>
+                                    </svg>
+                                </span>
+                              <div class="favtext">В избранном</div>
+                            </div>
+      
+                            </a>
+                          </div><!-- /.productcard__blockfav -->
+      
+                        </div><!-- /.productcard__blockwrapper -->
+      
+                        </div>
+                        <!-- /.productcard__wrapper -->
+                      </div>
+                      <!-- /.productcard -->
+                    </div>
+                    <!-- /.productslider__item -->
+                  </div>
+                  <!-- /.productslider__slide  --><div class="productslider__slide ">
+                    <div class="productslider__item">
+                      <div class="productcard">
+                        <div class="productcard__wrapper">
+                          <div class="productcard__stickers">
+                            <div class="productcard__sticker">
+                              <div class="productsticker productsticker_yellow">
+                                <span class="productsticker__text">Акция</span>
+                              </div>
+                            </div>
+                            <!-- /.productcard__sticker -->
+                          </div>
+      
+                          <a href="#" class="productcard__images ">
+                            <div class="productcard__img">
+                              <img src="img/product1.jpg" >
+                            </div>
+                          </a>
+                          <div class="productcard__blockwrapper">
+                            <div class="productcard__blockinfo">
+                              <div class="productcard__blockrating">
+                                  <div class="cproductcard__blockrating__star">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                  </div><!-- /.cardrating__star -->
+                                  <div class="productcard__blockrating__value">
+                                    <span>4,92</span>
+                                  </div>
+                              </div><!-- /.productcard__blockrating -->
+                              <div class="productcard__blockside">
+                                <div class="productcard__blockprice">322,99 ₽/кг</div><!-- /.productcard__blockprice -->
+                                <div class="productcard__blockfav onlyDesktop">
+                                  <a href="#" tabindex="0" class="catalog-fav " data-item="2676" data-step="0.1" data-entity="add-wish-list"> 
+                                    <div>
+                                      <span class="fav-default">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                          <g opacity="1">
+                                          <path d="M12.9991 24.5964L12.6659 24.3202C12.0342 23.792 11.1791 23.2192 10.1878 22.557C6.32641 19.9713 1.03906 16.4328 1.03906 10.4C1.03906 6.67267 4.07172 3.64001 7.79906 3.64001C9.82422 3.64001 11.7214 4.54189 12.9991 6.08361C14.2767 4.54189 16.1739 3.64001 18.1991 3.64001C21.9264 3.64001 24.9591 6.67267 24.9591 10.4C24.9591 16.4328 19.6717 19.9713 15.8103 22.557C14.8191 23.2192 13.9639 23.792 13.3322 24.3202L12.9991 24.5964Z" />
+                                          </g>
+                                          </svg>
+                                      </span>
+                                    </div>
+                                  </a>
+                                </div><!-- /.productcard__blockfav -->
+                              </div><!-- /.productcard__blockside -->
+                            </div><!-- /.productcard__blockinfo -->
+                           
+                          <div class="productcard__title">
+                            <a href="">Филе краба северного варено-мороженый, 70/90 1000 г</a>
+                          </div>
+                          <div class="productcard__buy">
+                            <div class="productcard__prices">
+                              <div class="productcard__topprice">
+                                <div class="productcard__oldprice">762.92 <span class=" rouble">₽</span>
+                                </div>
+                               <!--  <div class="productcard__badge">12%</div> -->
+                              </div>
+                              <!-- /.productcard__oldprice -->
+                              <div class="productcard__mainprice">
+                                <div class="productcard__price">
+                                  <div class="productcard__pricevalue">322,99</div>
+                                  <div class="productcard__priceunit rouble">₽</div>
+                                </div>
+                                <!-- /.productcard__price -->
+                              </div>
+                              <!-- /.productcard__mainprice -->
+                            </div>
+                            <!-- /.productcard__prices -->
+                            <div class="productcard__button">
+                              <button class="productcard__addtocart btn "></button>
+                            </div>
+                          </div>
+                          <!-- /.productcard__buy -->
+                          <div class="productcard__info">
+                           <!--  <div class="productcard__infoicon">
+                              <img src="img/productcard__info.svg" alt="">
+                            </div> -->
+                            <div class="productcard__infotext">Экономия -30%</div>
+                          </div>
+                          <!-- /\.productcard__info -->
+      <div class="productcard__mobfav favmobile onlyMobile">
+                            <a href="#" tabindex="0" class="catalog-fav " data-item="2676" data-step="0.1" data-entity="add-wish-list"> 
+                              <div class='favmobile__wrapper'>
+                                <span class="fav-default">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <g opacity="0.15">
+                                    <path d="M12.8847 10.4284C11.8445 11.5593 10.5132 12.4545 9.31331 13.2581L9.30941 13.2607C8.83409 13.5782 8.38047 13.8812 8.00063 14.1711C7.62078 13.8812 7.16716 13.5782 6.69183 13.2607L6.68793 13.2581C5.48803 12.4545 4.15673 11.5593 3.11654 10.4284C2.09009 9.31236 1.39062 8.01271 1.39062 6.39999C1.39062 4.52045 2.92109 2.98999 4.80062 2.98999C5.82236 2.98999 6.77861 3.44455 7.42315 4.22231L8.00062 4.91913L8.5781 4.22231C9.22264 3.44455 10.1789 2.98999 11.2006 2.98999C13.0802 2.98999 14.6106 4.52045 14.6106 6.39999C14.6106 8.01271 13.9112 9.31236 12.8847 10.4284Z" stroke-width="1.5"/>
+                                    </g>
+                                    </svg>
+                                </span>
+                              <div class="favtext">В избранное</div>
+                            </div>
+      
+                            </a>
+                          </div><!-- /.productcard__blockfav -->
+      
+                        </div><!-- /.productcard__blockwrapper -->
+      
+                        </div>
+                        <!-- /.productcard__wrapper -->
+                      </div>
+                      <!-- /.productcard -->
+                    </div>
+                    <!-- /.productslider__item -->
+                  </div>
+                  <!-- /.productslider__slide  --><div class="productslider__slide ">
+                    <div class="productslider__item">
+                      <div class="productcard">
+                        <div class="productcard__wrapper">
+                          <div class="productcard__stickers">
+                            <div class="productcard__sticker">
+                              <div class="productsticker productsticker_yellow">
+                                <span class="productsticker__text">Акция</span>
+                              </div>
+                            </div>
+                            <!-- /.productcard__sticker -->
+                          </div>
+      
+                          <a href="#" class="productcard__images ">
+                            <div class="productcard__img">
+                              <img src="img/product1.jpg" >
+                            </div>
+                          </a>
+                          <div class="productcard__blockwrapper">
+                            <div class="productcard__blockinfo">
+                              <div class="productcard__blockrating">
+                                  <div class="cproductcard__blockrating__star">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                  </div><!-- /.cardrating__star -->
+                                  <div class="productcard__blockrating__value">
+                                    <span>4,92</span>
+                                  </div>
+                              </div><!-- /.productcard__blockrating -->
+                              <div class="productcard__blockside">
+                                <div class="productcard__blockprice">322,99 ₽/кг</div><!-- /.productcard__blockprice -->
+                                <div class="productcard__blockfav onlyDesktop">
+                                  <a href="#" tabindex="0" class="catalog-fav " data-item="2676" data-step="0.1" data-entity="add-wish-list"> 
+                                    <div>
+                                      <span class="fav-default">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                          <g opacity="1">
+                                          <path d="M12.9991 24.5964L12.6659 24.3202C12.0342 23.792 11.1791 23.2192 10.1878 22.557C6.32641 19.9713 1.03906 16.4328 1.03906 10.4C1.03906 6.67267 4.07172 3.64001 7.79906 3.64001C9.82422 3.64001 11.7214 4.54189 12.9991 6.08361C14.2767 4.54189 16.1739 3.64001 18.1991 3.64001C21.9264 3.64001 24.9591 6.67267 24.9591 10.4C24.9591 16.4328 19.6717 19.9713 15.8103 22.557C14.8191 23.2192 13.9639 23.792 13.3322 24.3202L12.9991 24.5964Z" />
+                                          </g>
+                                          </svg>
+                                      </span>
+                                    </div>
+                                  </a>
+                                </div><!-- /.productcard__blockfav -->
+                              </div><!-- /.productcard__blockside -->
+                            </div><!-- /.productcard__blockinfo -->
+                           
+                          <div class="productcard__title">
+                            <a href="">Филе краба северного варено-мороженый, 70/90 1000 г</a>
+                          </div>
+                          <div class="productcard__buy">
+                            <div class="productcard__prices">
+                              <div class="productcard__topprice">
+                                <div class="productcard__oldprice">762.92 <span class=" rouble">₽</span>
+                                </div>
+                               <!--  <div class="productcard__badge">12%</div> -->
+                              </div>
+                              <!-- /.productcard__oldprice -->
+                              <div class="productcard__mainprice">
+                                <div class="productcard__price">
+                                  <div class="productcard__pricevalue">322,99</div>
+                                  <div class="productcard__priceunit rouble">₽</div>
+                                </div>
+                                <!-- /.productcard__price -->
+                              </div>
+                              <!-- /.productcard__mainprice -->
+                            </div>
+                            <!-- /.productcard__prices -->
+                            <div class="productcard__button">
+                              <button class="productcard__addtocart btn "></button>
+                            </div>
+                          </div>
+                          <!-- /.productcard__buy -->
+                          <div class="productcard__info">
+                           <!--  <div class="productcard__infoicon">
+                              <img src="img/productcard__info.svg" alt="">
+                            </div> -->
+                            <div class="productcard__infotext">Экономия -30%</div>
+                          </div>
+                          <!-- /\.productcard__info -->
+      <div class="productcard__mobfav favmobile onlyMobile">
+                            <a href="#" tabindex="0" class="catalog-fav " data-item="2676" data-step="0.1" data-entity="add-wish-list"> 
+                              <div class='favmobile__wrapper'>
+                                <span class="fav-default">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <g opacity="0.15">
+                                    <path d="M12.8847 10.4284C11.8445 11.5593 10.5132 12.4545 9.31331 13.2581L9.30941 13.2607C8.83409 13.5782 8.38047 13.8812 8.00063 14.1711C7.62078 13.8812 7.16716 13.5782 6.69183 13.2607L6.68793 13.2581C5.48803 12.4545 4.15673 11.5593 3.11654 10.4284C2.09009 9.31236 1.39062 8.01271 1.39062 6.39999C1.39062 4.52045 2.92109 2.98999 4.80062 2.98999C5.82236 2.98999 6.77861 3.44455 7.42315 4.22231L8.00062 4.91913L8.5781 4.22231C9.22264 3.44455 10.1789 2.98999 11.2006 2.98999C13.0802 2.98999 14.6106 4.52045 14.6106 6.39999C14.6106 8.01271 13.9112 9.31236 12.8847 10.4284Z" stroke-width="1.5"/>
+                                    </g>
+                                    </svg>
+                                </span>
+                              <div class="favtext">В избранное</div>
+                            </div>
+      
+                            </a>
+                          </div><!-- /.productcard__blockfav -->
+      
+                        </div><!-- /.productcard__blockwrapper -->
+      
+                        </div>
+                        <!-- /.productcard__wrapper -->
+                      </div>
+                      <!-- /.productcard -->
+                    </div>
+                    <!-- /.productslider__item -->
+                  </div>
+                  <!-- /.productslider__slide  --><div class="productslider__slide ">
+                    <div class="productslider__item">
+                      <div class="productcard">
+                        <div class="productcard__wrapper">
+                          <div class="productcard__stickers">
+                            <div class="productcard__sticker">
+                              <div class="productsticker productsticker_yellow">
+                                <span class="productsticker__text">Акция</span>
+                              </div>
+                            </div>
+                            <!-- /.productcard__sticker -->
+                          </div>
+      
+                          <a href="#" class="productcard__images ">
+                            <div class="productcard__img">
+                              <img src="img/product1.jpg" >
+                            </div>
+                          </a>
+                          <div class="productcard__blockwrapper">
+                            <div class="productcard__blockinfo">
+                              <div class="productcard__blockrating">
+                                  <div class="cproductcard__blockrating__star">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                  </div><!-- /.cardrating__star -->
+                                  <div class="productcard__blockrating__value">
+                                    <span>4,92</span>
+                                  </div>
+                              </div><!-- /.productcard__blockrating -->
+                              <div class="productcard__blockside">
+                                <div class="productcard__blockprice">322,99 ₽/кг</div><!-- /.productcard__blockprice -->
+                                <div class="productcard__blockfav onlyDesktop">
+                                  <a href="#" tabindex="0" class="catalog-fav " data-item="2676" data-step="0.1" data-entity="add-wish-list"> 
+                                    <div>
+                                      <span class="fav-default">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                          <g opacity="1">
+                                          <path d="M12.9991 24.5964L12.6659 24.3202C12.0342 23.792 11.1791 23.2192 10.1878 22.557C6.32641 19.9713 1.03906 16.4328 1.03906 10.4C1.03906 6.67267 4.07172 3.64001 7.79906 3.64001C9.82422 3.64001 11.7214 4.54189 12.9991 6.08361C14.2767 4.54189 16.1739 3.64001 18.1991 3.64001C21.9264 3.64001 24.9591 6.67267 24.9591 10.4C24.9591 16.4328 19.6717 19.9713 15.8103 22.557C14.8191 23.2192 13.9639 23.792 13.3322 24.3202L12.9991 24.5964Z" />
+                                          </g>
+                                          </svg>
+                                      </span>
+                                    </div>
+                                  </a>
+                                </div><!-- /.productcard__blockfav -->
+                              </div><!-- /.productcard__blockside -->
+                            </div><!-- /.productcard__blockinfo -->
+                           
+                          <div class="productcard__title">
+                            <a href="">Филе краба северного варено-мороженый, 70/90 1000 г</a>
+                          </div>
+                          <div class="productcard__buy">
+                            <div class="productcard__prices">
+                              <div class="productcard__topprice">
+                                <div class="productcard__oldprice">762.92 <span class=" rouble">₽</span>
+                                </div>
+                               <!--  <div class="productcard__badge">12%</div> -->
+                              </div>
+                              <!-- /.productcard__oldprice -->
+                              <div class="productcard__mainprice">
+                                <div class="productcard__price">
+                                  <div class="productcard__pricevalue">322,99</div>
+                                  <div class="productcard__priceunit rouble">₽</div>
+                                </div>
+                                <!-- /.productcard__price -->
+                              </div>
+                              <!-- /.productcard__mainprice -->
+                            </div>
+                            <!-- /.productcard__prices -->
+                            <div class="productcard__button">
+                              <button class="productcard__addtocart btn "></button>
+                            </div>
+                          </div>
+                          <!-- /.productcard__buy -->
+                          <div class="productcard__info">
+                           <!--  <div class="productcard__infoicon">
+                              <img src="img/productcard__info.svg" alt="">
+                            </div> -->
+                            <div class="productcard__infotext">Экономия -30%</div>
+                          </div>
+                          <!-- /\.productcard__info -->
+      <div class="productcard__mobfav favmobile onlyMobile">
+                            <a href="#" tabindex="0" class="catalog-fav " data-item="2676" data-step="0.1" data-entity="add-wish-list"> 
+                              <div class='favmobile__wrapper'>
+                                <span class="fav-default">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <g opacity="0.15">
+                                    <path d="M12.8847 10.4284C11.8445 11.5593 10.5132 12.4545 9.31331 13.2581L9.30941 13.2607C8.83409 13.5782 8.38047 13.8812 8.00063 14.1711C7.62078 13.8812 7.16716 13.5782 6.69183 13.2607L6.68793 13.2581C5.48803 12.4545 4.15673 11.5593 3.11654 10.4284C2.09009 9.31236 1.39062 8.01271 1.39062 6.39999C1.39062 4.52045 2.92109 2.98999 4.80062 2.98999C5.82236 2.98999 6.77861 3.44455 7.42315 4.22231L8.00062 4.91913L8.5781 4.22231C9.22264 3.44455 10.1789 2.98999 11.2006 2.98999C13.0802 2.98999 14.6106 4.52045 14.6106 6.39999C14.6106 8.01271 13.9112 9.31236 12.8847 10.4284Z" stroke-width="1.5"/>
+                                    </g>
+                                    </svg>
+                                </span>
+                              <div class="favtext">В избранное</div>
+                            </div>
+      
+                            </a>
+                          </div><!-- /.productcard__blockfav -->
+      
+                        </div><!-- /.productcard__blockwrapper -->
+      
+                        </div>
+                        <!-- /.productcard__wrapper -->
+                      </div>
+                      <!-- /.productcard -->
+                    </div>
+                    <!-- /.productslider__item -->
+                  </div>
+                  <!-- /.productslider__slide  -->
+                  <div class="productslider__slide ">
+                    <div class="productslider__item">
+                      <div class="productcard">
+                        <div class="productcard__wrapper">
+                          <div class="productcard__stickers">
+                            <div class="productcard__sticker">
+                              <div class="productsticker productsticker_yellow">
+                                <span class="productsticker__text">Акция</span>
+                              </div>
+                            </div>
+                            <!-- /.productcard__sticker -->
+                          </div>
+      
+                          <a href="#" class="productcard__images ">
+                            <div class="productcard__img">
+                              <img src="img/product1.jpg" >
+                            </div>
+                          </a>
+                          <div class="productcard__blockwrapper">
+                            <div class="productcard__blockinfo">
+                              <div class="productcard__blockrating">
+                                  <div class="cproductcard__blockrating__star">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                  </div><!-- /.cardrating__star -->
+                                  <div class="productcard__blockrating__value">
+                                    <span>4,92</span>
+                                  </div>
+                              </div><!-- /.productcard__blockrating -->
+                              <div class="productcard__blockside">
+                                <div class="productcard__blockprice">322,99 ₽/кг</div><!-- /.productcard__blockprice -->
+                                <div class="productcard__blockfav onlyDesktop">
+                                  <a href="#" tabindex="0" class="catalog-fav " data-item="2676" data-step="0.1" data-entity="add-wish-list"> 
+                                    <div>
+                                      <span class="fav-default">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                          <g opacity="1">
+                                          <path d="M12.9991 24.5964L12.6659 24.3202C12.0342 23.792 11.1791 23.2192 10.1878 22.557C6.32641 19.9713 1.03906 16.4328 1.03906 10.4C1.03906 6.67267 4.07172 3.64001 7.79906 3.64001C9.82422 3.64001 11.7214 4.54189 12.9991 6.08361C14.2767 4.54189 16.1739 3.64001 18.1991 3.64001C21.9264 3.64001 24.9591 6.67267 24.9591 10.4C24.9591 16.4328 19.6717 19.9713 15.8103 22.557C14.8191 23.2192 13.9639 23.792 13.3322 24.3202L12.9991 24.5964Z" />
+                                          </g>
+                                          </svg>
+                                      </span>
+                                    </div>
+                                  </a>
+                                </div><!-- /.productcard__blockfav -->
+                              </div><!-- /.productcard__blockside -->
+                            </div><!-- /.productcard__blockinfo -->
+                           
+                          <div class="productcard__title">
+                            <a href="">Филе краба северного варено-мороженый, 70/90 1000 г</a>
+                          </div>
+                          <div class="productcard__buy">
+                            <div class="productcard__prices">
+                              <div class="productcard__topprice">
+                                <div class="productcard__oldprice">762.92 <span class=" rouble">₽</span>
+                                </div>
+                               <!--  <div class="productcard__badge">12%</div> -->
+                              </div>
+                              <!-- /.productcard__oldprice -->
+                              <div class="productcard__mainprice">
+                                <div class="productcard__price">
+                                  <div class="productcard__pricevalue">322,99</div>
+                                  <div class="productcard__priceunit rouble">₽</div>
+                                </div>
+                                <!-- /.productcard__price -->
+                              </div>
+                              <!-- /.productcard__mainprice -->
+                            </div>
+                            <!-- /.productcard__prices -->
+                            <div class="productcard__button">
+                              <button class="productcard__addtocart btn "></button>
+                            </div>
+                          </div>
+                          <!-- /.productcard__buy -->
+                          <div class="productcard__info">
+                           <!--  <div class="productcard__infoicon">
+                              <img src="img/productcard__info.svg" alt="">
+                            </div> -->
+                            <div class="productcard__infotext">Экономия -30%</div>
+                          </div>
+                          <!-- /\.productcard__info -->
+      <div class="productcard__mobfav favmobile onlyMobile">
+                            <a href="#" tabindex="0" class="catalog-fav " data-item="2676" data-step="0.1" data-entity="add-wish-list"> 
+                              <div class='favmobile__wrapper'>
+                                <span class="fav-default">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <g opacity="0.15">
+                                    <path d="M12.8847 10.4284C11.8445 11.5593 10.5132 12.4545 9.31331 13.2581L9.30941 13.2607C8.83409 13.5782 8.38047 13.8812 8.00063 14.1711C7.62078 13.8812 7.16716 13.5782 6.69183 13.2607L6.68793 13.2581C5.48803 12.4545 4.15673 11.5593 3.11654 10.4284C2.09009 9.31236 1.39062 8.01271 1.39062 6.39999C1.39062 4.52045 2.92109 2.98999 4.80062 2.98999C5.82236 2.98999 6.77861 3.44455 7.42315 4.22231L8.00062 4.91913L8.5781 4.22231C9.22264 3.44455 10.1789 2.98999 11.2006 2.98999C13.0802 2.98999 14.6106 4.52045 14.6106 6.39999C14.6106 8.01271 13.9112 9.31236 12.8847 10.4284Z" stroke-width="1.5"/>
+                                    </g>
+                                    </svg>
+                                </span>
+                              <div class="favtext">В избранное</div>
+                            </div>
+      
+                            </a>
+                          </div><!-- /.productcard__blockfav -->
+      
+                        </div><!-- /.productcard__blockwrapper -->
+      
+                        </div>
+                        <!-- /.productcard__wrapper -->
+                      </div>  
+                      <!-- /.productcard -->
+                    </div>
+                    <!-- /.productslider__item -->
+                  </div>
+                  <!-- /.productslider__slide  -->
+                </div>
+                <!-- /.productslider__slide r -->
+              </div>
+              <!-- /.productslider__container -->
+              <div class='onlyMobile '>
+                <a href="#" class='btn_link'>
+                  <span>Смотреть все</span>
+                 </a>   
+              </div>
+            </div>
+            <!-- /.productslider__wrapper -->
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.pageblock -->
+      
+
+      </div>
+      <!-- /.productpage__footer -->
+    </div>
+    <!-- /.productpage -->
+  </div>
+  <!-- /.page -->
+</main>
+
+
+<%= _.template(require('../includes/footer.html').default)(data) %>

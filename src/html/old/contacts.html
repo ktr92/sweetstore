@@ -1,0 +1,120 @@
+<% var data = {
+  title: "MAIN",
+  author: ""
+  }; %><%= _.template(require('../includes/head.html').default)(data) %><%= _.template(require('../includes/header.html').default)(data) %> <main>
+    <div class="pageheader onlyMobile">
+      <div class="container">
+        <div class="pagetitle">       
+          <h1>Контакты</h1>
+        </div>
+      </div>
+    </div>
+    <div class="breadcrumbs">
+      <div class="container">
+        <div class="breadcrumbs__items">
+          <ul>
+            <li>
+              <a href="/">
+                <span>
+                  Рыбспецпродукт
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>Каталог</span>
+              </a>
+            </li>
+            <li>
+              <span>Рыба мороженная</span>
+            </li>
+          </ul>
+        </div>
+        <!-- /.breadcrumbs__items -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.breadcrumbs -->
+    <div class="page ">
+      <div class="container">
+    
+      <div class=" customblock_flex contactspage">
+        <div class="customblock__left customblock__left_contacts">
+          <div class="pageheader pageheader__type2 pageheader_lefcolumn onlyDesktop">
+            <h1>Контакты</h1>
+          </div>
+          <div class="customblock__content">
+           <div class="contactcards">
+            <div class="contactcards__items">
+              <div class="contactcards__item">
+                <div class="contactcards__icon">
+                  <img src="img/Phone.svg" alt="">
+                </div>
+                <div class="contactcards__content">
+                  <div class="contactcards__title">Телефон</div>
+                  <div class="contactcards__value">
+                    <a href="tel:+78633220211">+7 (863) 322-02-11</a>
+                  </div>
+                </div><!-- /.contactcards__content -->
+              </div><!-- /.contactcards__item -->
+              <div class="contactcards__item">
+                <div class="contactcards__icon">
+                  <img src="img/Whatsapp.svg" alt="">
+                </div>
+                <div class="contactcards__content">
+                  <div class="contactcards__title">Whatsapp</div>
+                  <div class="contactcards__value">
+                    <a href="https://api.whatsapp.com/send?phone=79185844335">+7 (918) 584-43-35</a>
+                  </div>
+                </div><!-- /.contactcards__content -->
+              </div><!-- /.contactcards__item -->
+              <div class="contactcards__item">
+                <div class="contactcards__icon">
+                  <img src="img/Telegram.svg" alt="">
+                </div>
+                <div class="contactcards__content">
+                  <div class="contactcards__title">Telegram</div>
+                  <div class="contactcards__value">
+                    <a href="https://t.me/79185677545">+7 (918) 567-75-45</a>
+                  </div>
+                </div><!-- /.contactcards__content -->
+              </div><!-- /.contactcards__item -->
+              <div class="contactcards__item">
+                <div class="contactcards__icon">
+                  <img src="img/Email.svg" alt="">
+                </div>
+                <div class="contactcards__content">
+                  <div class="contactcards__title">Email</div>
+                  <div class="contactcards__value">
+                    <a href="mailto:support@ribspecproduct.ru">support@ribspecproduct.ru</a>
+                  </div>
+                </div><!-- /.contactcards__content -->
+              </div><!-- /.contactcards__item -->
+              <div class="contactcards__item">
+                <div class="contactcards__icon">
+                  <img src="img/timeClock.svg" alt="">
+                </div>
+                <div class="contactcards__content">
+                  <div class="contactcards__title">Время работы</div>
+                  <div class="contactcards__value">
+                    ПН-ПТ: с 9:00 до 18:00
+                  </div>
+                </div><!-- /.contactcards__content -->
+              </div><!-- /.contactcards__item -->
+            </div><!-- /.contactcards__items -->
+           </div><!-- /.contactcards -->
+          </div>
+
+        </div>
+        <!-- /.customblock__left -->
+        <div class="customblock__right customblock__right_contacts">
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aea12485bc1818ce3bd23101475caa60b054fae6e3d88de1964176fb3a360fda2&amp;source=constructor" width="100%" height="450" frameborder="0"></iframe>
+
+        </div>
+        <!-- /.customblock__right -->
+      </div>
+      <!-- /.customblock -->
+     
+    </div>
+  </div>
+</main><%= _.template(require('../includes/footer.html').default)(data) %>

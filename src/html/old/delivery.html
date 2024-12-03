@@ -1,0 +1,127 @@
+<% var data = {
+  title: "MAIN",
+  author: ""
+  }; %><%= _.template(require('../includes/head.html').default)(data) %><%= _.template(require('../includes/header.html').default)(data) %> <main>
+    <div class="pageheader ">
+      <div class="container">
+        <div class="pagetitle">       
+          <h1>Доставка и оплата</h1>
+        </div>
+      </div>
+    </div>
+    <div class="breadcrumbs">
+      <div class="container">
+        <div class="breadcrumbs__items">
+          <ul>
+            <li>
+              <a href="/">
+              <span>
+              Рыбспецпродукт
+              </span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+              <span>Каталог</span>
+              </a>
+            </li>
+            <li>
+              <span>Рыба мороженная</span>
+            </li>
+          </ul>
+        </div>
+        <!-- /.breadcrumbs__items -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.breadcrumbs -->
+ 
+    <div class="page">
+      <div class="container">
+          <div class="pagebanner">
+            <div class="pagebanner__wrapper">
+              <div class="pagebanner__image onlyDesktop" style='background-image: url(img/image123.jpg);'></div><!-- /.pagebanner__image -->
+              <div class="pagebanner__image onlyMobile" style='background-image: url(img/delivery_mobile.jpg);'></div><!-- /.pagebanner__image -->
+              <div class="wavemask"></div><!-- /.wavemask -->
+            </div><!-- /.pagebanner__wrapper -->
+          </div><!-- /.pagebanner -->
+
+          <div class="fitchesblock fitchesblock_large">
+            <div class="container">
+              <h3>Способы оплаты</h3>
+              <div class="fitchesblock__items">
+                <div class="fitchesblock__item">
+                  <div class="fitchcard">
+                    <div class="fitchcard__img">
+                      <img src="img/Stack.svg" alt="">
+                    </div><!-- /.fitchcard__img -->
+                    <div class="fitchescard__content">
+                      <div class="fitchescard__title">Наличными при получении</div><!-- /.fitchescard__title -->
+                      <div class="fitchcard__text">Оплачивайте заказ при получении наличными средствами.</div><!-- /.fitchcard__text -->
+                    </div><!-- /.fitchescard__content -->
+                  </div><!-- /.fitchcard -->
+                </div><!-- /.fitchesblock__item -->
+               
+                <div class="fitchesblock__item">
+                  <div class="fitchcard">
+                    <div class="fitchcard__img">
+                      <img src="img/CardPayment.svg" alt="">
+                    </div><!-- /.fitchcard__img -->
+                    <div class="fitchescard__content">
+                      <div class="fitchescard__title">Картой при получении</div><!-- /.fitchescard__title -->
+                      <div class="fitchcard__text">Оплачивайте заказ при получении наличными средствами.</div><!-- /.fitchcard__text -->
+                    </div><!-- /.fitchescard__content -->
+                  </div><!-- /.fitchcard -->
+                </div><!-- /.fitchesblock__item -->
+               
+                <div class="fitchesblock__item">
+                  <div class="fitchcard">
+                    <div class="fitchcard__img">
+                      <img src="img/Online.svg" alt="">
+                    </div><!-- /.fitchcard__img -->
+                    <div class="fitchescard__content">
+                      <div class="fitchescard__title">Онлайн на сайте</div><!-- /.fitchescard__title -->
+                      <div class="fitchcard__text">Оплачивайте заказ при получении наличными средствами.</div><!-- /.fitchcard__text -->
+                    </div><!-- /.fitchescard__content -->
+                  </div><!-- /.fitchcard -->
+                </div><!-- /.fitchesblock__item -->
+               
+                
+              </div><!-- /.fitchesblock__items -->
+            </div><!-- /.container -->
+          </div>
+
+          <div class="blockhalf">
+            <div class="container">
+              <div class="blockhalf__cols">
+                <div class="blockhalf__col blockhalf__col_left">
+                  <h3 class="wave">Условия возврата денежных средств:</h3>
+                  <div class="pagecontent pagecontent_type22">
+                    <p>Для возврата денежных средств Вам нужно связаться с менеджером по телефону</p>
+                    <a href="tel:+7 495 555 55 55" class="phonelink">+7 495 555 55 55</a>
+                  </div><!-- /.pagetext -->
+                  
+                  <div class="pagecontent pagecontent_type22">
+                    <p>Срок рассмотрения заявки на возврат денежных средств составляет «10» дней (срок устанавливается магазином). Возврат денежных средств осуществляется на ту же банковскую карту, с которой производился платеж. Возврат денежных средств на карту осуществляется в срок от 5 до 30 банковских дней, в зависимости от Банка, которым была выпущена банковская карта</p>
+                  </div><!-- /.pagetext -->
+                </div><!-- /.blockhalf__col blockhalf__col_left -->
+                <div class="blockhalf__col blockhalf__col_right">
+                  <div class="grayblock">
+                    <div class="grayblock__wrapper">
+                      <h4>Товар подлежит возврату, если:</h4>
+                      <ul class="circle">
+                        <li>Товар не соответствует заявленному качеству</li>
+                        <li>Товар имеет повржденную или деформированную упаковку</li>
+                        <li>Товар имеет просроченный срок годности</li>
+                        <li>Товар не соответствует заказу.</li>
+                      </ul><!-- /.redcircle -->
+                    </div><!-- /.grayblock__wrapper -->
+                  </div><!-- /.grayblock -->
+                </div>
+              </div><!-- /.blockhalf__cols -->
+            </div><!-- /.container -->
+          </div><!-- /.blockhalf -->
+
+      </div>
+  </div>
+</main><%= _.template(require('../includes/footer.html').default)(data) %>

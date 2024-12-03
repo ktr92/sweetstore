@@ -1,0 +1,68 @@
+<% var data = {
+  title: "MAIN",
+  author: ""
+  }; %><%= _.template(require('../includes/head.html').default)(data) %><%= _.template(require('../includes/header.html').default)(data) %> <main>
+    <div class="breadcrumbs">
+      <div class="container">
+        <div class="breadcrumbs__items">
+          <ul>
+            <li>
+              <a href="/">
+              <span>
+              Рыбспецпродукт
+              </span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+              <span>Каталог</span>
+              </a>
+            </li>
+            <li>
+              <span>Рыба мороженная</span>
+            </li>
+          </ul>
+        </div>
+        <!-- /.breadcrumbs__items -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.breadcrumbs -->
+    <div class="page ">
+      <div class="container">
+        <div class="blockabout blockabout_wide">
+          <div class="container">
+            <div class="blockabout__wrapper">
+              <div class="blockabout__content">
+                <div class="blockabout__main">
+                  <div class="blockabout__title wave blockabout__title_confirm">Спасибо, ваш заказ принят!</div><!-- /.blockabout__title wave -->
+                  <div class="blockabout__text">Окончательная стоимость будет сформирована, после взвешивания весовых товаров.
+                    За статусом заказа вы можете следить в Вашем личном кабинете на сайте.</div><!-- /.blockabout__text -->
+
+                    <div class="blockabout__info">
+                      <div class="orderinfo">
+                        <div class="orderinfo__number">
+                          <div class="orderinfo__icon">
+                            <img src="img/Purchase.svg" alt="">
+                          </div><!-- /.orderinfo__icon -->
+                          <div class="orderinfo__order">
+                            <div class="orderinfo__name">Номер вашего заказа </div><!-- /.orderinfo__name -->
+                            <div class="orderinfo__value">591489149</div><!-- /.orderinfo__value -->
+                          </div><!-- /.orderinfo__order -->
+                        </div><!-- /.orderinfo__number -->
+                        <div class="orderinfo__link">
+                          <a href="#" class="btn_main btn_main_wide">В личный кабинет</a><!-- /.btn_main -->
+                        </div><!-- /.orderinfo__link -->
+                      </div><!-- /.orderinfo -->
+                    </div><!-- /.blockabout__info -->
+                </div><!-- /.blockabout__main -->
+              </div><!-- /.blockabout__content -->
+              <div class="blockabout__image wave_vertical">
+                <img src="img/about.jpg" alt="">
+              </div><!-- /.blockabout__image -->
+            </div><!-- /.blockabout__wrapper -->
+          </div><!-- /.container -->
+        </div>
+      </div>
+  </div>
+</main><%= _.template(require('../includes/footer.html').default)(data) %>

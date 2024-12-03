@@ -1,0 +1,62 @@
+<% var data = {
+  title: "MAIN",
+  author: ""
+  }; %><%= _.template(require('../includes/head.html').default)(data) %><%= _.template(require('../includes/header.html').default)(data) %> <main>
+    <div class="breadcrumbs">
+      <div class="container">
+        <div class="breadcrumbs__items">
+          <ul>
+            <li>
+              <a href="/">
+              <span>
+              Рыбспецпродукт
+              </span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+              <span>Каталог</span>
+              </a>
+            </li>
+            <li>
+              <span>Рыба мороженная</span>
+            </li>
+          </ul>
+        </div>
+        <!-- /.breadcrumbs__items -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.breadcrumbs -->
+    <div class="page ">
+      <div class="container">
+        <div class="errorpage">
+          <div class="errorpage__code"> <img src="img/404.svg" alt=""> </div>
+          <div class="errorpage__main">
+            <div class="errorpage__content">
+              <div class="errorpage__title">Упс, мы не смогли выловить нужную страницу</div>
+              <div class="errorpage__text">...Но возможно эти ссылки будут вам полезны</div>
+              <div class="errorpage__links">
+                <ul>
+                  <li>
+                    <a href="">Главная</a>
+                  </li>
+                  <li>
+                    <a href="">Каталог</a>
+                  </li>
+               
+                  <li>
+                    <a href="">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- /.errorpage__links -->
+            </div>
+            <!-- /.errorpage__content -->
+          </div>
+          <!-- /.errorpage__main -->
+        </div>
+        <!-- /.errorpage -->
+      </div>
+  </div>
+</main><%= _.template(require('../includes/footer.html').default)(data) %>
