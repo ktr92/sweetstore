@@ -135,6 +135,12 @@
   }
 }
 @include large-screen {
+  .footer__col_right {
+    max-width: 200px;
+  }
+  .footer__col ul li {
+    margin-bottom: 28px;
+  }
   .contactline__messenger {
     margin-right: 22px;
   }
@@ -147,8 +153,11 @@
   .mainmenu__column {
     padding: 18px 18px;
   }
+  #footer .menucontancts .phonelink {
+    font-size: 18px;
+  }
 
-
+  
   .mainmenu__column {
   
     &:nth-child(1) {

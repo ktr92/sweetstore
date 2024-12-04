@@ -867,7 +867,7 @@
   }
 
   .footer__menu ul li {
-    margin-bottom: 12px;
+    margin-bottom: 22px;
 
     &:last-child {
       margin-bottom: 0;
@@ -875,7 +875,7 @@
 
     a {
       padding: 0;
-      font-size: 14px;
+      font-size: 12px;
       line-height: 100%;
     }
   }
@@ -3797,4 +3797,68 @@ color: #231f20;
   .jsbackdrop.menuactive {
     display: block;
   }
+
+  .footer__items {
+    flex-wrap: wrap;
+  }
+  .footer__bottom .footer__items .footer__col {
+    width: 100%;
+    max-width: 100%;
+  }
+.footer__links {
+  flex-wrap: wrap;
+}
+.footer__link {
+margin-bottom: 6px;
+}
+
+.footer__info {
+  gap: 20px;
+}
+.footer__col_right {
+  max-width: 100%;
+}
+.footer__maincopy {
+  margin-bottom: 21px;
+  margin-right: 0;
+  font-weight: 400;
+font-size: 14px;
+color: #231f20;
+}
+.footer_app .mobilemenu__apptext {
+  margin-bottom: 16px;
+  font-weight: 700;
+font-size: 16px;
+text-align: left;
+}
+.footer_app {
+  .mobilemenu__appbuttons {
+    gap: 5px;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+}
+.footer_app .mobilemenu__appbutton {
+/*   width: 149px; */
+  margin-bottom: 0;
+}
+.footer__col {
+  padding: 0;
+  margin-bottom: 28px;
+}
+.footer__items {
+  margin: 0;
+}
+.mobilemenu__app {
+  margin-top: 11px;
+}
+#footer .menucontancts .phonelink {
+  font-size: 20px;
+}
+.footer__logo {
+  margin-bottom: 16px;
+  max-width: 106px;
+}
 }
