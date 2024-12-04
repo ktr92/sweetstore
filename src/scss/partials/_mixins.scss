@@ -21,6 +21,11 @@
 }
 
 
+@mixin frommedium-screen() {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
 @mixin xlarge-screen() {
   @media only screen and (max-width: 1700px) {
     @content;

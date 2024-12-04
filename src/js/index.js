@@ -8,7 +8,8 @@ function initFE() {
    contentSliderInit()
     mobileAccordeon()
     closeByOutsideSelect()
-    closeByClickOutside('.mainmenu', '.mainmenubtn')
+    closeByClickOutside('[data-menu="mainmenu"]', '[data-menutoggle="mainmenu"]')
+    closeByClickOutside('[data-menu="catalogmenu"]', '[data-menutoggle="catalogmenu"]')
     closeByClickOutside('.catalogpage__aside', '.js-mobilefilter')
   /*   fixElement(false, 750, 'mobpriceFixed', 'fixed')
     fixElement(300, false, 'headermain', 'fixed')
@@ -71,21 +72,22 @@ $(document).ready(function() {
 
   
 
-  $('button.mainmenubtn').on('click', function(e) {
+/*   $('button.mainmenubtn').on('click', function(e) {
       $(this).toggleClass('active')
       $('.jsbackdrop').toggleClass('active')
       $('.mainmenu').toggleClass('active')
-  })
+  }) */
 
       $("[data-menutoggle]").on("click", function (e) {
         e.preventDefault();
         let menu = $(this).data("menutoggle");
         $(`[data-menu=${menu}]`).toggleClass("active");
         $(this).toggleClass("active");
-        $(".jsbackdrop").toggleClass("active");
+        $(".jsbackdrop").toggleClass("menuactive");
       });
       $(".jsbackdrop").on("click", function (e) {
         $(this).removeClass("active");
+        $(this).removeClass("menuactive");
         $("[data-menu]").removeClass("active");
         $("[data-menutoggle]").removeClass("active");
       });
@@ -519,6 +521,8 @@ function closeByClickOutside(element, button) {
       if (!$(event.target).closest(`${element},${button}`).length) {
           $(button).removeClass('active')
           $(element).removeClass('active')
+          $(".jsbackdrop").toggleClass("menuactive");
+
       }
   });
   
@@ -526,8 +530,11 @@ function closeByClickOutside(element, button) {
       if (e.key === "Escape") { // escape key maps to keycode `27`
           $(button).removeClass('active')
           $(element).removeClass('active')
+          $(".jsbackdrop").toggleClass("menuactive");
+
       }
   });
+  
 }
 function closeByOutsideSelect() {
   $(document).click(function(event) {
