@@ -3778,21 +3778,13 @@
   .topmenu__items ul li {
     padding: 0;
   }
-  .contactline__messenger {
-    margin-top: 20px;
-    max-width: 100%;
 
-    img {
-      max-width: 32px;
-      min-width: 32px;
-      height: 32px;
-    }
-  }
   .mobilemenu__app {
     margin-top: 49px;
   }
   .mobilemenu__apptext {
     margin-bottom: 18px;
+    font-family: var(--second-family);
     font-weight: 700;
 font-size: 16px;
 text-transform: uppercase;

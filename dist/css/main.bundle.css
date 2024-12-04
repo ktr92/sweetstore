@@ -2406,7 +2406,8 @@ h2 {
   background: #fff; }
 
 .footer__main {
-  padding: 54px 0; }
+  padding: 43px 0;
+  border-top: 1px solid #f0f0f0; }
 
 .footer__items {
   display: -webkit-box;
@@ -6215,7 +6216,7 @@ a.location_icon {
   align-items: center; }
 
 .footer__logo {
-  margin-bottom: 47px; }
+  margin-bottom: 30px; }
 
 .footer__contacts .contacts__phone {
   margin-bottom: 9px; }
@@ -7322,6 +7323,45 @@ a .onHover, button .onHover {
   gap: 7px;
   border: 1.50px solid #f0f0f0;
   border-radius: 5555px; }
+
+.menucontancts .contactline__messenger {
+  margin-top: 20px;
+  max-width: 100%; }
+  .menucontancts .contactline__messenger img {
+    max-width: 32px;
+    min-width: 32px;
+    height: 32px; }
+
+#footer .menucontancts .contactline__phone {
+  margin-bottom: 19px; }
+
+#footer .menucontancts .phonelink {
+  font-size: 22px; }
+
+#footer .menucontancts .emaillink {
+  font-size: 14px; }
+
+#footer .menucontancts .contactline__messenger {
+  margin-top: 31px; }
+  #footer .menucontancts .contactline__messenger .msglink {
+    display: inline-flex;
+    padding-right: 38px; }
+    #footer .menucontancts .contactline__messenger .msglink:hover {
+      border-color: #40c351; }
+  #footer .menucontancts .contactline__messenger span span {
+    font-weight: 500;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #231f20;
+    opacity: 0.5;
+    display: block; }
+  #footer .menucontancts .contactline__messenger span span + span {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    color: #231f20;
+    opacity: 1;
+    text-transform: none; }
 
 @media only screen and (max-width: 1700px) {
   .pagedetail__aside {
@@ -9975,17 +10015,11 @@ a .onHover, button .onHover {
     justify-content: flex-start; }
   .topmenu__items ul li {
     padding: 0; }
-  .contactline__messenger {
-    margin-top: 20px;
-    max-width: 100%; }
-    .contactline__messenger img {
-      max-width: 32px;
-      min-width: 32px;
-      height: 32px; }
   .mobilemenu__app {
     margin-top: 49px; }
   .mobilemenu__apptext {
     margin-bottom: 18px;
+    font-family: var(--second-family);
     font-weight: 700;
     font-size: 16px;
     text-transform: uppercase;

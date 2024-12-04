@@ -13,19 +13,19 @@
     }
   }
 
-  .mainmenubtn  {
+  .mainmenubtn {
     &:hover {
       background: $main;
       opacity: 1;
       span {
         color: #fff !important;
-  
       }
-  
+
       .menuexpand {
         transform: rotate(180deg);
       }
-  
     }
   }
+
+
 }
