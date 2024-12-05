@@ -2113,35 +2113,6 @@ ul.mainmenuLevelOne {
   }
 }
 
-.cataloglist {
-}
-
-.cataloglist__items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin: 0 -5px;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-/* .productcard__wrapper {
-  -webkit-box-shadow: 8px 8px 40px rgba(48, 54, 64, 0.1);
-  box-shadow: 8px 8px 40px rgba(48, 54, 64, 0.1);
-} */
-.cataloglist__item {
-  padding: 0 5px;
-  margin-bottom: 10px;
-  width: 25%;
-  .productcard {
-    box-shadow: 10px 10px 46px 0px color(display-p3 0.1686 0.2118 0.2745 / 0.1);
-    background: #fff;
-    border-radius: 8px;
-  }
-}
 
 button.productcard__addtocart {
   border-radius: 12px;
@@ -2156,10 +2127,6 @@ button:hover {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-}
-
-.cataloglist__items {
-  margin-bottom: 20px;
 }
 
 .catalognav {
@@ -7461,6 +7428,11 @@ h4 {
       &:hover {
         border-color: $main;
       }
+      &.active {
+        border-color: $main;
+        background: $main;
+        color: #fff;
+      }
     }
   }
 }
@@ -8083,4 +8055,84 @@ color: #231f20;
 .categoryblock__arrow {
   max-width: 40px;
   min-width: 40px;
+}
+
+
+.producttabs {
+  margin: 170px 0 43px 0;
+}
+.producttabs__wrapper {
+  display: flex;
+  gap: 79px;
+}
+.producttabs__aside {
+  max-width: 346px;
+  min-width: 346px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+.btn_redborder {
+  min-width: 211px;
+}
+  .mainmenu__list ul a {
+    font-size: 14px;   
+  }
+}
+.producttabs__header {
+  h2 {
+    margin-bottom: 34px;
+  }
+}
+.producttabs__tabs {
+}
+.mainmenu__list {
+}
+.producttabs__footer {
+}
+.btn_border {
+}
+.producttabs__main {
+  width: 100%;
+}
+
+.cataloglist__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 19px;
+}
+
+.cataloglist__item {
+  flex: 1;
+  min-width: calc(33% - 19px);
+  .productcard__img {
+    width: 100%;
+    height: 272px;
+  }
+
+    .productcard {
+      max-width: 405px;
+    }
+ 
+    
+}
+
+.btn_redborder {
+  border: 1.50px solid #b81b37;
+border-radius: 555px;
+padding: 0 18px;
+height: 50px;
+line-height: 50px;
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 16px;
+text-transform: uppercase;
+color: #231f20;
+}
+
+[data-contenttabs] {
+  display: none;
+}
+
+[data-contenttabs].active {
+  display: block;
 }

@@ -209,53 +209,20 @@ $(document).ready(function () {
     decrementValue(e)
   })
 
+
   ;(function ($) {
     $(function () {
-      $(".js-tabsheader").on("click", "li:not(.active)", function () {
+      $("[data-headertabs]").on("click", "a:not(.active)", function (e) {
+        e.preventDefault()
+        const li = $(this).closest('li')
         $(this)
           .addClass("active")
-          .siblings()
-          .removeClass("active")
-          .closest("div.js-tabs")
-          .find("div.js-tabscontent")
-          .removeClass("active")
-          .eq($(this).index())
-          .addClass("active")
+          li.siblings().find('a').removeClass("active")
+          li.closest("[data-tabs]").find("[data-contenttabs]").removeClass("active").eq(li.index()).addClass("active")
       })
     })
   })(jQuery)
 
-  ;(function ($) {
-    $(function () {
-      $("[data-headertabs]").on("click", "li:not(.active)", function () {
-        $(this)
-          .addClass("active")
-          .siblings()
-          .removeClass("active")
-          .closest("[data-tabs]")
-          .find("[data-contenttabs]")
-          .removeClass("active")
-          .eq($(this).index())
-          .addClass("active")
-      })
-    })
-  })(jQuery)
-
-  ;(function ($) {
-    $(function () {
-      $(".sitetabs__header ul").on("click", "li:not(.active)", function () {
-        $(this)
-          .addClass("active")
-          .siblings()
-          .removeClass("active")
-          .closest("div.sitetabs")
-          .find("div.sitetabs__content")
-          .removeClass("active")
-          .eq($(this).index())
-          .addClass("active")
-      })
-    })
-  })(jQuery)
 })
 
 function mainSliderInit() {
