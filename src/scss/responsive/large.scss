@@ -135,6 +135,24 @@
   }
 }
 @include large-screen {
+  .projectblock__content {
+    max-width: 320px;
+  }
+  .projectblock__main {
+    background-position: bottom left;
+    background-size: 74%;
+  }
+  .projectblock__title {
+    font-size: 26px;
+
+  }
+  .projectblock__wrapper {
+    padding: 0 18px;
+  }
+  .projectblock__list li a {
+    padding: 10px 5px;
+    font-size: 14px;
+  }
   .footer__col_right {
     max-width: 200px;
   }
