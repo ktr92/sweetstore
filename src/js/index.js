@@ -21,6 +21,8 @@ function initFE() {
 }
 
 $(document).ready(function () {
+  new WOW().init();
+  
   $(".arrowmenu").click(function () {
     $(".headermenu__wrapper").animate({
       scrollLeft: "+=226px",
@@ -85,7 +87,7 @@ $(document).ready(function () {
     let menu = $(this).data("menutoggle")
     $(`[data-menu=${menu}]`).toggleClass("active")
     $(this).toggleClass("active")
-    $(".jsbackdrop").toggleClass("menuactive")
+    $(".jsbackdrop").addClass("menuactive")
   })
   $(".jsbackdrop").on("click", function (e) {
     $(this).removeClass("active")
@@ -330,7 +332,7 @@ function productSliderInit() {
     loop: true,
     slidesPerView: 1,
     spaceBetween: 15,
-    width: 287,
+    width: null,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -338,12 +340,14 @@ function productSliderInit() {
     breakpoints: {
       // when window width is >= 320
       320: {
+        width: 287,
         slidesPerView: 1,
         spaceBetween: 10
       },
       // when window width is >= 767
       767: {
-        slidesPerView: 2,
+        width: null,
+        slidesPerView: 3,
         spaceBetween: 10
       },
       // when window width is >= 1024
@@ -354,6 +358,7 @@ function productSliderInit() {
       },
       // when window width is >= 1440
       1440: {
+        width: null,
         slidesPerView: 5,
         spaceBetween: 15
       }

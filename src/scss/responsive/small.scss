@@ -1,7 +1,15 @@
 
 @include small-screen {
  
-
+  .producttabs {
+ 
+    .cataloglist__item {
+      min-width: 100%;
+    }
+  }
+  .producttabs .cataloglist__items {
+    gap: 27px 0;
+  }
   .itemslistslider__slide {
     padding: 0;
   }
