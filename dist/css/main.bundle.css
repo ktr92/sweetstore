@@ -7583,14 +7583,14 @@ small {
   gap: 52px 19px; }
 
 .catalogpage .cataloglist__item {
-  width: calc(25% - 19px); }
+  width: calc(25% - 15px); }
 
 .catalogpage .productcard__img {
   height: 272px;
   width: 100%; }
 
 .seoblock {
-  margin: 78px 0 38px 0; }
+  margin: 78px 0 78px 0; }
   .seoblock h2 {
     font-family: var(--second-family);
     font-weight: 700;
@@ -7609,6 +7609,58 @@ small {
 
 .page .pagebanner {
   margin-bottom: 38px; }
+
+.pageheader__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.contactsblock__common {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between; }
+  .contactsblock__common .contactline__messenger {
+    height: 30px; }
+  .contactsblock__common a {
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 22px;
+    text-transform: uppercase;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    display: flex;
+    align-items: center; }
+
+.contactsblock__cell {
+  max-width: 50%; }
+
+.contactsblock__label {
+  margin-bottom: 8px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: #231f20;
+  opacity: 0.5; }
+
+.contactsblock__value {
+  display: flex;
+  align-items: center;
+  gap: 6px; }
+
+.contactitem__info {
+  min-width: 102px;
+  max-width: 102px; }
+
+.contactitem__phones {
+  gap: 8px;
+  margin-bottom: 17px; }
+
+.contactsblock__common a {
+  line-height: 1; }
+
+.pageheader .contactsblock__common {
+  display: flex; }
 
 @media only screen and (max-width: 1700px) {
   .pagedetail__aside {
@@ -7987,9 +8039,10 @@ small {
   .tablinks__item a {
     padding: 12px 27px;
     font-size: 16px; }
-  .catalogheader__right {
+  /*   .catalogheader__right {
     order: -1;
-    margin-bottom: 21px; }
+    margin-bottom: 21px;
+  } */
   .btn_default {
     font-size: 12px;
     padding: 8px 22px;
@@ -8003,7 +8056,8 @@ small {
     justify-content: flex-end;
     display: flex; }
   .catalogheader__title {
-    font-size: 16px; }
+    font-size: 16px;
+    line-height: 16px; }
   .dropdown-select--type1 {
     width: 100%; }
   .asidemenubutton .asidemenubutton__current {
@@ -8349,11 +8403,13 @@ small {
   header#header {
     padding-bottom: 14px;
     margin-bottom: 0; }
-  .catalogheader {
+  /*  .catalogheader {
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
-  .catalogheader__left {
-    width: 100%; }
+    flex-wrap: wrap;
+  } */
+  /*   .catalogheader__left {
+    width: 100%;
+  } */
   .btn_icon {
     width: 36px;
     height: 36px;
@@ -8368,8 +8424,10 @@ small {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
+  /* 
   .catalogheader__right {
-    width: 100%; }
+    width: 100%;
+  } */
   .dropdown-select--type1 {
     background: #f2f4f6;
     border-radius: 8px;
@@ -10118,37 +10176,6 @@ small {
   .mainmenubanner__img {
     max-width: 195px;
     margin: auto; }
-  .contactsblock__common {
-    margin-bottom: 25px;
-    display: flex;
-    justify-content: space-between; }
-    .contactsblock__common a {
-      white-space: nowrap;
-      font-weight: 500;
-      font-size: 14px;
-      text-transform: uppercase;
-      display: block;
-      height: 30px;
-      line-height: 30px; }
-  .contactsblock__cell {
-    max-width: 50%; }
-  .contactsblock__label {
-    margin-bottom: 3px;
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 12px;
-    color: #231f20;
-    opacity: 0.5; }
-  .contactsblock__value {
-    display: flex;
-    align-items: center;
-    gap: 6px; }
-  .contactitem__info {
-    min-width: 102px;
-    max-width: 102px; }
-  .contactitem__phones {
-    gap: 8px;
-    margin-bottom: 17px; }
   .contactmap {
     height: 155px; }
   .contactitem__phones a {
@@ -10178,7 +10205,44 @@ small {
     font-size: 26px; }
   .seoblock p {
     font-size: 14px;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .contactsblock__label {
+    margin-bottom: 3px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    color: #231f20;
+    opacity: 0.5; }
+  .contactsblock__common {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between; }
+    .contactsblock__common .contactline__messenger {
+      height: 30px; }
+    .contactsblock__common a {
+      white-space: nowrap;
+      font-weight: 500;
+      font-size: 14px;
+      text-transform: uppercase;
+      display: block;
+      height: 30px;
+      line-height: 30px;
+      display: flex;
+      align-items: center; }
+  .pageheader .contactsblock__common {
+    margin-bottom: 0;
+    margin-top: 16px; }
+  .pageheader__row {
+    flex-wrap: wrap; }
+    .pageheader__row .breadcrumbs {
+      margin-top: 0; }
+    .pageheader__row .pageheader__content {
+      margin-bottom: 6px; }
+  .pageheader__content {
+    display: flex;
+    flex-direction: column; }
+    .pageheader__content .breadcrumbs {
+      order: -1; } }
 
 @media only screen and (max-width: 767px) {
   .catalogpage .cataloglist__items {

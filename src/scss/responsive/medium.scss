@@ -155,10 +155,10 @@
     font-size: 16px;
   }
 
-  .catalogheader__right {
+/*   .catalogheader__right {
     order: -1;
     margin-bottom: 21px;
-  }
+  } */
   .btn_default {
     font-size: 12px;
     padding: 8px 22px;
@@ -178,6 +178,7 @@
   }
   .catalogheader__title {
     font-size: 16px;
+    line-height: 16px;
   }
   .dropdown-select--type1 {
     width: 100%;
@@ -738,14 +739,14 @@
     margin-bottom: 0;
   }
 
-  .catalogheader {
+ /*  .catalogheader {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-  }
+  } */
 
-  .catalogheader__left {
+/*   .catalogheader__left {
     width: 100%;
-  }
+  } */
 
   .btn_icon {
     width: 36px;
@@ -764,10 +765,10 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
-
+/* 
   .catalogheader__right {
     width: 100%;
-  }
+  } */
 
   .dropdown-select--type1 {
     background: #f2f4f6;
@@ -3505,44 +3506,7 @@ color: #231f20;
     margin: auto;
   }
  
-  .contactsblock__common {
-    margin-bottom: 25px;
-    display: flex;
-    justify-content: space-between;
-    a {
-      white-space: nowrap;
-      font-weight: 500;
-      font-size: 14px;
-      text-transform: uppercase;
-      display: block;height: 30px;
-      line-height: 30px;
-    }
-  }
-
-  .contactsblock__cell {
-    max-width: 50%;
-  }
-  .contactsblock__label {
-    margin-bottom: 3px;
-    font-family: var(--font-family);
-font-weight: 400;
-font-size: 12px;
-color: #231f20;
-opacity: 0.5;
-  }
-  .contactsblock__value {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-  .contactitem__info {
-    min-width: 102px;
-    max-width: 102px;
-  }
-  .contactitem__phones {
-    gap: 8px;
-    margin-bottom: 17px;
-  }
+ 
   .contactmap {
     height: 155px;
   }
@@ -3595,5 +3559,54 @@ opacity: 0.5;
     font-size: 14px;
     margin-bottom: 20px;
   }
+  .contactsblock__label {
+    margin-bottom: 3px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    color: #231f20;
+    opacity: 0.5;
+  }
 
+  .contactsblock__common {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    .contactline__messenger {
+      height: 30px;
+    }
+    a {
+      white-space: nowrap;
+      font-weight: 500;
+      font-size: 14px;
+      text-transform: uppercase;
+      display: block;
+      height: 30px;
+      line-height: 30px;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .pageheader .contactsblock__common {
+    margin-bottom: 0;
+    margin-top: 16px;
+  }
+  .pageheader__row {
+    flex-wrap: wrap;
+
+    .breadcrumbs {
+      margin-top: 0;
+    }
+    .pageheader__content{
+      margin-bottom: 6px;
+    }
+  }
+
+  .pageheader__content {
+    display: flex;
+    flex-direction: column;
+    .breadcrumbs {
+      order: -1;
+    }
+  }
 }
