@@ -252,7 +252,7 @@ function mainSliderInit() {
   var swiper = new Swiper('[data-slider="mainslider"]', {
   
     pagination: {
-      el: ".swiper-pagination",
+      el: ".mainslider-pagination_mob",
       clickable: true,
     },
 
@@ -261,14 +261,23 @@ function mainSliderInit() {
       // when window width is >= 1024
       1024: {
         direction: "vertical",
-     
+        pagination: {
+          el: ".mainslider-pagination_desk",
+          clickable: true,
+        },
+    
       },
       
     }
   })
 
-  $(".mainslider .swiper-pagination-bullet").css(
+  $(".mainslider .swiper-pagination-vertical .swiper-pagination-bullet").css(
     "height",
+    100 / $(".mainslider .swiper-slide").length + "%"
+  )
+
+  $(".mainslider .swiper-pagination-horizontal .swiper-pagination-bullet").css(
+    "width",
     100 / $(".mainslider .swiper-slide").length + "%"
   )
 }
@@ -344,6 +353,7 @@ function productSliderInit() {
     loop: true,
     slidesPerView: 1,
     spaceBetween: 15,
+    width: 287,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -361,6 +371,7 @@ function productSliderInit() {
       },
       // when window width is >= 1024
       1024: {
+        width: null,
         slidesPerView: 4,
         spaceBetween: 15
       },
@@ -429,7 +440,7 @@ function closeByClickOutside(element, button) {
     if (!$(event.target).closest(`${element},${button}`).length) {
       $(button).removeClass("active")
       $(element).removeClass("active")
-      $(".jsbackdrop").toggleClass("menuactive")
+      $(".jsbackdrop").removeClass("menuactive")
     }
   })
 
@@ -438,7 +449,7 @@ function closeByClickOutside(element, button) {
       // escape key maps to keycode `27`
       $(button).removeClass("active")
       $(element).removeClass("active")
-      $(".jsbackdrop").toggleClass("menuactive")
+      $(".jsbackdrop").removeClass("menuactive")
     }
   })
 }

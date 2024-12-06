@@ -350,7 +350,7 @@
 <!-- /#header.header -->
       <main>
 
-        <div class="indexblock">
+        <section class="indexblock ">
           <div class="mainslider">
             <div class="mainslider__wrapper">
               <div class="mainslider__container swiper" data-slider="mainslider">
@@ -362,10 +362,12 @@
 
                           <div class="mainslide__content">
                             <div class="mainslide__top">
-                              <div class="mainslide__title">Торты и&nbsp;десерты
-                                по&nbsp;авторским
-                                рецептурам
-                                в&nbsp;Москве</div>
+                              <div class="mainslide__title">
+                                <h1>Торты и&nbsp;десерты
+                                  по&nbsp;авторским
+                                  рецептурам
+                                  в&nbsp;Москве</h1>
+                                </div>
                               <div class="mainslide__text">с доставкой от двух часов</div>
                             </div><!-- /.mainslide__top -->
                             <div class="mainslide__footer">
@@ -414,15 +416,17 @@
                     </div><!-- /.mainslide -->
                   </div><!-- /.mainslider__slide -->
                 </div><!-- /.mainslider__slides -->
-                <div class="swiper-pagination"></div>
+                <div class="mainslider-pagination_desk onlyDesktop"></div>
 
               </div><!-- /.mainslider__container -->
+              <div class="mainslider-pagination_mob onlyMobile"></div>
+
             </div><!-- /.mainslider__wrapper -->
           </div><!-- /.mainslider -->
-        </div><!-- /.indexblock -->
+        </section><!-- /.indexblock -->
 
 
-        <div class=" productslider">
+        <section class=" productslider sitesection">
           <div class="container">
             <div class="blockheader flex items-center content-between">
               <div class="blockheader__left">
@@ -784,19 +788,15 @@
 
                 </div>
               </div>
-              <div class='onlyMobile '>
-                <a href="#" class='btn_link'>
-                  <span>Смотреть все</span>
-                </a>
-              </div>
+             
             </div>
           </div>
-        </div>
+        </section>
 
 
-        <div class="categoryblock">
+        <section class="categoryblock sitesection">
           <div class="container">
-            <h2></h2>
+            <h2>Торт на заказ</h2>
             <div class="categoryblock__items">
               <div class="categoryblock__item">
                 <div class="categoryblock__content">
@@ -884,9 +884,9 @@
               </div><!-- /.categoryblock__item -->
             </div><!-- /.categoryblock__items -->
           </div><!-- /.container -->
-        </div><!-- /.categoryblock -->
+        </section><!-- /.categoryblock -->
 
-        <div class="producttabs">
+        <section class="producttabs sitesection">
           <div class="container">
             <div class="producttabs__wrapper" data-tabs='producttabs_1'>
               <div class="producttabs__aside">
@@ -2178,9 +2178,9 @@
               </div><!-- /.producttabs__main -->
             </div><!-- /.producttabs__wrapper -->
           </div><!-- /.container -->
-        </div><!-- /.producttabs -->
+        </section><!-- /.producttabs -->
 
-        <div class="pagebanner">
+        <section class="pagebanner sitesection">
           <div class="container">
             <div class="pagebanner__wrapper">
               <div class="pagebanner__items">
@@ -2189,7 +2189,7 @@
                     Скачайте наше приложение и получите скидку до <span class="badge">-10%</span>
                   </div><!-- /.pagebanner__text -->
                 </div><!-- /.pagebanner__left -->
-                <div class="pagebanner__center onlyDesktop">
+                <div class="pagebanner__center ">
                   <div class="pagebanner__img">
                     <img src="img/appimg.png" alt="">
 
@@ -2215,10 +2215,10 @@
               </div><!-- /.pagebanner__items -->
             </div><!-- /.pagebanner__wrapper -->
           </div><!-- /.container -->
-        </div><!-- /.pagebanner -->
+        </section><!-- /.pagebanner -->
 
 
-        <div class="producttabs">
+        <section class="producttabs sitesection">
           <div class="container">
             <div class="producttabs__wrapper" data-tabs='producttabs_2'>
               <div class="producttabs__aside">
@@ -3512,9 +3512,9 @@
               </div><!-- /.producttabs__main -->
             </div><!-- /.producttabs__wrapper -->
           </div><!-- /.container -->
-        </div><!-- /.producttabs -->
+        </section><!-- /.producttabs -->
 
-        <div class="projectblock onlyDesktop" data-tabs='projectblock'>
+        <section class="projectblock onlyDesktop sitesection" data-tabs='projectblock'>
           <div class="container">
             <div class="projectblock__wrapper">
               <div class="projectblock__aside">
@@ -3636,9 +3636,9 @@
 
             </div><!-- /.projectblock__wrapper -->
           </div><!-- /.container -->
-        </div><!-- /.projectblock -->
+        </section><!-- /.projectblock -->
 
-        <div class="cardsblock onlyMobile">
+        <section class="cardsblock onlyMobile sitesection">
           <div class="mainmenubanner">
             <div class="mainmenubanner__content">
               <div class="mainmenubanner__image">
@@ -3653,8 +3653,8 @@
               <div class="mainmenubanner__button"><a href="" class="btn_border btn_sm">5 000 ₽</a></div>
             </div><!-- /.mainmenubanner__buttons -->
           </div>
-        </div>
-        <div class="cardsblock onlyDesktop">
+        </section>
+        <section class="cardsblock onlyDesktop sitesection">
           <div class="container">
             <h2>Подарочные карты</h2>
             <div class="cardsblock__items">
@@ -3725,13 +3725,12 @@
                 </div><!-- /.onecardblock -->
               </div><!-- /.cardsblock__item -->
 
-            </div><!-- /.cardsblock__item -->
           </div><!-- /.cardsblock__items -->
         </div><!-- /.container -->
-        </div><!-- /.cardsblock -->
+        </section><!-- /.cardsblock -->
 
 
-        <div class="contactsblock">
+        <section class="contactsblock sitesection">
           <div class="container">
             <h2></h2>
             <div class="contactsblock__items">
@@ -3830,7 +3829,7 @@
               </div><!-- /.contactsblock__item -->
             </div><!-- /.contactsblock__items -->
           </div><!-- /.container -->
-        </div><!-- /.contactsblock -->
+        </section><!-- /.contactsblock -->
 
       </main>
       <footer id="footer" class="footer">
