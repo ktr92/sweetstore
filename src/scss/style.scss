@@ -7946,6 +7946,7 @@ small {
 .categoryblock__items {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 .categoryblock__item {
   flex: 1;
@@ -8410,8 +8411,10 @@ small {
 .contactsblock__items {
   display: flex;
   gap: 25px;
+  flex-wrap: wrap;
 }
 .contactsblock__item {
+  flex: 1;
 }
 .contactitem {
   border-radius: 12px;
@@ -8506,6 +8509,7 @@ white-space: nowrap;
   border-radius: 12px;overflow: hidden;
   img {
     height: 100%;
+    width: 100%;
     object-fit: cover;
     object-position: center;
   }

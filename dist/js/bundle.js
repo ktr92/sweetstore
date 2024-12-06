@@ -250,11 +250,21 @@ $(document).ready(function () {
 
 function mainSliderInit() {
   var swiper = new Swiper('[data-slider="mainslider"]', {
-    direction: "vertical",
+  
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
+
+    breakpoints: {
+
+      // when window width is >= 1024
+      1024: {
+        direction: "vertical",
+     
+      },
+      
+    }
   })
 
   $(".mainslider .swiper-pagination-bullet").css(
