@@ -14,9 +14,9 @@ function initFE() {
     '[data-menutoggle="catalogmenu"]'
   )
   closeByClickOutside(".catalogpage__aside", ".js-mobilefilter")
-  /*   fixElement(false, 750, 'mobpriceFixed', 'fixed')
-    fixElement(300, false, 'headermain', 'fixed')
-    fixElement(300, false, 'headercontainer', 'fixed')
+/*     fixElement(false, 750, 'mobpriceFixed', 'fixed') */
+    fixElement(170, false, 'headermain', 'fixed')
+    /* fixElement(300, false, 'headercontainer', 'fixed')
     fixElement(false, 0, 'mobilenav', 'fixed') */
 }
 
