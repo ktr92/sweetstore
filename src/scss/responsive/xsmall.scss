@@ -4,4 +4,32 @@
     width: 50%;
   
   }
+  .pageheader {
+    padding: 24px 0 22px 0;
+  }
+  .breadcrumbs {
+    margin-top: 14px;
+  }
+
+  .catalogpage {
+    
+    .cataloglist__items {
+      gap: 27px 0;
+    }
+    .cataloglist__item{
+      width: 100%;
+    }
+    .productcard__img {
+      height: 229px;
+     
+    }
+  }
+  .breadcrumbs__items ul img {
+    max-width: 16px;
+    min-width: 16px;
+  }
+  .pageheader__filter .mainmenu__list ul a {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }

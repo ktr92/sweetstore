@@ -1,6 +1,18 @@
 
 @include small-screen {
- 
+  .catalogpage {
+    
+    .cataloglist__items {
+      gap: 27px 10px;
+    }
+    .cataloglist__item{
+      width: calc(50% - 10px);
+    }
+    .productcard__img {
+      height: 229px;
+     
+    }
+  }
   .producttabs {
  
     .cataloglist__item {
