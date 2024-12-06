@@ -332,12 +332,34 @@ function productSliderInit() {
 
   var swiper = new Swiper('[data-slider="slider_sale"]', {
     loop: true,
-    slidesPerView: 5,
+    slidesPerView: 1,
     spaceBetween: 15,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+      // when window width is >= 320
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10
+      },
+      // when window width is >= 767
+      767: {
+        slidesPerView: 2,
+        spaceBetween: 10
+      },
+      // when window width is >= 1024
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 15
+      },
+      // when window width is >= 1440
+      1440: {
+        slidesPerView: 5,
+        spaceBetween: 15
+      }
+    }
   })
 }
 

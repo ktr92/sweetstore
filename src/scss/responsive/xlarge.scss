@@ -139,5 +139,31 @@
       min-width: 372px;
     }
   }
+  .productslider .swiper-button-next {
+    right: 52px;
+  }
+  .productslider .swiper-button-prev {
+    left: 52px;
+  }
+  .contactsblock__items {
+    gap: 10px;
+  }
+  .contactitem {
+    padding: 30px 12px;
+  }
+  .contactitem__phones a {
+    font-size: 14px;
+  }
+  .contactline__messenger {
+    max-width: 30px;
+    min-width: 30px;
+    height: 30px;
+  }
+  .contactitem__text {
+    font-size: 12px;
+  }
+  .contactitem__small {
+    font-size: 9px;
+  }
 
 }
