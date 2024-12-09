@@ -271,16 +271,25 @@ function contentSliderInit() {
 
 function detailsliderInit() {
   const swiper = new Swiper(".detailswiperpreview", {
-    spaceBetween: 9,
+    spaceBetween: 6,
     scrollbar: {
       el: ".swiper-scrollbar",
       draggable: true,
     },
     slidesPerView: "auto",
     mousewheel: true,
-    direction: "vertical",
     freeMode: true,
     watchSlidesProgress: true,
+    breakpoints: {
+     
+      // when window width is >= 1024
+      1024: {
+        spaceBetween: 9,
+        direction: "vertical",
+
+      },
+    
+    }
   })
   const swiper2 = new Swiper(".detailswiper", {
     navigation: {

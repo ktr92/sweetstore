@@ -244,4 +244,20 @@
   .mainslider__wrapper {
     margin: 0 10px;
   }
+  .detailslider__wrapper {
+    max-width: 550px;
+  }
+  .detailslider .detailswiperpreview,
+  .detailslider .detailswiper{
+    height: 450px;
+  }
+  .detail__banner .pagebanner__text {
+    font-size: 16px;
+  }
+  .detail__banner .pagebanner__wrapper {
+    padding: 0 15px;
+  }
+  .detailinfo__text {
+    margin-bottom: 20px;
+  }
 }
