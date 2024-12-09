@@ -329,29 +329,107 @@ function detailsliderInit() {
 }
 
 function productSliderInit() {
- /*  $('[data-slider="slider_sale"]').each(function () {
+
+  const buildSwiperSlider = sliderElm => {
+    const sliderIdentifier = sliderElm.id
+    console.log(sliderIdentifier)
+    return new Swiper(`#${sliderElm.id}`, {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 15,
+      width: null,
+        navigation: {
+            nextEl: `.swiper-next.arrows_${sliderIdentifier}`,
+            prevEl: `.swiper-prev.arrows_${sliderIdentifier}`
+        },
+        breakpoints: {
+          // when window width is >= 320
+          320: {
+            width: 287,
+            slidesPerView: 1,
+            spaceBetween: 10
+          },
+          // when window width is >= 767
+          767: {
+            width: null,
+            slidesPerView: 3,
+            spaceBetween: 10
+          },
+          // when window width is >= 1024
+          1024: {
+            width: null,
+            slidesPerView: 4,
+            spaceBetween: 15
+          },
+          // when window width is >= 1440
+          1440: {
+            width: null,
+            slidesPerView: 5,
+            spaceBetween: 15
+          }
+        }
+       
+    });
+}
+
+// Get all of the swipers on the page
+const allSliders = document.querySelectorAll('[data-slider="slider_sale"]');
+
+// Loop over all of the fetched sliders and apply Swiper on each one.
+allSliders.forEach(slider => buildSwiperSlider(slider));
+
+/* 
+  $('[data-slider="slider_sale"]').each(function () {
     const sl = $(this)
     var mySwiper = new Swiper(sl, {
       loop: true,
-      slidesPerView: 5,
-      spaceBetween: 15
+    slidesPerView: 1,
+    spaceBetween: 15,
+    width: null,
+   
+    breakpoints: {
+      // when window width is >= 320
+      320: {
+        width: 287,
+        slidesPerView: 1,
+        spaceBetween: 10
+      },
+      // when window width is >= 767
+      767: {
+        width: null,
+        slidesPerView: 3,
+        spaceBetween: 10
+      },
+      // when window width is >= 1024
+      1024: {
+        width: null,
+        slidesPerView: 4,
+        spaceBetween: 15
+      },
+      // when window width is >= 1440
+      1440: {
+        width: null,
+        slidesPerView: 5,
+        spaceBetween: 15
+      }
+    }
     })
-    $(this)
+    sl
       .closest(".container")
       .find(".swiper-button-prev")
       .on("click", function (e) {
         e.preventDefault()
         mySwiper.swipePrev()
       })
-    $(this)
+   sl
       .find(".swiper-button-next")
       .on("click", function (e) {
         e.preventDefault()
         mySwiper.swipeNext()
       })
-  }) */
-
-  var swiper = new Swiper('[data-slider="slider_sale"]', {
+  })
+ */
+/*   var swiper = new Swiper('[data-slider="slider_sale"]', {
     loop: true,
     slidesPerView: 1,
     spaceBetween: 15,
@@ -386,7 +464,7 @@ function productSliderInit() {
         spaceBetween: 15
       }
     }
-  })
+  }) */
 }
 
 function recipeSliderInit() {}

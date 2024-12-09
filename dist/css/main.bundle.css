@@ -3238,7 +3238,7 @@ input.quantity-minus {
   display: block; }
 
 .sitetabs__header {
-  margin-bottom: 55px; }
+  margin-bottom: 49px; }
 
 .sitetabs__header ul {
   padding: 0;
@@ -3249,45 +3249,23 @@ input.quantity-minus {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
-
-.sitetabs__header li {
-  list-style: none;
-  display: inline-block;
-  background: #f3f5f8;
-  border-radius: 6px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 45px;
-  position: relative;
-  color: #283647;
-  cursor: pointer;
-  height: 45px;
-  padding: 0 36px;
-  margin-right: 8px; }
-
-.sitetabs__header li.active {
-  background: rgba(4, 163, 233, 0.15);
-  color: #b81b37; }
-
-.sitetabs__header li span.sitetabs__title {
-  position: relative;
-  padding-right: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  height: 100%; }
+  gap: 49px; }
 
-.sitetabs__header li span.count {
-  font-size: 11px;
-  position: absolute;
-  right: 0;
-  top: 10px;
-  min-width: 16px; }
+.sitetabs__header li a {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #231f20;
+  opacity: 0.3; }
+
+.sitetabs__header li a:hover {
+  opacity: 0.6; }
+
+.sitetabs__header li a.active {
+  color: #b81b37;
+  opacity: 1; }
 
 .description h3 {
   font-style: normal;
@@ -3299,11 +3277,11 @@ input.quantity-minus {
   margin-bottom: 12px; }
 
 .description p {
-  font-style: normal;
+  font-family: var(--font-family);
   font-weight: 400;
-  font-size: 18px;
-  line-height: 140%;
-  color: #283647; }
+  font-size: 16px;
+  line-height: 160%;
+  color: #231f20; }
 
 .description__cols {
   display: -webkit-box;
@@ -6945,12 +6923,13 @@ small {
 .productslider__wrapper {
   position: relative; }
 
-.productslider .swiper-button-next:after,
-.productslider .swiper-button-prev:after {
+.productslider .swiper-next:after,
+.productslider .swiper-prev:after {
   display: none; }
 
-.productslider .swiper-button-next,
-.productslider .swiper-button-prev {
+.productslider .swiper-next,
+.productslider .swiper-prev {
+  position: absolute;
   top: 106px;
   width: 46px;
   height: 46px;
@@ -6960,11 +6939,11 @@ small {
   align-items: center;
   justify-content: center; }
 
-.productslider .swiper-button-prev {
+.productslider .swiper-prev {
   left: -22px;
   transform: translateX(-100%); }
 
-.productslider .swiper-button-next {
+.productslider .swiper-next {
   right: -22px;
   transform: translateX(100%); }
 

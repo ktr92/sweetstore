@@ -2857,7 +2857,7 @@ input.quantity-minus {
 }
 
 .sitetabs__header {
-  margin-bottom: 55px;
+  margin-bottom: 49px;
 }
 
 .sitetabs__header ul {
@@ -2868,49 +2868,28 @@ input.quantity-minus {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  gap: 49px;
 }
 
-.sitetabs__header li {
-  list-style: none;
-  display: inline-block;
-  background: #f3f5f8;
-  border-radius: 6px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 45px;
-  position: relative;
-  color: #283647;
-  cursor: pointer;
-  height: 45px;
-  padding: 0 36px;
-  margin-right: 8px;
+.sitetabs__header li a {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #231f20;
+  opacity: 0.3;
 }
 
-.sitetabs__header li.active {
-  background: rgba(4, 163, 233, 0.15);
+.sitetabs__header li a:hover {
+  opacity: 0.6;
+}
+
+.sitetabs__header li a.active {
   color: $main;
+  opacity: 1;
 }
 
-.sitetabs__header li span.sitetabs__title {
-  position: relative;
-  padding-right: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 100%;
-}
 
-.sitetabs__header li span.count {
-  font-size: 11px;
-  position: absolute;
-  right: 0;
-  top: 10px;
-  min-width: 16px;
-}
 
 .sitetabs__wrapper {
 }
@@ -2933,11 +2912,11 @@ input.quantity-minus {
   }
 
   p {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 140%;
-    color: #283647;
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+color: #231f20;
   }
 }
 
@@ -7547,12 +7526,13 @@ small {
   position: relative;
 }
 .productslider {
-  .swiper-button-next:after,
-  .swiper-button-prev:after {
+  .swiper-next:after,
+  .swiper-prev:after {
     display: none;
   }
-  .swiper-button-next,
-  .swiper-button-prev {
+  .swiper-next,
+  .swiper-prev {
+    position: absolute;
     top: 106px;
     width: 46px;
     height: 46px;
@@ -7562,11 +7542,11 @@ small {
     align-items: center;
     justify-content: center;
   }
-  .swiper-button-prev {
+  .swiper-prev {
     left: -22px;
     transform: translateX(-100%);
   }
-  .swiper-button-next {
+  .swiper-next {
     right: -22px;
     transform: translateX(100%);
   }
