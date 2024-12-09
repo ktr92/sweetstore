@@ -1,360 +1,514 @@
-Html Webpack Plugin:
-<pre>
-  Error: Child compilation failed:
-  Module not found: Error: Can't resolve 'D:\work\fishproduct\src\html\views\404.htm  l' in 'D:\work\fishproduct'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\fishproduct\s  rc\html\views\404.html' in 'D:\work\fishproduct'
-      at D:\work\fishproduct\node_modules\webpack\lib\Compilation.js:2022:28
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:817:13
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:10:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:275:22
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:9:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:448:22
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:118:11
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:689:25
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:893:8
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:1013:5
-  Module not found: Error: Can't resolve 'D:\work\fishproduct\src\html\views\about.h  tml' in 'D:\work\fishproduct'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\fishproduct\s  rc\html\views\about.html' in 'D:\work\fishproduct'
-      at D:\work\fishproduct\node_modules\webpack\lib\Compilation.js:2022:28
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:817:13
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:10:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:275:22
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:9:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:448:22
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:118:11
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:689:25
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:893:8
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:1013:5
-  Module not found: Error: Can't resolve 'D:\work\fishproduct\src\html\views\news_de  tail.html' in 'D:\work\fishproduct'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\fishproduct\s  rc\html\views\news_detail.html' in 'D:\work\fishproduct'
-      at D:\work\fishproduct\node_modules\webpack\lib\Compilation.js:2022:28
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:817:13
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:10:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:275:22
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:9:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:448:22
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:118:11
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:689:25
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:893:8
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:1013:5
-  Module not found: Error: Can't resolve 'D:\work\fishproduct\src\html\views\order.h  tml' in 'D:\work\fishproduct'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\fishproduct\s  rc\html\views\order.html' in 'D:\work\fishproduct'
-      at D:\work\fishproduct\node_modules\webpack\lib\Compilation.js:2022:28
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:817:13
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:10:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:275:22
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:9:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:448:22
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:118:11
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:689:25
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:893:8
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:1013:5
-  Module not found: Error: Can't resolve 'D:\work\fishproduct\src\html\views\politic  s.html' in 'D:\work\fishproduct'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\fishproduct\s  rc\html\views\politics.html' in 'D:\work\fishproduct'
-      at D:\work\fishproduct\node_modules\webpack\lib\Compilation.js:2022:28
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:817:13
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:10:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:275:22
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:9:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:448:22
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:118:11
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:689:25
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:893:8
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:1013:5
-  Module not found: Error: Can't resolve 'D:\work\fishproduct\src\html\views\popup.h  tml' in 'D:\work\fishproduct'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\fishproduct\s  rc\html\views\popup.html' in 'D:\work\fishproduct'
-      at D:\work\fishproduct\node_modules\webpack\lib\Compilation.js:2022:28
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:817:13
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:10:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:275:22
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:9:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:448:22
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:118:11
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:689:25
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:893:8
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:1013:5
-  Module not found: Error: Can't resolve 'D:\work\fishproduct\src\html\views\product  .html' in 'D:\work\fishproduct'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\fishproduct\s  rc\html\views\product.html' in 'D:\work\fishproduct'
-      at D:\work\fishproduct\node_modules\webpack\lib\Compilation.js:2022:28
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:817:13
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:10:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:275:22
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:9:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:448:22
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:118:11
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:689:25
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:893:8
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:1013:5
-  Module not found: Error: Can't resolve 'D:\work\fishproduct\src\html\views\product  _off.html' in 'D:\work\fishproduct'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\fishproduct\s  rc\html\views\product_off.html' in 'D:\work\fishproduct'
-      at D:\work\fishproduct\node_modules\webpack\lib\Compilation.js:2022:28
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:817:13
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:10:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:275:22
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:9:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:448:22
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:118:11
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:689:25
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:893:8
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:1013:5
-  Module not found: Error: Can't resolve 'D:\work\fishproduct\src\html\views\recipe.  html' in 'D:\work\fishproduct'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\fishproduct\s  rc\html\views\recipe.html' in 'D:\work\fishproduct'
-      at D:\work\fishproduct\node_modules\webpack\lib\Compilation.js:2022:28
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:817:13
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:10:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:275:22
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:9:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:448:22
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:118:11
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:689:25
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:893:8
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:1013:5
-  Module not found: Error: Can't resolve 'D:\work\fishproduct\src\html\views\recipe_  detail.html' in 'D:\work\fishproduct'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\fishproduct\s  rc\html\views\recipe_detail.html' in 'D:\work\fishproduct'
-      at D:\work\fishproduct\node_modules\webpack\lib\Compilation.js:2022:28
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:817:13
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:10:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:275:22
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:9:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:448:22
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:118:11
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:689:25
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:893:8
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:1013:5
-  Module not found: Error: Can't resolve 'D:\work\fishproduct\src\html\views\start.h  tml' in 'D:\work\fishproduct'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\fishproduct\s  rc\html\views\start.html' in 'D:\work\fishproduct'
-      at D:\work\fishproduct\node_modules\webpack\lib\Compilation.js:2022:28
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:817:13
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:10:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:275:22
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:9:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:448:22
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:118:11
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:689:25
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:893:8
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:1013:5
-  Module not found: Error: Can't resolve 'D:\work\fishproduct\src\html\views\wishlis  t.html' in 'D:\work\fishproduct'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\fishproduct\s  rc\html\views\wishlist.html' in 'D:\work\fishproduct'
-      at D:\work\fishproduct\node_modules\webpack\lib\Compilation.js:2022:28
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:817:13
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:10:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:275:22
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:9:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:448:22
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:118:11
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:689:25
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:893:8
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:1013:5
-  Module not found: Error: Can't resolve 'D:\work\fishproduct\src\html\views\cart.ht  ml' in 'D:\work\fishproduct'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\fishproduct\s  rc\html\views\cart.html' in 'D:\work\fishproduct'
-      at D:\work\fishproduct\node_modules\webpack\lib\Compilation.js:2022:28
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:817:13
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:10:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:275:22
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:9:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:448:22
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:118:11
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:689:25
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:893:8
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:1013:5
-  Module not found: Error: Can't resolve 'D:\work\fishproduct\src\html\views\catalog  .html' in 'D:\work\fishproduct'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\fishproduct\s  rc\html\views\catalog.html' in 'D:\work\fishproduct'
-      at D:\work\fishproduct\node_modules\webpack\lib\Compilation.js:2022:28
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:817:13
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:10:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:275:22
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:9:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:448:22
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:118:11
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:689:25
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:893:8
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:1013:5
-  Module not found: Error: Can't resolve 'D:\work\fishproduct\src\html\views\catalog  _root.html' in 'D:\work\fishproduct'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\fishproduct\s  rc\html\views\catalog_root.html' in 'D:\work\fishproduct'
-      at D:\work\fishproduct\node_modules\webpack\lib\Compilation.js:2022:28
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:817:13
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:10:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:275:22
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:9:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:448:22
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:118:11
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:689:25
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:893:8
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:1013:5
-  Module not found: Error: Can't resolve 'D:\work\fishproduct\src\html\views\contact  s.html' in 'D:\work\fishproduct'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\fishproduct\s  rc\html\views\contacts.html' in 'D:\work\fishproduct'
-      at D:\work\fishproduct\node_modules\webpack\lib\Compilation.js:2022:28
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:817:13
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:10:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:275:22
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:9:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:448:22
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:118:11
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:689:25
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:893:8
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:1013:5
-  Module not found: Error: Can't resolve 'D:\work\fishproduct\src\html\views\deliver  y.html' in 'D:\work\fishproduct'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\fishproduct\s  rc\html\views\delivery.html' in 'D:\work\fishproduct'
-      at D:\work\fishproduct\node_modules\webpack\lib\Compilation.js:2022:28
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:817:13
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:10:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:275:22
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:9:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:448:22
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:118:11
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:689:25
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:893:8
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:1013:5
-  Module not found: Error: Can't resolve 'D:\work\fishproduct\src\html\views\how.htm  l' in 'D:\work\fishproduct'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\fishproduct\s  rc\html\views\how.html' in 'D:\work\fishproduct'
-      at D:\work\fishproduct\node_modules\webpack\lib\Compilation.js:2022:28
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:817:13
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:10:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:275:22
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:9:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:448:22
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:118:11
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:689:25
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:893:8
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:1013:5
-  Module not found: Error: Can't resolve 'D:\work\fishproduct\src\html\views\news.ht  ml' in 'D:\work\fishproduct'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\fishproduct\s  rc\html\views\news.html' in 'D:\work\fishproduct'
-      at D:\work\fishproduct\node_modules\webpack\lib\Compilation.js:2022:28
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:817:13
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:10:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:275:22
-      at eval (eval at create (D:\work\fishproduct\node_modules\tapable\lib\HookCode  Factory.js:33:10), <anonymous>:9:1)
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:448:22
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:118:11
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:689:25
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:893:8
-      at D:\work\fishproduct\node_modules\webpack\lib\NormalModuleFactory.js:1013:5
+
+  <!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>MAIN</title>
+<!--   <link rel="shortcut icon" href="favicon/favicon.ico" />
+ -->  
+
   
-  - Compilation.js:2022 
-    [fishproduct]/[webpack]/lib/Compilation.js:2022:28
-  
-  - NormalModuleFactory.js:817 
-    [fishproduct]/[webpack]/lib/NormalModuleFactory.js:817:13
-  
-  
-  - NormalModuleFactory.js:275 
-    [fishproduct]/[webpack]/lib/NormalModuleFactory.js:275:22
-  
-  
-  - NormalModuleFactory.js:448 
-    [fishproduct]/[webpack]/lib/NormalModuleFactory.js:448:22
-  
-  - NormalModuleFactory.js:118 
-    [fishproduct]/[webpack]/lib/NormalModuleFactory.js:118:11
-  
-  - NormalModuleFactory.js:689 
-    [fishproduct]/[webpack]/lib/NormalModuleFactory.js:689:25
-  
-  - NormalModuleFactory.js:893 
-    [fishproduct]/[webpack]/lib/NormalModuleFactory.js:893:8
-  
-  - NormalModuleFactory.js:1013 
-    [fishproduct]/[webpack]/lib/NormalModuleFactory.js:1013:5
-  
-  - Module not found: Error: Can't resolve 'D:\work\fishproduct\src\html\views\about    .html' in 'D:\work\fishproduct'
-  
-  - ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\fishproduct    \src\html\views\about.html' in 'D:\work\fishproduct'
-  
-  - Compilation.js:2022 
-    [fishproduct]/[webpack]/lib/Compilation.js:2022:28
-  
-  - NormalModuleFactory.js:817 
-    [fishproduct]/[webpack]/lib/NormalModuleFactory.js:817:13
-  
-  
-  - NormalModuleFactory.js:275 
-    [fishproduct]/[webpack]/lib/NormalModuleFactory.js:275:22
-  
-  
-  - NormalModuleFactory.js:448 
-    [fishproduct]/[webpack]/lib/NormalModuleFactory.js:448:22
-  
-  - NormalModuleFactory.js:118 
-    [fishproduct]/[webpack]/lib/NormalModuleFactory.js:118:11
-  
-  - NormalModuleFactory.js:689 
-    [fishproduct]/[webpack]/lib/NormalModuleFactory.js:689:25
-  
-  - NormalModuleFactory.js:893 
-    [fishproduct]/[webpack]/lib/NormalModuleFactory.js:893:8
-  
-  - NormalModuleFactory.js:1013 
-    [fishproduct]/[webpack]/lib/NormalModuleFactory.js:1013:5
-  
-  - Module not found: Error: Can't resolve 'D:\work\fishproduct\src\html\views\news_    detail.html' in 'D:\work\fishproduct'
-  
-  - ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\fishproduct    \src\html\views\news_detail.html' in 'D:\work\fishproduct'
-  
-  - Compilation.js:2022 
-    [fishproduct]/[webpack]/lib/Compilation.js:2022:28
-  
-  - NormalModuleFactory.js:817 
-    [fishproduct]/[webpack]/lib/NormalModuleFactory.js:817:13
-  
-  
-  - NormalModuleFactory.js:275 
-    [fishproduct]/[webpack]/lib/NormalModuleFactory.js:275:22
-  
-  
-  - NormalModuleFactory.js:448 
-    [fishproduct]/[webpack]/lib/NormalModuleFactory.js:448:22
-  
-  - NormalModuleFactory.js:118 
-    [fishproduct]/[webpack]/lib/NormalModuleFactory.js:118:11
-  
-  - NormalModuleFactory.js:689 
-    [fishproduct]/[webpack]/lib/NormalModuleFactory.js:689:25
-  
-  - NormalModuleFactory.js:893 
-    [fishproduct]/[webpack]/lib/NormalModuleFactory.js:893:8
-  
-  - NormalModuleFactory.js:1013 
-    [fishproduct]/[webpack]/lib/NormalModuleFactory.js:1013:5
-  
-  - Module not found: Error: Can't resolve 'D:\work\fishproduct\src\html\views\order    .html' in 'D:\work\fishproduct'
-  
-  - ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\fishproduct    \src\html\views\order.html' in 'D:\work\fishproduct'
-  
-  - Compilation.js:2022 
-    [fishproduct]/[webpack]/lib/Compilation.js:2022:28
-  
-  - NormalModuleFactory.js:817 
-    [fishproduct]/[webpack]/lib/NormalModuleFactory.js:817:13
-  
-  
-  - NormalModuleFactory.js:275 
-    [fishproduct]/[webpack]/lib/NormalModuleFactory.js:275:22
-  
-  
-  - NormalModuleFactory.js:448 
-    [fishproduct]/[webpack]/lib/NormalModuleFactory.js:448:22
-  
-  - NormalModuleFactory.js:118 
-    [fishproduct]/[webpack]/lib/NormalModuleFactory.js:118:11
-  
-  - NormalModuleFactory.js:689 
-    [fishproduct]/[webpack]/lib/NormalModuleFactory.js:689:25
-  
-  - NormalModuleFactory.js:893 
-    [fishproduct]/[webpack]/lib/NormalModuleFactory.js:893:8
-  
-  - NormalModuleFactory.js:1013 
-    [fishproduct]/[webpack]/lib/NormalModuleFactory.js:1013:5
-  
-  - Module not found: Error: Can't resolve 'D:\work\fishproduct\src\html\views\polit    ics.html' in 'D:\work\fishproduct'
-  
-  - ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\fishproduct    \src\html\views\politics.html' in 'D:\work\fishproduct'
-  
-  - Compilation.js:2022 
-    [fishproduct]/[webpack]/lib/Compilation.js:2022:28
-  
-  - NormalModuleFactory.js:817 
-    [fishproduct]/[webpack]/lib/NormalModuleFactory.js:817:13
-  
-  
-</pre>
+
+ 
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+  <link rel="stylesheet" href="css/lightbox.min.css">
+
+  <link rel="stylesheet" href="css/main.bundle.css" />
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/maskedinput.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/wow.min.js"></script>
+ 
+ 
+  <script src="js/jquery.zoom.min.js"></script>
+  <script src="js/lightbox.min.js"></script>
+  <script src="js/selectbox.js"></script>
+
+  <!-- <script src="js/fixedcart.js"></script> -->
+
+</head>
+
+<body>
+    <div class="jsbackdrop "></div>
+
+
+<div class="mobilemenu" data-menu="mainmenu">
+  <div class="mobilemenu__wrapper">
+    <div class="mobilemenu__block">
+      <div class="mobilemenu__menu">
+        <div class="headermenu__topmenu ">
+          <div class="topmenu">
+            <div class="topmenu__items">
+              <ul>
+                <li><a href="">Наши кондитерские</a></li>
+                <li><a href="">Мероприятия “под ключ”</a></li>
+                <li><a href="">О нас</a></li>
+                <li><a href="">Оплата и доставка</a></li>
+                <li><a href="">Контакты</a></li>
+              </ul>
+            </div><!-- /.topmenu__items -->
+          </div><!-- /.topmenu -->
+        </div>
+      </div>
+      <!-- /.mobilemenu__menu -->
+    </div>
+    <!-- /.mobilemenu__block -->
+
+    <div class="mobilemenu__block menucontancts">
+      <div class="contactline contactline__phone">
+        <a href="tel:+7 (495) 799 70 07" class='phonelink active'>+7 (495) 799 70 07</a>
+      </div>
+      <div class="contactline contactline__email">
+        <a href="mailto:info@sweetstore.ru" class='emaillink active'>info@sweetstore.ru</a>
+      </div>
+      <div class=" contactline__messenger">
+        <a href="#" class='msglink'>
+          <img src="img/WhatsApp.svg" alt="">
+          <span> Написать в WhatsApp</span>
+
+        </a>
+      </div>
+
+    </div>
+
+    <div class="mobilemenu__app">
+      <div class="mobilemenu__apptext">Скачайте наше приложение и получите скидку <div class="red">-10%</div>
+      </div>
+      <div class="mobilemenu__appbuttons">
+        <a href="" target='_blank' class="mobilemenu__appbutton">
+          <img src="img/gplay.svg" alt="">
+        </a>
+        <a href="" target="_blank" class="mobilemenu__appbutton">
+          <img src="img/appstore.svg" alt="">
+        </a>
+      </div><!-- /.mobilemenu__appbuttons -->
+    </div><!-- /.mobilemenu__app -->
+
+  </div>
+  <!-- /.mobilemenu__wrapper -->
+</div>
+<!-- /.mobilepanel -->
+<header id="header" class="header">
+
+  <div class='headerwrapper'>
+    <div class="container">
+      <div>
+        <div class="headermain">
+          <div class="headermain__left">
+            <div class="headermain__logo"><a href="#" class='logo'><img src="img/logo.svg" alt=""></a></div>
+
+          </div>
+          <!-- /.headermain__left-->
+          <div class="headermain__right">
+            <div class="headermain__search onlyDesktop">
+              <form action="">
+                <div class="searchinput">
+                  <button type="submit"><img src="img/Search.svg" alt=""></button>
+
+                  <input type="text" placeholder='Я ищу' id='title-search-input_fixed'>
+
+                  <!-- <input type="text" placeholder='' id='title-search-input_fixed'> -->
+                </div>
+              </form>
+            </div>
+            <div class="headermain__contacts onlyDesktop">
+              <div class="contactline">
+                <div class="contactline__phone">
+                  <a href="tel:+7 (495) 799 70 07" class='phonelink'>+7 (495) 799 70 07</a>
+                </div><!-- /.contactline__phone -->
+                <div class="contactline__messenger">
+                  <a href="#">
+                    <img src="img/WhatsApp.svg" alt="" class='offHover'>
+                    <img src="img/WhatsApp2.svg" alt="" class='onHover'>
+                  </a>
+                </div><!-- /.contactline__messenger -->
+                <div class="contactline__callback">
+                  <a href="#popup_callback" data-toggle="modal" class='btn_main animatebtn'>Заказать звонок</a>
+                </div><!-- /.contactline__callback -->
+              </div><!-- /.contactline -->
+            </div>
+            <!-- /.headermain__contacts -->
+            <div class="headermain__iconlinks">
+              <div class="iconlinks">
+
+                <div class="iconlinks__item">
+                  <a href="#" class="iconlinks__link">
+                    <span class="iconlinks__badge">2</span>
+
+                    <span class="iconlinks__icon">
+                      <img src="img/icnHeart.svg" alt="" class='offHover'>
+                      <img src="img/icnHeart2.svg" alt="" class='onHover'>
+                    </span>
+                  </a>
+                </div>
+                <div class="iconlinks__item">
+                  <a href="#" class="iconlinks__link">
+                    <span class="iconlinks__badge">5</span>
+                    <span class="iconlinks__icon">
+                      <img src="img/icnCart.svg" alt="" class='offHover'>
+                      <img src="img/icnCart2.svg" alt="" class='onHover'>
+                    </span>
+                  </a>
+                </div>
+                <div class="iconlinks__item onlyMobile">
+                  <a href="#" data-menutoggle="mainmenu" class='menuicon'>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </a>
+                </div>
+              </div>
+              <!-- /.iconlinks -->
+            </div>
+            <!-- /.headermain__iconlinks -->
+          </div>
+          <!-- /.headermain__right -->
+        </div>
+        <!-- /.headermain -->
+      </div>
+
+      <div id='headermain' class="headermenu__stickty">
+      <div class="headermenu" >
+
+        <div class="headermenu__catalog">
+          <div class="headermain__menu">
+
+            <button class='mainmenubtn animatebtn' data-menutoggle='catalogmenu'>
+              <span>
+                <img class="burgericon icon--white onlyDesktop offHover" src="img/burger.svg" alt="">
+                <img class="burgericon icon--white onlyMobile " src="img/burger2.svg" alt="">
+                <img class="burgericon icon--white  onHover" src="img/burger2.svg" alt="">
+                <span>Каталог</span>
+              </span>
+              <span class='menuexpand'>
+                <img src="img/expand.svg" alt="" class='onlyDesktop offHover'>
+                <img src="img/expand2.svg" alt="" class='onlyMobile '>
+                <img src="img/expand2.svg" alt="" class='onHover'>
+              </span>
+
+            </button>
+
+            <div class="mainmenu" data-menu="catalogmenu">
+              <div class="mainmenu__wrapper">
+                <div class="mainmenu__items">
+                  <div class="mainmenu__column">
+                    <div class="mainmenu__block">
+                      <div class="mainmenu__title">Торты</div>
+                      <div class="mainmenu__list">
+                        <ul>
+                          <li><a href="">Фирменные в наличии</a></li>
+                          <li><a href="">За 48 часов</a></li>
+                          <li><a href="">Заказные</a></li>
+                          <li><a href="">по Госту</a></li>
+                          <li><a href="">Дополнительно к торту</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="mainmenu__block">
+                      <div class="mainmenu__title">Десерты</div>
+                      <div class="mainmenu__list">
+                        <ul>
+                          <li><a href="">Пирожные</a></li>
+                          <li><a href="">Безе</a></li>
+                          <li><a href="">Макаронс</a></li>
+                          <li><a href="">Мармелад</a></li>
+                          <li><a href="">Шоколад и конфеты</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="mainmenu__column">
+
+                    <div class="mainmenu__block">
+                      <div class="mainmenu__title">Проекты от шефа</div>
+                      <div class="mainmenu__links">
+                        <ul>
+                          <li>
+                            <a href="">
+                              <img src="img/mainmenu__links1.svg" alt=""><span>Онлайн курс</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="">
+                              <img src="img/mainmenu__links2.svg" alt=""><span>Книга “Рецепт Сладкой жизни”</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="">
+                              <img src="img/mainmenu__links3.svg" alt=""><span>Аудио рассказ</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="">
+                              <img src="img/mainmenu__links4.svg" alt=""><span>Лекции</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="">
+                              <img src="img/mainmenu__links5.svg" alt=""><span>VIP Подарок</span>
+                            </a>
+                          </li>
+
+                        </ul>
+                      </div><!-- /.mainmenu__list -->
+                    </div><!-- /.mainmenu__block -->
+                    <div class="mainmenu__block">
+                      <div class="mainmenu__title">Меню</div>
+                      <div class="mainmenu__links">
+                        <ul>
+                          <li>
+                            <a href="">
+                              <img src="img/locate.svg" alt=""><span>На Удальцова</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="">
+                              <img src="img/locate.svg" alt=""><span>На Удальцова</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="">
+                              <img src="img/locate.svg" alt=""><span>На Удальцова</span>
+                            </a>
+                          </li>
+
+
+                        </ul>
+                      </div><!-- /.mainmenu__list -->
+                    </div><!-- /.mainmenu__block -->
+                  </div><!-- /.mainmenu__column -->
+                  <div class="mainmenu__column pl-0">
+                    <div class="mainmenubanner">
+                      <div class="mainmenubanner__content">
+                        <div class="mainmenubanner__image">
+                          <div class="mainmenubanner__img">
+                            <img src="img/mainmenubanner.png" alt="">
+                          </div><!-- /.mainmenubanner__img -->
+                        </div><!-- /.mainmenubanner__image -->
+                        <div class="mainmenubanner__title">Подарочные <br> Карты</div>
+                      </div><!-- /.mainmenubanner__content -->
+                      <div class="mainmenubanner__buttons">
+                        <div class="mainmenubanner__button"><a href="" class='btn_main btn_sm animatebtn'>3 000 ₽</a></div>
+                        <div class="mainmenubanner__button"><a href="" class='btn_border btn_sm animatebtn'>5 000 ₽</a></div>
+                      </div><!-- /.mainmenubanner__buttons -->
+                    </div><!-- /.mainmenubanner -->
+                  </div><!-- /.mainmenu__column -->
+                </div>
+                <!-- /.mainmenu__items -->
+              </div>
+              <!-- /.mainmenu__wrapper -->
+            </div>
+            <!-- /.mainmenu -->
+          </div>
+          <!-- /.headermain__menu -->
+        </div><!-- /.headermenu__catalog -->
+        <div class="headermain__search onlyMobile">
+          <form action="">
+            <div class="searchinput">
+              <button type="submit"><img src="img/Search.svg" alt=""></button>
+
+              <input type="text" placeholder='Я ищу' id='title-search-input_fixed'>
+
+              <!-- <input type="text" placeholder='' id='title-search-input_fixed'> -->
+            </div>
+          </form>
+        </div>
+        <div class="headermenu__topmenu onlyDesktop">
+          <div class="topmenu">
+            <div class="topmenu__items">
+              <ul>
+                <li><a href="">Наши кондитерские</a></li>
+                <li><a href="">Мероприятия “под ключ”</a></li>
+                <li><a href="">О нас</a></li>
+                <li><a href="">Оплата и доставка</a></li>
+                <li><a href="">Контакты</a></li>
+              </ul>
+            </div><!-- /.topmenu__items -->
+          </div><!-- /.topmenu -->
+        </div><!-- /.headermenu__topmenu -->
+
+      </div><!-- /.headermenu -->
+    </div>
+
+
+    </div>
+    <!-- /.headercontainer -->
+
+
+
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</header>
+<!-- /#header.header -->
+      <main>
+      <style>
+        .page li {
+          margin-bottom: 20px;
+        }
+       .page a {
+          font-size: 20px;
+        }
+      </style>
+
+        <div class="page ">
+          <br><br><br><br><br>
+          <div class="container">
+            <ul>
+              <li>
+                <a href="index.html" target='_blank'>Главная</a>
+              </li>
+              <li>  <a href="catalog.html" target='_blank'>Каталог</a>     </li>
+              <li>  <a href="catalog2.html" target='_blank'>Каталог 2</a>     </li>
+                <li> <a href="catalog_fav.html" target='_blank'>Избранное</a>     </li>
+                <li>  <a href="detail.html" target='_blank'>Карточка товара</a>     </li>
+                <li>  <a href="contacts.html" target='_blank'>Контакты</a>     </li>
+         
+            </ul>
+          </div>
+        </div>
+        <br><br><br><br><br>
+      </main>
+      <footer id="footer" class="footer">
+  <div class="footer__main">
+    <div class="container">
+      <div class="footer__items">
+        <div class="footer__col footer__col_info">
+          <div class="footer__informblock">
+            <div class="footer__logo">
+              <img src="img/logo.svg" alt="">
+            </div><!-- /.footer__logo -->
+            <div class="footer__contacts menucontancts">
+              <div class="contactline contactline__phone">
+                <a href="tel:+7 (495) 799 70 07" class='phonelink active'>+7 (495) 799 70 07</a>
+              </div>
+              <div class="contactline contactline__email">
+                <a href="mailto:info@sweetstore.ru" class='emaillink active'>info@sweetstore.ru</a>
+              </div>
+              <div class=" contactline__messenger">
+                <a href="#" class='msglink'>
+                  <img src="img/WhatsApp.svg" alt="" class='offHover'>
+                  <img src="img/WhatsApp2.svg" alt="" class='onHover'>
+                  <span>
+                    <span>Написать в</span><span>WhatsApp</span> </span>
+                  </span>
+
+
+                </a>
+              </div>
+            </div><!-- /.footer__phone -->
+
+          </div>
+        </div><!-- /.footer__col footer__col_info -->
+        <div class="footer__menublock">
+          <div class="footer__col footer__catalog onlyDesktop">
+            <div class="footer__menu">
+              <ul>
+                <li><a href="">торты в наличии</a></li>
+                <li><a href="">Торты за 48 часов</a></li>
+                <li><a href="">Заказные торты</a></li>
+                <li><a href="">Торты по госту</a></li>
+                <li><a href="">Десерты</a></li>
+
+              </ul>
+            </div><!-- /.footer__menu -->
+          </div><!-- /.footer__catalog -->
+
+          <div class="footer__col onlyDesktop">
+            <div class="footer__menu">
+              <ul>
+                <li><a href="">Книга</a></li>
+                <li><a href="">Онлайн-курс</a></li>
+                <li><a href="">Аудио рассказ</a></li>
+                <li><a href="">Лекции</a></li>
+                <li><a href="">VIp Подарок</a></li>
+
+              </ul>
+            </div><!-- /.footer__menu -->
+          </div>
+          <div class="footer__col ">
+            <div class="footer__menu">
+              <ul>
+                <li><a href="">Наши кондитерские</a></li>
+                <li><a href="">Мероприятия “под ключ”</a></li>
+                <li><a href="">О нас</a></li>
+                <li><a href="">Оплата и доставка</a></li>
+                <li><a href="">Контакты</a></li>
+
+              </ul>
+            </div><!-- /.footer__menu -->
+          </div>
+
+        </div>
+
+        <div class="footer__col footer__col_right">
+          <div class="footer_app">
+            <div class="mobilemenu__app">
+              <div class="mobilemenu__apptext">Скачайте наше приложение и получите скидку <small>до</small>
+                <span class="red">-10%</span>
+              </div>
+              <div class="mobilemenu__appbuttons">
+                <a href="" target="_blank" class="mobilemenu__appbutton animatebtn">
+                  <img src="img/appstore_icon.svg" alt="">
+                  <img src="img/appstore_2.svg" alt="">
+                </a>
+                <a href="" target="_blank" class="mobilemenu__appbutton animatebtn">
+                  <img src="img/gplay_icon.svg" alt="">
+                  <img src="img/gplay_2.svg" alt="">
+                </a>
+              </div><!-- /.mobilemenu__appbuttons -->
+            </div>
+          </div><!-- /.footer_app -->
+        </div><!-- /.footer__col -->
+      </div><!-- /.footer__items -->
+    </div><!-- /.container -->
+  </div><!-- /.footer__main -->
+  <div class="footer__bottom">
+    <div class="container">
+
+      <div class="footer__items">
+        <div class="footer__col ">
+
+          <div class="footer__cols flex items-center">
+            <div class="footer__maincopy">Sweetstore.ru © 2024 | Все права защищены</div>
+          </div>
+        </div><!-- /.footer__col -->
+
+        <div class="footer__col ">
+          <div class="footer__info">
+            <div class="footer__links">
+              <div class="footer__link"><a href="" class='borderlink'>Договор-оферта</a></div>
+              <div class="footer__link"><a href="" class='borderlink'>Политика конфиденциальности</a></div>
+            </div><!-- /.footer__links -->
+            <div class="footer__dev">
+              <a href="" class="fdev">
+                <span class="fdev__title">Разработано в:</span>
+                <span class="fdev__icon"><img src="img/empis.svg" alt=""></span>
+              </a>
+            </div><!-- /.footer__dev -->
+          </div><!-- /.footer__info -->
+         
+
+        </div><!-- /.footer__col -->
+      </div><!-- /.footer__items -->
+    </div><!-- /.container -->
+  </div><!-- /.footer__bottom -->
+</footer>
+
+
+<!-- <div id="toTop">
+  <img src="img/up.svg" alt="">
+</div> -->
+
+
+<script src="js/index.js"></script>
