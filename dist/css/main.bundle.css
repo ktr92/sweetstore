@@ -10209,6 +10209,7 @@ small {
   position: relative;
   overflow: hidden; }
 
+/* 
 .animatebtn::after {
   content: "";
   display: block;
@@ -10216,9 +10217,9 @@ small {
   height: 300px;
   margin-left: 60px;
   background: #fff;
-  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.7) 0%, white 50%, rgba(255, 255, 255, 0.7) 100%);
-  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.7) 0%, white 50%, rgba(255, 255, 255, 0.7) 100%);
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, white 50%, rgba(255, 255, 255, 0.7) 100%);
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.7) 100%);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.7) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.7) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3ffffff', endColorstr='#b3ffffff',GradientType=0 );
   position: absolute;
   left: -40px;
@@ -10238,8 +10239,8 @@ small {
   animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  opacity: 0.4; }
-
+  opacity: 0.4;
+} */
 @media only screen and (max-width: 767px) {
   .catalogpage .cataloglist__items {
     gap: 27px 10px; }
