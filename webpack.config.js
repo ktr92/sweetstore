@@ -7,8 +7,8 @@ const {
 const CopyPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-/* const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-const TerserPlugin = require("terser-webpack-plugin"); */
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 const HtmlWebpackInlineSVGPlugin = require('html-webpack-inline-svg-plugin');
 
 
@@ -38,7 +38,7 @@ const config = {
   mode: "production",
   optimization: {
     minimize: false,
-   /*  minimizer: [
+   minimizer: [
       new CssMinimizerPlugin({
         minimizerOptions: {
           preset: [
@@ -54,7 +54,7 @@ const config = {
       new TerserPlugin({
         extractComments: true,
       }),
-    ], */
+    ]
   },
   module: {
     rules: [{
