@@ -1,4 +1,7 @@
 function initFE() {
+
+  loadImages()
+
   mainSliderInit()
   detailsliderInit()
   imgSliderInit()
@@ -18,6 +21,13 @@ function initFE() {
     fixElement(170, false, 'headermain', 'fixed')
     /* fixElement(300, false, 'headercontainer', 'fixed')
     fixElement(false, 0, 'mobilenav', 'fixed') */
+}
+
+function loadImages() {
+  $('img[data-src]').each(function() {
+    let imageDataSource = $(this).data('src').toString();
+    let setImageSource = $(this).attr('src', imageDataSource);
+  });
 }
 
 $(document).ready(function () {
@@ -539,6 +549,8 @@ function closeByOutsideSelect() {
     }
   })
 }
+
+
 
 window.addEventListener("load", function () {
   initFE()
