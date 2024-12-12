@@ -11,6 +11,13 @@
   .dropdowncart {
     display: none !important;
   }
+  .quantity {
+    padding: 0 10px 0 0;
+  }
+  input.quantity-field{
+    max-width: 45px;
+    font-size: 14px;
+  }
 
   .customblock_flex_663 .customblock_contentside {
     margin-left: 0;
@@ -3725,6 +3732,9 @@ line-height: 160%;
     max-width: 550px;
     margin-left: auto;  
     margin-right: auto;
+  }
+  .footer__link {
+    width: 100%;
   }
 }
 

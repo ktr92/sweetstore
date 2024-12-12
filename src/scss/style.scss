@@ -93,11 +93,10 @@
   font-family: "Sofia Sans";
   src: url("../fonts/SofiaSans-Bold.woff2") format("woff2"),
     url("../fonts/SofiaSans-Bold.woff") format("woff");
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
-
 
 
 @import "./partials/params.scss";
@@ -125,6 +124,7 @@ body {
 }
 
 * {
+  font-feature-settings: 'locl' 0;
   font-family: "Jost";
   font-style: normal;
   -webkit-box-sizing: border-box;
@@ -1477,6 +1477,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin-top: 5px;
 }
 
 .footer__maincopy {
@@ -8123,9 +8124,9 @@ small {
   .btn_ring {
     transform: scale(0.8);
   }
-  .quantity {
+ /*  .quantity {
     display: none;
-  }
+  } */
   .productcard__oldprice {
     position: relative;
     display: inline-block;
@@ -8254,3 +8255,14 @@ opacity: 0.9;
 }
 }
 
+@media (min-width: 1451px) {
+
+  [data-slider-count="4"] {
+    .productcard {
+      max-width: 100%;
+    }
+    .productcard__img {
+      height: 272px;
+    }
+  }
+}

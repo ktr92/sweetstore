@@ -360,7 +360,7 @@ function productSliderInit() {
           // when window width is >= 1440
           1440: {
             width: null,
-            slidesPerView: 5,
+            slidesPerView: $(`#${sliderElm.id}`).data('slider-count'),
             spaceBetween: 15
           }
         }
