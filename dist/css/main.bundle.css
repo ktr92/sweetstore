@@ -10166,7 +10166,7 @@ small {
     transform: rotate(-12deg); }
   .productarrows {
     display: none !important; }
-  .pagebanner__center {
+  .detail__banner .pagebanner__center {
     bottom: -15px;
     right: -15px; }
   .detailbuy .productcard__price .productcard__pricevalue {

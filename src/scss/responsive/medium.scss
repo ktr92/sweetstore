@@ -3641,10 +3641,13 @@
   .productarrows {
     display: none !important;
   }
-  .pagebanner__center {
-    bottom: -15px;
-    right: -15px;
+  .detail__banner {
+    .pagebanner__center {
+      bottom: -15px;
+      right: -15px;
+    }
   }
+
 
   .detailbuy {
     .productcard__price .productcard__pricevalue {
