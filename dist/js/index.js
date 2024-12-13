@@ -34,6 +34,10 @@ function loadImages() {
 $(document).ready(function () {
   new WOW().init();
 
+  $('[data-action="showcartpopup"]').on('click', function(e) {
+    $('#popup_addproduct').modal('show')
+  })
+
 
   $(".js-addmodal").on("click", function (e) {
     e.preventDefault();
