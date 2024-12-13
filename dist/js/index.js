@@ -3,13 +3,14 @@ function initFE() {
   loadImages()
 
   mainSliderInit()
+  projectSliderInit()
   detailsliderInit()
-  imgSliderInit()
+/*   imgSliderInit() */
 
-  recipeSliderInit()
+/*   recipeSliderInit() */
   productSliderInit()
-  contentSliderInit()
-  mobileAccordeon()
+/*   contentSliderInit() */
+/*   mobileAccordeon() */
   closeByOutsideSelect()
   closeByClickOutside('[data-menu="mainmenu"]', '[data-menutoggle="mainmenu"]')
   closeByClickOutside(
@@ -32,12 +33,7 @@ function loadImages() {
 
 $(document).ready(function () {
   new WOW().init();
-  
-  $(".arrowmenu").click(function () {
-    $(".headermenu__wrapper").animate({
-      scrollLeft: "+=226px",
-    })
-  })
+ 
 
   $(window).scroll(function () {
     if ($(this).scrollTop()) {
@@ -51,46 +47,6 @@ $(document).ready(function () {
     $("html, body").animate({ scrollTop: 0 }, 400)
   })
 
-  $(".asidemenubutton .mainmenuLevelOne__link").on("click", function (e) {
-    e.preventDefault()
-    $(this)
-      .closest(".asidemenubutton")
-      .siblings(".asidemenu")
-      .toggleClass("active")
-    $(this).toggleClass("active")
-  })
-
-  document.querySelectorAll('[data-toggle="password"]').forEach((item) => {
-    item.addEventListener("click", (event) => {
-      let inp = item.previousElementSibling
-      if (inp.type === "password") {
-        inp.type = "text"
-        console.log(item)
-        item.classList.add("active")
-      } else {
-        inp.type = "password"
-        item.classList.remove("active")
-      }
-    })
-  })
-
-  $(".js-mobilefilter").on("click", function (e) {
-    e.preventDefault()
-    $(this).toggleClass("active")
-    $(".catalogpage__aside").toggleClass("active")
-  })
-
-  /*  $('.headermain__contacts').on('click', function(e) {
-      e.preventDefault()
-      $(this).toggleClass('active')
-      $('.contacts__dropdown').slideToggle()
-  }) */
-
-  /*   $('button.mainmenubtn').on('click', function(e) {
-      $(this).toggleClass('active')
-      $('.jsbackdrop').toggleClass('active')
-      $('.mainmenu').toggleClass('active')
-  }) */
 
   $("[data-menutoggle]").on("click", function (e) {
     e.preventDefault()
@@ -113,73 +69,12 @@ $(document).ready(function () {
       .siblings(".mobilemenu__level2")
       .toggleClass("active")
   })
-  $(".mobilemenu__level2 .js-toggler").on("click", function (e) {
-    $(this).closest(".mobilemenu__content").toggleClass("active")
-    $(this)
-      .closest(".mobilemenu__item")
-      .find(".mobilemenu__level3")
-      .slideToggle()
-  })
-
-  /* $('.menubutton').on('click', function(e) {
-      $(this).toggleClass('active')
-      $('.mobilemenu').toggleClass('active')
-      $('.jsbackdrop').toggleClass('active')
-      $('.mobilemenu__level2').removeClass('active')
-      $('.mobilemenu__content').removeClass('active')
-
-  }) */
-  /*   $('.jsbackdrop').on('click', function(e) {
-      $(this).removeClass('active')
-      $('.mobilemenu').removeClass('active')
-      $('.menubutton').removeClass('active')
-      $('.mobilemenu__level2').removeClass('active')
-      $('.mobilemenu__content').removeClass('active')
-
-  }) */
-  $(".haederbanner__close").on("click", function (e) {
-    e.preventDefault()
-    $(this).closest(".haederbanner").hide()
-  })
-
-  $(".reviesblock__stars_off").each(function () {
-    let wrapper = $(this)
-    wrapper.find(".fa").each(function (index) {
-      let fa = $(this)
-      let rating = fa.closest("[data-rating]").data("rating")
-      if (index < rating) {
-        $(this).addClass("active")
-      } else {
-        return false
-      }
-    })
-  })
-
-  $(".productcard .cardrating").each(function () {
-    $(this)
-      .find("span.stars-active")
-      .css("width", $(this).find(".cardrating__value").text() * 11.2)
-  })
-  $(".detailinfo__reviews .cardrating").each(function () {
-    $(this)
-      .find("span.stars-active")
-      .css(
-        "width",
-        $(this).find(".cardrating__value").text() *
-          ($(this).find(".fa-star").width() + 2.1)
-      )
-  })
-  $(".reviews__rating .cardrating").each(function () {
-    $(this)
-      .find("span.stars-active")
-      .css("width", $(this).find(".cardrating__value").text() * 18)
-  })
 
   $("input[type=tel]").mask("+7 ___ ___ __ __")
 
-  lightbox.option({
+/*   lightbox.option({
     resizeDuration: 0,
-  })
+  }) */
 
   function incrementValue(e) {
     e.preventDefault()
@@ -271,13 +166,13 @@ function mainSliderInit() {
   )
 }
 
-function contentSliderInit() {
+/* function contentSliderInit() {
   const swiper = new Swiper(".pagecontent__images.swiper", {
     pagination: {
       el: ".mainslider__dots",
     },
   })
-}
+} */
 
 function detailsliderInit() {
   const swiper = new Swiper(".detailswiperpreview", {
@@ -322,6 +217,24 @@ function detailsliderInit() {
       })
     }
   })
+}
+
+function projectSliderInit() {
+  const swiper = new Swiper('[data-slider="projectslider"]', {
+    width: 277,
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 11,
+    pagination: {
+      el: ".projectslider__dots",
+      clickable: true,
+    },
+  })
+
+  $(".projectblock .swiper-pagination-horizontal .swiper-pagination-bullet").css(
+    "width",
+    100 / $(".projectblock .swiper-slide").length - 2 + "%"
+  )
 }
 
 function productSliderInit() {
