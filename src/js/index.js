@@ -33,6 +33,35 @@ function loadImages() {
 
 $(document).ready(function () {
   new WOW().init();
+
+
+  $(".js-addmodal").on("click", function (e) {
+    e.preventDefault();
+    $(this).addClass('active')
+    $("#popup_addproduct").modal("show");
+  });
+  $("#popup_addproduct").on("shown.bs.modal", function (e) {
+    const swiper = new Swiper('[data-slider="modalslider"]', {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+      navigation: {
+        nextEl: `.sliderarrows__right`,
+        prevEl: `.sliderarrows__left`
+      },
+      breakpoints: {
+        // when window width is >= 1024
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 60,
+        },
+        
+      }
+    });
+    $(".wrap-modal-slider").addClass("open"); 
+/*        $(".wrap-modal-slider .productslider__modalslider").slick("setPosition");
+    $(".wrap-modal-slider").addClass("open"); */
+  });
  
 
   $(window).scroll(function () {
