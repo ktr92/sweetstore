@@ -260,4 +260,22 @@
   .detailinfo__text {
     margin-bottom: 20px;
   }
+  .modalcatalog__aside {
+    max-width: 332px;
+    padding: 40px 30px;
+  }
+  .modalcatalog__tabs a {
+    margin-left: -30px;
+    margin-right: -30px;
+    font-size: 18px;
+  }
+  .modalcatalog__items {
+    padding-right: 20px;
+  }
+  .modalcatalog__main {
+    padding-left: 20px;
+  }
+  .modalcatalog__item img {
+    height: 300px;
+  }
 }

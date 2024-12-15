@@ -6,7 +6,7 @@
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1700px) {
   .modal:before {
     display: inline-block;
     vertical-align: middle;
@@ -22,7 +22,7 @@
 }
 
 .modal {
-  z-index: 9999999999;
+  z-index: 9999;
 }
 
 .modal-dialog {
@@ -161,13 +161,13 @@ button.close:hover {
 .selectbox {}
 
 label {
-  display: inline-block;
+  font-weight: 400;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 120%; 
-  margin-bottom: 11px;
-  color: rgba(43, 54, 70, 0.7);
+  line-height: 100%;
+  color: #231f20;
+  margin-bottom: 12px;
+  display: block;
+  opacity: 0.5;
 }
 
 input[type="text"],
@@ -185,10 +185,10 @@ input[type="password"] {
   width: 100%;
   border: none;
   
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+color: #231f20;
   border: 2px solid #f3f3f7;
   /* identical to box height */
 
@@ -199,7 +199,7 @@ input[type="password"] {
   }
 
   &:focus {
-    border: 2px solid $main;
+    border: 2px solid $inpfocus;
   }
 }
 
@@ -214,10 +214,10 @@ textarea {
   width: 100%;
   border: none;
   
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+color: #231f20;
   border: 2px solid #f3f3f7;
   /* identical to box height */
 
@@ -251,12 +251,19 @@ textarea {
   text-transform: uppercase;
   color: #231f20;
   margin-bottom: 35px;
-  padding-left: 29px;
-  background-image: url('data:image/svg+xml,<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="9" cy="9" r="9" fill="%2340C351"/><path fill-rule="evenodd" clip-rule="evenodd" d="M8.29739 9.73003L12.2226 5L14 6.45258L8.56661 13L5 9.903L6.51622 8.18338L8.29739 9.73003Z" fill="white"/></svg>');
-  background-position: left center;
-  background-repeat: no-repeat;
+  text-align: center;
+ 
 }
+#popup_addproduct {
+  .modal-title {
+    padding-left: 29px;
+    background-image: url('data:image/svg+xml,<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="9" cy="9" r="9" fill="%2340C351"/><path fill-rule="evenodd" clip-rule="evenodd" d="M8.29739 9.73003L12.2226 5L14 6.45258L8.56661 13L5 9.903L6.51622 8.18338L8.29739 9.73003Z" fill="white"/></svg>');
+    background-position: left center;
+    background-repeat: no-repeat;
+    text-align: left;
+  }
 
+}
 .modal-body {
   padding: 0;
   overflow: visible;
@@ -291,8 +298,8 @@ textarea {
 .modal_small .modal-content {
   min-height: initial;
   width: 494px;
-  max-width: calc(100% - 36px);
-  padding-bottom: 57px;
+  max-width: 100%;
+  padding-bottom: 42px;
   padding-top: 49px;
   margin-left: auto;
   margin-right: auto;
@@ -326,10 +333,11 @@ textarea {
 }
 
 .formblock .check label {
-  font-size: 13px;
-  line-height: 110%;
-  margin-bottom: 0;
-  padding-left: 25px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: #231f20;
+  opacity: 1;
 }
 
 /* .formblock .check label:before {
@@ -373,17 +381,13 @@ textarea {
 }
 
 .buttonsrow__item_full {
-  margin-bottom: 8px;
-
-  a {
-    height: 60px;
-    line-height: 60px;
+  button, a {
+    width: 100%;
+    display: block;
+    height: 50px;
+    line-height: 50px;
   }
 
-  a.btn_border {
-    height: 60px;
-    line-height: 60px;
-  }
 }
 
 .passwordforgot a {
@@ -406,6 +410,8 @@ textarea {
   line-height: 24px;
   /* identical to box height */
   color: #283647;
+  opacity: 1;
+  margin-bottom: 0;
 }
 
 .textlogin {
@@ -451,7 +457,7 @@ textarea {
 }
 
 .modal-submit_small {
-  margin-top: 17px;
+  margin-top: 37px;
 }
 
 .formblock__input:last-child {
@@ -694,7 +700,141 @@ textarea {
 textarea {
   resize: none;
 }
+.modal_xxl {
+  button.close {
+    top: 15px;
+    
+  }
+  .modal-dialog {
+    width: 1460px;
+  }
+  .modal-content {
+    padding: 0;
+    border-radius: 12px;
 
+    overflow: hidden;
+  }
+}
+.modalcatalog__main {
+  width: 100%;
+}
+.modalcatalog__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  height: 730px;
+  overflow: auto;
+  padding-right: 27px;
+  width: 100%;
+
+  &::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+  }
+  
+  
+}
+.modalcatalog__item {
+  width: calc(33.33333% - 11px);
+
+}
+.modalcatalog__item {
+  position: relative;
+  a {
+    display: block;
+  }
+  img {
+    width: 294px;
+    height: 368px;
+    object-position: bottom;
+    object-fit: cover;
+    border-radius: 8px;
+
+  }
+}
+
+.modalcatalog__wrapper {
+  display: flex;
+
+}
+.modalcatalog__main {
+  padding: 35px 23px 35px 35px;
+}
+.modalcatalog__button {
+  max-width: 332px;
+}
+
+.modalcatalog__aside {
+  max-width: 454px;
+  width: 100%;
+  background: #f8f8f8;
+  padding: 54px 33px 46px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.modalcatalog__title {
+  font-family: var(--second-family);
+font-weight: 700;
+font-size: 36px;
+text-transform: uppercase;
+color: #231f20;
+margin-bottom: 26px;
+}
+.modalcatalog__text {
+  margin-bottom: 57px;
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+line-height: 130%;
+color: #212121;
+opacity: 0.7
+}
+
+.modalcatalog__tabs {
+  ul {
+    @include clear;
+  }
+  a {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #231f20;
+    padding: 22px 22px 22px 60px;
+    display: block;
+    position: relative;
+    margin-left: -60px;
+    margin-right: -33px;
+
+    &:hover {
+      color: #b81b37;
+
+    }
+
+    &.active {
+      color: #b81b37;
+      background: #fff;
+    }
+    &.active:before {
+ 
+      content: "";
+      width: 6px;
+height: 6px;
+background: #b81b37;
+transform: rotate(45deg) translateY(-50%);
+display: block;
+position: absolute;
+left: 40px;
+top: 50%;
+
+    }
+  }
+
+
+
+}
 
 @include medium-screen {
   .pickuplist__addr {

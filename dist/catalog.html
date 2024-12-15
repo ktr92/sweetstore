@@ -49,7 +49,7 @@
   <link rel="stylesheet" href="css/main.bundle.css" />
 
 
-<!--   <script src="js/lightbox.min.js"></script> -->
+
 <!--   <script src="js/selectbox.js"></script> -->
 
   <!-- <script src="js/fixedcart.js"></script> -->
@@ -57,10 +57,11 @@
   
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/maskedinput.min.js"></script>
+<script src="js/jquery.inputmask.min.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/jquery.zoom.min.js"></script>
+<script src="js/lightbox.min.js"></script>
 
 </head>
 
@@ -1770,6 +1771,231 @@
   <img src="img/up.svg" alt="">
 </div> -->
 
+<div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_callback'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal__header">
+          <div class="modal-title">Заказать звонок</div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="img/closebutton.svg" alt="">
+          </span>
+        </button>
+        <div class="modal-body">
+          <form action="">
+            <div class="formblock">
+              <div class="formblock__main">
+                <div class="formblock__input">
+                  <label for="">ФИО</label>
+                  <input type="text" class='input-error' value='123'>
+                  <span class="input-errortext">Имя не может содержать символы: 123</span>
+
+                </div><!-- /.formblock__input -->
+                <div class="formblock__input">
+                  <label for="">Email</label>
+                  <input type="email" placeholder=''>
+                </div><!-- /.formblock__input -->
+                <div class="formblock__input">
+                  <label for="">Телефон</label>
+                  <input type="tel" placeholder='+7 '>
+                </div><!-- /.formblock__input -->
+              </div><!-- /.formblock__main -->
+              <div class="modal-submit modal-submit_small">
+                <div class="buttonsrow">
+                  <div class="buttonsrow__item buttonsrow__item_full">
+                    <button type='submit' class='btn btn_main'>Оформить заказ</button>
+                  </div>
+                  <!-- /.buttonsrow__item -->
+                </div>
+                <!-- /.buttonsrow -->
+              </div>
+              <div class="formblock__check">
+                <div class="check">
+                  <input type="checkbox" id="agree" checked="checked" value="Y">
+                  <label for="agree">Я подтверждаю свое согласие с обработкой <a href="">ПЕРСОНАЛЬНЫХ ДАННЫХ</a> 
+                  </label>
+                </div>
+              </div><!-- /.formblock__check -->
+             
+            </div><!-- /.formblock -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal_xxl fade" tabindex="-1" role="dialog" id='popup_catalog'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="img/closebutton.svg" alt="">
+          </span>
+        </button>
+        <div class="modal-body">
+            <div class="modalcatalog">
+              <div class="modalcatalog__wrapper" data-tabs='modalcatalog'>
+                <div class="modalcatalog__aside">
+                  <div class="modalcatalog__content">
+                    <div class="modalcatalog__title">Заказные  <br>
+                      торты</div>
+                    <div class="modalcatalog__text">Выберите один из шедевров наших мастеров или мы готовы воплотить любую вашу идею в реальность!</div>
+                    <div class="modalcatalog__tabs" data-headertabs='modalcatalog'>
+                      <ul>
+                        <li><a href="#">На день рождения</a></li>
+                        <li><a href="#" class='active'>Свадебные</a></li>
+                        <li><a href="#">Праздничные</a></li>
+                        <li><a href="#">Детские</a></li>
+                      </ul>
+                    </div><!-- /.modalcatalog__tabs -->
+                  </div><!-- /.modalcatalog__content -->
+                  <div class="modalcatalog__footer onlyDesktop">
+                    <div class="modalcatalog__button"><a href="#popup_callback" data-toggle="modal" class='btn_main w-full'>Оставить заявку</a></div><!-- /.modalcatalog__button -->
+                  </div><!-- /.modalcatalog__footer onlyDesktop -->
+                </div><!-- /.modalcatalog__aside -->
+                <div class="modalcatalog__main">
+                  <div class="modalcatalog__tab" data-contenttabs='modalcatalog'>
+                    <div class="modalcatalog__items">
+                      <div class="modalcatalog__item">
+                        <a href="img/categoryblock__image1.webp" data-lightbox='modalcatalog_1'>
+                          <span class="modalcatalog__img">
+                            <img src="img/categoryblock__image1.webp" alt="" width='294' height='368'>
+                          </span>
+                        </a>
+                      </div><!-- /.modalcatalog__item -->
+                      <div class="modalcatalog__item">
+                        <a href="img/categoryblock__image1.webp" data-lightbox='modalcatalog_1'>
+                          <span class="modalcatalog__img">
+                            <img src="img/categoryblock__image1.webp" alt="" width='294' height='368'>
+                          </span>
+                        </a>
+                      </div><!-- /.modalcatalog__item -->
+                      <div class="modalcatalog__item">
+                        <a href="img/categoryblock__image1.webp" data-lightbox='modalcatalog_1'>
+                          <span class="modalcatalog__img">
+                            <img src="img/categoryblock__image1.webp" alt="" width='294' height='368'>
+                          </span>
+                        </a>
+                      </div><!-- /.modalcatalog__item -->
+                      <div class="modalcatalog__item">
+                        <a href="img/categoryblock__image1.webp" data-lightbox='modalcatalog_1'>
+                          <span class="modalcatalog__img">
+                            <img src="img/categoryblock__image1.webp" alt="" width='294' height='368'>
+                          </span>
+                        </a>
+                      </div><!-- /.modalcatalog__item -->
+                     
+                     
+                    </div><!-- /.modalcatalog__items -->
+                  </div><!-- /.modalcatalog__tab -->
+                  <div class="modalcatalog__tab active" data-contenttabs='modalcatalog' >
+                    <div class="modalcatalog__sliderwrapper" data-slider="modalcatalog">
+
+                    <div class="modalcatalog__items">
+                      <div class="modalcatalog__item">
+                        <a href="img/categoryblock__image1.webp" data-lightbox='modalcatalog_1'>
+                          <span class="modalcatalog__img">
+                            <img src="img/categoryblock__image1.webp" alt="" width='294' height='368'>
+                          </span>
+                        </a>
+                      </div><!-- /.modalcatalog__item -->
+                      <div class="modalcatalog__item">
+                        <a href="img/categoryblock__image1.webp" data-lightbox='modalcatalog_1'>
+                          <span class="modalcatalog__img">
+                            <img src="img/categoryblock__image1.webp" alt="" width='294' height='368'>
+                          </span>
+                        </a>
+                      </div><!-- /.modalcatalog__item -->
+                      <div class="modalcatalog__item">
+                        <a href="img/categoryblock__image1.webp" data-lightbox='modalcatalog_1'>
+                          <span class="modalcatalog__img">
+                            <img src="img/categoryblock__image1.webp" alt="" width='294' height='368'>
+                          </span>
+                        </a>
+                      </div><!-- /.modalcatalog__item -->
+                      <div class="modalcatalog__item">
+                        <a href="img/categoryblock__image1.webp" data-lightbox='modalcatalog_1'>
+                          <span class="modalcatalog__img">
+                            <img src="img/categoryblock__image1.webp" alt="" width='294' height='368'>
+                          </span>
+                        </a>
+                      </div><!-- /.modalcatalog__item -->
+                      <div class="modalcatalog__item">
+                        <a href="img/categoryblock__image1.webp" data-lightbox='modalcatalog_1'>
+                          <span class="modalcatalog__img">
+                            <img src="img/categoryblock__image1.webp" alt="" width='294' height='368'>
+                          </span>
+                        </a>
+                      </div><!-- /.modalcatalog__item -->
+                      <div class="modalcatalog__item">
+                        <a href="img/categoryblock__image1.webp" data-lightbox='modalcatalog_1'>
+                          <span class="modalcatalog__img">
+                            <img src="img/categoryblock__image1.webp" alt="" width='294' height='368'>
+                          </span>
+                        </a>
+                      </div><!-- /.modalcatalog__item -->
+                      <div class="modalcatalog__item">
+                        <a href="img/categoryblock__image1.webp" data-lightbox='modalcatalog_1'>
+                          <span class="modalcatalog__img">
+                            <img src="img/categoryblock__image1.webp" alt="" width='294' height='368'>
+                          </span>
+                        </a>
+                      </div><!-- /.modalcatalog__item -->
+                      <div class="modalcatalog__item">
+                        <a href="img/categoryblock__image1.webp" data-lightbox='modalcatalog_1'>
+                          <span class="modalcatalog__img">
+                            <img src="img/categoryblock__image1.webp" alt="" width='294' height='368'>
+                          </span>
+                        </a>
+                      </div><!-- /.modalcatalog__item -->
+                    </div><!-- /.modalcatalog__items -->
+
+                  </div><!-- /.modalcatalog__sliderwrapper -->
+                  <div class="modalcatalog-pagination_mob"></div>
+
+                  </div><!-- /.modalcatalog__tab -->
+                  <div class="modalcatalog__tab" data-contenttabs='modalcatalog'>
+                    <div class="modalcatalog__items">
+                      <div class="modalcatalog__item">
+                        <a href="img/categoryblock__image1.webp" data-lightbox='modalcatalog_1'>
+                          <span class="modalcatalog__img">
+                            <img src="img/categoryblock__image1.webp" alt="" width='294' height='368'>
+                          </span>
+                        </a>
+                      </div><!-- /.modalcatalog__item -->
+                    </div><!-- /.modalcatalog__items -->
+                  </div><!-- /.modalcatalog__tab -->
+                  <div class="modalcatalog__tab" data-contenttabs='modalcatalog'>
+                    <div class="modalcatalog__items">
+                      <div class="modalcatalog__item">
+                        <a href="img/categoryblock__image1.webp" data-lightbox='modalcatalog_1'>
+                          <span class="modalcatalog__img">
+                            <img src="img/categoryblock__image1.webp" alt="" width='294' height='368'>
+                          </span>
+                        </a>
+                      </div><!-- /.modalcatalog__item -->
+                    </div><!-- /.modalcatalog__items -->
+                  </div><!-- /.modalcatalog__tab -->
+                </div><!-- /.modalcatalog__main -->
+               
+                
+              </div><!-- /.modalcatalog__wrapper -->
+              <div class="modalcatalog__main onlyMobile">
+                <div class="modalcatalog__footer ">
+                  <div class="modalcatalog__button"><a href="#popup_callback" data-toggle="modal" class='btn_main w-full'>Оставить заявку</a></div><!-- /.modalcatalog__button -->
+                </div><!-- /.modalcatalog__footer onlyDesktop -->
+              </div><!-- /.modalcatalog__main -->
+            </div><!-- /.modalcatalog -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="modal fade" tabindex="-1" role="dialog" id="popup_addproduct">
   <div class="modal-dialog modal-dialog_product" role="document">

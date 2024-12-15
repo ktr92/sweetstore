@@ -32,6 +32,8 @@ function initFE() {
 
 /*   recipeSliderInit() */
   productSliderInit()
+
+  maskInit()
 /*   contentSliderInit() */
 /*   mobileAccordeon() */
   closeByOutsideSelect()
@@ -46,7 +48,18 @@ function initFE() {
     /* fixElement(300, false, 'headercontainer', 'fixed')
     fixElement(false, 0, 'mobilenav', 'fixed') */
 }
-
+function maskInit() {
+  $("[type='tel']").inputmask({
+    mask: "+7 999 999 9999",
+    placeholder: "+7             ",
+    clearIncomplete: false,
+    definitions: {
+      0: {
+        validator: "+7 999 999 9999",
+      },
+    },
+  })
+}
 function loadImages() {
   $('img[data-src]').each(function() {
     let imageDataSource = $(this).data('src').toString();
@@ -124,13 +137,15 @@ $(document).ready(function () {
       .closest(".jscatalog")
       .siblings(".mobilemenu__level2")
       .toggleClass("active")
-  })
+  });
+/* 
+  $("input[type=tel]").mask("+7 ___ ___ __ __") */
 
-  $("input[type=tel]").mask("+7 ___ ___ __ __")
+ 
 
-/*   lightbox.option({
+  lightbox.option({
     resizeDuration: 0,
-  }) */
+  })
 
   function incrementValue(e) {
     e.preventDefault()
@@ -271,6 +286,48 @@ function detailsliderInit() {
       $(".zoom-box").each(function () {
         $(this).zoom()
       })
+    }
+
+    if ($(window).width() <= 1023) {
+      $('.modalcatalog__tab').addClass('swiper')
+      $('.modalcatalog__items').addClass('swiper-wrapper')
+      $('.modalcatalog__item').addClass('swiper-slide')
+
+
+      $("#popup_catalog").on("shown.bs.modal", function (e) {
+        var modalcatalog = new Swiper('[data-slider="modalcatalog"]', {
+          slidesPerView: 2,
+          grid: {
+            rows: 2,
+          },
+          spaceBetween: 7,
+          pagination: {
+            el: ".modalcatalog-pagination_mob",
+            clickable: true,
+          },
+          breakpoints: {
+     
+            // when window width is >= 1024
+            500: {
+              slidesPerView: 3,
+              grid: {
+                rows: 2,
+              },
+            },
+          
+            767: {
+              slidesPerView: 4,
+              grid: {
+                rows: 2,
+              },
+            },
+          
+          
+          }
+        })
+      });
+
+     
     }
   })
 }

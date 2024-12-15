@@ -1657,7 +1657,7 @@ ul.mainmenuLevelOne {
   display: flex;
   margin: 0 -5px;
 } */
-
+/* 
 .buttonsrow__item {
   a.btn_main,
   a.btn_border,
@@ -1677,7 +1677,7 @@ ul.mainmenuLevelOne {
   .btn_border {
     line-height: 46px;
   }
-}
+} */
 
 .btn_gray {
   color: $gray;
@@ -1752,7 +1752,11 @@ ul.mainmenuLevelOne {
     }
   }
 }
-
+.w-full {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
 /* width */
 ::-webkit-scrollbar {
   width: 8px;
@@ -3720,7 +3724,7 @@ a.active {
   background: rgba(52, 60, 75, 0.5);
   display: none;
   position: fixed;
-  z-index: 99999;
+  z-index: 999;
   height: 100%;
   min-height: 100vh;
   left: 0;
@@ -5143,12 +5147,13 @@ input.input_image {
 .check label {
   cursor: pointer;
   display: inline-block;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 120%;
-  padding-left: 38px;
+  font-weight: 500;
+font-size: 14px;
+line-height: 130%;
+color: #231f20;
+  padding-left: 32px;
   position: relative;
+  margin-bottom: 0;
 }
 
 .check input[type="checkbox"] {
@@ -5157,8 +5162,7 @@ input.input_image {
 
 .check label a {
   text-decoration: underline;
-  color: rgba(43, 54, 70, 0.5);
-}
+  color: #231f20;}
 
 .check label a:hover {
   text-decoration: none;
@@ -5271,7 +5275,7 @@ iframe {
 }
 
 .formblock__input {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .modal__header {
