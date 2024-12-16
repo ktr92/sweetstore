@@ -4077,14 +4077,14 @@
     margin-bottom: 20px;
     margin-top: 0;
     display: flex;
- 
+
     gap: 18px;
     br {
       display: none;
     }
   }
   .pagedelivery {
-    padding:  0;
+    padding: 0;
   }
   .pagedelivery__steptext {
     height: 42px;
@@ -4121,25 +4121,85 @@
   .pagedelivery__text {
     font-size: 14px;
     line-height: 120%;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
   }
- .pagedelivery__tabscontacts {
-  flex-wrap: wrap;
-  gap: 22px;
- }
- .pagedelivery__tabscontactlink a {
-  font-size: 16px;
- }
- .pagedelivery__tabscontact {
-  width: 100%;
- }
- .pagedelivery__tabsheader {
-  margin-bottom: 26px;
- }
- .pagedelivery__tabsbutton {
-  padding: 23px 18px;
- }
- .pagedelivery__tabsbutton.active {
-  border-color: transparent;
- }
+  .pagedelivery__tabscontacts {
+    flex-wrap: wrap;
+    gap: 22px;
+  }
+  .pagedelivery__tabscontactlink a {
+    font-size: 16px;
+  }
+  .pagedelivery__tabscontact {
+    width: 100%;
+  }
+  .pagedelivery__tabsheader {
+    margin-bottom: 26px;
+  }
+  .pagedelivery__tabsbutton {
+    padding: 23px 18px;
+  }
+  .pagedelivery__tabsbutton.active {
+    border-color: transparent;
+  }
+  .menupage__tabsheaderitem {
+    font-size: 14px;
+  }
+  .menupage__tabsheader {
+    /*  gap: 42px; */
+    width: 100%;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    & {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
+  .menupage__tabsheaderitem {
+    padding-bottom: 28px;
+    padding-left: 21px;
+    padding-right: 21px;
+    white-space: nowrap;
+  }
+  .menupage__main {
+    margin: 28px 0;
+  }
+  .menupage__tabsheader {
+    margin-bottom: 28px;
+  }
+  .pageheader__filter {
+    width: 100%;
+
+  }
+  .pageheader .mainmenu__list.mainmenu__list_row {
+    width: 100%;
+    overflow: auto;
+
+    li {
+      max-width: 130px;
+      a {
+        white-space: initial;
+      }
+    }
+    
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    & {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+    ul {
+      justify-content: flex-start;
+      display: flex;
+      flex-wrap: nowrap;
+    }
+  }
 }
