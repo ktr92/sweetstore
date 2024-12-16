@@ -8007,6 +8007,20 @@ small {
   background-position: left center;
   background-repeat: no-repeat; }
 
+.productpage__images_project {
+  border-radius: 9px;
+  background: #f8f8f8;
+  overflow: hidden; }
+
+.detail_project .detailinfo__content .btn_ring {
+  transform: none; }
+
+.detail_project .blockheader__left h2 {
+  font-weight: 700;
+  font-size: 58px;
+  text-transform: uppercase;
+  color: #231f20; }
+
 @media only screen and (max-width: 1700px) {
   .pagedetail__aside {
     max-width: 330px;
@@ -11091,7 +11105,17 @@ small {
     .pageheader .mainmenu__list.mainmenu__list_row ul {
       justify-content: flex-start;
       display: flex;
-      flex-wrap: nowrap; } }
+      flex-wrap: nowrap; }
+  .productpage__right {
+    margin-top: 20px; }
+  .detail_project .detailinfo__content .btn_ring {
+    transform: scale(0.8); }
+  .detail_project .blockheader__left h2 {
+    text-align: left;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; } }
 
 @media only screen and (max-width: 767px) {
   .catalogpage .cataloglist__items {

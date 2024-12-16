@@ -4202,4 +4202,21 @@
       flex-wrap: nowrap;
     }
   }
+  .productpage__right{
+    margin-top: 20px;
+  }
+
+  .detail_project {
+    .detailinfo__content .btn_ring{
+      transform: scale(0.8);
+    }
+    .blockheader__left h2{
+      text-align: left;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%;
+    }
+  }
+  
 }

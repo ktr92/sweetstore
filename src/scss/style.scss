@@ -8678,3 +8678,21 @@ small {
 
 
 }
+
+.productpage__images_project {
+  border-radius: 9px;
+  background: #f8f8f8;
+  overflow: hidden;
+}
+
+.detail_project {
+  .detailinfo__content .btn_ring{
+    transform: none;
+  }
+  .blockheader__left h2{
+    font-weight: 700;
+font-size: 58px;
+text-transform: uppercase;
+color: #231f20;
+  }
+}
