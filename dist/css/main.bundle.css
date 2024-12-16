@@ -8072,6 +8072,79 @@ small {
 .page .pagebanner {
   margin-bottom: 68px; }
 
+.pagefilial__mainimage {
+  position: relative;
+  overflow: hidden;
+  height: 541px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .pagefilial__mainimage img {
+    border-radius: 12px; }
+
+a.pagefilial_3d {
+  position: absolute; }
+
+.contactitem__main {
+  max-width: 484px;
+  width: 100%; }
+
+.pagefilial__tour {
+  width: 100%;
+  max-width: 840px; }
+
+.pagefilial__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.pagefilial__title {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 36px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  color: #231f20;
+  margin-bottom: 37px; }
+
+.pagefilial__info .contactitem__info {
+  background: #f8f8f8;
+  max-width: 130px; }
+
+.pagefilial__info {
+  margin-top: 38px; }
+
+.pagefilial {
+  padding: 31px 0; }
+  .pagefilial .contactline__messenger {
+    margin-right: 0; }
+  .pagefilial .linkred {
+    margin-right: 20px; }
+    .pagefilial .linkred:last-of-type {
+      margin-top: 0; }
+
+.pagefilial__footer {
+  margin: 69px 0 31px 0; }
+  .pagefilial__footer .pagefilial__slide {
+    width: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .pagefilial__footer .pagefilial__slide a {
+      display: inline-block;
+      height: 400px; }
+      .pagefilial__footer .pagefilial__slide a img {
+        object-fit: cover;
+        object-position: center;
+        border-radius: 8px;
+        height: 100%; }
+
+.pagefilial:nth-child(2) {
+  background: #f8f8f8; }
+
 @media only screen and (max-width: 1700px) {
   .pagedetail__aside {
     max-width: 330px;
@@ -11332,7 +11405,7 @@ small {
     width: 100%;
     -webkit-box-shadow: 0px 0px 40px rgba(37, 52, 79, 0.15);
     box-shadow: 0px 0px 40px rgba(37, 52, 79, 0.15);
-    z-index: 999999; }
+    z-index: 99; }
   #headermain.fixed .headermenu__wrapper {
     width: 100%; }
   #headermain.fixed .headermain__contacts {

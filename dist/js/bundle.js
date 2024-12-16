@@ -22,20 +22,19 @@ var __webpack_exports__ = {};
   !*** ./src/js/index.js ***!
   \*************************/
 function initFE() {
-
   loadImages()
 
   mainSliderInit()
   projectSliderInit()
   detailsliderInit()
-/*   imgSliderInit() */
+  /*   imgSliderInit() */
 
-/*   recipeSliderInit() */
+  /*   recipeSliderInit() */
   productSliderInit()
-
+  filialSliderinit()
   maskInit()
-/*   contentSliderInit() */
-/*   mobileAccordeon() */
+  /*   contentSliderInit() */
+  /*   mobileAccordeon() */
   closeByOutsideSelect()
   closeByClickOutside('[data-menu="mainmenu"]', '[data-menutoggle="mainmenu"]')
   closeByClickOutside(
@@ -43,9 +42,9 @@ function initFE() {
     '[data-menutoggle="catalogmenu"]'
   )
   closeByClickOutside(".catalogpage__aside", ".js-mobilefilter")
-/*     fixElement(false, 750, 'mobpriceFixed', 'fixed') */
-    fixElement(170, false, 'headermain', 'fixed')
-    /* fixElement(300, false, 'headercontainer', 'fixed')
+  /*     fixElement(false, 750, 'mobpriceFixed', 'fixed') */
+  fixElement(170, false, "headermain", "fixed")
+  /* fixElement(300, false, 'headercontainer', 'fixed')
     fixElement(false, 0, 'mobilenav', 'fixed') */
 }
 function maskInit() {
@@ -61,25 +60,24 @@ function maskInit() {
   })
 }
 function loadImages() {
-  $('img[data-src]').each(function() {
-    let imageDataSource = $(this).data('src').toString();
-    let setImageSource = $(this).attr('src', imageDataSource);
-  });
+  $("img[data-src]").each(function () {
+    let imageDataSource = $(this).data("src").toString()
+    let setImageSource = $(this).attr("src", imageDataSource)
+  })
 }
 
 $(document).ready(function () {
-  new WOW().init();
+  new WOW().init()
 
-  $('[data-action="showcartpopup"]').on('click', function(e) {
-    $('#popup_addproduct').modal('show')
+  $('[data-action="showcartpopup"]').on("click", function (e) {
+    $("#popup_addproduct").modal("show")
   })
 
-
   $(".js-addmodal").on("click", function (e) {
-    e.preventDefault();
-    $(this).addClass('active')
-    $("#popup_addproduct").modal("show");
-  });
+    e.preventDefault()
+    $(this).addClass("active")
+    $("#popup_addproduct").modal("show")
+  })
   $("#popup_addproduct").on("shown.bs.modal", function (e) {
     const swiper = new Swiper('[data-slider="modalslider"]', {
       loop: true,
@@ -87,7 +85,7 @@ $(document).ready(function () {
       spaceBetween: 0,
       navigation: {
         nextEl: `.sliderarrows__right`,
-        prevEl: `.sliderarrows__left`
+        prevEl: `.sliderarrows__left`,
       },
       breakpoints: {
         // when window width is >= 1024
@@ -95,14 +93,12 @@ $(document).ready(function () {
           slidesPerView: 2,
           spaceBetween: 60,
         },
-        
-      }
-    });
-    $(".wrap-modal-slider").addClass("open"); 
-/*        $(".wrap-modal-slider .productslider__modalslider").slick("setPosition");
+      },
+    })
+    $(".wrap-modal-slider").addClass("open")
+    /*        $(".wrap-modal-slider .productslider__modalslider").slick("setPosition");
     $(".wrap-modal-slider").addClass("open"); */
-  });
- 
+  })
 
   $(window).scroll(function () {
     if ($(this).scrollTop()) {
@@ -115,7 +111,6 @@ $(document).ready(function () {
   $("#toTop").click(function () {
     $("html, body").animate({ scrollTop: 0 }, 400)
   })
-
 
   $("[data-menutoggle]").on("click", function (e) {
     e.preventDefault()
@@ -137,11 +132,9 @@ $(document).ready(function () {
       .closest(".jscatalog")
       .siblings(".mobilemenu__level2")
       .toggleClass("active")
-  });
-/* 
+  })
+  /* 
   $("input[type=tel]").mask("+7 ___ ___ __ __") */
-
- 
 
   lightbox.option({
     resizeDuration: 0,
@@ -186,45 +179,50 @@ $(document).ready(function () {
   $(".quantity").on("click", ".quantity-minus", function (e) {
     decrementValue(e)
   })
-
-
   ;(function ($) {
     $(function () {
       $("[data-headertabs]").on("click", "a:not(.active)", function (e) {
         e.preventDefault()
-        const li = $(this).closest('li')
-        $(this)
+        const li = $(this).closest("li")
+        $(this).addClass("active")
+        li.siblings().find("a").removeClass("active")
+        li.closest("[data-tabs]")
+          .find("[data-contenttabs]")
+          .removeClass("active")
+          .eq(li.index())
           .addClass("active")
-          li.siblings().find('a').removeClass("active")
-          li.closest("[data-tabs]").find("[data-contenttabs]").removeClass("active").eq(li.index()).addClass("active")
       })
     })
   })(jQuery)
-
   ;(function ($) {
     $(function () {
-      $("[data-headertabs]").on("click", "[data-headertab]:not(.active)", function (e) {
-        e.preventDefault()
-        $(this)
-          .addClass("active")
+      $("[data-headertabs]").on(
+        "click",
+        "[data-headertab]:not(.active)",
+        function (e) {
+          e.preventDefault()
+          $(this).addClass("active")
           $(this).siblings().removeClass("active")
-          $(this).closest("[data-tabs]").find("[data-contenttabs]").removeClass("active").eq($(this).index()).addClass("active")
-      })
+          $(this)
+            .closest("[data-tabs]")
+            .find("[data-contenttabs]")
+            .removeClass("active")
+            .eq($(this).index())
+            .addClass("active")
+        }
+      )
     })
   })(jQuery)
-
 })
 
 function mainSliderInit() {
   var swiper = new Swiper('[data-slider="mainslider"]', {
-  
     pagination: {
       el: ".mainslider-pagination_mob",
       clickable: true,
     },
 
     breakpoints: {
-
       // when window width is >= 1024
       1024: {
         direction: "vertical",
@@ -232,10 +230,8 @@ function mainSliderInit() {
           el: ".mainslider-pagination_desk",
           clickable: true,
         },
-    
       },
-      
-    }
+    },
   })
 
   $(".mainslider .swiper-pagination-vertical .swiper-pagination-bullet").css(
@@ -269,15 +265,12 @@ function detailsliderInit() {
     freeMode: true,
     watchSlidesProgress: true,
     breakpoints: {
-     
       // when window width is >= 1024
       1024: {
         spaceBetween: 9,
         direction: "vertical",
-
       },
-    
-    }
+    },
   })
   const swiper2 = new Swiper(".detailswiper", {
     navigation: {
@@ -301,10 +294,9 @@ function detailsliderInit() {
     }
 
     if ($(window).width() <= 1023) {
-      $('.modalcatalog__tab').addClass('swiper')
-      $('.modalcatalog__items').addClass('swiper-wrapper')
-      $('.modalcatalog__item').addClass('swiper-slide')
-
+      $(".modalcatalog__tab").addClass("swiper")
+      $(".modalcatalog__items").addClass("swiper-wrapper")
+      $(".modalcatalog__item").addClass("swiper-slide")
 
       $("#popup_catalog").on("shown.bs.modal", function (e) {
         var modalcatalog = new Swiper('[data-slider="modalcatalog"]', {
@@ -318,7 +310,6 @@ function detailsliderInit() {
             clickable: true,
           },
           breakpoints: {
-     
             // when window width is >= 1024
             500: {
               slidesPerView: 3,
@@ -326,20 +317,16 @@ function detailsliderInit() {
                 rows: 2,
               },
             },
-          
+
             767: {
               slidesPerView: 4,
               grid: {
                 rows: 2,
               },
             },
-          
-          
-          }
+          },
         })
-      });
-
-     
+      })
     }
   })
 }
@@ -356,15 +343,30 @@ function projectSliderInit() {
     },
   })
 
-  $(".projectblock .swiper-pagination-horizontal .swiper-pagination-bullet").css(
-    "width",
-    100 / $(".projectblock .swiper-slide").length - 2 + "%"
-  )
+  $(
+    ".projectblock .swiper-pagination-horizontal .swiper-pagination-bullet"
+  ).css("width", 100 / $(".projectblock .swiper-slide").length - 2 + "%")
+}
+
+function filialSliderinit() {
+  const buildSwiperSlider = (sliderElm) => {
+    const sliderIdentifier = sliderElm.id
+    console.log(sliderIdentifier)
+    return new Swiper(`#${sliderElm.id}`, {
+      loop: true,
+      slidesPerView: "auto",
+      spaceBetween: 16,
+      centeredSlides: true,
+
+    })
+  }
+
+  const allSliders = document.querySelectorAll('[data-slider="pagefilial"]')
+  allSliders.forEach((slider) => buildSwiperSlider(slider))
 }
 
 function productSliderInit() {
-
-  const buildSwiperSlider = sliderElm => {
+  const buildSwiperSlider = (sliderElm) => {
     const sliderIdentifier = sliderElm.id
     console.log(sliderIdentifier)
     return new Swiper(`#${sliderElm.id}`, {
@@ -372,133 +374,41 @@ function productSliderInit() {
       slidesPerView: 1,
       spaceBetween: 15,
       width: null,
-        navigation: {
-            nextEl: `.swiper-next.arrows_${sliderIdentifier}`,
-            prevEl: `.swiper-prev.arrows_${sliderIdentifier}`
+      navigation: {
+        nextEl: `.swiper-next.arrows_${sliderIdentifier}`,
+        prevEl: `.swiper-prev.arrows_${sliderIdentifier}`,
+      },
+      breakpoints: {
+        // when window width is >= 320
+        320: {
+          width: 287,
+          slidesPerView: 1,
+          spaceBetween: 10,
         },
-        breakpoints: {
-          // when window width is >= 320
-          320: {
-            width: 287,
-            slidesPerView: 1,
-            spaceBetween: 10
-          },
-          // when window width is >= 767
-          767: {
-            width: null,
-            slidesPerView: 3,
-            spaceBetween: 10
-          },
-          // when window width is >= 1024
-          1024: {
-            width: null,
-            slidesPerView: 4,
-            spaceBetween: 15
-          },
-          // when window width is >= 1440
-          1440: {
-            width: null,
-            slidesPerView: $(`#${sliderElm.id}`).data('slider-count'),
-            spaceBetween: 15
-          }
-        }
-       
-    });
-}
-
-// Get all of the swipers on the page
-const allSliders = document.querySelectorAll('[data-slider="slider_sale"]');
-
-// Loop over all of the fetched sliders and apply Swiper on each one.
-allSliders.forEach(slider => buildSwiperSlider(slider));
-
-/* 
-  $('[data-slider="slider_sale"]').each(function () {
-    const sl = $(this)
-    var mySwiper = new Swiper(sl, {
-      loop: true,
-    slidesPerView: 1,
-    spaceBetween: 15,
-    width: null,
-   
-    breakpoints: {
-      // when window width is >= 320
-      320: {
-        width: 287,
-        slidesPerView: 1,
-        spaceBetween: 10
+        // when window width is >= 767
+        767: {
+          width: null,
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+        // when window width is >= 1024
+        1024: {
+          width: null,
+          slidesPerView: 4,
+          spaceBetween: 15,
+        },
+        // when window width is >= 1440
+        1440: {
+          width: null,
+          slidesPerView: $(`#${sliderElm.id}`).data("slider-count"),
+          spaceBetween: 15,
+        },
       },
-      // when window width is >= 767
-      767: {
-        width: null,
-        slidesPerView: 3,
-        spaceBetween: 10
-      },
-      // when window width is >= 1024
-      1024: {
-        width: null,
-        slidesPerView: 4,
-        spaceBetween: 15
-      },
-      // when window width is >= 1440
-      1440: {
-        width: null,
-        slidesPerView: 5,
-        spaceBetween: 15
-      }
-    }
     })
-    sl
-      .closest(".container")
-      .find(".swiper-button-prev")
-      .on("click", function (e) {
-        e.preventDefault()
-        mySwiper.swipePrev()
-      })
-   sl
-      .find(".swiper-button-next")
-      .on("click", function (e) {
-        e.preventDefault()
-        mySwiper.swipeNext()
-      })
-  })
- */
-/*   var swiper = new Swiper('[data-slider="slider_sale"]', {
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 15,
-    width: null,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-      // when window width is >= 320
-      320: {
-        width: 287,
-        slidesPerView: 1,
-        spaceBetween: 10
-      },
-      // when window width is >= 767
-      767: {
-        width: null,
-        slidesPerView: 3,
-        spaceBetween: 10
-      },
-      // when window width is >= 1024
-      1024: {
-        width: null,
-        slidesPerView: 4,
-        spaceBetween: 15
-      },
-      // when window width is >= 1440
-      1440: {
-        width: null,
-        slidesPerView: 5,
-        spaceBetween: 15
-      }
-    }
-  }) */
+  }
+
+  const allSliders = document.querySelectorAll('[data-slider="slider_sale"]')
+  allSliders.forEach((slider) => buildSwiperSlider(slider))
 }
 
 function recipeSliderInit() {}
@@ -587,8 +497,6 @@ function closeByOutsideSelect() {
     }
   })
 }
-
-
 
 window.addEventListener("load", function () {
   initFE()
