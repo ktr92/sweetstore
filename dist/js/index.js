@@ -178,6 +178,18 @@ $(document).ready(function () {
     })
   })(jQuery)
 
+  ;(function ($) {
+    $(function () {
+      $("[data-headertabs]").on("click", "[data-headertab]:not(.active)", function (e) {
+        e.preventDefault()
+        $(this)
+          .addClass("active")
+          $(this).siblings().removeClass("active")
+          $(this).closest("[data-tabs]").find("[data-contenttabs]").removeClass("active").eq($(this).index()).addClass("active")
+      })
+    })
+  })(jQuery)
+
 })
 
 function mainSliderInit() {

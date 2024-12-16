@@ -1,0 +1,18 @@
+<svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="27" cy="27" r="27" fill="#B81B37"/>
+<g clip-path="url(#clip0_39_2417)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M32.3015 30.9757L27.9375 26.6117V18.5625H26.0625V27.3883L30.9757 32.3015L32.3015 30.9757Z" fill="#FFE5AE"/>
+<mask id="mask0_39_2417" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="11" y="11" width="32" height="32">
+<path d="M11 11H43V43H11V11Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_39_2417)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11 27C11 35.8487 18.1623 43 27 43C35.8487 43 43 35.8377 43 27C43 18.1513 35.8377 11 27 11C18.1513 11 11 18.1623 11 27ZM27 41.125C19.197 41.125 12.875 34.8124 12.875 27C12.875 19.197 19.1877 12.875 27 12.875C34.803 12.875 41.125 19.1876 41.125 27C41.125 34.803 34.8123 41.125 27 41.125Z" fill="#FFE5AE"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14.75 27C14.75 33.7555 20.2445 39.25 27 39.25C33.7555 39.25 39.25 33.7555 39.25 27C39.25 20.2445 33.7555 14.75 27 14.75C20.2445 14.75 14.75 20.2445 14.75 27ZM27 37.375C21.28 37.375 16.625 32.72 16.625 27C16.625 21.28 21.28 16.625 27 16.625C32.72 16.625 37.375 21.28 37.375 27C37.375 32.72 32.72 37.375 27 37.375Z" fill="white"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_39_2417">
+<rect width="32" height="32" fill="white" transform="translate(11 11)"/>
+</clipPath>
+</defs>
+</svg>
