@@ -8021,6 +8021,57 @@ small {
   text-transform: uppercase;
   color: #231f20; }
 
+.cataloglist_projects .projectcard {
+  width: 100%;
+  border-radius: 8px;
+  background: #f8f8f8;
+  padding: 13px 51px 16px 11px; }
+
+.cataloglist_projects .cataloglist__items {
+  width: 100%;
+  gap: 20px; }
+
+.cataloglist_projects .cataloglist__item {
+  width: calc(50% - 10px); }
+
+.cataloglist_projects .projectblock__image {
+  min-width: 276px;
+  max-width: 276px;
+  margin-right: 47px; }
+
+.cataloglist_projects .projectdata__title {
+  margin-bottom: 40px;
+  height: 76px;
+  overflow: hidden; }
+
+.cataloglist_projects .projectblock__main {
+  justify-content: flex-start; }
+
+.cataloglist_projects .projectblock__content {
+  max-width: unset;
+  width: 100%; }
+
+.cataloglist_projects .projectdata__price_free {
+  text-transform: uppercase;
+  color: #1d9a3e; }
+
+.pagedescription {
+  margin: 97px 0 57px 0; }
+  .pagedescription h2 {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 42px;
+    text-transform: uppercase;
+    color: #231f20; }
+  .pagedescription p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #231f20; }
+
+.page .pagebanner {
+  margin-bottom: 68px; }
+
 @media only screen and (max-width: 1700px) {
   .pagedetail__aside {
     max-width: 330px;
@@ -8338,6 +8389,25 @@ small {
   .pagedelivery__tabscontactlink a {
     font-size: 14px; }
   .pagedelivery__steptext {
+    font-size: 14px; }
+  .cataloglist_projects .projectblock__image {
+    margin-right: 17px;
+    min-width: 180px; }
+  .cataloglist_projects .projectdata__buyblock .btn_ring {
+    transform: scale(0.8); }
+  .cataloglist_projects .projectdata__price {
+    font-size: 26px;
+    margin-bottom: 13px; }
+  .cataloglist_projects .projectdata__title {
+    margin-bottom: 25px;
+    height: 58px;
+    font-size: 20px; }
+  .cataloglist_projects .projectcard {
+    padding: 20px 11px; }
+  .cataloglist_projects .projectdata__price {
+    white-space: nowrap; }
+  .cataloglist_projects .btn_border {
+    max-width: 120px;
     font-size: 14px; } }
 
 @media only screen and (max-width: 1023px) {
@@ -11115,7 +11185,43 @@ small {
     font-size: 26px;
     font-style: normal;
     font-weight: 700;
-    line-height: 100%; } }
+    line-height: 100%; }
+  .catalogpage .cataloglist_projects .projectcard {
+    width: 100%;
+    border-radius: 8px;
+    background: #f8f8f8; }
+  .catalogpage .cataloglist_projects .cataloglist__items {
+    width: 100%;
+    gap: 10px; }
+  .catalogpage .cataloglist_projects .cataloglist__item {
+    width: 100%; }
+  .catalogpage .cataloglist_projects .projectblock__image {
+    min-width: 183px;
+    max-width: 183px;
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 12px; }
+  .catalogpage .cataloglist_projects .projectdata__title {
+    text-align: center;
+    height: unset; }
+  .catalogpage .cataloglist_projects .projectblock__main {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 330px;
+    margin-left: auto;
+    margin-right: auto; }
+  .catalogpage .cataloglist_projects .projectblock__content {
+    max-width: unset;
+    width: 100%; }
+  .catalogpage .cataloglist_projects .projectdata__price_free {
+    text-transform: uppercase;
+    color: #1d9a3e; }
+  .pagedescription h2 {
+    font-size: 22px;
+    margin-bottom: 27px; }
+  .pagedescription p {
+    font-size: 14px;
+    line-height: 140%; } }
 
 @media only screen and (max-width: 767px) {
   .catalogpage .cataloglist__items {

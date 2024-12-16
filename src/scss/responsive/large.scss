@@ -303,4 +303,36 @@ font-size: 16px;
   .pagedelivery__steptext {
     font-size: 14px;
   }
+  .cataloglist_projects { 
+    .projectblock__image {
+      margin-right: 17px;
+      min-width: 180px;
+    }
+    .projectdata__buyblock .btn_ring {
+      transform: scale(0.8);
+    }
+    .projectdata__price {
+      font-size: 26px;
+      margin-bottom: 13px;
+
+    }
+   .projectdata__title {
+      margin-bottom: 25px;
+      height: 58px;
+      font-size: 20px;
+  
+    }
+    .projectcard {
+      padding: 20px 11px;
+    }
+    .projectdata__price {
+      white-space: nowrap;
+    }
+  
+    .btn_border {
+      max-width: 120px;
+      font-size: 14px
+    }
+  }
+ 
 }

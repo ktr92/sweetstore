@@ -8696,3 +8696,64 @@ text-transform: uppercase;
 color: #231f20;
   }
 }
+
+.cataloglist_projects {
+  .projectcard {
+    width: 100%;
+    border-radius: 8px;
+    background: #f8f8f8;
+    padding: 13px 51px 16px 11px;
+
+  }
+  .cataloglist__items {
+    width: 100%;
+    gap: 20px;
+  }
+  .cataloglist__item {
+    width: calc(50% - 10px);
+  }
+  .projectblock__image {
+    min-width: 276px;
+    max-width: 276px;
+    margin-right: 47px;
+  }
+  .projectdata__title {
+    margin-bottom: 40px;
+    height: 76px;
+    overflow: hidden;
+  }
+  .projectblock__main {
+    justify-content: flex-start;
+  }
+  .projectblock__content {
+    max-width: unset;
+    width: 100%;
+  }
+  .projectdata__price_free {
+    text-transform: uppercase;
+
+    color: #1d9a3e;
+  }
+ 
+}
+.pagedescription {
+  margin: 97px 0 57px 0;
+
+  h2 {
+    font-family: var(--second-family);
+font-weight: 700;
+font-size: 42px;
+text-transform: uppercase;
+color: #231f20;
+  }
+
+  p {
+    font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+color: #231f20;
+  }
+}
+.page .pagebanner {
+  margin-bottom: 68px;
+}

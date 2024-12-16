@@ -4219,4 +4219,59 @@
     }
   }
   
+.catalogpage  .cataloglist_projects {
+  .projectcard {
+   
+    width: 100%;
+    border-radius: 8px;
+    background: #f8f8f8;
+
+  }
+  .cataloglist__items {
+    width: 100%;
+    gap: 10px;
+  }
+  .cataloglist__item {
+    width: 100%;
+  }
+  .projectblock__image {
+    min-width: 183px;
+    max-width: 183px;
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  .projectdata__title {
+   text-align: center;
+   height: unset;
+  }
+  .projectblock__main {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .projectblock__content {
+    max-width: unset;
+    width: 100%;
+  }
+  .projectdata__price_free {
+    text-transform: uppercase;
+
+    color: #1d9a3e;
+  }
+  
+ 
+}
+.pagedescription {
+  h2 {
+    font-size: 22px;
+    margin-bottom: 27px;
+  }
+  p {
+    font-size: 14px;
+line-height: 140%;
+  }
+}
 }
