@@ -8830,10 +8830,10 @@ margin-bottom: 37px;
     justify-content: center;
     align-items: center;
 
-    a {
+    > a {
       display: inline-block;
       height: 400px;
-      img {
+      > img {
         object-fit: cover;
         object-position: center;
         border-radius: 8px;
@@ -8846,3 +8846,4 @@ margin-bottom: 37px;
 .pagefilial:nth-child(2) {
   background: #f8f8f8;
 }
+

@@ -8133,10 +8133,10 @@ a.pagefilial_3d {
     display: flex;
     justify-content: center;
     align-items: center; }
-    .pagefilial__footer .pagefilial__slide a {
+    .pagefilial__footer .pagefilial__slide > a {
       display: inline-block;
       height: 400px; }
-      .pagefilial__footer .pagefilial__slide a img {
+      .pagefilial__footer .pagefilial__slide > a > img {
         object-fit: cover;
         object-position: center;
         border-radius: 8px;
@@ -8481,7 +8481,9 @@ a.pagefilial_3d {
     white-space: nowrap; }
   .cataloglist_projects .btn_border {
     max-width: 120px;
-    font-size: 14px; } }
+    font-size: 14px; }
+  .pagefilial__tour {
+    max-width: 500px; } }
 
 @media only screen and (max-width: 1023px) {
   .onlyMobile {
@@ -11294,7 +11296,53 @@ a.pagefilial_3d {
     margin-bottom: 27px; }
   .pagedescription p {
     font-size: 14px;
-    line-height: 140%; } }
+    line-height: 140%; }
+  .pagefilial__mainimage > img {
+    height: 123px;
+    border-radius: 6px; }
+  .pagefilial__mainimage {
+    height: unset; }
+  .pagefilial__footer {
+    margin: 23px 0 27px 0; }
+    .pagefilial__footer .pagefilial__slide {
+      width: unset;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .pagefilial__footer .pagefilial__slide > a {
+        display: inline-block;
+        height: 123px; }
+        .pagefilial__footer .pagefilial__slide > a > img {
+          object-fit: cover;
+          object-position: center;
+          border-radius: 6px;
+          height: 100%; }
+  .pagefilial_3d {
+    height: 54px;
+    width: 54px; }
+  .pagefilial {
+    padding: 12px 0; }
+  .pagefilial__title {
+    font-size: 18px;
+    margin-bottom: 0; }
+  .pagefilial__content {
+    width: 100%; }
+  .pagefilial__info {
+    margin-top: 0; }
+  .pagefilial__top {
+    width: 100%;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .pagefilial .linkred {
+    margin-right: 0; }
+  .pagefilial__content .contactitem__address span {
+    font-size: 12px; }
+  .pagefilial__footer {
+    margin: 17px 0; }
+  .contactitem__phones {
+    margin: 17px 0 0 0; } }
 
 @media only screen and (max-width: 767px) {
   .catalogpage .cataloglist__items {

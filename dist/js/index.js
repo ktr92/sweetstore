@@ -332,9 +332,15 @@ function filialSliderinit() {
     return new Swiper(`#${sliderElm.id}`, {
       loop: true,
       slidesPerView: "auto",
-      spaceBetween: 16,
+      spaceBetween: 5,
       centeredSlides: true,
+      breakpoints: {
+        // when window width is >= 320
+        1024: {
+          spaceBetween: 16,
 
+        },
+      }
     })
   }
 
