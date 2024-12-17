@@ -156,6 +156,24 @@ $(document).ready(function () {
   $(".quantity").on("click", ".quantity-minus", function (e) {
     decrementValue(e)
   })
+
+
+  $("[data-accordionbutton]").on("click", function(e) {
+
+		e.preventDefault();
+		var $this = $(this);
+
+		if (!$this.hasClass("active")) {
+			$("[data-accordioncontent]").slideUp(400);
+			$("[data-accordionbutton]").removeClass("active");
+		}
+
+		$this.toggleClass("active");
+		$this.siblings('[data-accordioncontent]').slideToggle();
+	});
+
+
+
   ;(function ($) {
     $(function () {
       $("[data-headertabs]").on("click", "a:not(.active)", function (e) {

@@ -4341,5 +4341,68 @@ margin-bottom: 0;
   .contactitem__phones {
     margin: 17px 0 0 0;
   }
+  .pageabout__item {
+    width: 100%;
+  }
+  .aboutitem {
+    height: 195px;
+    padding: 24px 18px;
+  }
+  .aboutitem__icon {
+    max-width: 50px;
+    min-width: 50px;
+    height: 50px;
+    img {
+      width: 27px;
+    }
+  }
+  .aboutitem__number {
+    width: 130px;
+  }
+  .aboutitem__text {
+    font-size: 18px;
+line-height: 120%;
 
+br {
+  display: none;
+}
+  }
+  .pageabout__expandheader {
+    flex-wrap: wrap;
+  }
+  .pageabout__expandtitle {
+    h2 {
+      margin-bottom: 20px;
+      font-size: 32px;
+    }
+  }
+  .pageabout__expandtext {
+    margin-left: 0;
+    margin-bottom: 30px;
+    font-size: 14px;
+line-height: 120%;
+  }
+  .pageabout__expanditems {
+    gap: 30px;
+  }
+  .pageabout__expanditem {
+    padding-bottom: 27px;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .pageabout__expandbuttontitle {
+    font-size: 16px;
+line-height: 120%;
+  }
+  .pageabout__expandbuttonicon {
+    max-width: 24px;
+    min-width: 24px;
+  }
+  .pageabout__expandcontent {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .pageabout__expandblocks {
+    margin: 40px 0;
+  }
 }

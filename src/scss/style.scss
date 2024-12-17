@@ -8847,3 +8847,115 @@ margin-bottom: 37px;
   background: #f8f8f8;
 }
 
+.pageabout {
+}
+.pageabout__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 21px;
+}
+.pageabout__item {
+  width: calc(33.3333% - 14px);
+}
+.aboutitem {
+  border-radius: 8px;
+  background: #f8f8f8;
+  height: 367px;
+  padding: 46px 35px 35px 40px;
+}
+.aboutitem__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.aboutitem__header {
+  display: flex;justify-content: space-between;
+  width: 100%;
+}
+.aboutitem__icon {
+  max-width: 74px;
+  min-width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  background: #b81b37;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutitem__number {
+}
+.aboutitem__footer {
+}
+.aboutitem__text {
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 20px;
+line-height: 120%;
+color: #343c4b;
+}
+
+
+
+.pageabout__expandblocks {
+  margin: 90px 0;
+}
+.pageabout__expandheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pageabout__expandtitle {
+}
+.pageabout__expandtext {
+  max-width: 822px;
+  margin-left: 20px;
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 18px;
+line-height: 120%;
+color: #343c4b;
+}
+.pageabout__expanditems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+}
+.pageabout__expanditem {
+  width: calc(50% - 20px);
+  padding-bottom: 44px;
+  border-bottom: 2px solid #f0f0f0;
+  margin-bottom: 14px;
+}
+.pageabout__expandbutton {
+  cursor: pointer;
+  display: flex;align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+
+}
+.pageabout__expandbuttontitle {
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 26px;
+line-height: 120%;
+color: #343c4b;
+max-width: calc(100% - 64px);
+}
+.pageabout__expandbuttonicon {
+  transition: all 0.3s ease;
+}
+.pageabout__expandcontent {
+  padding: 20px;
+  font-size: 18px;
+  line-height: 1.2;
+  
+}
+[data-accordioncontent] {
+  display: none;
+}
+
+.active .pageabout__expandbuttonicon {
+  transform: rotate(45deg);
+}
