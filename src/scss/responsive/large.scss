@@ -352,5 +352,15 @@ height: unset;
   .formblock__left {
     padding-right: 20px;
   }
-
+  .confirmpage__content {
+    padding: 40px;
+  }
+  .confirmpage__right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    max-height: 100%;
+  }
+  
 }

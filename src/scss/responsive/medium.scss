@@ -4558,4 +4558,48 @@ color: #343c4b;
   .banketsection {
     margin: 0 0 40px 0;
   }
+  .confirmpage__wrapper {
+    height: unset;
+    text-align: center;
+  }
+  .orderinfo__number {
+    justify-content: center;
+  }
+  .confirmpage__content {
+    padding: 37px 18px;
+    height: unset;
+  }
+  .confirmpage__title {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .confirmpage__text {
+    margin-bottom: 19px;
+    font-size: 14px;
+    line-height: 120%;
+  }
+  .ordernumber__text {
+    font-size: 12px;
+  }
+  .ordernumber__number {
+font-size: 20px;
+  }
+  .confirmpage__logo {
+    margin-bottom: 17px;
+  }
+  .confirmpage__left {
+    position: relative;
+    z-index: 1;
+  }
+  .confirmpage__info {
+    margin-top: 19px;
+  }
+  .confirmpage {
+    margin: 0 0 20px 0;
+  }
+  .confirmpage__left {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
 }

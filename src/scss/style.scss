@@ -9222,3 +9222,87 @@ color: #fff;
   }
 
 }
+
+
+
+
+.confirmpage {
+  margin: 60px 0;
+}
+.confirmpage__wrapper {
+  border-radius: 12px;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+background: #f8f8f8;
+display: flex;
+justify-content: space-between;
+  align-items: flex-end;
+
+}
+.confirmpage__logo {
+  margin-bottom: 47px;
+}
+
+.confirmpage__content {
+  max-width: 869px;
+  padding: 77px 30px 68px 90px;
+}
+.confirmpage__title {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 42px;
+  text-transform: uppercase;
+  color: #231f20;
+  margin-bottom: 14px;
+}
+.confirmpage__text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: #231f20;
+}
+.confirmpage__info {
+}
+.orderinfo {
+  display: flex;
+  align-items: center;
+}
+.orderinfo__number {
+}
+.ordernumber {
+}
+.ordernumber__number {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #b81b37;
+  line-height: 1.6;
+}
+.ordernumber__text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: #231f20;
+  margin-bottom: 2px;
+}
+.orderinfo__button {
+  margin-left: 30px;
+  .btn_main {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    padding: 0 27px;
+    font-weight: 400;
+font-size: 16px;
+text-transform: uppercase;
+color: #fff;
+  }
+
+}
+
+.confirmpage__info {
+  margin-top: 63px;
+}
