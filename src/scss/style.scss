@@ -122,7 +122,10 @@ body {
   line-height: 1;
 }
 
-h3, h4, h5, h6 {
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--second-family);
   text-transform: uppercase;
 }
@@ -5583,7 +5586,7 @@ a.location_icon {
   }
 
   &:hover {
-    border-color: $blue;
+    border-color: $hover;
     opacity: 1;
 
     span {
@@ -8967,7 +8970,6 @@ a.pagefilial_3d {
 }
 
 .pagefilial_events {
-
   .pagefilial__title {
     font-weight: 700;
     font-size: 26px;
@@ -8990,12 +8992,233 @@ a.pagefilial_3d {
     position: relative;
   }
   .aboutitem__number {
-   position: absolute;
-   right: 0;
+    position: absolute;
+    right: 0;
   }
 }
 .pagevent {
   .categoryblock {
     margin-bottom: 110px;
   }
+}
+
+.pageaboutrooms {
+  margin: 147px 0 60px 0;
+}
+
+.pageabout__rooms {
+  position: relative;
+
+
+  &:after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #f0f0f0;
+    transform: translateY(-50%);
+    top: 50%;
+    position: absolute;
+  }
+}
+.pageabout__roomsitems {
+  display: flex;
+  justify-content: space-between;
+  margin: 84px 0 0 0;
+}
+.pageabout__roomsitem {
+  width: 33.3333%;
+  height: 161px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+
+  &:after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #b81b37;
+    transform: rotate(45deg) translateY(-50%);
+    top: 50%;
+    margin-top: -1px;
+    position: absolute;
+    z-index: 1;
+  }
+}
+.pageabout__roomstitle {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #b81b37;
+}
+.pageabout__roomsvalue {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #231f20;
+}
+
+
+.banketsection {
+  margin: 62px 0;
+}
+.banketsection__wrapper {
+  display: flex;
+  align-items: center;
+
+}
+.banketsection__left {
+  width: 100%;
+}
+.banketsection__image {
+}
+.banketsection__img {
+}
+.banketsection__right {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.banketsection__content {
+  max-width: 451px;
+}
+.banketsection__title {
+  font-family: var(--second-family);
+font-weight: 700;
+font-size: 42px;
+text-transform: uppercase;
+color: #b81b37;
+  margin-bottom: 36px;
+}
+.banketsection__btn {
+}
+.btn_linkborder {
+  border: 2px solid #b81b37;
+  border-radius: 555px;
+  padding: 18px;
+  max-width: 323px;
+  display: block;
+  text-align: center;
+  span {
+    display: inline-block;
+    padding-right: 23px;
+  }
+}
+
+.formsection {
+}
+.formblock {
+  border-radius: 12px;
+  background: #f8f8f8;
+  height: 410px;
+  display: flex;align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  padding: 30px;
+
+  input {
+    background: #fff;
+    height: 42px;
+    line-height: 42px;
+    border: none;
+  }
+
+}
+.formblock__left {
+  max-width: 610px;
+  width: 100%;
+}
+.formblock__title {
+  font-family: var(--second-family);
+font-weight: 700;
+font-size: 42px;
+line-height: 100%;
+text-transform: uppercase;
+color: #231f20;
+margin-bottom: 35px;
+}
+.formblock__text {
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 18px;
+line-height: 120%;
+color: #343c4b;
+}
+.formblock__contact {
+  margin-top: 56px;
+}
+.formblock__right {
+  width: 100%;
+  max-width: 560px;
+}
+.formblock__form {
+}
+.formblock__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+.formblock__input {
+width: calc(50% - 10px);
+margin-bottom: 0;
+}
+.formblock__input_full {
+  width: 100%;
+}
+.input-error {
+}
+.input-errortext {
+}
+.buttonsrow {
+}
+.xs-full {
+}
+.buttonsrow__item {
+}
+.formblock__check {
+}
+.check {
+}
+.btn {
+}
+.btn_main {
+}
+.contactlabel {
+  margin-bottom: 4px;
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+color: #231f20;
+opacity: 0.5;
+}
+
+.contactlabel + .contactitem__phones {
+  margin-top: 0;
+}
+.formblock__items_submit {
+  margin-top: 37px;
+}
+.formblock__items_submit {
+  .formblock__check {
+    margin-top: 0;
+  }
+  .btn_main {
+    display: block;width: 100%;
+    max-width: 100%;
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 14px;
+text-transform: uppercase;
+color: #fff;
+  }
+  .check label {
+    font-size: 12px;
+    line-height: 130%; 
+  }
+
 }
