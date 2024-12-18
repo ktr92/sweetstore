@@ -7509,6 +7509,10 @@ small {
 .categoryblock__arrow {
   max-width: 40px;
   min-width: 40px;
+  display: block;
+  .slider__button {
+    display: block;
+  }
 }
 
 .producttabs {

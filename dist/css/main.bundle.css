@@ -7044,7 +7044,10 @@ small {
 
 .categoryblock__arrow {
   max-width: 40px;
-  min-width: 40px; }
+  min-width: 40px;
+  display: block; }
+  .categoryblock__arrow .slider__button {
+    display: block; }
 
 .producttabs {
   margin: 170px 0 43px 0; }
