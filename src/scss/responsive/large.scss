@@ -346,12 +346,15 @@ font-size: 16px;
 height: unset;
     }
   }
-  .formblock__title {
-    font-size: 32px;
+  .formsection {
+    .formblock__title {
+      font-size: 32px;
+    }
+    .formblock__left {
+      padding-right: 20px;
+    }
   }
-  .formblock__left {
-    padding-right: 20px;
-  }
+ 
   .confirmpage__content {
     padding: 40px;
   }

@@ -31,25 +31,3 @@ a {
 .cursor-pointer {
   cursor: pointer;
 }
-
-.color-white, .text-white {
-  color: #fff;
-}
-
-.wrap {
-  flex-wrap: wrap;
-}
-
-.w-half {
-  width: 50%;
-}
-
-.w-20 {
-  width: 20%;
-}
-
-@media (max-width: 1023px) {
-  .mobile-full {
-    width: 100% !important;
-  }
-}
