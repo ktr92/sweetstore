@@ -8344,7 +8344,7 @@ a.location_icon {
     bottom: -1px;
     top: unset;
     background-repeat: repeat-x;
-    background-image: url(../img/wavemob.png);
+    background-image: url(../img/wavemob.webp);
     background-size: cover; }
   .wave_vertical:before {
     display: none; }
@@ -8376,7 +8376,7 @@ a.location_icon {
     right: 0;
     top: -21px;
     background-repeat: repeat-x;
-    background-image: url(../img/wavemob.png);
+    background-image: url(../img/wavemob.webp);
     background-size: cover; }
   .subscribe__header {
     justify-content: center;
