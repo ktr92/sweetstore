@@ -36,7 +36,7 @@ const config = {
   },
   devtool: "source-map",
   mode: "production",
-  optimization: {
+ /*  optimization: {
     minimize: false,
    minimizer: [
       new CssMinimizerPlugin({
@@ -55,7 +55,7 @@ const config = {
         extractComments: true,
       }),
     ]
-  },
+  }, */
   module: {
     rules: [{
         test: /\.(sass|scss)$/,
