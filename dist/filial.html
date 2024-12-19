@@ -918,7 +918,63 @@
               <div class="modal-submit modal-submit_small">
                 <div class="buttonsrow">
                   <div class="buttonsrow__item buttonsrow__item_full">
-                    <button type='submit' class='btn btn_main'>Оформить заказ</button>
+                    <button type='submit' class='btn btn_main'>Отправить</button>
+                  </div>
+                  <!-- /.buttonsrow__item -->
+                </div>
+                <!-- /.buttonsrow -->
+              </div>
+              <div class="formblock__check">
+                <div class="check">
+                  <input type="checkbox" id="agree" checked="checked" value="Y">
+                  <label for="agree">Я подтверждаю свое согласие с обработкой <a href="" aria-label="link">ПЕРСОНАЛЬНЫХ ДАННЫХ</a> 
+                  </label>
+                </div>
+              </div><!-- /.formblock__check -->
+             
+            </div><!-- /.formblock -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_order'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal__header">
+          <div class="modal-title">Заказать мероприятие</div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="#" data-src="img/closebutton.svg" alt="" title="" >
+          </span>
+        </button>
+        <div class="modal-body">
+          <form action="#">
+            <div class="formblock">
+              <div class="formblock__main">
+                <div class="formblock__input">
+                  <label for="modalfio">ФИО</label>
+                  <input id='modalfio' type="text" class='input-error' value='123'>
+                  <span class="input-errortext">Имя не может содержать символы: 123</span>
+
+                </div><!-- /.formblock__input -->
+                <div class="formblock__input">
+                  <label for="modalemail">Email</label>
+                  <input id="modalemail" type="email" placeholder=''>
+                </div><!-- /.formblock__input -->
+                <div class="formblock__input">
+                  <label for="modalphone">Телефон</label>
+                  <input id="modalphone" type="tel" placeholder='+7 '>
+                </div><!-- /.formblock__input -->
+              </div><!-- /.formblock__main -->
+              <div class="modal-submit modal-submit_small">
+                <div class="buttonsrow">
+                  <div class="buttonsrow__item buttonsrow__item_full">
+                    <button type='submit' class='btn btn_main'>Отправить</button>
                   </div>
                   <!-- /.buttonsrow__item -->
                 </div>
@@ -968,7 +1024,7 @@
                     </div><!-- /.modalcatalog__tabs -->
                   </div><!-- /.modalcatalog__content -->
                   <div class="modalcatalog__footer onlyDesktop">
-                    <div class="modalcatalog__button"><a href="#popup_callback" data-toggle="modal" class='btn_main w-full'>Оставить заявку</a></div><!-- /.modalcatalog__button -->
+                    <div class="modalcatalog__button"><a href="#popup_order" data-toggle="modal" class='btn_main w-full'>Оставить заявку</a></div><!-- /.modalcatalog__button -->
                   </div><!-- /.modalcatalog__footer onlyDesktop -->
                 </div><!-- /.modalcatalog__aside -->
                 <div class="modalcatalog__main">
@@ -1100,7 +1156,7 @@
               </div><!-- /.modalcatalog__wrapper -->
               <div class="modalcatalog__main onlyMobile">
                 <div class="modalcatalog__footer ">
-                  <div class="modalcatalog__button"><a href="#popup_callback" data-toggle="modal" class='btn_main w-full'>Оставить заявку</a></div><!-- /.modalcatalog__button -->
+                  <div class="modalcatalog__button"><a href="#popup_order" data-toggle="modal" class='btn_main w-full'>Оставить заявку</a></div><!-- /.modalcatalog__button -->
                 </div><!-- /.modalcatalog__footer onlyDesktop -->
               </div><!-- /.modalcatalog__main -->
             </div><!-- /.modalcatalog -->

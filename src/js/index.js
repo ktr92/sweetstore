@@ -51,7 +51,7 @@ $(document).ready(function () {
     $(this).addClass("active")
     $("#popup_addproduct").modal("show")
   })
-  $("#popup_callback").on("shown.bs.modal", function (e) {
+  $("#popup_order").on("shown.bs.modal", function (e) {
     $('#popup_catalog').modal('hide')
   })
   $("#popup_addproduct").on("shown.bs.modal", function (e) {
