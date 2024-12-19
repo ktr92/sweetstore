@@ -26,14 +26,10 @@ function initFE() {
 }
 function maskInit() {
   $("[type='tel']").inputmask({
-    mask: "+7 999 999 9999",
-    placeholder: "+7             ",
+    mask: "+7 (999) 999-99-99",
+    placeholder: "+7 (___) ___-__-__",
     clearIncomplete: false,
-    definitions: {
-      0: {
-        validator: "+7 999 999 9999",
-      },
-    },
+   
   })
 }
 function loadImages() {
@@ -54,6 +50,9 @@ $(document).ready(function () {
     e.preventDefault()
     $(this).addClass("active")
     $("#popup_addproduct").modal("show")
+  })
+  $("#popup_callback").on("shown.bs.modal", function (e) {
+    $('#popup_catalog').modal('hide')
   })
   $("#popup_addproduct").on("shown.bs.modal", function (e) {
     const swiper = new Swiper('[data-slider="modalslider"]', {
@@ -282,12 +281,12 @@ function detailsliderInit() {
   })
 
   $(function () {
-    if ($(window).width() >= 1024) {
+   /*  if ($(window).width() >= 1024) {
       $(".zoom-box").each(function () {
         $(this).zoom()
       })
     }
-
+ */
     if ($(window).width() <= 1023) {
       $(".modalcatalog__tab").addClass("swiper")
       $(".modalcatalog__items").addClass("swiper-wrapper")

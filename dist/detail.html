@@ -6,9 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" >
   <title>MAIN</title>
   <meta name="description" content="Put your description here.">
+  <link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+  <link rel="manifest" href="img/site.webmanifest" />
 
-<!--   <link rel="shortcut icon" href="favicon/favicon.ico" />
- -->  
  <link rel="preload" href="/fonts/Jost-Regular.woff" as="font" type="font/woff2" crossorigin>
  <link rel="preload" href="/fonts/Jost-Regular.woff2" as="font" type="font/woff2" crossorigin>
 
@@ -59,7 +62,7 @@
 <script src="js/jquery.inputmask.min.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/wow.min.js"></script>
-<script src="js/jquery.zoom.min.js"></script>
+<!-- <script src="js/jquery.zoom.min.js"></script> -->
 <script src="js/lightbox.min.js"></script>
 
 </head>
@@ -527,9 +530,9 @@
                           <div class="  projectdata__buyblock ">
                             <div class="buyblock__quantity">
                               <div class="quantity">
-                                <input type="button"  class="quantity-minus" value="minus" data-field="quantity" />
+                                <input type="button"  class="quantity-minus" value="" data-field="quantity" />
                                 <input type="number" step="1" max="1000" value="1" name="quantity" class="quantity-field" />
-                                <input type="button"  class="quantity-plus" value="plus" data-field="quantity" />
+                                <input type="button"  class="quantity-plus" value="" data-field="quantity" />
                               </div>
                             </div>
                             <button type="button" class="btn_ring" data-action="showcartpopup">
@@ -669,7 +672,7 @@
                 </button>
               </div>
 
-              <div class="productslider__container swiper" id='slider1' data-slider="slider_sale" data-slider-count='5'>
+              <div class="productslider__container swiper" id='slider_sale5' data-slider="slider_sale" data-slider-count='5'>
                 <div class="productslider__slider swiper-wrapper">
                   <div class="productslider__slide swiper-slide">
                     <div class="productslider__item">
@@ -681,10 +684,10 @@
                             <span class="productcard__blockfav ">
                               <span tabindex="0" class="catalog-fav " data-item="2676" data-step="0.1"
                                 data-entity="add-wish-list">
-                                <div>
-                                   <span class="fav-default">
-                                      <img src="#" data-src="img/favactive.svg" alt="" title=""  class='ifactive'>
-                                      <svg class='ifnotactive' width="23" height="24" viewBox="0 0 23 24" fill="none"
+                                <span>
+                                  <span class="fav-default">
+                                    <img src="#" data-src="img/favactive.svg" alt="" title=""  class='ifactive' width='24' height='23'>
+                                    <svg class='ifnotactive' width="23" height="24" viewBox="0 0 23 24" fill="none"
                                       xmlns="http://www.w3.org/2000/svg">
                                       <path
                                         d="M7.22109 4.20654C4.32439 4.20654 1.96094 6.57 1.96094 9.46669C1.96094 11.4255 3.43743 13.2697 5.23732 15.1611C7.03721 17.0525 9.25264 18.9682 11.0177 20.7332C11.1522 20.8677 11.3346 20.9432 11.5248 20.9432C11.715 20.9432 11.8975 20.8677 12.032 20.7332C13.797 18.9682 16.0125 17.0525 17.8124 15.1611C19.6123 13.2697 21.0887 11.4255 21.0887 9.46669C21.0887 6.57 18.7253 4.20654 15.8286 4.20654C14.1662 4.20654 12.7188 5.09909 11.5248 6.61527C10.3309 5.09909 8.8835 4.20654 7.22109 4.20654ZM7.22109 5.64113C8.62151 5.64113 9.78722 6.38635 10.9187 8.17594C10.9834 8.27816 11.0729 8.36236 11.1789 8.4207C11.2849 8.47905 11.4039 8.50964 11.5248 8.50964C11.6458 8.50964 11.7648 8.47905 11.8708 8.4207C11.9768 8.36236 12.0663 8.27816 12.131 8.17594C13.2625 6.38635 14.4282 5.64113 15.8286 5.64113C17.9501 5.64113 19.6542 7.34521 19.6542 9.46669C19.6542 10.6162 18.5006 12.3584 16.7738 14.173C15.1991 15.8277 13.2417 17.5565 11.5248 19.2305C9.80797 17.5565 7.85059 15.8277 6.2759 14.173C4.5491 12.3584 3.39552 10.6162 3.39552 9.46669C3.39552 7.34521 5.0996 5.64113 7.22109 5.64113Z"
@@ -692,11 +695,11 @@
                                     </svg>
 
                                   </span>
-                                </div>
+                                </span>
                               </span>
                             </span><!-- /.productcard__blockfav -->
-                            <a href="#" class="productcard__img hoverimage" aria-label="hoverimage">
-                              <img src="#" data-src="img/product1.webp" alt="" title="" width="405" height="272">
+                            <a href="#" aria-label="productlink" class="productcard__img hoverimage">
+                              <img src="#" data-src="img/product1.webp" alt="" title=""  width='323' height='217'>
                             </a>
                           </div>
                           <div class="productcard__blockwrapper">
@@ -716,7 +719,7 @@
                                 <div class="productcard__button">
                                   <button type='button' class='btn_ring' aria-label="btn_ring">
                                     <span class='btncart'>
-                                      <img src="#" data-src="img/ShoppingBagWhite.svg" alt="" title="" >
+                                      <img src="#" data-src="img/ShoppingBagWhite.svg" alt="" title=""  width='21' height='22'>
                                     </span>
                                   </button>
                                 </div>
@@ -738,10 +741,10 @@
                             <span class="productcard__blockfav ">
                               <span tabindex="0" class="catalog-fav " data-item="2676" data-step="0.1"
                                 data-entity="add-wish-list">
-                                <div>
-                                   <span class="fav-default">
-                                      <img src="#" data-src="img/favactive.svg" alt="" title=""  class='ifactive'>
-                                      <svg class='ifnotactive' width="23" height="24" viewBox="0 0 23 24" fill="none"
+                                <span>
+                                  <span class="fav-default">
+                                    <img src="#" data-src="img/favactive.svg" alt="" title=""  class='ifactive' width='24' height='23'>
+                                    <svg class='ifnotactive' width="23" height="24" viewBox="0 0 23 24" fill="none"
                                       xmlns="http://www.w3.org/2000/svg">
                                       <path
                                         d="M7.22109 4.20654C4.32439 4.20654 1.96094 6.57 1.96094 9.46669C1.96094 11.4255 3.43743 13.2697 5.23732 15.1611C7.03721 17.0525 9.25264 18.9682 11.0177 20.7332C11.1522 20.8677 11.3346 20.9432 11.5248 20.9432C11.715 20.9432 11.8975 20.8677 12.032 20.7332C13.797 18.9682 16.0125 17.0525 17.8124 15.1611C19.6123 13.2697 21.0887 11.4255 21.0887 9.46669C21.0887 6.57 18.7253 4.20654 15.8286 4.20654C14.1662 4.20654 12.7188 5.09909 11.5248 6.61527C10.3309 5.09909 8.8835 4.20654 7.22109 4.20654ZM7.22109 5.64113C8.62151 5.64113 9.78722 6.38635 10.9187 8.17594C10.9834 8.27816 11.0729 8.36236 11.1789 8.4207C11.2849 8.47905 11.4039 8.50964 11.5248 8.50964C11.6458 8.50964 11.7648 8.47905 11.8708 8.4207C11.9768 8.36236 12.0663 8.27816 12.131 8.17594C13.2625 6.38635 14.4282 5.64113 15.8286 5.64113C17.9501 5.64113 19.6542 7.34521 19.6542 9.46669C19.6542 10.6162 18.5006 12.3584 16.7738 14.173C15.1991 15.8277 13.2417 17.5565 11.5248 19.2305C9.80797 17.5565 7.85059 15.8277 6.2759 14.173C4.5491 12.3584 3.39552 10.6162 3.39552 9.46669C3.39552 7.34521 5.0996 5.64113 7.22109 5.64113Z"
@@ -749,11 +752,11 @@
                                     </svg>
 
                                   </span>
-                                </div>
+                                </span>
                               </span>
                             </span><!-- /.productcard__blockfav -->
-                            <a href="#" class="productcard__img hoverimage" aria-label="hoverimage">
-                              <img src="#" data-src="img/product1.webp" alt="" title="" width="405" height="272">
+                            <a href="#" aria-label="productlink" class="productcard__img hoverimage">
+                              <img src="#" data-src="img/product1.webp" alt="" title=""  width='323' height='217'>
                             </a>
                           </div>
                           <div class="productcard__blockwrapper">
@@ -771,9 +774,9 @@
                               </div>
                               <div class="productcard__rightmain">
                                 <div class="productcard__button">
-                                  <button type='button' class='btn_ring active'>
+                                  <button type='button' class='btn_ring active' aria-label='btn_ring'>
                                     <span class='btncart'>
-                                      <img src="#" data-src="img/ShoppingBagWhite.svg" alt="" title="" >
+                                      <img src="#" data-src="img/ShoppingBagWhite.svg" alt="" title=""  width='21' height='22'>
                                     </span>
                                   </button>
                                 </div>
@@ -795,10 +798,10 @@
                             <span class="productcard__blockfav ">
                               <span tabindex="0" class="catalog-fav " data-item="2676" data-step="0.1"
                                 data-entity="add-wish-list">
-                                <div>
-                                   <span class="fav-default">
-                                      <img src="#" data-src="img/favactive.svg" alt="" title=""  class='ifactive'>
-                                      <svg class='ifnotactive' width="23" height="24" viewBox="0 0 23 24" fill="none"
+                                <span>
+                                  <span class="fav-default">
+                                    <img src="#" data-src="img/favactive.svg" alt="" title=""  class='ifactive' width='24' height='23'>
+                                    <svg class='ifnotactive' width="23" height="24" viewBox="0 0 23 24" fill="none"
                                       xmlns="http://www.w3.org/2000/svg">
                                       <path
                                         d="M7.22109 4.20654C4.32439 4.20654 1.96094 6.57 1.96094 9.46669C1.96094 11.4255 3.43743 13.2697 5.23732 15.1611C7.03721 17.0525 9.25264 18.9682 11.0177 20.7332C11.1522 20.8677 11.3346 20.9432 11.5248 20.9432C11.715 20.9432 11.8975 20.8677 12.032 20.7332C13.797 18.9682 16.0125 17.0525 17.8124 15.1611C19.6123 13.2697 21.0887 11.4255 21.0887 9.46669C21.0887 6.57 18.7253 4.20654 15.8286 4.20654C14.1662 4.20654 12.7188 5.09909 11.5248 6.61527C10.3309 5.09909 8.8835 4.20654 7.22109 4.20654ZM7.22109 5.64113C8.62151 5.64113 9.78722 6.38635 10.9187 8.17594C10.9834 8.27816 11.0729 8.36236 11.1789 8.4207C11.2849 8.47905 11.4039 8.50964 11.5248 8.50964C11.6458 8.50964 11.7648 8.47905 11.8708 8.4207C11.9768 8.36236 12.0663 8.27816 12.131 8.17594C13.2625 6.38635 14.4282 5.64113 15.8286 5.64113C17.9501 5.64113 19.6542 7.34521 19.6542 9.46669C19.6542 10.6162 18.5006 12.3584 16.7738 14.173C15.1991 15.8277 13.2417 17.5565 11.5248 19.2305C9.80797 17.5565 7.85059 15.8277 6.2759 14.173C4.5491 12.3584 3.39552 10.6162 3.39552 9.46669C3.39552 7.34521 5.0996 5.64113 7.22109 5.64113Z"
@@ -806,11 +809,11 @@
                                     </svg>
 
                                   </span>
-                                </div>
+                                </span>
                               </span>
                             </span><!-- /.productcard__blockfav -->
-                            <a href="#" class="productcard__img hoverimage" aria-label="hoverimage">
-                              <img src="#" data-src="img/product1.webp" alt="" title="" width="405" height="272">
+                            <a href="#" aria-label="productlink" class="productcard__img hoverimage">
+                              <img src="#" data-src="img/product1.webp" alt="" title=""  width='323' height='217'>
                             </a>
                           </div>
                           <div class="productcard__blockwrapper">
@@ -830,7 +833,7 @@
                                 <div class="productcard__button">
                                   <button type='button' class='btn_ring' aria-label="btn_ring">
                                     <span class='btncart'>
-                                      <img src="#" data-src="img/ShoppingBagWhite.svg" alt="" title="" >
+                                      <img src="#" data-src="img/ShoppingBagWhite.svg" alt="" title=""  width='21' height='22'>
                                     </span>
                                   </button>
                                 </div>
@@ -852,10 +855,10 @@
                             <span class="productcard__blockfav ">
                               <span tabindex="0" class="catalog-fav " data-item="2676" data-step="0.1"
                                 data-entity="add-wish-list">
-                                <div>
-                                   <span class="fav-default">
-                                      <img src="#" data-src="img/favactive.svg" alt="" title=""  class='ifactive'>
-                                      <svg class='ifnotactive' width="23" height="24" viewBox="0 0 23 24" fill="none"
+                                <span>
+                                  <span class="fav-default">
+                                    <img src="#" data-src="img/favactive.svg" alt="" title=""  class='ifactive' width='24' height='23'>
+                                    <svg class='ifnotactive' width="23" height="24" viewBox="0 0 23 24" fill="none"
                                       xmlns="http://www.w3.org/2000/svg">
                                       <path
                                         d="M7.22109 4.20654C4.32439 4.20654 1.96094 6.57 1.96094 9.46669C1.96094 11.4255 3.43743 13.2697 5.23732 15.1611C7.03721 17.0525 9.25264 18.9682 11.0177 20.7332C11.1522 20.8677 11.3346 20.9432 11.5248 20.9432C11.715 20.9432 11.8975 20.8677 12.032 20.7332C13.797 18.9682 16.0125 17.0525 17.8124 15.1611C19.6123 13.2697 21.0887 11.4255 21.0887 9.46669C21.0887 6.57 18.7253 4.20654 15.8286 4.20654C14.1662 4.20654 12.7188 5.09909 11.5248 6.61527C10.3309 5.09909 8.8835 4.20654 7.22109 4.20654ZM7.22109 5.64113C8.62151 5.64113 9.78722 6.38635 10.9187 8.17594C10.9834 8.27816 11.0729 8.36236 11.1789 8.4207C11.2849 8.47905 11.4039 8.50964 11.5248 8.50964C11.6458 8.50964 11.7648 8.47905 11.8708 8.4207C11.9768 8.36236 12.0663 8.27816 12.131 8.17594C13.2625 6.38635 14.4282 5.64113 15.8286 5.64113C17.9501 5.64113 19.6542 7.34521 19.6542 9.46669C19.6542 10.6162 18.5006 12.3584 16.7738 14.173C15.1991 15.8277 13.2417 17.5565 11.5248 19.2305C9.80797 17.5565 7.85059 15.8277 6.2759 14.173C4.5491 12.3584 3.39552 10.6162 3.39552 9.46669C3.39552 7.34521 5.0996 5.64113 7.22109 5.64113Z"
@@ -863,11 +866,11 @@
                                     </svg>
 
                                   </span>
-                                </div>
+                                </span>
                               </span>
                             </span><!-- /.productcard__blockfav -->
-                            <a href="#" class="productcard__img hoverimage" aria-label="hoverimage">
-                              <img src="#" data-src="img/product1.webp" alt="" title="" width="405" height="272">
+                            <a href="#" aria-label="productlink" class="productcard__img hoverimage">
+                              <img src="#" data-src="img/product1.webp" alt="" title=""  width='323' height='217'>
                             </a>
                           </div>
                           <div class="productcard__blockwrapper">
@@ -887,7 +890,7 @@
                                 <div class="productcard__button">
                                   <button type='button' class='btn_ring' aria-label="btn_ring">
                                     <span class='btncart'>
-                                      <img src="#" data-src="img/ShoppingBagWhite.svg" alt="" title="" >
+                                      <img src="#" data-src="img/ShoppingBagWhite.svg" alt="" title=""  width='21' height='22'>
                                     </span>
                                   </button>
                                 </div>
@@ -909,10 +912,10 @@
                             <span class="productcard__blockfav ">
                               <span tabindex="0" class="catalog-fav " data-item="2676" data-step="0.1"
                                 data-entity="add-wish-list">
-                                <div>
-                                   <span class="fav-default">
-                                      <img src="#" data-src="img/favactive.svg" alt="" title=""  class='ifactive'>
-                                      <svg class='ifnotactive' width="23" height="24" viewBox="0 0 23 24" fill="none"
+                                <span>
+                                  <span class="fav-default">
+                                    <img src="#" data-src="img/favactive.svg" alt="" title=""  class='ifactive' width='24' height='23'>
+                                    <svg class='ifnotactive' width="23" height="24" viewBox="0 0 23 24" fill="none"
                                       xmlns="http://www.w3.org/2000/svg">
                                       <path
                                         d="M7.22109 4.20654C4.32439 4.20654 1.96094 6.57 1.96094 9.46669C1.96094 11.4255 3.43743 13.2697 5.23732 15.1611C7.03721 17.0525 9.25264 18.9682 11.0177 20.7332C11.1522 20.8677 11.3346 20.9432 11.5248 20.9432C11.715 20.9432 11.8975 20.8677 12.032 20.7332C13.797 18.9682 16.0125 17.0525 17.8124 15.1611C19.6123 13.2697 21.0887 11.4255 21.0887 9.46669C21.0887 6.57 18.7253 4.20654 15.8286 4.20654C14.1662 4.20654 12.7188 5.09909 11.5248 6.61527C10.3309 5.09909 8.8835 4.20654 7.22109 4.20654ZM7.22109 5.64113C8.62151 5.64113 9.78722 6.38635 10.9187 8.17594C10.9834 8.27816 11.0729 8.36236 11.1789 8.4207C11.2849 8.47905 11.4039 8.50964 11.5248 8.50964C11.6458 8.50964 11.7648 8.47905 11.8708 8.4207C11.9768 8.36236 12.0663 8.27816 12.131 8.17594C13.2625 6.38635 14.4282 5.64113 15.8286 5.64113C17.9501 5.64113 19.6542 7.34521 19.6542 9.46669C19.6542 10.6162 18.5006 12.3584 16.7738 14.173C15.1991 15.8277 13.2417 17.5565 11.5248 19.2305C9.80797 17.5565 7.85059 15.8277 6.2759 14.173C4.5491 12.3584 3.39552 10.6162 3.39552 9.46669C3.39552 7.34521 5.0996 5.64113 7.22109 5.64113Z"
@@ -920,11 +923,11 @@
                                     </svg>
 
                                   </span>
-                                </div>
+                                </span>
                               </span>
                             </span><!-- /.productcard__blockfav -->
-                            <a href="#" class="productcard__img hoverimage" aria-label="hoverimage">
-                              <img src="#" data-src="img/product1.webp" alt="" title="" width="405" height="272">
+                            <a href="#" aria-label="productlink" class="productcard__img hoverimage">
+                              <img src="#" data-src="img/product1.webp" alt="" title=""  width='323' height='217'>
                             </a>
                           </div>
                           <div class="productcard__blockwrapper">
@@ -944,7 +947,7 @@
                                 <div class="productcard__button">
                                   <button type='button' class='btn_ring' aria-label="btn_ring">
                                     <span class='btncart'>
-                                      <img src="#" data-src="img/ShoppingBagWhite.svg" alt="" title="" >
+                                      <img src="#" data-src="img/ShoppingBagWhite.svg" alt="" title=""  width='21' height='22'>
                                     </span>
                                   </button>
                                 </div>
@@ -966,10 +969,10 @@
                             <span class="productcard__blockfav ">
                               <span tabindex="0" class="catalog-fav " data-item="2676" data-step="0.1"
                                 data-entity="add-wish-list">
-                                <div>
-                                   <span class="fav-default">
-                                      <img src="#" data-src="img/favactive.svg" alt="" title=""  class='ifactive'>
-                                      <svg class='ifnotactive' width="23" height="24" viewBox="0 0 23 24" fill="none"
+                                <span>
+                                  <span class="fav-default">
+                                    <img src="#" data-src="img/favactive.svg" alt="" title=""  class='ifactive' width='24' height='23'>
+                                    <svg class='ifnotactive' width="23" height="24" viewBox="0 0 23 24" fill="none"
                                       xmlns="http://www.w3.org/2000/svg">
                                       <path
                                         d="M7.22109 4.20654C4.32439 4.20654 1.96094 6.57 1.96094 9.46669C1.96094 11.4255 3.43743 13.2697 5.23732 15.1611C7.03721 17.0525 9.25264 18.9682 11.0177 20.7332C11.1522 20.8677 11.3346 20.9432 11.5248 20.9432C11.715 20.9432 11.8975 20.8677 12.032 20.7332C13.797 18.9682 16.0125 17.0525 17.8124 15.1611C19.6123 13.2697 21.0887 11.4255 21.0887 9.46669C21.0887 6.57 18.7253 4.20654 15.8286 4.20654C14.1662 4.20654 12.7188 5.09909 11.5248 6.61527C10.3309 5.09909 8.8835 4.20654 7.22109 4.20654ZM7.22109 5.64113C8.62151 5.64113 9.78722 6.38635 10.9187 8.17594C10.9834 8.27816 11.0729 8.36236 11.1789 8.4207C11.2849 8.47905 11.4039 8.50964 11.5248 8.50964C11.6458 8.50964 11.7648 8.47905 11.8708 8.4207C11.9768 8.36236 12.0663 8.27816 12.131 8.17594C13.2625 6.38635 14.4282 5.64113 15.8286 5.64113C17.9501 5.64113 19.6542 7.34521 19.6542 9.46669C19.6542 10.6162 18.5006 12.3584 16.7738 14.173C15.1991 15.8277 13.2417 17.5565 11.5248 19.2305C9.80797 17.5565 7.85059 15.8277 6.2759 14.173C4.5491 12.3584 3.39552 10.6162 3.39552 9.46669C3.39552 7.34521 5.0996 5.64113 7.22109 5.64113Z"
@@ -977,11 +980,11 @@
                                     </svg>
 
                                   </span>
-                                </div>
+                                </span>
                               </span>
                             </span><!-- /.productcard__blockfav -->
-                            <a href="#" class="productcard__img hoverimage" aria-label="hoverimage">
-                              <img src="#" data-src="img/product1.webp" alt="" title="" width="405" height="272">
+                            <a href="#" aria-label="productlink" class="productcard__img hoverimage">
+                              <img src="#" data-src="img/product1.webp" alt="" title=""  width='323' height='217'>
                             </a>
                           </div>
                           <div class="productcard__blockwrapper">
@@ -1001,7 +1004,7 @@
                                 <div class="productcard__button">
                                   <button type='button' class='btn_ring' aria-label="btn_ring">
                                     <span class='btncart'>
-                                      <img src="#" data-src="img/ShoppingBagWhite.svg" alt="" title="" >
+                                      <img src="#" data-src="img/ShoppingBagWhite.svg" alt="" title=""  width='21' height='22'>
                                     </span>
                                   </button>
                                 </div>
@@ -1016,6 +1019,7 @@
 
                 </div>
               </div>
+
              
             </div>
           </div>
@@ -1053,7 +1057,7 @@
                 </button>
               </div>
 
-              <div class="productslider__container swiper" id='slider2' data-slider="slider_sale" data-slider-count='4'>
+              <div class="productslider__container swiper" id='slider_sale4' data-slider="slider_sale" data-slider-count='4'>
                 <div class="productslider__slider swiper-wrapper">
                   <div class="productslider__slide swiper-slide">
                     <div class="productslider__item">
@@ -1065,10 +1069,10 @@
                             <span class="productcard__blockfav ">
                               <span tabindex="0" class="catalog-fav " data-item="2676" data-step="0.1"
                                 data-entity="add-wish-list">
-                                <div>
-                                   <span class="fav-default">
-                                      <img src="#" data-src="img/favactive.svg" alt="" title=""  class='ifactive'>
-                                      <svg class='ifnotactive' width="23" height="24" viewBox="0 0 23 24" fill="none"
+                                <span>
+                                  <span class="fav-default">
+                                    <img src="#" data-src="img/favactive.svg" alt="" title=""  class='ifactive' width='24' height='23'>
+                                    <svg class='ifnotactive' width="23" height="24" viewBox="0 0 23 24" fill="none"
                                       xmlns="http://www.w3.org/2000/svg">
                                       <path
                                         d="M7.22109 4.20654C4.32439 4.20654 1.96094 6.57 1.96094 9.46669C1.96094 11.4255 3.43743 13.2697 5.23732 15.1611C7.03721 17.0525 9.25264 18.9682 11.0177 20.7332C11.1522 20.8677 11.3346 20.9432 11.5248 20.9432C11.715 20.9432 11.8975 20.8677 12.032 20.7332C13.797 18.9682 16.0125 17.0525 17.8124 15.1611C19.6123 13.2697 21.0887 11.4255 21.0887 9.46669C21.0887 6.57 18.7253 4.20654 15.8286 4.20654C14.1662 4.20654 12.7188 5.09909 11.5248 6.61527C10.3309 5.09909 8.8835 4.20654 7.22109 4.20654ZM7.22109 5.64113C8.62151 5.64113 9.78722 6.38635 10.9187 8.17594C10.9834 8.27816 11.0729 8.36236 11.1789 8.4207C11.2849 8.47905 11.4039 8.50964 11.5248 8.50964C11.6458 8.50964 11.7648 8.47905 11.8708 8.4207C11.9768 8.36236 12.0663 8.27816 12.131 8.17594C13.2625 6.38635 14.4282 5.64113 15.8286 5.64113C17.9501 5.64113 19.6542 7.34521 19.6542 9.46669C19.6542 10.6162 18.5006 12.3584 16.7738 14.173C15.1991 15.8277 13.2417 17.5565 11.5248 19.2305C9.80797 17.5565 7.85059 15.8277 6.2759 14.173C4.5491 12.3584 3.39552 10.6162 3.39552 9.46669C3.39552 7.34521 5.0996 5.64113 7.22109 5.64113Z"
@@ -1076,11 +1080,11 @@
                                     </svg>
 
                                   </span>
-                                </div>
+                                </span>
                               </span>
                             </span><!-- /.productcard__blockfav -->
-                            <a href="#" class="productcard__img hoverimage" aria-label="hoverimage">
-                              <img src="#" data-src="img/product1.webp" alt="" title="" width="405" height="272">
+                            <a href="#" aria-label="productlink" class="productcard__img hoverimage">
+                              <img src="#" data-src="img/product1.webp" alt="" title=""  width='323' height='217'>
                             </a>
                           </div>
                           <div class="productcard__blockwrapper">
@@ -1100,7 +1104,7 @@
                                 <div class="productcard__button">
                                   <button type='button' class='btn_ring' aria-label="btn_ring">
                                     <span class='btncart'>
-                                      <img src="#" data-src="img/ShoppingBagWhite.svg" alt="" title="" >
+                                      <img src="#" data-src="img/ShoppingBagWhite.svg" alt="" title=""  width='21' height='22'>
                                     </span>
                                   </button>
                                 </div>
@@ -1122,10 +1126,10 @@
                             <span class="productcard__blockfav ">
                               <span tabindex="0" class="catalog-fav " data-item="2676" data-step="0.1"
                                 data-entity="add-wish-list">
-                                <div>
-                                   <span class="fav-default">
-                                      <img src="#" data-src="img/favactive.svg" alt="" title=""  class='ifactive'>
-                                      <svg class='ifnotactive' width="23" height="24" viewBox="0 0 23 24" fill="none"
+                                <span>
+                                  <span class="fav-default">
+                                    <img src="#" data-src="img/favactive.svg" alt="" title=""  class='ifactive' width='24' height='23'>
+                                    <svg class='ifnotactive' width="23" height="24" viewBox="0 0 23 24" fill="none"
                                       xmlns="http://www.w3.org/2000/svg">
                                       <path
                                         d="M7.22109 4.20654C4.32439 4.20654 1.96094 6.57 1.96094 9.46669C1.96094 11.4255 3.43743 13.2697 5.23732 15.1611C7.03721 17.0525 9.25264 18.9682 11.0177 20.7332C11.1522 20.8677 11.3346 20.9432 11.5248 20.9432C11.715 20.9432 11.8975 20.8677 12.032 20.7332C13.797 18.9682 16.0125 17.0525 17.8124 15.1611C19.6123 13.2697 21.0887 11.4255 21.0887 9.46669C21.0887 6.57 18.7253 4.20654 15.8286 4.20654C14.1662 4.20654 12.7188 5.09909 11.5248 6.61527C10.3309 5.09909 8.8835 4.20654 7.22109 4.20654ZM7.22109 5.64113C8.62151 5.64113 9.78722 6.38635 10.9187 8.17594C10.9834 8.27816 11.0729 8.36236 11.1789 8.4207C11.2849 8.47905 11.4039 8.50964 11.5248 8.50964C11.6458 8.50964 11.7648 8.47905 11.8708 8.4207C11.9768 8.36236 12.0663 8.27816 12.131 8.17594C13.2625 6.38635 14.4282 5.64113 15.8286 5.64113C17.9501 5.64113 19.6542 7.34521 19.6542 9.46669C19.6542 10.6162 18.5006 12.3584 16.7738 14.173C15.1991 15.8277 13.2417 17.5565 11.5248 19.2305C9.80797 17.5565 7.85059 15.8277 6.2759 14.173C4.5491 12.3584 3.39552 10.6162 3.39552 9.46669C3.39552 7.34521 5.0996 5.64113 7.22109 5.64113Z"
@@ -1133,11 +1137,11 @@
                                     </svg>
 
                                   </span>
-                                </div>
+                                </span>
                               </span>
                             </span><!-- /.productcard__blockfav -->
-                            <a href="#" class="productcard__img hoverimage" aria-label="hoverimage">
-                              <img src="#" data-src="img/product1.webp" alt="" title="" width="405" height="272">
+                            <a href="#" aria-label="productlink" class="productcard__img hoverimage">
+                              <img src="#" data-src="img/product1.webp" alt="" title=""  width='323' height='217'>
                             </a>
                           </div>
                           <div class="productcard__blockwrapper">
@@ -1155,9 +1159,9 @@
                               </div>
                               <div class="productcard__rightmain">
                                 <div class="productcard__button">
-                                  <button type='button' class='btn_ring active'>
+                                  <button type='button' class='btn_ring active' aria-label='btn_ring'>
                                     <span class='btncart'>
-                                      <img src="#" data-src="img/ShoppingBagWhite.svg" alt="" title="" >
+                                      <img src="#" data-src="img/ShoppingBagWhite.svg" alt="" title=""  width='21' height='22'>
                                     </span>
                                   </button>
                                 </div>
@@ -1179,10 +1183,10 @@
                             <span class="productcard__blockfav ">
                               <span tabindex="0" class="catalog-fav " data-item="2676" data-step="0.1"
                                 data-entity="add-wish-list">
-                                <div>
-                                   <span class="fav-default">
-                                      <img src="#" data-src="img/favactive.svg" alt="" title=""  class='ifactive'>
-                                      <svg class='ifnotactive' width="23" height="24" viewBox="0 0 23 24" fill="none"
+                                <span>
+                                  <span class="fav-default">
+                                    <img src="#" data-src="img/favactive.svg" alt="" title=""  class='ifactive' width='24' height='23'>
+                                    <svg class='ifnotactive' width="23" height="24" viewBox="0 0 23 24" fill="none"
                                       xmlns="http://www.w3.org/2000/svg">
                                       <path
                                         d="M7.22109 4.20654C4.32439 4.20654 1.96094 6.57 1.96094 9.46669C1.96094 11.4255 3.43743 13.2697 5.23732 15.1611C7.03721 17.0525 9.25264 18.9682 11.0177 20.7332C11.1522 20.8677 11.3346 20.9432 11.5248 20.9432C11.715 20.9432 11.8975 20.8677 12.032 20.7332C13.797 18.9682 16.0125 17.0525 17.8124 15.1611C19.6123 13.2697 21.0887 11.4255 21.0887 9.46669C21.0887 6.57 18.7253 4.20654 15.8286 4.20654C14.1662 4.20654 12.7188 5.09909 11.5248 6.61527C10.3309 5.09909 8.8835 4.20654 7.22109 4.20654ZM7.22109 5.64113C8.62151 5.64113 9.78722 6.38635 10.9187 8.17594C10.9834 8.27816 11.0729 8.36236 11.1789 8.4207C11.2849 8.47905 11.4039 8.50964 11.5248 8.50964C11.6458 8.50964 11.7648 8.47905 11.8708 8.4207C11.9768 8.36236 12.0663 8.27816 12.131 8.17594C13.2625 6.38635 14.4282 5.64113 15.8286 5.64113C17.9501 5.64113 19.6542 7.34521 19.6542 9.46669C19.6542 10.6162 18.5006 12.3584 16.7738 14.173C15.1991 15.8277 13.2417 17.5565 11.5248 19.2305C9.80797 17.5565 7.85059 15.8277 6.2759 14.173C4.5491 12.3584 3.39552 10.6162 3.39552 9.46669C3.39552 7.34521 5.0996 5.64113 7.22109 5.64113Z"
@@ -1190,11 +1194,11 @@
                                     </svg>
 
                                   </span>
-                                </div>
+                                </span>
                               </span>
                             </span><!-- /.productcard__blockfav -->
-                            <a href="#" class="productcard__img hoverimage" aria-label="hoverimage">
-                              <img src="#" data-src="img/product1.webp" alt="" title="" width="405" height="272">
+                            <a href="#" aria-label="productlink" class="productcard__img hoverimage">
+                              <img src="#" data-src="img/product1.webp" alt="" title=""  width='323' height='217'>
                             </a>
                           </div>
                           <div class="productcard__blockwrapper">
@@ -1214,7 +1218,7 @@
                                 <div class="productcard__button">
                                   <button type='button' class='btn_ring' aria-label="btn_ring">
                                     <span class='btncart'>
-                                      <img src="#" data-src="img/ShoppingBagWhite.svg" alt="" title="" >
+                                      <img src="#" data-src="img/ShoppingBagWhite.svg" alt="" title=""  width='21' height='22'>
                                     </span>
                                   </button>
                                 </div>
@@ -1236,10 +1240,10 @@
                             <span class="productcard__blockfav ">
                               <span tabindex="0" class="catalog-fav " data-item="2676" data-step="0.1"
                                 data-entity="add-wish-list">
-                                <div>
-                                   <span class="fav-default">
-                                      <img src="#" data-src="img/favactive.svg" alt="" title=""  class='ifactive'>
-                                      <svg class='ifnotactive' width="23" height="24" viewBox="0 0 23 24" fill="none"
+                                <span>
+                                  <span class="fav-default">
+                                    <img src="#" data-src="img/favactive.svg" alt="" title=""  class='ifactive' width='24' height='23'>
+                                    <svg class='ifnotactive' width="23" height="24" viewBox="0 0 23 24" fill="none"
                                       xmlns="http://www.w3.org/2000/svg">
                                       <path
                                         d="M7.22109 4.20654C4.32439 4.20654 1.96094 6.57 1.96094 9.46669C1.96094 11.4255 3.43743 13.2697 5.23732 15.1611C7.03721 17.0525 9.25264 18.9682 11.0177 20.7332C11.1522 20.8677 11.3346 20.9432 11.5248 20.9432C11.715 20.9432 11.8975 20.8677 12.032 20.7332C13.797 18.9682 16.0125 17.0525 17.8124 15.1611C19.6123 13.2697 21.0887 11.4255 21.0887 9.46669C21.0887 6.57 18.7253 4.20654 15.8286 4.20654C14.1662 4.20654 12.7188 5.09909 11.5248 6.61527C10.3309 5.09909 8.8835 4.20654 7.22109 4.20654ZM7.22109 5.64113C8.62151 5.64113 9.78722 6.38635 10.9187 8.17594C10.9834 8.27816 11.0729 8.36236 11.1789 8.4207C11.2849 8.47905 11.4039 8.50964 11.5248 8.50964C11.6458 8.50964 11.7648 8.47905 11.8708 8.4207C11.9768 8.36236 12.0663 8.27816 12.131 8.17594C13.2625 6.38635 14.4282 5.64113 15.8286 5.64113C17.9501 5.64113 19.6542 7.34521 19.6542 9.46669C19.6542 10.6162 18.5006 12.3584 16.7738 14.173C15.1991 15.8277 13.2417 17.5565 11.5248 19.2305C9.80797 17.5565 7.85059 15.8277 6.2759 14.173C4.5491 12.3584 3.39552 10.6162 3.39552 9.46669C3.39552 7.34521 5.0996 5.64113 7.22109 5.64113Z"
@@ -1247,11 +1251,11 @@
                                     </svg>
 
                                   </span>
-                                </div>
+                                </span>
                               </span>
                             </span><!-- /.productcard__blockfav -->
-                            <a href="#" class="productcard__img hoverimage" aria-label="hoverimage">
-                              <img src="#" data-src="img/product1.webp" alt="" title="" width="405" height="272">
+                            <a href="#" aria-label="productlink" class="productcard__img hoverimage">
+                              <img src="#" data-src="img/product1.webp" alt="" title=""  width='323' height='217'>
                             </a>
                           </div>
                           <div class="productcard__blockwrapper">
@@ -1271,7 +1275,7 @@
                                 <div class="productcard__button">
                                   <button type='button' class='btn_ring' aria-label="btn_ring">
                                     <span class='btncart'>
-                                      <img src="#" data-src="img/ShoppingBagWhite.svg" alt="" title="" >
+                                      <img src="#" data-src="img/ShoppingBagWhite.svg" alt="" title=""  width='21' height='22'>
                                     </span>
                                   </button>
                                 </div>
@@ -1293,10 +1297,10 @@
                             <span class="productcard__blockfav ">
                               <span tabindex="0" class="catalog-fav " data-item="2676" data-step="0.1"
                                 data-entity="add-wish-list">
-                                <div>
-                                   <span class="fav-default">
-                                      <img src="#" data-src="img/favactive.svg" alt="" title=""  class='ifactive'>
-                                      <svg class='ifnotactive' width="23" height="24" viewBox="0 0 23 24" fill="none"
+                                <span>
+                                  <span class="fav-default">
+                                    <img src="#" data-src="img/favactive.svg" alt="" title=""  class='ifactive' width='24' height='23'>
+                                    <svg class='ifnotactive' width="23" height="24" viewBox="0 0 23 24" fill="none"
                                       xmlns="http://www.w3.org/2000/svg">
                                       <path
                                         d="M7.22109 4.20654C4.32439 4.20654 1.96094 6.57 1.96094 9.46669C1.96094 11.4255 3.43743 13.2697 5.23732 15.1611C7.03721 17.0525 9.25264 18.9682 11.0177 20.7332C11.1522 20.8677 11.3346 20.9432 11.5248 20.9432C11.715 20.9432 11.8975 20.8677 12.032 20.7332C13.797 18.9682 16.0125 17.0525 17.8124 15.1611C19.6123 13.2697 21.0887 11.4255 21.0887 9.46669C21.0887 6.57 18.7253 4.20654 15.8286 4.20654C14.1662 4.20654 12.7188 5.09909 11.5248 6.61527C10.3309 5.09909 8.8835 4.20654 7.22109 4.20654ZM7.22109 5.64113C8.62151 5.64113 9.78722 6.38635 10.9187 8.17594C10.9834 8.27816 11.0729 8.36236 11.1789 8.4207C11.2849 8.47905 11.4039 8.50964 11.5248 8.50964C11.6458 8.50964 11.7648 8.47905 11.8708 8.4207C11.9768 8.36236 12.0663 8.27816 12.131 8.17594C13.2625 6.38635 14.4282 5.64113 15.8286 5.64113C17.9501 5.64113 19.6542 7.34521 19.6542 9.46669C19.6542 10.6162 18.5006 12.3584 16.7738 14.173C15.1991 15.8277 13.2417 17.5565 11.5248 19.2305C9.80797 17.5565 7.85059 15.8277 6.2759 14.173C4.5491 12.3584 3.39552 10.6162 3.39552 9.46669C3.39552 7.34521 5.0996 5.64113 7.22109 5.64113Z"
@@ -1304,11 +1308,11 @@
                                     </svg>
 
                                   </span>
-                                </div>
+                                </span>
                               </span>
                             </span><!-- /.productcard__blockfav -->
-                            <a href="#" class="productcard__img hoverimage" aria-label="hoverimage">
-                              <img src="#" data-src="img/product1.webp" alt="" title="" width="405" height="272">
+                            <a href="#" aria-label="productlink" class="productcard__img hoverimage">
+                              <img src="#" data-src="img/product1.webp" alt="" title=""  width='323' height='217'>
                             </a>
                           </div>
                           <div class="productcard__blockwrapper">
@@ -1328,7 +1332,7 @@
                                 <div class="productcard__button">
                                   <button type='button' class='btn_ring' aria-label="btn_ring">
                                     <span class='btncart'>
-                                      <img src="#" data-src="img/ShoppingBagWhite.svg" alt="" title="" >
+                                      <img src="#" data-src="img/ShoppingBagWhite.svg" alt="" title=""  width='21' height='22'>
                                     </span>
                                   </button>
                                 </div>
@@ -1350,10 +1354,10 @@
                             <span class="productcard__blockfav ">
                               <span tabindex="0" class="catalog-fav " data-item="2676" data-step="0.1"
                                 data-entity="add-wish-list">
-                                <div>
-                                   <span class="fav-default">
-                                      <img src="#" data-src="img/favactive.svg" alt="" title=""  class='ifactive'>
-                                      <svg class='ifnotactive' width="23" height="24" viewBox="0 0 23 24" fill="none"
+                                <span>
+                                  <span class="fav-default">
+                                    <img src="#" data-src="img/favactive.svg" alt="" title=""  class='ifactive' width='24' height='23'>
+                                    <svg class='ifnotactive' width="23" height="24" viewBox="0 0 23 24" fill="none"
                                       xmlns="http://www.w3.org/2000/svg">
                                       <path
                                         d="M7.22109 4.20654C4.32439 4.20654 1.96094 6.57 1.96094 9.46669C1.96094 11.4255 3.43743 13.2697 5.23732 15.1611C7.03721 17.0525 9.25264 18.9682 11.0177 20.7332C11.1522 20.8677 11.3346 20.9432 11.5248 20.9432C11.715 20.9432 11.8975 20.8677 12.032 20.7332C13.797 18.9682 16.0125 17.0525 17.8124 15.1611C19.6123 13.2697 21.0887 11.4255 21.0887 9.46669C21.0887 6.57 18.7253 4.20654 15.8286 4.20654C14.1662 4.20654 12.7188 5.09909 11.5248 6.61527C10.3309 5.09909 8.8835 4.20654 7.22109 4.20654ZM7.22109 5.64113C8.62151 5.64113 9.78722 6.38635 10.9187 8.17594C10.9834 8.27816 11.0729 8.36236 11.1789 8.4207C11.2849 8.47905 11.4039 8.50964 11.5248 8.50964C11.6458 8.50964 11.7648 8.47905 11.8708 8.4207C11.9768 8.36236 12.0663 8.27816 12.131 8.17594C13.2625 6.38635 14.4282 5.64113 15.8286 5.64113C17.9501 5.64113 19.6542 7.34521 19.6542 9.46669C19.6542 10.6162 18.5006 12.3584 16.7738 14.173C15.1991 15.8277 13.2417 17.5565 11.5248 19.2305C9.80797 17.5565 7.85059 15.8277 6.2759 14.173C4.5491 12.3584 3.39552 10.6162 3.39552 9.46669C3.39552 7.34521 5.0996 5.64113 7.22109 5.64113Z"
@@ -1361,11 +1365,11 @@
                                     </svg>
 
                                   </span>
-                                </div>
+                                </span>
                               </span>
                             </span><!-- /.productcard__blockfav -->
-                            <a href="#" class="productcard__img hoverimage" aria-label="hoverimage">
-                              <img src="#" data-src="img/product1.webp" alt="" title="" width="405" height="272">
+                            <a href="#" aria-label="productlink" class="productcard__img hoverimage">
+                              <img src="#" data-src="img/product1.webp" alt="" title=""  width='323' height='217'>
                             </a>
                           </div>
                           <div class="productcard__blockwrapper">
@@ -1385,7 +1389,7 @@
                                 <div class="productcard__button">
                                   <button type='button' class='btn_ring' aria-label="btn_ring">
                                     <span class='btncart'>
-                                      <img src="#" data-src="img/ShoppingBagWhite.svg" alt="" title="" >
+                                      <img src="#" data-src="img/ShoppingBagWhite.svg" alt="" title=""  width='21' height='22'>
                                     </span>
                                   </button>
                                 </div>
@@ -1400,6 +1404,7 @@
 
                 </div>
               </div>
+
              
             </div>
           </div>
@@ -1812,9 +1817,9 @@
                           </div><!-- /.minicard__params -->
                           <div class="buyblock__quantity">
                             <div class="quantity">
-                              <input type="button"  class="quantity-minus" value="minus" data-field="quantity">
+                              <input type="button"  class="quantity-minus" value="" data-field="quantity">
                               <input type="number" step="1" max="1000" value="1" name="quantity" class="quantity-field">
-                              <input type="button"  class="quantity-plus" value="plus" data-field="quantity">
+                              <input type="button"  class="quantity-plus" value="" data-field="quantity">
                             </div>
                           </div>
 

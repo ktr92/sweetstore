@@ -1587,7 +1587,7 @@ small {
   position: absolute;
   top: 11px;
   left: 10px;
-  z-index: 9999; }
+  z-index: 9; }
 
 .detailslider .swiper-scrollbar-drag {
   background: #b81b37;
@@ -7152,7 +7152,7 @@ a.pagefilial_3d {
     align-items: center;
     justify-content: space-between; }
   .pagefilial .linkred {
-    margin-right: 0; }
+    margin-right: 5px; }
   .pagefilial__content .contactitem__address span {
     font-size: 12px; }
   .pagefilial__footer {
@@ -7339,6 +7339,8 @@ a.pagefilial_3d {
   .confirmpage__left {
     margin-left: auto;
     margin-right: auto;
+    width: 100%; }
+  .contactitem__flex {
     width: 100%; } }
 
 @media only screen and (max-width: 767px) {
