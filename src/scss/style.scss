@@ -5671,12 +5671,16 @@ margin-bottom: 18px;
 }
 .itemslist__nav {
   margin-bottom: 18px;
+  display: none;
 }
 .itemslist__nav a {
   display: block !important;
 }
 
 @media (max-width: 1023px) {
+  .itemslist__nav {
+    display: block;
+  }
   .news .itemslist__item_col3 {
     padding: 0 6px;
   }
