@@ -8028,5 +8028,136 @@ a.pagefilial_3d {
     color: #fff;
     padding: 0 5px; }
 
+.lessonpromo__wrapper {
+  gap: 20px; }
+
+@media (max-width: 1140px) {
+  .lessoncategory__items {
+    gap: 10px; }
+  .lessoncategory__item {
+    width: calc(100% / 4 - 10px);
+    margin-bottom: 31px; }
+  .lessoncards__wrapper {
+    height: unset;
+    padding: 34px; }
+  .lessoncards__content {
+    min-width: 220px;
+    max-width: 220px; }
+  .lessonpromo__right {
+    max-width: 50%; } }
+
+@media (max-width: 1023px) {
+  .lessoncategory__item {
+    width: calc(100% / 3 - 10px);
+    margin-bottom: 31px; }
+  .pagelesson h2 {
+    font-size: 26px;
+    text-align: center; }
+  .lessoncategory {
+    padding: 25px 0; }
+  .lessoncategory h2 {
+    margin-bottom: 38px; }
+  .lessonabout__title {
+    margin-bottom: 0; }
+  .lessonabout__wrapper h2 {
+    margin-bottom: 0; }
+  .lessonabout__subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    margin-bottom: 23px; }
+  .lessonabout__text {
+    margin-bottom: 24px; }
+  .lessonabout__text p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    margin: 0; }
+  .lessonabout__button .btn_main {
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center; }
+  .pageabout__expandtitle {
+    width: 100%; }
+  .pageabout__expandtitle h2 {
+    margin-bottom: 40px; }
+  .bannerpage {
+    height: 421px; }
+  .lessoncategory__image {
+    width: unset;
+    height: unset;
+    padding: 0 15px;
+    /*     width: 74px;
+    height: 74px; */ }
+  .lessoncategory__title {
+    font-size: 14px; }
+  .lessoncategory__image {
+    margin-bottom: 13px; }
+  .lessonabout__main,
+  .lessonpromo__right,
+  .lessonpromo__wrapper > div,
+  .lessonabout__wrapper > div,
+  .lessonformat__wrapper > div {
+    min-width: 100%;
+    max-width: 100%; }
+  .lessonpromo__wrapper,
+  .lessonabout__wrapper,
+  .lessonformat__wrapper {
+    flex-wrap: wrap;
+    width: 100%; }
+  .lessoncards .cardsblock__items {
+    flex-wrap: wrap; }
+  .lessonformat__title {
+    margin-bottom: 0; }
+  .lessonformat__text {
+    font-size: 14px;
+    line-height: 120%;
+    padding: 14px 18px;
+    margin-top: 20px;
+    gap: 22px; }
+  .lessonformat__text span {
+    font-size: 14px; }
+  .lessonformat {
+    margin: 45px 0 35px 0; }
+  .lessoncards {
+    margin: 35px 0; }
+  .lessoncards__image {
+    order: -1; }
+  .lessoncards__wrapper {
+    flex-wrap: wrap; }
+  .lessoncards__wrapper {
+    padding-top: 0;
+    gap: 0; }
+  .lessoncards__title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase; }
+  .lessoncards__content {
+    min-width: 100%;
+    max-width: 100%; }
+  .lessoncards__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
+    color: #343c4b; }
+  .lessonpromo {
+    margin: 30px 0; }
+  .lessonpromo__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    color: #b81b37; } }
+
 
 /*# sourceMappingURL=main.bundle.css.map*/
