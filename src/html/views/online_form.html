@@ -1,0 +1,104 @@
+<% var data={ title: "MAIN" , author: "" }; %>
+  <%= _.template(require('../includes/head.html').default)(data) %>
+    <%= _.template(require('../includes/header.html').default)(data) %>
+      <main>
+        <div class="container">
+          <div class="pageheader pageheader_white">
+
+            <div class="pageheader__row">
+              <div class="pageheader__left">
+                <div class="pageheader__content">
+
+                  <div class="breadcrumbs">
+                    <div class="container">
+                      <div class="breadcrumbs__items">
+                        <ul>
+                          <li>
+                            <a href="/" aria-label="index">
+                              <span>
+                                <img src="#" data-src="img/breadcrumbs.svg" alt="" title="" width="20" height="20">
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                              <span>Личный кабинет</span>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                      <!-- /.breadcrumbs__items -->
+                    </div>
+                    <!-- /.container -->
+                  </div>
+                  <!-- /.breadcrumbs -->
+
+                </div><!-- /.pageheader flex content-center -->
+              </div><!-- /.pageheader__left -->
+            </div><!-- /.pageheader -->
+
+          </div><!-- /.pageheader__row -->
+        </div>
+
+
+        <div class="page ">
+          <div class="lessonsform">
+            <div class="container">
+              <div class="lessonsform__form">
+                <form action="#">
+                  <div class="formblock">
+                    <div class="formblock__title">Добро пожаловать</div>
+                    <div class="formblock__main">
+                      <div class="formblock__input">
+                        <label>Логин</label>
+                        <input name="LOGIN" type="text" class="" value="">
+      
+                      </div><!-- /.formblock__input -->
+                      <div class="formblock__input">
+                        <label for="password">Пароль</label>
+                        <div class="inputpassword">
+                          <input name="PASSWORD" type="password">
+                          <img src="img/Invisible.svg" alt="" data-toggle="password">
+                        </div>
+                      </div><!-- /.formblock__input -->
+                      
+                      <div class="formblock__check">
+                        <div class="check">
+                          <input type="checkbox" id="remember" checked="checked" value="Y">
+                          <label for="remember">Запомнить меня</label>
+                        </div>
+                      </div><!-- /.formblock__check -->
+                    </div><!-- /.formblock__main -->
+                    <div class="modal-submit modal-submit_small">
+                      <div class="buttonsrow">
+                        <div class="buttonsrow__item buttonsrow__item_full">
+                          <button type="submit" class="btn btn_main">Войти</button>
+                        </div>
+                        <!-- /.buttonsrow__item -->
+                      </div>
+                      <!-- /.buttonsrow -->
+                    </div>
+                  
+                   
+                  </div><!-- /.formblock -->
+                </form>
+              </div><!-- /.lessonsform__form -->
+            </div><!-- /.container -->
+          </div><!-- /.lessonsform -->
+        </div>
+
+      </main>
+
+      <script>
+        
+  document.querySelectorAll('[data-toggle="password"]').forEach((item) => {
+    item.addEventListener("click", (event) => {
+      let inp = item.previousElementSibling
+      if (inp.type === "password") {
+        inp.type = "text"
+      } else {
+        inp.type = "password"
+      }
+    })
+  })
+      </script>
+      <%= _.template(require('../includes/footer.html').default)(data) %>

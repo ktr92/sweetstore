@@ -8031,6 +8031,70 @@ a.pagefilial_3d {
 .lessonpromo__wrapper {
   gap: 20px; }
 
+.lessonslist__item {
+  margin-bottom: 40px; }
+
+.lessonslist__title {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: uppercase;
+  margin-top: 22px; }
+
+.pageheader_white {
+  background: none; }
+
+.lessonslist video {
+  width: 100%; }
+
+.lessonslist__items {
+  max-width: 1175px;
+  margin: auto; }
+
+.lessonslist {
+  background: #f8f8f8;
+  padding: 30px 0; }
+
+.lessonsform {
+  background-image: url(../img/oblineform.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 102px 0; }
+
+.lessonsform__form {
+  max-width: 490px;
+  background: #fff;
+  border-radius: 12px;
+  margin: auto;
+  padding: 50px; }
+
+.formblock__title {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #231f20;
+  margin-bottom: 39px;
+  text-align: center; }
+
+.inputpassword {
+  position: relative; }
+
+.inputpassword img {
+  position: absolute;
+  right: 34px;
+  top: 50%;
+  cursor: pointer;
+  transform: translateY(-50%); }
+
+.pageheader_white {
+  padding: 0;
+  margin: 0; }
+
+.pageheader_white .breadcrumbs {
+  margin: 20px 0; }
+
 @media (max-width: 1140px) {
   .lessoncategory__items {
     gap: 10px; }
@@ -8047,6 +8111,13 @@ a.pagefilial_3d {
     max-width: 50%; } }
 
 @media (max-width: 1023px) {
+  .lessonsform {
+    padding: 50px 0; }
+  .lessonsform__form {
+    padding: 32px 18px; }
+  .formblock__title {
+    margin-bottom: 24px;
+    font-size: 20px; }
   .lessoncategory__item {
     width: calc(100% / 3 - 10px);
     margin-bottom: 31px; }
@@ -8157,7 +8228,10 @@ a.pagefilial_3d {
     font-size: 16px;
     line-height: 120%;
     text-align: center;
-    color: #b81b37; } }
+    color: #b81b37; }
+  .lessonslist__title {
+    font-size: 14px;
+    margin-top: 13px; } }
 
 
 /*# sourceMappingURL=main.bundle.css.map*/
