@@ -1,0 +1,175 @@
+<% var data={ title: "MAIN" , author: "" }; %>
+  <%= _.template(require('../includes/head.html').default)(data) %>
+    <%= _.template(require('../includes/header.html').default)(data) %>
+      <main>
+        <div class="pageheader ">
+          <div class="container">
+            <div class="pageheader__row">
+              <div class="pageheader__left">
+                <div class="pageheader__content">
+                  <div class="pagetitle">
+                    <h1>Контакты</h1>
+                  </div>
+                  <div class="breadcrumbs">
+                    <div class="container">
+                      <div class="breadcrumbs__items">
+                        <ul>
+                          <li>
+                            <a href="/" aria-label="index">
+                              <span>
+                                <img src="#" data-src="img/breadcrumbs.svg" alt="" title="" width="20" height="20">
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="" aria-label="link">
+                              <span>Каталог</span>
+                            </a>
+                          </li>
+                          <li>
+                            <span>фирменные торты </span>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- /.breadcrumbs__items -->
+                    </div>
+                    <!-- /.container -->
+                  </div>
+                  <!-- /.breadcrumbs -->
+
+                </div><!-- /.pageheader flex content-center -->
+              </div><!-- /.pageheader__left -->
+              <div class="pageheader__right">
+                <div class="contactsblock__common ">
+                  <div class="contactsblock__cell">
+                    <div class="contactsblock__label">Единый номер</div>
+                    <div class="contactsblock__value">
+                      <a href="tel:+74957997007">+7 (495) 799 70 07</a>
+                      <div class="contactline__messenger">
+                        <a href="#">
+                          <img src="#" data-src="img/WhatsApp.svg" alt="" title=""  class="offHover">
+                          <img src="#" data-src="img/WhatsApp2.svg" alt="" title=""  class="onHover">
+                        </a>
+                      </div>
+                    </div><!-- /.contactsblock__valie -->
+                  </div><!-- /.contactsblock__cell -->
+                  <div class="contactsblock__cell">
+                    <div class="contactsblock__label">Email</div>
+                    <div class="contactsblock__value">
+                      <a href="mailto:info@sweetstore.ru">info@sweetstore.ru</a>
+
+                    </div><!-- /.contactsblock__valie -->
+                  </div><!-- /.contactsblock__cell -->
+                </div><!-- /.contactsblock__common onlyMobile -->
+              </div>
+            </div><!-- /.pageheader__row -->
+          </div>
+        </div>
+
+
+        <div class="page ">
+          <div class="container">
+            <div class="pagecontacts">
+
+              <div class="contactsblock__items">
+                <div class="contactsblock__item fadeInUpSmall wow" data-wow-delay=".15s">
+                  <div class="contactitem">
+                    <div class="contactitem__header">
+                      <div class="contactitem__title">Кондитерская на Кудринской</div>
+                      <div class="contactitem__info">
+                        <div class="contactitem__text">9:00 - 21:00</div>
+                        <div class="contactitem__small">Без выходных</div>
+                      </div>
+                    </div><!-- /.contactitem__header -->
+                    <div class="contactitem__main">
+                      <div class="contactitem__address">
+                        <img src="#" data-src="img/locationsm.svg" alt="" title="" ><span>г. Москва, Кудринская площадь, 1</span>
+                      </div><!-- /.contactitem__address -->
+                      <div class="contactitem__phones">
+                        <a href="tel:+74957997707" class='linkred'>+7 (495) 799-77-07</a>
+                        <a href="tel:+74992523736" class='linkred onlyDesktop'>+7 (499) 252-37-36</a>
+                        <div class="contactline__messenger">
+                          <a href="#">
+                            <img src="#" data-src="img/WhatsApp.svg" alt="" title=""  class="offHover">
+                            <img src="#" data-src="img/WhatsApp2.svg" alt="" title=""  class="onHover">
+                          </a>
+                        </div>
+
+                      </div><!-- /.contactitem__phones -->
+                    </div><!-- /.contactitem__main -->
+                    <div class="contactitem__map">
+                      <div class="contactmap">
+                        <img src="#" data-src="img/contactmap.webp" alt="" title="" >
+                      </div><!-- /.contactmap -->
+                    </div><!-- /.contactitem__map -->
+                  </div><!-- /.contactitem -->
+                </div><!-- /.contactsblock__item -->
+                <div class="contactsblock__item fadeInUpSmall wow" data-wow-delay=".25s">
+                  <div class="contactitem">
+                    <div class="contactitem__header">
+                      <div class="contactitem__title">Кондитерская на Удальцова</div>
+                      <div class="contactitem__info">
+                        <div class="contactitem__text">9:00 - 21:00</div>
+                        <div class="contactitem__small">Без выходных</div>
+                      </div>
+                    </div><!-- /.contactitem__header -->
+                    <div class="contactitem__main">
+                      <div class="contactitem__address">
+                        <img src="#" data-src="img/locationsm.svg" alt="" title="" ><span>г. Москва ул. Удальцова, дом 1, корпус 1</span>
+                      </div><!-- /.contactitem__address -->
+                      <div class="contactitem__phones">
+                        <a href="tel:+74957997007" class='linkred'>+7 (495) 799-70-07</a>
+                        <a href="tel:+74997308418" class='linkred onlyDesktop'>+7 (499) 730-84-18</a>
+                        <div class="contactline__messenger">
+                          <a href="#">
+                            <img src="#" data-src="img/WhatsApp.svg" alt="" title=""  class="offHover">
+                            <img src="#" data-src="img/WhatsApp2.svg" alt="" title=""  class="onHover">
+                          </a>
+                        </div>
+                      </div><!-- /.contactitem__phones -->
+                    </div><!-- /.contactitem__main -->
+                    <div class="contactitem__map">
+                      <div class="contactmap">
+                        <img src="#" data-src="img/contactmap.webp" alt="" title="" >
+                      </div><!-- /.contactmap -->
+                    </div><!-- /.contactitem__map -->
+                  </div><!-- /.contactitem -->
+                </div><!-- /.contactsblock__item -->
+                <div class="contactsblock__item fadeInUpSmall wow" data-wow-delay=".35s">
+                  <div class="contactitem">
+                    <div class="contactitem__header">
+                      <div class="contactitem__title">Кондитерская на Смольной</div>
+                      <div class="contactitem__info">
+                        <div class="contactitem__text">9:00 - 21:00</div>
+                        <div class="contactitem__small">Без выходных</div>
+                      </div>
+                    </div><!-- /.contactitem__header -->
+                    <div class="contactitem__main">
+                      <div class="contactitem__address">
+                        <img src="#" data-src="img/locationsm.svg" alt="" title="" ><span>г. Москва, Кудринская площадь, 1</span>
+                      </div><!-- /.contactitem__address -->
+                      <div class="contactitem__phones">
+                        <a href="tel:+74957297707" class='linkred'>+7 (495) 729-77-07</a>
+                        <div class="contactline__messenger">
+                          <a href="#">
+                            <img src="#" data-src="img/WhatsApp.svg" alt="" title=""  class="offHover">
+                            <img src="#" data-src="img/WhatsApp2.svg" alt="" title=""  class="onHover">
+                          </a>
+                        </div>
+                      </div><!-- /.contactitem__phones -->
+                    </div><!-- /.contactitem__main -->
+                    <div class="contactitem__map">
+                      <div class="contactmap">
+                        <img src="#" data-src="img/contactmap.webp" alt="" title="" >
+                      </div><!-- /.contactmap -->
+                    </div><!-- /.contactitem__map -->
+                  </div><!-- /.contactitem -->
+                </div><!-- /.contactsblock__item -->
+              </div><!-- /.contactsblock__items -->
+            </div><!-- /.pagecontacts -->
+
+          </div>
+        </div>
+
+      </main>
+      <%= _.template(require('../includes/footer.html').default)(data) %>

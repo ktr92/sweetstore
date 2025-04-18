@@ -340,7 +340,55 @@ text-align: center;
   .pageheader_white .breadcrumbs {
     margin: 20px 0;
   }
-@media (max-width: 1140px) {
+
+  .catalogpage {
+  }
+  .gallerypage {
+  }
+  .gallerypage__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 21px;
+    margin-bottom: 60px;
+  }
+  .gallerypage__item {
+    width: calc(100% / 4 - 21px);
+  }
+  .gallerypage__link {
+    display: block;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .gallerypage__content {
+  }
+  .gallerypage__img  {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .gallerypage__img img {
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.3s ease;
+  }
+  .gallerypage__link:hover img {
+    transform: scale(1.05);
+  }
+  .gallerypage__more .btn_main {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 507px;
+    text-align: center;
+  }
+  .gallerypage {
+    margin-bottom: 60px;
+  }
+  .formblock__left .formblock__title {
+    text-align: left;
+  }
+
+@media (max-width: 1440px) {
   .lessoncategory__items {
     gap: 10px;
   }
@@ -361,6 +409,18 @@ text-align: center;
   }
 }
 @media (max-width: 1023px) {
+  .gallerypage__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 42px;
+  }
+  .pageheader h1 {
+    text-align: center;
+  }
+  .gallerypage__item {
+    width: calc(100% / 2 - 12px);
+  }
   .lessonsform {
     padding: 50px 0;
   }

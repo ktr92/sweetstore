@@ -1,360 +1,1364 @@
-Html Webpack Plugin:
-<pre>
-  Error: Child compilation failed:
-  Module not found: Error: Can't resolve 'D:\work\sweetstore\src\html\v  iews\about.html' in 'D:\work\sweetstore'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\  sweetstore\src\html\views\about.html' in 'D:\work\sweetstore'
-      at D:\work\sweetstore\node_modules\webpack\lib\Compilation.js:193  5:28
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:795:13
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:10:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:275:22
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:9:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:431:22
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:124:11
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:667:25
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:852:8
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:972:5
-  Module not found: Error: Can't resolve 'D:\work\sweetstore\src\html\v  iews\catalog.html' in 'D:\work\sweetstore'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\  sweetstore\src\html\views\catalog.html' in 'D:\work\sweetstore'
-      at D:\work\sweetstore\node_modules\webpack\lib\Compilation.js:193  5:28
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:795:13
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:10:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:275:22
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:9:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:431:22
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:124:11
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:667:25
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:852:8
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:972:5
-  Module not found: Error: Can't resolve 'D:\work\sweetstore\src\html\v  iews\filial.html' in 'D:\work\sweetstore'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\  sweetstore\src\html\views\filial.html' in 'D:\work\sweetstore'
-      at D:\work\sweetstore\node_modules\webpack\lib\Compilation.js:193  5:28
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:795:13
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:10:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:275:22
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:9:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:431:22
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:124:11
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:667:25
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:852:8
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:972:5
-  Module not found: Error: Can't resolve 'D:\work\sweetstore\src\html\v  iews\index.html' in 'D:\work\sweetstore'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\  sweetstore\src\html\views\index.html' in 'D:\work\sweetstore'
-      at D:\work\sweetstore\node_modules\webpack\lib\Compilation.js:193  5:28
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:795:13
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:10:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:275:22
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:9:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:431:22
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:124:11
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:667:25
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:852:8
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:972:5
-  Module not found: Error: Can't resolve 'D:\work\sweetstore\src\html\v  iews\menu.html' in 'D:\work\sweetstore'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\  sweetstore\src\html\views\menu.html' in 'D:\work\sweetstore'
-      at D:\work\sweetstore\node_modules\webpack\lib\Compilation.js:193  5:28
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:795:13
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:10:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:275:22
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:9:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:431:22
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:124:11
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:667:25
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:852:8
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:972:5
-  Module not found: Error: Can't resolve 'D:\work\sweetstore\src\html\v  iews\news.html' in 'D:\work\sweetstore'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\  sweetstore\src\html\views\news.html' in 'D:\work\sweetstore'
-      at D:\work\sweetstore\node_modules\webpack\lib\Compilation.js:193  5:28
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:795:13
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:10:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:275:22
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:9:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:431:22
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:124:11
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:667:25
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:852:8
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:972:5
-  Module not found: Error: Can't resolve 'D:\work\sweetstore\src\html\v  iews\news_detail.html' in 'D:\work\sweetstore'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\  sweetstore\src\html\views\news_detail.html' in 'D:\work\sweetstore'
-      at D:\work\sweetstore\node_modules\webpack\lib\Compilation.js:193  5:28
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:795:13
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:10:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:275:22
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:9:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:431:22
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:124:11
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:667:25
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:852:8
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:972:5
-  Module not found: Error: Can't resolve 'D:\work\sweetstore\src\html\v  iews\popup.html' in 'D:\work\sweetstore'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\  sweetstore\src\html\views\popup.html' in 'D:\work\sweetstore'
-      at D:\work\sweetstore\node_modules\webpack\lib\Compilation.js:193  5:28
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:795:13
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:10:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:275:22
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:9:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:431:22
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:124:11
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:667:25
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:852:8
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:972:5
-  Module not found: Error: Can't resolve 'D:\work\sweetstore\src\html\v  iews\project.html' in 'D:\work\sweetstore'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\  sweetstore\src\html\views\project.html' in 'D:\work\sweetstore'
-      at D:\work\sweetstore\node_modules\webpack\lib\Compilation.js:193  5:28
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:795:13
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:10:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:275:22
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:9:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:431:22
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:124:11
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:667:25
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:852:8
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:972:5
-  Module not found: Error: Can't resolve 'D:\work\sweetstore\src\html\v  iews\projectlist.html' in 'D:\work\sweetstore'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\  sweetstore\src\html\views\projectlist.html' in 'D:\work\sweetstore'
-      at D:\work\sweetstore\node_modules\webpack\lib\Compilation.js:193  5:28
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:795:13
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:10:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:275:22
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:9:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:431:22
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:124:11
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:667:25
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:852:8
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:972:5
-  Module not found: Error: Can't resolve 'D:\work\sweetstore\src\html\v  iews\start.html' in 'D:\work\sweetstore'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\  sweetstore\src\html\views\start.html' in 'D:\work\sweetstore'
-      at D:\work\sweetstore\node_modules\webpack\lib\Compilation.js:193  5:28
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:795:13
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:10:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:275:22
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:9:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:431:22
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:124:11
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:667:25
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:852:8
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:972:5
-  Module not found: Error: Can't resolve 'D:\work\sweetstore\src\html\v  iews\catalogroot.html' in 'D:\work\sweetstore'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\  sweetstore\src\html\views\catalogroot.html' in 'D:\work\sweetstore'
-      at D:\work\sweetstore\node_modules\webpack\lib\Compilation.js:193  5:28
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:795:13
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:10:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:275:22
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:9:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:431:22
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:124:11
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:667:25
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:852:8
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:972:5
-  Module not found: Error: Can't resolve 'D:\work\sweetstore\src\html\v  iews\catalog_2.html' in 'D:\work\sweetstore'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\  sweetstore\src\html\views\catalog_2.html' in 'D:\work\sweetstore'
-      at D:\work\sweetstore\node_modules\webpack\lib\Compilation.js:193  5:28
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:795:13
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:10:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:275:22
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:9:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:431:22
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:124:11
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:667:25
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:852:8
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:972:5
-  Module not found: Error: Can't resolve 'D:\work\sweetstore\src\html\v  iews\catalog_fav.html' in 'D:\work\sweetstore'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\  sweetstore\src\html\views\catalog_fav.html' in 'D:\work\sweetstore'
-      at D:\work\sweetstore\node_modules\webpack\lib\Compilation.js:193  5:28
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:795:13
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:10:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:275:22
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:9:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:431:22
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:124:11
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:667:25
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:852:8
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:972:5
-  Module not found: Error: Can't resolve 'D:\work\sweetstore\src\html\v  iews\confirm.html' in 'D:\work\sweetstore'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\  sweetstore\src\html\views\confirm.html' in 'D:\work\sweetstore'
-      at D:\work\sweetstore\node_modules\webpack\lib\Compilation.js:193  5:28
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:795:13
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:10:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:275:22
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:9:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:431:22
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:124:11
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:667:25
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:852:8
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:972:5
-  Module not found: Error: Can't resolve 'D:\work\sweetstore\src\html\v  iews\contacts.html' in 'D:\work\sweetstore'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\  sweetstore\src\html\views\contacts.html' in 'D:\work\sweetstore'
-      at D:\work\sweetstore\node_modules\webpack\lib\Compilation.js:193  5:28
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:795:13
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:10:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:275:22
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:9:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:431:22
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:124:11
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:667:25
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:852:8
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:972:5
-  Module not found: Error: Can't resolve 'D:\work\sweetstore\src\html\v  iews\delivery.html' in 'D:\work\sweetstore'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\  sweetstore\src\html\views\delivery.html' in 'D:\work\sweetstore'
-      at D:\work\sweetstore\node_modules\webpack\lib\Compilation.js:193  5:28
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:795:13
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:10:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:275:22
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:9:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:431:22
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:124:11
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:667:25
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:852:8
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:972:5
-  Module not found: Error: Can't resolve 'D:\work\sweetstore\src\html\v  iews\detail.html' in 'D:\work\sweetstore'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\  sweetstore\src\html\views\detail.html' in 'D:\work\sweetstore'
-      at D:\work\sweetstore\node_modules\webpack\lib\Compilation.js:193  5:28
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:795:13
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:10:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:275:22
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:9:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:431:22
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:124:11
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:667:25
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:852:8
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:972:5
-  Module not found: Error: Can't resolve 'D:\work\sweetstore\src\html\v  iews\events.html' in 'D:\work\sweetstore'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\work\  sweetstore\src\html\views\events.html' in 'D:\work\sweetstore'
-      at D:\work\sweetstore\node_modules\webpack\lib\Compilation.js:193  5:28
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:795:13
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:10:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:275:22
-      at eval (eval at create (D:\work\sweetstore\node_modules\tapable\  lib\HookCodeFactory.js:33:10), <anonymous>:9:1)
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:431:22
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:124:11
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:667:25
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:852:8
-      at D:\work\sweetstore\node_modules\webpack\lib\NormalModuleFactor  y.js:972:5
+
+  <!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" >
+  <title>MAIN</title>
+  <meta name="description" content="Put your description here.">
+  <link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96" >
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg" >
+  <link rel="shortcut icon" href="img/favicon.ico" >
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" >
+  <link rel="manifest" href="img/site.webmanifest" >
+
+ <link rel="preload" href="/fonts/Jost-Regular.woff" as="font" type="font/woff2" crossorigin>
+ <link rel="preload" href="/fonts/Jost-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+ <link rel="preload" href="/fonts/Jost-Bold.woff" as="font" type="font/woff2" crossorigin>
+ <link rel="preload" href="/fonts/Jost-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+ <link rel="preload" href="/fonts/Jost-ExtraBold.woff" as="font" type="font/woff2" crossorigin>
+ <link rel="preload" href="/fonts/Jost-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+
+ <link rel="preload" href="/fonts/Jost-BoldItalic.woff" as="font" type="font/woff2" crossorigin>
+ <link rel="preload" href="/fonts/Jost-BoldItalic.woff2" as="font" type="font/woff2" crossorigin>
+
+ <link rel="preload" href="/fonts/Jost-Light.woff" as="font" type="font/woff2" crossorigin>
+ <link rel="preload" href="/fonts/Jost-Light.woff2" as="font" type="font/woff2" crossorigin>
+
+ <link rel="preload" href="/fonts/Jost-Medium.woff" as="font" type="font/woff2" crossorigin>
+ <link rel="preload" href="/fonts/Jost-Medium.woff2" as="font" type="font/woff2" crossorigin>
+
+ <link rel="preload" href="/fonts/Jost-SemiBold.woff" as="font" type="font/woff2" crossorigin>
+ <link rel="preload" href="/fonts/Jost-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+
+ <link rel="preload" href="/fonts/Jost-MediumItalic.woff" as="font" type="font/woff2" crossorigin>
+ <link rel="preload" href="/fonts/Jost-MediumItalic.woff2" as="font" type="font/woff2" crossorigin>
+
+ <link rel="preload" href="/fonts/SofiaSans-Regular.woff" as="font" type="font/woff2" crossorigin>
+ <link rel="preload" href="/fonts/SofiaSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+ <link rel="preload" href="/fonts/SofiaSans-Bold.woff" as="font" type="font/woff2" crossorigin>
+ <link rel="preload" href="/fonts/SofiaSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+ 
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+  <link rel="stylesheet" href="css/lightbox.min.css">
+
+  <link rel="stylesheet" href="css/main.bundle.css" >
+
+
+
+<!--   <script src="js/selectbox.js"></script> -->
+
+  <!-- <script src="js/fixedcart.js"></script> -->
+
   
-  - Compilation.js:1935 
-    [sweetstore]/[webpack]/lib/Compilation.js:1935:28
-  
-  - NormalModuleFactory.js:795 
-    [sweetstore]/[webpack]/lib/NormalModuleFactory.js:795:13
-  
-  
-  - NormalModuleFactory.js:275 
-    [sweetstore]/[webpack]/lib/NormalModuleFactory.js:275:22
-  
-  
-  - NormalModuleFactory.js:431 
-    [sweetstore]/[webpack]/lib/NormalModuleFactory.js:431:22
-  
-  - NormalModuleFactory.js:124 
-    [sweetstore]/[webpack]/lib/NormalModuleFactory.js:124:11
-  
-  - NormalModuleFactory.js:667 
-    [sweetstore]/[webpack]/lib/NormalModuleFactory.js:667:25
-  
-  - NormalModuleFactory.js:852 
-    [sweetstore]/[webpack]/lib/NormalModuleFactory.js:852:8
-  
-  - NormalModuleFactory.js:972 
-    [sweetstore]/[webpack]/lib/NormalModuleFactory.js:972:5
-  
-  - Module not found: Error: Can't resolve 'D:\work\sweetstore\src\html    \views\catalog.html' in 'D:\work\sweetstore'
-  
-  - ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\wor    k\sweetstore\src\html\views\catalog.html' in 'D:\work\sweetstore'
-  
-  - Compilation.js:1935 
-    [sweetstore]/[webpack]/lib/Compilation.js:1935:28
-  
-  - NormalModuleFactory.js:795 
-    [sweetstore]/[webpack]/lib/NormalModuleFactory.js:795:13
-  
-  
-  - NormalModuleFactory.js:275 
-    [sweetstore]/[webpack]/lib/NormalModuleFactory.js:275:22
-  
-  
-  - NormalModuleFactory.js:431 
-    [sweetstore]/[webpack]/lib/NormalModuleFactory.js:431:22
-  
-  - NormalModuleFactory.js:124 
-    [sweetstore]/[webpack]/lib/NormalModuleFactory.js:124:11
-  
-  - NormalModuleFactory.js:667 
-    [sweetstore]/[webpack]/lib/NormalModuleFactory.js:667:25
-  
-  - NormalModuleFactory.js:852 
-    [sweetstore]/[webpack]/lib/NormalModuleFactory.js:852:8
-  
-  - NormalModuleFactory.js:972 
-    [sweetstore]/[webpack]/lib/NormalModuleFactory.js:972:5
-  
-  - Module not found: Error: Can't resolve 'D:\work\sweetstore\src\html    \views\filial.html' in 'D:\work\sweetstore'
-  
-  - ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\wor    k\sweetstore\src\html\views\filial.html' in 'D:\work\sweetstore'
-  
-  - Compilation.js:1935 
-    [sweetstore]/[webpack]/lib/Compilation.js:1935:28
-  
-  - NormalModuleFactory.js:795 
-    [sweetstore]/[webpack]/lib/NormalModuleFactory.js:795:13
-  
-  
-  - NormalModuleFactory.js:275 
-    [sweetstore]/[webpack]/lib/NormalModuleFactory.js:275:22
-  
-  
-  - NormalModuleFactory.js:431 
-    [sweetstore]/[webpack]/lib/NormalModuleFactory.js:431:22
-  
-  - NormalModuleFactory.js:124 
-    [sweetstore]/[webpack]/lib/NormalModuleFactory.js:124:11
-  
-  - NormalModuleFactory.js:667 
-    [sweetstore]/[webpack]/lib/NormalModuleFactory.js:667:25
-  
-  - NormalModuleFactory.js:852 
-    [sweetstore]/[webpack]/lib/NormalModuleFactory.js:852:8
-  
-  - NormalModuleFactory.js:972 
-    [sweetstore]/[webpack]/lib/NormalModuleFactory.js:972:5
-  
-  - Module not found: Error: Can't resolve 'D:\work\sweetstore\src\html    \views\index.html' in 'D:\work\sweetstore'
-  
-  - ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\wor    k\sweetstore\src\html\views\index.html' in 'D:\work\sweetstore'
-  
-  - Compilation.js:1935 
-    [sweetstore]/[webpack]/lib/Compilation.js:1935:28
-  
-  - NormalModuleFactory.js:795 
-    [sweetstore]/[webpack]/lib/NormalModuleFactory.js:795:13
-  
-  
-  - NormalModuleFactory.js:275 
-    [sweetstore]/[webpack]/lib/NormalModuleFactory.js:275:22
-  
-  
-  - NormalModuleFactory.js:431 
-    [sweetstore]/[webpack]/lib/NormalModuleFactory.js:431:22
-  
-  - NormalModuleFactory.js:124 
-    [sweetstore]/[webpack]/lib/NormalModuleFactory.js:124:11
-  
-  - NormalModuleFactory.js:667 
-    [sweetstore]/[webpack]/lib/NormalModuleFactory.js:667:25
-  
-  - NormalModuleFactory.js:852 
-    [sweetstore]/[webpack]/lib/NormalModuleFactory.js:852:8
-  
-  - NormalModuleFactory.js:972 
-    [sweetstore]/[webpack]/lib/NormalModuleFactory.js:972:5
-  
-  - Module not found: Error: Can't resolve 'D:\work\sweetstore\src\html    \views\menu.html' in 'D:\work\sweetstore'
-  
-  - ModuleNotFoundError: Module not found: Error: Can't resolve 'D:\wor    k\sweetstore\src\html\views\menu.html' in 'D:\work\sweetstore'
-  
-  - Compilation.js:1935 
-    [sweetstore]/[webpack]/lib/Compilation.js:1935:28
-  
-  - NormalModuleFactory.js:795 
-    [sweetstore]/[webpack]/lib/NormalModuleFactory.js:795:13
-  
-  
-</pre>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.inputmask.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/wow.min.js"></script>
+<!-- <script src="js/jquery.zoom.min.js"></script> -->
+<script src="js/lightbox.min.js"></script>
+
+</head>
+
+<body>
+    <div class="jsbackdrop "></div>
+
+
+<div class="mobilemenu" data-menu="mainmenu">
+  <div class="mobilemenu__wrapper">
+    <div class="mobilemenu__block">
+      <div class="mobilemenu__menu">
+        <div class="headermenu__topmenu ">
+          <div class="topmenu">
+            <div class="topmenu__items">
+              <ul>
+                <li><a href="" aria-label="link">Наши кондитерские</a></li>
+                <li><a href="" aria-label="link">Мероприятия “под ключ”</a></li>
+                <li><a href="" aria-label="link">О нас</a></li>
+                <li><a href="" aria-label="link">Оплата и доставка</a></li>
+                <li><a href="" aria-label="link">Контакты</a></li>
+              </ul>
+            </div><!-- /.topmenu__items -->
+          </div><!-- /.topmenu -->
+        </div>
+      </div>
+      <!-- /.mobilemenu__menu -->
+    </div>
+    <!-- /.mobilemenu__block -->
+
+    <div class="mobilemenu__block menucontancts">
+      <div class="contactline contactline__phone">
+        <a href="tel:+74957997007" class='phonelink active'>+7 (495) 799 70 07</a>
+      </div>
+      <div class="contactline contactline__email">
+        <a href="mailto:info@sweetstore.ru" class='emaillink active'>info@sweetstore.ru</a>
+      </div>
+      <div class=" contactline__messenger">
+        <a href="#" class='msglink' aria-label='msglink'>
+          <img src="#" data-src="img/WhatsApp.svg" alt="" title=""  width='32' height='32'>
+          <span> Написать в WhatsApp</span>
+
+        </a>
+      </div>
+
+    </div>
+
+    <div class="mobilemenu__app">
+      <div class="mobilemenu__apptext">Скачайте наше приложение и получите скидку <div class="red">-10%</div>
+      </div>
+      <div class="mobilemenu__appbuttons">
+        <a href="" target='_blank' class="mobilemenu__appbutton">
+          <img src="#" data-src="img/gplay.svg" alt="" title=""  width='137' height='38'>
+        </a>
+        <a href="" target="_blank" aria-label="app"  class="mobilemenu__appbutton">
+          <img src="#" data-src="img/appstore.svg" alt="" title=""  width='137' height='38'>
+        </a>
+      </div><!-- /.mobilemenu__appbuttons -->
+    </div><!-- /.mobilemenu__app -->
+
+  </div>
+  <!-- /.mobilemenu__wrapper -->
+</div>
+<!-- /.mobilepanel -->
+<header id="header" class="header">
+
+  <div class='headerwrapper'>
+    <div class="container">
+      <div>
+        <div class="headermain">
+          <div class="headermain__left">
+            <div class="headermain__logo"><a href="#" class='logo'  aria-label='logo'><img src="#" data-src="img/logo.svg" alt="" title=""  width='143' height='117'></a></div>
+
+          </div>
+          <!-- /.headermain__left-->
+          <div class="headermain__right">
+            <div class="headermain__search onlyDesktop">
+              <form action="#">
+                <div class="searchinput">
+                  <button type="submit" aria-label="Search2"><img src="#" data-src="img/Search.svg" alt="" title=""  width='23' height='23'></button>
+
+                  <input type="text" placeholder='Я ищу' >
+
+                </div>
+              </form>
+            </div>
+            <div class="headermain__contacts onlyDesktop">
+              <div class="contactline">
+                <div class="contactline__phone">
+                  <a href="tel:+74957997007" class='phonelink'>+7 (495) 799 70 07</a>
+                </div><!-- /.contactline__phone -->
+                <div class="contactline__messenger">
+                  <a href="#"  aria-label='msglink'>
+                    <img src="#" data-src="img/WhatsApp.svg" alt="" title=""  class='offHover' width='42' height='42'>
+                    <img src="#" data-src="img/WhatsApp2.svg" alt="" title=""  class='onHover' width='42' height='42'>
+                  </a>
+                </div><!-- /.contactline__messenger -->
+                <div class="contactline__callback">
+                  <a href="#popup_callback" data-toggle="modal" class='btn_main animatebtn' aria-label='callback'>Заказать звонок</a>
+                </div><!-- /.contactline__callback -->
+              </div><!-- /.contactline -->
+            </div>
+            <!-- /.headermain__contacts -->
+            <div class="headermain__iconlinks">
+              <div class="iconlinks">
+
+                <div class="iconlinks__item">
+                  <a href="#" class="iconlinks__link"  aria-label='fav'>
+                    <span class="iconlinks__badge">2</span>
+
+                    <span class="iconlinks__icon">
+                      <img src="#" data-src="img/icnHeart.svg" alt="" title=""  class='offHover' width='28' height='28'>
+                      <img src="#" data-src="img/icnHeart2.svg" alt="" title=""  class='onHover' width='28' height='28'>
+                    </span>
+                  </a>
+                </div>
+                <div class="iconlinks__item">
+                  <a href="#" class="iconlinks__link"  aria-label='cart'>
+                    <span class="iconlinks__badge">5</span>
+                    <span class="iconlinks__icon">
+                      <img src="#" data-src="img/icnCart.svg" alt="" title=""  class='offHover' width='28' height='28'>
+                      <img src="#" data-src="img/icnCart2.svg" alt="" title=""  class='onHover' width='28' height='28'>
+                    </span>
+                  </a>
+                </div>
+                <div class="iconlinks__item onlyMobile">
+                  <a href="#" data-menutoggle="mainmenu" class='menuicon'  aria-label='menu'>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </a>
+                </div>
+              </div>
+              <!-- /.iconlinks -->
+            </div>
+            <!-- /.headermain__iconlinks -->
+          </div>
+          <!-- /.headermain__right -->
+        </div>
+        <!-- /.headermain -->
+      </div>
+
+      <div id='headermain' class="headermenu__stickty">
+      <div class="headermenu" >
+
+        <div class="headermenu__catalog">
+          <div class="headermain__menu">
+
+            <button class='mainmenubtn animatebtn' data-menutoggle='catalogmenu' aria-label="catalogmenu">
+              <span>
+                <img class="burgericon icon--white onlyDesktop offHover" src="#" data-src="img/burger.svg" alt="" title=""  width='18' height='18'>
+                <img class="burgericon icon--white onlyMobile " src="#"  data-src="img/burger2.svg" alt="" title=""  width='18' height='18'>
+                <img class="burgericon icon--white  onHover" src="#"  data-src="img/burger2.svg" alt="" title=""  width='18' height='18'>
+                <span>Каталог</span>
+              </span>
+              <span class='menuexpand'>
+                <img src="#" data-src="img/expand.svg" alt="" title=""  class='onlyDesktop offHover' width='8' height='5'>
+                <img src="#" data-src="img/expand2.svg" alt="" title=""  class='onlyMobile ' width='8' height='5'>
+                <img src="#" data-src="img/expand2.svg" alt="" title=""  class='onHover' width='8' height='5'>
+              </span>
+
+            </button>
+
+            <div class="mainmenu" data-menu="catalogmenu">
+              <div class="mainmenu__wrapper">
+                <div class="mainmenu__items">
+                  <div class="mainmenu__column">
+                    <div class="mainmenu__block">
+                      <div class="mainmenu__title">Торты</div>
+                      <div class="mainmenu__list">
+                        <ul>
+                          <li><a href="" aria-label="link">Фирменные в наличии</a></li>
+                          <li><a href="" aria-label="link">За 48 часов</a></li>
+                          <li><a href="" aria-label="link">Заказные</a></li>
+                          <li><a href="" aria-label="link">по Госту</a></li>
+                          <li><a href="" aria-label="link">Дополнительно к торту</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="mainmenu__block">
+                      <div class="mainmenu__title">Десерты</div>
+                      <div class="mainmenu__list">
+                        <ul>
+                          <li><a href="" aria-label="link">Пирожные</a></li>
+                          <li><a href="" aria-label="link">Безе</a></li>
+                          <li><a href="" aria-label="link">Макаронс</a></li>
+                          <li><a href="" aria-label="link">Мармелад</a></li>
+                          <li><a href="" aria-label="link">Шоколад и конфеты</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="mainmenu__column">
+
+                    <div class="mainmenu__block">
+                      <div class="mainmenu__title">Проекты от шефа</div>
+                      <div class="mainmenu__links">
+                        <ul>
+                          <li>
+                            <a href="" aria-label="link">
+                              <img src="#" data-src="img/mainmenu__links1.svg" alt="" title=""  width='20' height='21'><span>Онлайн курс</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="" aria-label="link">
+                              <img src="#" data-src="img/mainmenu__links2.svg" alt="" title=""  width='20' height='21'><span>Книга “Рецепт Сладкой жизни”</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="" aria-label="link">
+                              <img src="#" data-src="img/mainmenu__links3.svg" alt="" title=""  width='20' height='21'><span>Аудио рассказ</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="" aria-label="link">
+                              <img src="#" data-src="img/mainmenu__links4.svg" alt="" title=""  width='20' height='21'><span>Лекции</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="" aria-label="link">
+                              <img src="#" data-src="img/mainmenu__links5.svg" alt="" title=""  width='20' height='21'><span>VIP Подарок</span>
+                            </a>
+                          </li>
+
+                        </ul>
+                      </div><!-- /.mainmenu__list -->
+                    </div><!-- /.mainmenu__block -->
+                    <div class="mainmenu__block">
+                      <div class="mainmenu__title">Меню</div>
+                      <div class="mainmenu__links">
+                        <ul>
+                          <li>
+                            <a href="" aria-label="link">
+                              <img src="#" data-src="img/locate.svg" alt="" title=""  width='20' height='20'><span>На Удальцова</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="" aria-label="link">
+                              <img src="#" data-src="img/locate.svg" alt="" title=""  width='20' height='20'><span>На Удальцова</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="" aria-label="link">
+                              <img src="#" data-src="img/locate.svg" alt="" title=""  width='20' height='20'><span>На Удальцова</span>
+                            </a>
+                          </li>
+
+
+                        </ul>
+                      </div><!-- /.mainmenu__list -->
+                    </div><!-- /.mainmenu__block -->
+                  </div><!-- /.mainmenu__column -->
+                  <div class="mainmenu__column pl-0">
+                    <div class="mainmenubanner">
+                      <div class="mainmenubanner__content">
+                        <div class="mainmenubanner__image">
+                          <div class="mainmenubanner__img">
+                            <img src="#" data-src="img/mainmenubanner.webp" alt="" title=""  width='248' height='168'>
+                          </div><!-- /.mainmenubanner__img -->
+                        </div><!-- /.mainmenubanner__image -->
+                        <div class="mainmenubanner__title">Подарочные <br> Карты</div>
+                      </div><!-- /.mainmenubanner__content -->
+                      <div class="mainmenubanner__buttons">
+                        <div class="mainmenubanner__button"><a href="" class='btn_main btn_sm animatebtn'>3 000 ₽</a></div>
+                        <div class="mainmenubanner__button"><a href="" class='btn_border btn_sm animatebtn'>5 000 ₽</a></div>
+                      </div><!-- /.mainmenubanner__buttons -->
+                    </div><!-- /.mainmenubanner -->
+                  </div><!-- /.mainmenu__column -->
+                </div>
+                <!-- /.mainmenu__items -->
+              </div>
+              <!-- /.mainmenu__wrapper -->
+            </div>
+            <!-- /.mainmenu -->
+          </div>
+          <!-- /.headermain__menu -->
+        </div><!-- /.headermenu__catalog -->
+        <div class="headermain__search onlyMobile">
+          <form action="#">
+            <div class="searchinput">
+              <button type="submit" aria-label="Search"><img src="#" data-src="img/Search.svg" alt="" title=""  width='18' height='18'></button>
+
+              <input type="text" placeholder='Я ищу' >
+
+              <!-- <input type="text" placeholder='' > -->
+            </div>
+          </form>
+        </div>
+        <div class="headermenu__topmenu onlyDesktop">
+          <div class="topmenu">
+            <div class="topmenu__items">
+              <ul>
+                <li><a href="" aria-label="link">Наши кондитерские</a></li>
+                <li><a href="" aria-label="link">Мероприятия “под ключ”</a></li>
+                <li><a href="" aria-label="link">О нас</a></li>
+                <li><a href="" aria-label="link">Оплата и доставка</a></li>
+                <li><a href="" aria-label="link">Контакты</a></li>
+              </ul>
+            </div><!-- /.topmenu__items -->
+          </div><!-- /.topmenu -->
+        </div><!-- /.headermenu__topmenu -->
+
+      </div><!-- /.headermenu -->
+    </div>
+
+
+    </div>
+    <!-- /.headercontainer -->
+
+
+
+  </div>
+
+</header>
+<!-- /#header.header -->
+      <main>
+        <div class="pageheader ">
+          <div class="container">
+            <div class="pageheader__row">
+              <div class="pageheader__left">
+                <div class="pageheader__content">
+                  <div class="pagetitle">
+                    <h1>Оплата и доставка</h1>
+                  </div>
+                  <div class="breadcrumbs">
+                    <div class="container">
+                      <div class="breadcrumbs__items">
+                        <ul>
+                          <li>
+                            <a href="/" aria-label="index">
+                              <span>
+                                <img src="#" data-src="img/breadcrumbs.svg" alt="" title="" width="20" height="20">
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="" aria-label="link">
+                              <span>Каталог</span>
+                            </a>
+                          </li>
+                          <li>
+                            <span>фирменные торты </span>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- /.breadcrumbs__items -->
+                    </div>
+                    <!-- /.container -->
+                  </div>
+                  <!-- /.breadcrumbs -->
+
+                </div><!-- /.pageheader flex content-center -->
+              </div><!-- /.pageheader__left -->
+
+            </div><!-- /.pageheader__row -->
+          </div>
+        </div>
+
+
+        <div class="page ">
+          <div class="container">
+            <div class="pagedelivery">
+              <div class="pagedelivery__section">
+                <div class="pagedelivery__title">Как сделать заказ?</div>
+                <div class="pagedelivery__steps">
+                  <div class="pagedelivery__step">
+                    <div class="pagedelivery__stepnumber"><img src="#" data-src="img/step01.svg" alt="" title="" ></div>
+                    <div class="pagedelivery__stepcontent">
+                      <div class="pagedelivery__stepicon"><img src="#" data-src="img/stepicon1.svg" alt="" title=""  width='54' height='54'>
+                      </div>
+                      <div class="pagedelivery__steptext">
+                        Добавьте товар в корзину <br> и нажмите <a href="" aria-label="link">«Оформить заказ»</a>
+                      </div><!-- /.pagedelivery__steptext -->
+                    </div><!-- /.pagedelivery__stepcontent -->
+
+                  </div><!-- /.pagedelivery__step -->
+                  <div class="pagedelivery__step">
+                    <div class="pagedelivery__stepnumber"><img src="#" data-src="img/step02.svg" alt="" title="" ></div>
+                    <div class="pagedelivery__stepcontent">
+
+                      <div class="pagedelivery__stepicon"><img src="#" data-src="img/stepicon2.svg" alt="" title=""  width='54' height='54'>
+                      </div>
+                      <div class="pagedelivery__steptext">
+                        Выберите способ <br> оплаты и доставки
+                      </div><!-- /.pagedelivery__steptext -->
+                    </div><!-- /.pagedelivery__stepcontent -->
+
+                  </div><!-- /.pagedelivery__step -->
+                  <div class="pagedelivery__step">
+                    <div class="pagedelivery__stepnumber"><img src="#" data-src="img/step03.svg" alt="" title="" ></div>
+                    <div class="pagedelivery__stepcontent">
+
+                      <div class="pagedelivery__stepicon"><img src="#" data-src="img/stepicon3.svg" alt="" title=""  width='54' height='54'>
+                      </div>
+                      <div class="pagedelivery__steptext">
+                        Введите свои <br> платежные данные
+                      </div><!-- /.pagedelivery__steptext -->
+                    </div><!-- /.pagedelivery__stepcontent -->
+
+                  </div><!-- /.pagedelivery__step -->
+                  <div class="pagedelivery__step">
+                    <div class="pagedelivery__stepnumber"><img src="#" data-src="img/step04.svg" alt="" title="" ></div>
+                    <div class="pagedelivery__stepcontent">
+
+                      <div class="pagedelivery__stepicon"><img src="#" data-src="img/stepicon4.svg" alt="" title=""  width='54' height='54'>
+                      </div>
+                      <div class="pagedelivery__steptext">
+                        Выберите время <br>и дату доставки
+                      </div><!-- /.pagedelivery__steptext -->
+                    </div><!-- /.pagedelivery__stepcontent -->
+
+                  </div><!-- /.pagedelivery__step -->
+                </div><!-- /.pagedelivery__steps -->
+              </div><!-- /.pagedelivery__section -->
+              <div class="pagedelivery__section">
+                <div class="pagedelivery__title">Способы оплаты</div>
+                <div class="pagedelivery__payments">
+                  <div class="pagedelivery__pay">
+                    <div class="pagedelivery__paywrapper">
+                      <div class="pagedelivery__payicons">
+                        <img src="#" data-src="img/pay1.svg" alt="" title=""  width='54' height='38'>
+                      </div>
+                      <div class="pagedelivery__paytitle">
+                        Наличными со скидкой до <span class="grbadge">-10%</span>
+                      </div>
+                      <div class="pagedelivery__paytext">При получении заказа</div>
+                    </div><!-- /.pagedelivery__paywrapper -->
+                  </div><!-- /.pagedelivery__pay -->
+                  <div class="pagedelivery__pay">
+                    <div class="pagedelivery__paywrapper">
+                      <div class="pagedelivery__payicons">
+                        <img src="#" data-src="img/pay2.svg" alt="" title=""  width='54' height='38'>
+                        <img src="#" data-src="img/pay3.svg" alt="" title=""  width='54' height='38'>
+                        <img src="#" data-src="img/pay4.svg" alt="" title=""  width='54' height='38'>
+                      </div>
+                      <div class="pagedelivery__paytitle">
+                        Картой онлайн
+                      </div>
+                      <div class="pagedelivery__paytext">Сразу после оформления заказа</div>
+                    </div><!-- /.pagedelivery__paywrapper -->
+                  </div><!-- /.pagedelivery__pay -->
+                </div><!-- /.pagedelivery__payments -->
+              </div><!-- /.pagedelivery__section -->
+              <div class="pagedelivery__section">
+                <div class="pagedelivery__title">Общая информация</div>
+                <div class="pagedelivery__text">Минимальная сумма заказа <span class="red">2 000 ₽</span></div>
+                <div class="pagedelivery__text">Доставка ежедневно с 10:00 до 21:00</div>
+              </div><!-- /.pagedelivery__section -->
+
+              <div class="pagedelivery__section">
+                <div class="pagedelivery__title">Способы доставки</div>
+                <div class="pagedelivery__tabs" data-tabs='pagedelivery'>
+                  <div class="pagedelivery__tabsleft" data-headertabs='pagedelivery'>
+                    <div class="pagedelivery__tabsbutton active" data-headertab='pagedelivery'>
+                      <div class="pagedelivery__tabsheader">
+                        <div class="pagedelivery__tabstitle">Доставка в пределах МКАД</div>
+                        <div class="pagedelivery__tabsprice">от 550 ₽ </div>
+                      </div>
+                      <div class="pagedelivery__tabslist">
+                        <div class="pagedelivery__tabsitem">
+                          <div class="pagedelivery__tabsitemtotle">Стоимость доставки пешим курьером </div>
+                          <div class="pagedelivery__tabsitemtext">от 550р вы сможете согласовать с менеджером</div>
+                        </div>
+                        <div class="pagedelivery__tabsitem">
+                          <div class="pagedelivery__tabsitemtotle">Стоимость доставки на автотранспорте</div>
+                          <div class="pagedelivery__tabsitemtext">от 1500р вы сможете согласовать с менеджером</div>
+                        </div>
+                        <div class="pagedelivery__tabsitem">
+                          <div class="pagedelivery__tabsitemtext">Время доставки – в течение 3-х часов</div>
+                        </div>
+                        <div class="pagedelivery__tabcontent active onlyMobile" data-contenttabs='pagedelivery'>
+                          <img src="#" data-src="img/pagedelivery.webp" alt="" title="" >
+                        </div><!-- /.pagedelivery__tabcontent -->
+                      </div><!-- /.pagedelivery__tabslist -->
+                    </div><!-- /.pagedelivery__tabsbutton -->
+                    <div class="pagedelivery__tabsbutton " data-headertab='pagedelivery'>
+                      <div class="pagedelivery__tabsheader">
+                        <div class="pagedelivery__tabstitle">Доставка за пределами МКАД</div>
+                        <div class="pagedelivery__tabsprice">от 550 ₽ </div>
+                      </div>
+                      <div class="pagedelivery__tabslist">
+                        <div class="pagedelivery__tabsitem">
+                          <div class="pagedelivery__tabsitemtotle">Стоимость доставки пешим курьером </div>
+                          <div class="pagedelivery__tabsitemtext">от 550р + 100р за 1км вы сможете согласовать с
+                            менеджером</div>
+                        </div>
+                        <div class="pagedelivery__tabsitem">
+                          <div class="pagedelivery__tabsitemtotle">Стоимость доставки на автотранспорте
+                          </div>
+                          <div class="pagedelivery__tabsitemtext"> от 1500р + 100р за км вы сможете согласовать с
+                            менеджером
+                          </div>
+                        </div>
+
+                        <div class="pagedelivery__tabsitem">
+                          <div class="pagedelivery__tabsitemtext">Доставка ежедневно с 10:00 до 21:00</div>
+                        </div>
+
+                        <div class="pagedelivery__tabcontent active onlyMobile" data-contenttabs='pagedelivery'>
+                          <img src="#" data-src="img/pagedelivery.webp" alt="" title="" >
+                        </div><!-- /.pagedelivery__tabcontent -->
+                      </div><!-- /.pagedelivery__tabslist -->
+                    </div><!-- /.pagedelivery__tabsbutton -->
+                    <div class="pagedelivery__tabsbutton " data-headertab='pagedelivery'>
+                      <div class="pagedelivery__tabsheader block">
+                          <div class="pagedelivery__tabstitle">Самовывоз</div>
+                          <div class="pagedelivery__tabssubtitle">Ежедневно с 10:00 до 21:00</div>
+                      </div>
+                      <div class="pagedelivery__tabscontacts">
+                        <div class="pagedelivery__tabscontact">
+                          <div class="pagedelivery__tabscontacttext">ул. Смольная, д.44, корп.2,</div>
+                          <div class="pagedelivery__tabscontactlink"><a href="tel:+74957997707">+7 (495) 799-77-07</a></div>
+                        </div><!-- /.pagedelivery__tabscontact -->
+                        <div class="pagedelivery__tabscontact">
+                          <div class="pagedelivery__tabscontacttext">Кудринская площадь, д.1,</div>
+                          <div class="pagedelivery__tabscontactlink"><a href="tel:+74957997707">+7 (495) 799-77-07</a></div>
+                        </div><!-- /.pagedelivery__tabscontact -->
+                        <div class="pagedelivery__tabscontact">
+                          <div class="pagedelivery__tabscontacttext">ул. Удальцова, д.1, корп.1,</div>
+                          <div class="pagedelivery__tabscontactlink"><a href="tel:+74957997707">+7 (495) 799-77-07</a></div>
+                        </div><!-- /.pagedelivery__tabscontact -->
+                      </div><!-- /.pagedelivery__tabscontacts -->
+                    
+                    </div><!-- /.pagedelivery__tabsbutton -->
+                  </div><!-- /.pagedelivery__tabsleft -->
+                  <div class="pagedelivery__tabsright onlyDesktop">
+                    <div class="pagedelivery__tabcontent active" data-contenttabs='pagedelivery'>
+                      <img src="#" data-src="img/pagedelivery.webp" alt="" title="" >
+                    </div><!-- /.pagedelivery__tabcontent -->
+                    <div class="pagedelivery__tabcontent" data-contenttabs='pagedelivery'>
+                      карта Доставка за пределами МКАД
+                    </div><!-- /.pagedelivery__tabcontent -->
+                    <div class="pagedelivery__tabcontent" data-contenttabs='pagedelivery'>
+                      карта Самовывоз
+                    </div><!-- /.pagedelivery__tabcontent -->
+                  </div>
+                </div><!-- /.pagedelivery__tabs s-->
+              </div><!-- /.pagedelivery__section -->
+            </div><!-- /.pagedelivery -->
+
+          </div>
+        </div>
+
+      </main>
+      <footer id="footer" class="footer">
+  <div class="footer__main">
+    <div class="container">
+      <div class="footer__items">
+        <div class="footer__col footer__col_info">
+          <div class="footer__informblock">
+            <div class="footer__logo">
+              <img src="#" data-src="img/logo.svg" alt="" title=""  width='156' height='127'>
+            </div><!-- /.footer__logo -->
+            <div class="footer__contacts menucontancts">
+              <div class="contactline contactline__phone">
+                <a href="tel:+74957997007" class='phonelink active'>+7 (495) 799 70 07</a>
+              </div>
+              <div class="contactline contactline__email">
+                <a href="mailto:info@sweetstore.ru" class='emaillink active'>info@sweetstore.ru</a>
+              </div>
+              <div class=" contactline__messenger">
+                <a href="#" class='msglink'  aria-label='msglink'>
+                  <img src="#" data-src="img/WhatsApp.svg" alt="" title=""  class='offHover' width='42' height='42'>
+                  <img src="#" data-src="img/WhatsApp2.svg" alt="" title=""  class='onHover' width='42' height='42'>
+                  <span>
+                    <span>Написать в</span><span>WhatsApp</span>
+                  </span>
+
+
+                </a>
+              </div>
+            </div><!-- /.footer__phone -->
+
+          </div>
+        </div><!-- /.footer__col footer__col_info -->
+        <div class="footer__menublock">
+          <div class="footer__col footer__catalog onlyDesktop">
+            <div class="footer__menu">
+              <ul>
+                <li><a href="" aria-label="link">торты в наличии</a></li>
+                <li><a href="" aria-label="link">Торты за 48 часов</a></li>
+                <li><a href="" aria-label="link">Заказные торты</a></li>
+                <li><a href="" aria-label="link">Торты по госту</a></li>
+                <li><a href="" aria-label="link">Десерты</a></li>
+
+              </ul>
+            </div><!-- /.footer__menu -->
+          </div><!-- /.footer__catalog -->
+
+          <div class="footer__col onlyDesktop">
+            <div class="footer__menu">
+              <ul>
+                <li><a href="" aria-label="link">Книга</a></li>
+                <li><a href="" aria-label="link">Онлайн-курс</a></li>
+                <li><a href="" aria-label="link">Аудио рассказ</a></li>
+                <li><a href="" aria-label="link">Лекции</a></li>
+                <li><a href="" aria-label="link">VIp Подарок</a></li>
+
+              </ul>
+            </div><!-- /.footer__menu -->
+          </div>
+          <div class="footer__col ">
+            <div class="footer__menu">
+              <ul>
+                <li><a href="" aria-label="link">Наши кондитерские</a></li>
+                <li><a href="" aria-label="link">Мероприятия “под ключ”</a></li>
+                <li><a href="" aria-label="link">О нас</a></li>
+                <li><a href="" aria-label="link">Оплата и доставка</a></li>
+                <li><a href="" aria-label="link">Контакты</a></li>
+
+              </ul>
+            </div><!-- /.footer__menu -->
+          </div>
+
+        </div>
+
+        <div class="footer__col footer__col_right">
+          <div class="footer_app">
+            <div class="mobilemenu__app">
+              <div class="mobilemenu__apptext">Скачайте наше приложение и получите скидку <small>до</small>
+                <span class="red">-10%</span>
+              </div>
+              <div class="mobilemenu__appbuttons">
+                <a href="" target="_blank" 
+ class="mobilemenu__appbutton animatebtn"  aria-label='mobilemenu__appbuttons'>
+                  <img src="#" data-src="img/appstore_icon.svg" alt="" title=""  width='25' height='31'>
+                  <img src="#" data-src="img/appstore_2.svg" alt="" title=""  width='25' height='31'>
+                </a>
+                <a href="" target="_blank" 
+ class="mobilemenu__appbutton animatebtn"  aria-label='mobilemenu__appbuttons'>
+                  <img src="#" data-src="img/gplay_icon.svg" alt="" title=""  width='25' height='31'>
+                  <img src="#" data-src="img/gplay_2.svg" alt="" title=""  width='25' height='31'>
+                </a>
+              </div><!-- /.mobilemenu__appbuttons -->
+            </div>
+          </div><!-- /.footer_app -->
+        </div><!-- /.footer__col -->
+      </div><!-- /.footer__items -->
+    </div><!-- /.container -->
+  </div><!-- /.footer__main -->
+  <div class="footer__bottom">
+    <div class="container">
+
+      <div class="footer__items">
+        <div class="footer__col ">
+
+          <div class="footer__cols flex items-center">
+            <div class="footer__maincopy">Sweetstore.ru © 2024 | Все права защищены</div>
+          </div>
+        </div><!-- /.footer__col -->
+
+        <div class="footer__col ">
+          <div class="footer__info">
+            <div class="footer__links">
+              <div class="footer__link"><a href="" class='borderlink'>Договор-оферта</a></div>
+              <div class="footer__link"><a href="" class='borderlink'>Политика конфиденциальности</a></div>
+            </div><!-- /.footer__links -->
+            <div class="footer__dev">
+              <a href="" class="fdev">
+                <span class="fdev__title">Разработано в:</span>
+                <span class="fdev__icon"><img src="#" data-src="img/empis.svg" alt="" title=""  width='95' height='23'></span>
+              </a>
+            </div><!-- /.footer__dev -->
+          </div><!-- /.footer__info -->
+         
+
+        </div><!-- /.footer__col -->
+      </div><!-- /.footer__items -->
+    </div><!-- /.container -->
+  </div><!-- /.footer__bottom -->
+</footer>
+
+
+<!-- <div id="toTop">
+  <img src="#" data-src="img/up.svg" alt="" title="" >
+</div> -->
+
+<div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_callback'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal__header">
+          <div class="modal-title">Заказать звонок</div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="#" data-src="img/closebutton.svg" alt="" title="" >
+          </span>
+        </button>
+        <div class="modal-body">
+          <form action="#">
+            <div class="formblock">
+              <div class="formblock__main">
+                <div class="formblock__input">
+                  <label for="modalfio1">ФИО</label>
+                  <input id='modalfio1' type="text" class='input-error' value='123'>
+                  <span class="input-errortext">Имя не может содержать символы: 123</span>
+
+                </div><!-- /.formblock__input -->
+                <div class="formblock__input">
+                  <label for="modalemail1">Email</label>
+                  <input id="modalemail1" type="email" placeholder=''>
+                </div><!-- /.formblock__input -->
+                <div class="formblock__input">
+                  <label for="modalphone1">Телефон</label>
+                  <input id="modalphone1" type="tel" placeholder='+7 '>
+                </div><!-- /.formblock__input -->
+              </div><!-- /.formblock__main -->
+              <div class="modal-submit modal-submit_small">
+                <div class="buttonsrow">
+                  <div class="buttonsrow__item buttonsrow__item_full">
+                    <button type='submit' class='btn btn_main'>Отправить</button>
+                  </div>
+                  <!-- /.buttonsrow__item -->
+                </div>
+                <!-- /.buttonsrow -->
+              </div>
+              <div class="formblock__check">
+                <div class="check">
+                  <input type="checkbox" id="agree2" checked="checked" value="Y">
+                  <label for="agree2">Я подтверждаю свое согласие с обработкой <a href="" aria-label="link">ПЕРСОНАЛЬНЫХ ДАННЫХ</a> 
+                  </label>
+                </div>
+              </div><!-- /.formblock__check -->
+             
+            </div><!-- /.formblock -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_banket'>
+  <div class="modal-dialog" role="document">
+    <img src="img/Menu_banket_21.webp" alt="">
+  </div>
+</div>
+
+<div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_order'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal__header">
+          <div class="modal-title">Заказать мероприятие</div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="#" data-src="img/closebutton.svg" alt="" title="" >
+          </span>
+        </button>
+        <div class="modal-body">
+          <form action="#">
+            <div class="formblock">
+              <div class="formblock__main">
+                <div class="formblock__input">
+                  <label for="modalfio2">ФИО</label>
+                  <input id='modalfio2' type="text" class='input-error' value='123'>
+                  <span class="input-errortext">Имя не может содержать символы: 123</span>
+
+                </div><!-- /.formblock__input -->
+                <div class="formblock__input">
+                  <label for="modalemail2">Email</label>
+                  <input id="modalemail2" type="email" placeholder=''>
+                </div><!-- /.formblock__input -->
+                <div class="formblock__input">
+                  <label for="modalphone2">Телефон</label>
+                  <input id="modalphone2" type="tel" placeholder='+7 '>
+                </div><!-- /.formblock__input -->
+              </div><!-- /.formblock__main -->
+              <div class="modal-submit modal-submit_small">
+                <div class="buttonsrow">
+                  <div class="buttonsrow__item buttonsrow__item_full">
+                    <button type='submit' class='btn btn_main'>Отправить</button>
+                  </div>
+                  <!-- /.buttonsrow__item -->
+                </div>
+                <!-- /.buttonsrow -->
+              </div>
+              <div class="formblock__check">
+                <div class="check">
+                  <input type="checkbox" id="agree1" checked="checked" value="Y">
+                  <label for="agree1">Я подтверждаю свое согласие с обработкой <a href="" aria-label="link">ПЕРСОНАЛЬНЫХ ДАННЫХ</a> 
+                  </label>
+                </div>
+              </div><!-- /.formblock__check -->
+             
+            </div><!-- /.formblock -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal_xxl fade" tabindex="-1" role="dialog" id='popup_catalog'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="#" data-src="img/closebutton.svg" alt="" title="" >
+          </span>
+        </button>
+        <div class="modal-body">
+            <div class="modalcatalog">
+              <div class="modalcatalog__wrapper" data-tabs='modalcatalog'>
+                <div class="modalcatalog__aside">
+                  <div class="modalcatalog__content">
+                    <div class="modalcatalog__title">Заказные  <br>
+                      торты</div>
+                    <div class="modalcatalog__text">Выберите один из шедевров наших мастеров или мы готовы воплотить любую вашу идею в реальность!</div>
+                    <div class="modalcatalog__tabs" data-headertabs='modalcatalog'>
+                      <ul>
+                        <li><a href="#">На день рождения</a></li>
+                        <li><a href="#" class='active'>Свадебные</a></li>
+                        <li><a href="#">Праздничные</a></li>
+                        <li><a href="#">Детские</a></li>
+                      </ul>
+                    </div><!-- /.modalcatalog__tabs -->
+                  </div><!-- /.modalcatalog__content -->
+                  <div class="modalcatalog__footer onlyDesktop">
+                    <div class="modalcatalog__button"><a href="#popup_order" data-toggle="modal" class='btn_main w-full'>Оставить заявку</a></div><!-- /.modalcatalog__button -->
+                  </div><!-- /.modalcatalog__footer onlyDesktop -->
+                </div><!-- /.modalcatalog__aside -->
+                <div class="modalcatalog__main">
+                  <div class="modalcatalog__tab" data-contenttabs='modalcatalog'>
+                    <div class="modalcatalog__items">
+                      <div class="modalcatalog__item">
+                        <a href="img/categoryblock__image1.webp" data-lightbox='modalcatalog_1'>
+                          <span class="modalcatalog__img">
+                            <img src="#" data-src="img/categoryblock__image1.webp" alt="" title=""  width='294' height='368'>
+                          </span>
+                        </a>
+                      </div><!-- /.modalcatalog__item -->
+                      <div class="modalcatalog__item">
+                        <a href="img/categoryblock__image1.webp" data-lightbox='modalcatalog_1'>
+                          <span class="modalcatalog__img">
+                            <img src="#" data-src="img/categoryblock__image1.webp" alt="" title=""  width='294' height='368'>
+                          </span>
+                        </a>
+                      </div><!-- /.modalcatalog__item -->
+                      <div class="modalcatalog__item">
+                        <a href="img/categoryblock__image1.webp" data-lightbox='modalcatalog_1'>
+                          <span class="modalcatalog__img">
+                            <img src="#" data-src="img/categoryblock__image1.webp" alt="" title=""  width='294' height='368'>
+                          </span>
+                        </a>
+                      </div><!-- /.modalcatalog__item -->
+                      <div class="modalcatalog__item">
+                        <a href="img/categoryblock__image1.webp" data-lightbox='modalcatalog_1'>
+                          <span class="modalcatalog__img">
+                            <img src="#" data-src="img/categoryblock__image1.webp" alt="" title=""  width='294' height='368'>
+                          </span>
+                        </a>
+                      </div><!-- /.modalcatalog__item -->
+                     
+                     
+                    </div><!-- /.modalcatalog__items -->
+                  </div><!-- /.modalcatalog__tab -->
+                  <div class="modalcatalog__tab active" data-contenttabs='modalcatalog' >
+                    <div class="modalcatalog__sliderwrapper" data-slider="modalcatalog">
+
+                    <div class="modalcatalog__items">
+                      <div class="modalcatalog__item">
+                        <a href="img/categoryblock__image1.webp" data-lightbox='modalcatalog_1'>
+                          <span class="modalcatalog__img">
+                            <img src="#" data-src="img/categoryblock__image1.webp" alt="" title=""  width='294' height='368'>
+                          </span>
+                        </a>
+                      </div><!-- /.modalcatalog__item -->
+                      <div class="modalcatalog__item">
+                        <a href="img/categoryblock__image1.webp" data-lightbox='modalcatalog_1'>
+                          <span class="modalcatalog__img">
+                            <img src="#" data-src="img/categoryblock__image1.webp" alt="" title=""  width='294' height='368'>
+                          </span>
+                        </a>
+                      </div><!-- /.modalcatalog__item -->
+                      <div class="modalcatalog__item">
+                        <a href="img/categoryblock__image1.webp" data-lightbox='modalcatalog_1'>
+                          <span class="modalcatalog__img">
+                            <img src="#" data-src="img/categoryblock__image1.webp" alt="" title=""  width='294' height='368'>
+                          </span>
+                        </a>
+                      </div><!-- /.modalcatalog__item -->
+                      <div class="modalcatalog__item">
+                        <a href="img/categoryblock__image1.webp" data-lightbox='modalcatalog_1'>
+                          <span class="modalcatalog__img">
+                            <img src="#" data-src="img/categoryblock__image1.webp" alt="" title=""  width='294' height='368'>
+                          </span>
+                        </a>
+                      </div><!-- /.modalcatalog__item -->
+                      <div class="modalcatalog__item">
+                        <a href="img/categoryblock__image1.webp" data-lightbox='modalcatalog_1'>
+                          <span class="modalcatalog__img">
+                            <img src="#" data-src="img/categoryblock__image1.webp" alt="" title=""  width='294' height='368'>
+                          </span>
+                        </a>
+                      </div><!-- /.modalcatalog__item -->
+                      <div class="modalcatalog__item">
+                        <a href="img/categoryblock__image1.webp" data-lightbox='modalcatalog_1'>
+                          <span class="modalcatalog__img">
+                            <img src="#" data-src="img/categoryblock__image1.webp" alt="" title=""  width='294' height='368'>
+                          </span>
+                        </a>
+                      </div><!-- /.modalcatalog__item -->
+                      <div class="modalcatalog__item">
+                        <a href="img/categoryblock__image1.webp" data-lightbox='modalcatalog_1'>
+                          <span class="modalcatalog__img">
+                            <img src="#" data-src="img/categoryblock__image1.webp" alt="" title=""  width='294' height='368'>
+                          </span>
+                        </a>
+                      </div><!-- /.modalcatalog__item -->
+                      <div class="modalcatalog__item">
+                        <a href="img/categoryblock__image1.webp" data-lightbox='modalcatalog_1'>
+                          <span class="modalcatalog__img">
+                            <img src="#" data-src="img/categoryblock__image1.webp" alt="" title=""  width='294' height='368'>
+                          </span>
+                        </a>
+                      </div><!-- /.modalcatalog__item -->
+                    </div><!-- /.modalcatalog__items -->
+
+                  </div><!-- /.modalcatalog__sliderwrapper -->
+                  <div class="modalcatalog-pagination_mob"></div>
+
+                  </div><!-- /.modalcatalog__tab -->
+                  <div class="modalcatalog__tab" data-contenttabs='modalcatalog'>
+                    <div class="modalcatalog__items">
+                      <div class="modalcatalog__item">
+                        <a href="img/categoryblock__image1.webp" data-lightbox='modalcatalog_1'>
+                          <span class="modalcatalog__img">
+                            <img src="#" data-src="img/categoryblock__image1.webp" alt="" title=""  width='294' height='368'>
+                          </span>
+                        </a>
+                      </div><!-- /.modalcatalog__item -->
+                    </div><!-- /.modalcatalog__items -->
+                  </div><!-- /.modalcatalog__tab -->
+                  <div class="modalcatalog__tab" data-contenttabs='modalcatalog'>
+                    <div class="modalcatalog__items">
+                      <div class="modalcatalog__item">
+                        <a href="img/categoryblock__image1.webp" data-lightbox='modalcatalog_1'>
+                          <span class="modalcatalog__img">
+                            <img src="#" data-src="img/categoryblock__image1.webp" alt="" title=""  width='294' height='368'>
+                          </span>
+                        </a>
+                      </div><!-- /.modalcatalog__item -->
+                    </div><!-- /.modalcatalog__items -->
+                  </div><!-- /.modalcatalog__tab -->
+                </div><!-- /.modalcatalog__main -->
+               
+                
+              </div><!-- /.modalcatalog__wrapper -->
+              <div class="modalcatalog__main onlyMobile">
+                <div class="modalcatalog__footer ">
+                  <div class="modalcatalog__button"><a href="#popup_order" data-toggle="modal" class='btn_main w-full'>Оставить заявку</a></div><!-- /.modalcatalog__button -->
+                </div><!-- /.modalcatalog__footer onlyDesktop -->
+              </div><!-- /.modalcatalog__main -->
+            </div><!-- /.modalcatalog -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="popup_addproduct">
+  <div class="modal-dialog modal-dialog_product" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal-title modal-title_left">Товар добавлен в корзину</div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="#" data-src="img/closebutton.svg" alt="" title=""  ></span>
+        </button>
+        <div class="modal-body">
+          <div class="modalproduct">
+            <form action="#">
+            <div class="modalproduct__main">
+              <div class="modalproduct__product">
+                <div class="minicard">
+                  <div class="minicard__wrapper">
+                    <div class="minicard__left">
+                      <div class="minicard__section">
+                      <div class="minicard__image">
+                        <img src="#" data-src="img/product1.webp" alt="" title=""  >
+                      </div>
+                      <div class="minicard__header onlyMobile">
+                        <div class="minicard__title">Торт Черная Смородина</div>
+                        <div class="minicard__params">
+                          <div class="minicard__param">Артикул: 599595</div>
+                          <div class="minicard__param">Вес: 1 250 г</div>
+                        </div><!-- /.minicard__params -->
+                      </div>
+                      <!-- /.minicard__info -->
+                    </div><!-- /.minicard__section -->
+                      <div class="minicard__main">
+                        <div class="minicard__title onlyDesktop">Торт Черная Смородина</div>
+                        <!-- /.minicard__title -->
+                        <div class="minicard__info">
+                          <div class="minicard__params onlyDesktop">
+                            <div class="minicard__param">Артикул: 599595</div>
+                            <div class="minicard__param">Вес: 1 250 г</div>
+                          </div><!-- /.minicard__params -->
+                          <div class="buyblock__quantity">
+                            <div class="quantity">
+                              <input type="button"  class="quantity-minus" value="" data-field="quantity">
+                              <input type="number" step="1" max="1000" value="1" name="quantity" class="quantity-field">
+                              <input type="button"  class="quantity-plus" value="" data-field="quantity">
+                            </div>
+                          </div>
+
+                          <div class="minicard__price detailinfo__content onlyMobile">
+                            <div class="productcard__prices">
+                              <div class="productcard__mainprice">
+                                <div class="productcard__price">
+                                  <div class="productcard__pricevalue">4 150 <small>руб.</small></div>
+                                </div>
+                              </div>
+                              <div class="productcard__topprice">
+                                <div class="productcard__oldprice">4 250</div>
+                              </div>
+                             
+                            </div>
+                          </div>
+                          
+
+                        </div>
+                        <!-- /.minicard__buyblock -->
+                      </div>
+                      <!-- /.minicard__main -->
+                    </div>
+                    <div class="minicard__right ">
+                      <div class="minicard__price detailinfo__content onlyDesktop">
+                        <div class="productcard__prices">
+                          <div class="productcard__topprice">
+                            <div class="productcard__oldprice">4 250</div>
+                          </div>
+                          <div class="productcard__mainprice">
+                            <div class="productcard__price">
+                              <div class="productcard__pricevalue">4 150 <small>руб.</small></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.minicard__price -->
+                      <div class="modalproduct__buttons">
+                        <a href="#" class="btn_main">Оформить заказ</a>
+                      </div>
+                      <!-- /.modalproduct__buttons -->
+                    </div>
+                  </div>
+                  <!-- /.minicard__wrapper -->
+                </div>
+                <!-- /.minicard -->
+              </div>
+              <!-- /.modalproduct__product -->
+             
+            </div>
+            <!-- /.modalproduct__main -->
+          </form>
+            <div class="modalproduct__related">
+              <div class="miniproductslider">
+                <div class="pageblocksl productslider">
+                  <div class="blockheader flex items-center content-between">
+                    <div class="blockheader__left">
+                      <h2>ВАм возможно понадобится</h2>
+                    </div>
+                    <!-- /.blockheader__left -->
+                    <div>
+                      <div class="sliderarrows flex">
+                        <div class="sliderarrows__left">
+                          <img src="#" data-src="img/left.svg" alt="" title=""  >
+                        </div>
+                        <!-- /.sliderarrows__left -->
+                        <div class="sliderarrows__right">
+                          <img src="#" data-src="img/right.svg" alt="" title=""  >
+                        </div>
+                        <!-- /.sliderarrows__right -->
+                      </div>
+                      <!-- /.sliderarrows -->
+                    </div>
+                  </div>
+                  <!-- /.blockheader -->
+                  <div class="productslider__wrapper">
+                    <div class="productslider__container wrap-modal-slider swiper" data-slider="modalslider">
+                      <div class="productslider__modalslider swiper-wrapper">
+                        <div class="productslider__slide swiper-slide">
+                          <div class="productslider__item">
+                            <div class="miniproduct">
+                              <div class="miniproduct__wrapper">
+                                
+                                <div class="miniproduct__main">
+                                  <div class="miniproduct__image">
+                                    <div class="miniproduct__img">
+                                      <a href="#">
+                                        <img src="#" data-src="img/product1.webp" alt="" title=""  width='135' height='91'>
+                                      </a>
+                                    </div><!-- /.miniproduct__img -->
+                                  </div><!-- /.miniproduct__image -->
+                                  <div class="miniproduct__content">
+                                    <div class="miniproduct__name">
+                                      <a href="#">Малиновый пломбир</a>
+                                    </div><!-- /.miniproduct__name -->
+                                    <div class="miniproduct__price">
+                                      4 150 <small>руб.</small>
+                                    </div><!-- /.miniproduct__price -->
+                                  </div><!-- /.miniproduct__content -->
+                                 
+                                </div><!-- /.miniproduct__main -->
+                                <div class="miniproduct__button">
+                                  <div class="productcard__button">
+                                    <button type="button" class="btn_ring" aria-label="btn_ring">
+                                      <span class="btncart">
+                                        <img src="#" data-src="img/ShoppingBagWhite.svg" alt="" title=""  width="21" height="22" >
+                                      </span>
+                                    </button>
+                                  </div>
+                                </div><!-- /.miniproduct__button -->
+                              </div><!-- /.miniproduct__wrapper -->
+                            </div><!-- /.miniproduct -->
+                          </div>
+                          <!-- /.productslider__item -->
+                        </div>
+                        <!-- /.productslider__slide  -->
+                        <div class="productslider__slide swiper-slide">
+                          <div class="productslider__item">
+                            <div class="miniproduct">
+                              <div class="miniproduct__wrapper">
+                                
+                                <div class="miniproduct__main">
+                                  <div class="miniproduct__image">
+                                    <div class="miniproduct__img">
+                                      <a href="#">
+                                        <img src="#" data-src="img/product1.webp" alt="" title=""  width='135' height='91'>
+                                      </a>
+                                    </div><!-- /.miniproduct__img -->
+                                  </div><!-- /.miniproduct__image -->
+                                  <div class="miniproduct__content">
+                                    <div class="miniproduct__name">
+                                      <a href="#">Малиновый пломбир</a>
+                                    </div><!-- /.miniproduct__name -->
+                                    <div class="miniproduct__price">
+                                      4 150 <small>руб.</small>
+                                    </div><!-- /.miniproduct__price -->
+                                  </div><!-- /.miniproduct__content -->
+                                 
+                                </div><!-- /.miniproduct__main -->
+                                <div class="miniproduct__button">
+                                  <div class="productcard__button">
+                                    <button type="button" class="btn_ring" aria-label="btn_ring">
+                                      <span class="btncart">
+                                        <img src="#" data-src="img/ShoppingBagWhite.svg" alt="" title=""  width="21" height="22" >
+                                      </span>
+                                    </button>
+                                  </div>
+                                </div><!-- /.miniproduct__button -->
+                              </div><!-- /.miniproduct__wrapper -->
+                            </div><!-- /.miniproduct -->
+                          </div>
+                          <!-- /.productslider__item -->
+                        </div>
+                        <!-- /.productslider__slide  -->
+                        <div class="productslider__slide swiper-slide">
+                          <div class="productslider__item">
+                            <div class="miniproduct">
+                              <div class="miniproduct__wrapper">
+                                
+                                <div class="miniproduct__main">
+                                  <div class="miniproduct__image">
+                                    <div class="miniproduct__img">
+                                      <a href="#">
+                                        <img src="#" data-src="img/product1.webp" alt="" title=""  width='135' height='91'>
+                                      </a>
+                                    </div><!-- /.miniproduct__img -->
+                                  </div><!-- /.miniproduct__image -->
+                                  <div class="miniproduct__content">
+                                    <div class="miniproduct__name">
+                                      <a href="#">Малиновый пломбир</a>
+                                    </div><!-- /.miniproduct__name -->
+                                    <div class="miniproduct__price">
+                                      4 150 <small>руб.</small>
+                                    </div><!-- /.miniproduct__price -->
+                                  </div><!-- /.miniproduct__content -->
+                                 
+                                </div><!-- /.miniproduct__main -->
+                                <div class="miniproduct__button">
+                                  <div class="productcard__button">
+                                    <button type="button" class="btn_ring" aria-label="btn_ring">
+                                      <span class="btncart">
+                                        <img src="#" data-src="img/ShoppingBagWhite.svg" alt="" title=""  width="21" height="22" >
+                                      </span>
+                                    </button>
+                                  </div>
+                                </div><!-- /.miniproduct__button -->
+                              </div><!-- /.miniproduct__wrapper -->
+                            </div><!-- /.miniproduct -->
+                          </div>
+                          <!-- /.productslider__item -->
+                        </div>
+                        <!-- /.productslider__slide  -->
+                        <div class="productslider__slide swiper-slide">
+                          <div class="productslider__item">
+                            <div class="miniproduct">
+                              <div class="miniproduct__wrapper">
+                                
+                                <div class="miniproduct__main">
+                                  <div class="miniproduct__image">
+                                    <div class="miniproduct__img">
+                                      <a href="#">
+                                        <img src="#" data-src="img/product1.webp" alt="" title=""  width='135' height='91'>
+                                      </a>
+                                    </div><!-- /.miniproduct__img -->
+                                  </div><!-- /.miniproduct__image -->
+                                  <div class="miniproduct__content">
+                                    <div class="miniproduct__name">
+                                      <a href="#">Малиновый пломбир</a>
+                                    </div><!-- /.miniproduct__name -->
+                                    <div class="miniproduct__price">
+                                      4 150 <small>руб.</small>
+                                    </div><!-- /.miniproduct__price -->
+                                  </div><!-- /.miniproduct__content -->
+                                 
+                                </div><!-- /.miniproduct__main -->
+                                <div class="miniproduct__button">
+                                  <div class="productcard__button">
+                                    <button type="button" class="btn_ring" aria-label="btn_ring">
+                                      <span class="btncart">
+                                        <img src="#" data-src="img/ShoppingBagWhite.svg" alt="" title=""  width="21" height="22" >
+                                      </span>
+                                    </button>
+                                  </div>
+                                </div><!-- /.miniproduct__button -->
+                              </div><!-- /.miniproduct__wrapper -->
+                            </div><!-- /.miniproduct -->
+                          </div>
+                          <!-- /.productslider__item -->
+                        </div>
+                        <!-- /.productslider__slide  -->
+                        <div class="productslider__slide swiper-slide">
+                          <div class="productslider__item">
+                            <div class="miniproduct">
+                              <div class="miniproduct__wrapper">
+                                
+                                <div class="miniproduct__main">
+                                  <div class="miniproduct__image">
+                                    <div class="miniproduct__img">
+                                      <a href="#">
+                                        <img src="#" data-src="img/product1.webp" alt="" title=""  width='135' height='91'>
+                                      </a>
+                                    </div><!-- /.miniproduct__img -->
+                                  </div><!-- /.miniproduct__image -->
+                                  <div class="miniproduct__content">
+                                    <div class="miniproduct__name">
+                                      <a href="#">Малиновый пломбир</a>
+                                    </div><!-- /.miniproduct__name -->
+                                    <div class="miniproduct__price">
+                                      4 150 <small>руб.</small>
+                                    </div><!-- /.miniproduct__price -->
+                                  </div><!-- /.miniproduct__content -->
+                                 
+                                </div><!-- /.miniproduct__main -->
+                                <div class="miniproduct__button">
+                                  <div class="productcard__button">
+                                    <button type="button" class="btn_ring" aria-label="btn_ring">
+                                      <span class="btncart">
+                                        <img src="#" data-src="img/ShoppingBagWhite.svg" alt="" title=""  width="21" height="22" >
+                                      </span>
+                                    </button>
+                                  </div>
+                                </div><!-- /.miniproduct__button -->
+                              </div><!-- /.miniproduct__wrapper -->
+                            </div><!-- /.miniproduct -->
+                          </div>
+                          <!-- /.productslider__item -->
+                        </div>
+                        <!-- /.productslider__slide  -->
+                      
+                      </div>
+                      <!-- /.productslider__slide r -->
+                    </div>
+                    <!-- /.productslider__container -->
+                  </div>
+                  <!-- /.productslider__wrapper -->
+                </div>
+                <!-- /.pageblock -->
+              </div>
+              <!-- /.miniproductslider -->
+            </div>
+            <!-- /.modalproduct__related -->
+          </div>
+          <!-- /.modalproduct -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="js/index.js"></script>

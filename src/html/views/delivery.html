@@ -1,0 +1,233 @@
+<% var data={ title: "MAIN" , author: "" }; %>
+  <%= _.template(require('../includes/head.html').default)(data) %>
+    <%= _.template(require('../includes/header.html').default)(data) %>
+      <main>
+        <div class="pageheader ">
+          <div class="container">
+            <div class="pageheader__row">
+              <div class="pageheader__left">
+                <div class="pageheader__content">
+                  <div class="pagetitle">
+                    <h1>Оплата и доставка</h1>
+                  </div>
+                  <div class="breadcrumbs">
+                    <div class="container">
+                      <div class="breadcrumbs__items">
+                        <ul>
+                          <li>
+                            <a href="/" aria-label="index">
+                              <span>
+                                <img src="#" data-src="img/breadcrumbs.svg" alt="" title="" width="20" height="20">
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="" aria-label="link">
+                              <span>Каталог</span>
+                            </a>
+                          </li>
+                          <li>
+                            <span>фирменные торты </span>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- /.breadcrumbs__items -->
+                    </div>
+                    <!-- /.container -->
+                  </div>
+                  <!-- /.breadcrumbs -->
+
+                </div><!-- /.pageheader flex content-center -->
+              </div><!-- /.pageheader__left -->
+
+            </div><!-- /.pageheader__row -->
+          </div>
+        </div>
+
+
+        <div class="page ">
+          <div class="container">
+            <div class="pagedelivery">
+              <div class="pagedelivery__section">
+                <div class="pagedelivery__title">Как сделать заказ?</div>
+                <div class="pagedelivery__steps">
+                  <div class="pagedelivery__step">
+                    <div class="pagedelivery__stepnumber"><img src="#" data-src="img/step01.svg" alt="" title="" ></div>
+                    <div class="pagedelivery__stepcontent">
+                      <div class="pagedelivery__stepicon"><img src="#" data-src="img/stepicon1.svg" alt="" title=""  width='54' height='54'>
+                      </div>
+                      <div class="pagedelivery__steptext">
+                        Добавьте товар в корзину <br> и нажмите <a href="" aria-label="link">«Оформить заказ»</a>
+                      </div><!-- /.pagedelivery__steptext -->
+                    </div><!-- /.pagedelivery__stepcontent -->
+
+                  </div><!-- /.pagedelivery__step -->
+                  <div class="pagedelivery__step">
+                    <div class="pagedelivery__stepnumber"><img src="#" data-src="img/step02.svg" alt="" title="" ></div>
+                    <div class="pagedelivery__stepcontent">
+
+                      <div class="pagedelivery__stepicon"><img src="#" data-src="img/stepicon2.svg" alt="" title=""  width='54' height='54'>
+                      </div>
+                      <div class="pagedelivery__steptext">
+                        Выберите способ <br> оплаты и доставки
+                      </div><!-- /.pagedelivery__steptext -->
+                    </div><!-- /.pagedelivery__stepcontent -->
+
+                  </div><!-- /.pagedelivery__step -->
+                  <div class="pagedelivery__step">
+                    <div class="pagedelivery__stepnumber"><img src="#" data-src="img/step03.svg" alt="" title="" ></div>
+                    <div class="pagedelivery__stepcontent">
+
+                      <div class="pagedelivery__stepicon"><img src="#" data-src="img/stepicon3.svg" alt="" title=""  width='54' height='54'>
+                      </div>
+                      <div class="pagedelivery__steptext">
+                        Введите свои <br> платежные данные
+                      </div><!-- /.pagedelivery__steptext -->
+                    </div><!-- /.pagedelivery__stepcontent -->
+
+                  </div><!-- /.pagedelivery__step -->
+                  <div class="pagedelivery__step">
+                    <div class="pagedelivery__stepnumber"><img src="#" data-src="img/step04.svg" alt="" title="" ></div>
+                    <div class="pagedelivery__stepcontent">
+
+                      <div class="pagedelivery__stepicon"><img src="#" data-src="img/stepicon4.svg" alt="" title=""  width='54' height='54'>
+                      </div>
+                      <div class="pagedelivery__steptext">
+                        Выберите время <br>и дату доставки
+                      </div><!-- /.pagedelivery__steptext -->
+                    </div><!-- /.pagedelivery__stepcontent -->
+
+                  </div><!-- /.pagedelivery__step -->
+                </div><!-- /.pagedelivery__steps -->
+              </div><!-- /.pagedelivery__section -->
+              <div class="pagedelivery__section">
+                <div class="pagedelivery__title">Способы оплаты</div>
+                <div class="pagedelivery__payments">
+                  <div class="pagedelivery__pay">
+                    <div class="pagedelivery__paywrapper">
+                      <div class="pagedelivery__payicons">
+                        <img src="#" data-src="img/pay1.svg" alt="" title=""  width='54' height='38'>
+                      </div>
+                      <div class="pagedelivery__paytitle">
+                        Наличными со скидкой до <span class="grbadge">-10%</span>
+                      </div>
+                      <div class="pagedelivery__paytext">При получении заказа</div>
+                    </div><!-- /.pagedelivery__paywrapper -->
+                  </div><!-- /.pagedelivery__pay -->
+                  <div class="pagedelivery__pay">
+                    <div class="pagedelivery__paywrapper">
+                      <div class="pagedelivery__payicons">
+                        <img src="#" data-src="img/pay2.svg" alt="" title=""  width='54' height='38'>
+                        <img src="#" data-src="img/pay3.svg" alt="" title=""  width='54' height='38'>
+                        <img src="#" data-src="img/pay4.svg" alt="" title=""  width='54' height='38'>
+                      </div>
+                      <div class="pagedelivery__paytitle">
+                        Картой онлайн
+                      </div>
+                      <div class="pagedelivery__paytext">Сразу после оформления заказа</div>
+                    </div><!-- /.pagedelivery__paywrapper -->
+                  </div><!-- /.pagedelivery__pay -->
+                </div><!-- /.pagedelivery__payments -->
+              </div><!-- /.pagedelivery__section -->
+              <div class="pagedelivery__section">
+                <div class="pagedelivery__title">Общая информация</div>
+                <div class="pagedelivery__text">Минимальная сумма заказа <span class="red">2 000 ₽</span></div>
+                <div class="pagedelivery__text">Доставка ежедневно с 10:00 до 21:00</div>
+              </div><!-- /.pagedelivery__section -->
+
+              <div class="pagedelivery__section">
+                <div class="pagedelivery__title">Способы доставки</div>
+                <div class="pagedelivery__tabs" data-tabs='pagedelivery'>
+                  <div class="pagedelivery__tabsleft" data-headertabs='pagedelivery'>
+                    <div class="pagedelivery__tabsbutton active" data-headertab='pagedelivery'>
+                      <div class="pagedelivery__tabsheader">
+                        <div class="pagedelivery__tabstitle">Доставка в пределах МКАД</div>
+                        <div class="pagedelivery__tabsprice">от 550 ₽ </div>
+                      </div>
+                      <div class="pagedelivery__tabslist">
+                        <div class="pagedelivery__tabsitem">
+                          <div class="pagedelivery__tabsitemtotle">Стоимость доставки пешим курьером </div>
+                          <div class="pagedelivery__tabsitemtext">от 550р вы сможете согласовать с менеджером</div>
+                        </div>
+                        <div class="pagedelivery__tabsitem">
+                          <div class="pagedelivery__tabsitemtotle">Стоимость доставки на автотранспорте</div>
+                          <div class="pagedelivery__tabsitemtext">от 1500р вы сможете согласовать с менеджером</div>
+                        </div>
+                        <div class="pagedelivery__tabsitem">
+                          <div class="pagedelivery__tabsitemtext">Время доставки – в течение 3-х часов</div>
+                        </div>
+                        <div class="pagedelivery__tabcontent active onlyMobile" data-contenttabs='pagedelivery'>
+                          <img src="#" data-src="img/pagedelivery.webp" alt="" title="" >
+                        </div><!-- /.pagedelivery__tabcontent -->
+                      </div><!-- /.pagedelivery__tabslist -->
+                    </div><!-- /.pagedelivery__tabsbutton -->
+                    <div class="pagedelivery__tabsbutton " data-headertab='pagedelivery'>
+                      <div class="pagedelivery__tabsheader">
+                        <div class="pagedelivery__tabstitle">Доставка за пределами МКАД</div>
+                        <div class="pagedelivery__tabsprice">от 550 ₽ </div>
+                      </div>
+                      <div class="pagedelivery__tabslist">
+                        <div class="pagedelivery__tabsitem">
+                          <div class="pagedelivery__tabsitemtotle">Стоимость доставки пешим курьером </div>
+                          <div class="pagedelivery__tabsitemtext">от 550р + 100р за 1км вы сможете согласовать с
+                            менеджером</div>
+                        </div>
+                        <div class="pagedelivery__tabsitem">
+                          <div class="pagedelivery__tabsitemtotle">Стоимость доставки на автотранспорте
+                          </div>
+                          <div class="pagedelivery__tabsitemtext"> от 1500р + 100р за км вы сможете согласовать с
+                            менеджером
+                          </div>
+                        </div>
+
+                        <div class="pagedelivery__tabsitem">
+                          <div class="pagedelivery__tabsitemtext">Доставка ежедневно с 10:00 до 21:00</div>
+                        </div>
+
+                        <div class="pagedelivery__tabcontent active onlyMobile" data-contenttabs='pagedelivery'>
+                          <img src="#" data-src="img/pagedelivery.webp" alt="" title="" >
+                        </div><!-- /.pagedelivery__tabcontent -->
+                      </div><!-- /.pagedelivery__tabslist -->
+                    </div><!-- /.pagedelivery__tabsbutton -->
+                    <div class="pagedelivery__tabsbutton " data-headertab='pagedelivery'>
+                      <div class="pagedelivery__tabsheader block">
+                          <div class="pagedelivery__tabstitle">Самовывоз</div>
+                          <div class="pagedelivery__tabssubtitle">Ежедневно с 10:00 до 21:00</div>
+                      </div>
+                      <div class="pagedelivery__tabscontacts">
+                        <div class="pagedelivery__tabscontact">
+                          <div class="pagedelivery__tabscontacttext">ул. Смольная, д.44, корп.2,</div>
+                          <div class="pagedelivery__tabscontactlink"><a href="tel:+74957997707">+7 (495) 799-77-07</a></div>
+                        </div><!-- /.pagedelivery__tabscontact -->
+                        <div class="pagedelivery__tabscontact">
+                          <div class="pagedelivery__tabscontacttext">Кудринская площадь, д.1,</div>
+                          <div class="pagedelivery__tabscontactlink"><a href="tel:+74957997707">+7 (495) 799-77-07</a></div>
+                        </div><!-- /.pagedelivery__tabscontact -->
+                        <div class="pagedelivery__tabscontact">
+                          <div class="pagedelivery__tabscontacttext">ул. Удальцова, д.1, корп.1,</div>
+                          <div class="pagedelivery__tabscontactlink"><a href="tel:+74957997707">+7 (495) 799-77-07</a></div>
+                        </div><!-- /.pagedelivery__tabscontact -->
+                      </div><!-- /.pagedelivery__tabscontacts -->
+                    
+                    </div><!-- /.pagedelivery__tabsbutton -->
+                  </div><!-- /.pagedelivery__tabsleft -->
+                  <div class="pagedelivery__tabsright onlyDesktop">
+                    <div class="pagedelivery__tabcontent active" data-contenttabs='pagedelivery'>
+                      <img src="#" data-src="img/pagedelivery.webp" alt="" title="" >
+                    </div><!-- /.pagedelivery__tabcontent -->
+                    <div class="pagedelivery__tabcontent" data-contenttabs='pagedelivery'>
+                      карта Доставка за пределами МКАД
+                    </div><!-- /.pagedelivery__tabcontent -->
+                    <div class="pagedelivery__tabcontent" data-contenttabs='pagedelivery'>
+                      карта Самовывоз
+                    </div><!-- /.pagedelivery__tabcontent -->
+                  </div>
+                </div><!-- /.pagedelivery__tabs s-->
+              </div><!-- /.pagedelivery__section -->
+            </div><!-- /.pagedelivery -->
+
+          </div>
+        </div>
+
+      </main>
+      <%= _.template(require('../includes/footer.html').default)(data) %>

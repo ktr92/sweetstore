@@ -1,0 +1,84 @@
+<% var data={ title: "MAIN" , author: "" }; %>
+  <%= _.template(require('../includes/head.html').default)(data) %>
+    <%= _.template(require('../includes/header.html').default)(data) %>
+      <main>
+        <div class="container">
+          <div class="pageheader__row">
+            <div class="pageheader__left">
+              <div class="pageheader__content">
+
+                <div class="breadcrumbs">
+                  <div class="container">
+                    <div class="breadcrumbs__items">
+                      <ul>
+                        <li>
+                          <a href="/" aria-label="index">
+                            <span>
+                              <img src="#" data-src="img/breadcrumbs.svg" alt="" title="" width="20" height="20">
+                            </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" aria-label="link">
+                            <span>Каталог</span>
+                          </a>
+                        </li>
+                        <li>
+                          <span>фирменные торты </span>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- /.breadcrumbs__items -->
+                  </div>
+                  <!-- /.container -->
+                </div>
+                <!-- /.breadcrumbs -->
+
+              </div><!-- /.pageheader flex content-center -->
+            </div><!-- /.pageheader__left -->
+
+          </div><!-- /.pageheader__row -->
+        </div>
+
+
+        <div class="page ">
+
+          <div class="confirmpage">
+            <div class="container">
+              <div class="confirmpage__wrapper">
+                <div class="confirmpage__left">
+                 
+                  <div class="confirmpage__content">
+                    <div class="confirmpage__logo">
+                      <img src="#" data-src="img/logo63.svg" alt="" title=""  width='63' height='59'>
+                    </div><!-- /.confirmpage__logo -->
+                    <div class="confirmpage__title">Благодарим вас за заказ!</div><!-- /.confirmpage__title -->
+                    <div class="confirmpage__text">С вами свяжется наш менеджер для подтверждения заказа </div>
+                    <!-- /.confirmpage__text -->
+                    <div class="confirmpage__info">
+                      <div class="orderinfo">
+                        <div class="orderinfo__number">
+                          <div class="ordernumber">
+                            <div class="ordernumber__text">Номер вашего заказа</div><!-- /.ordernumber__text -->
+                            <div class="ordernumber__number">5941914</div><!-- /.ordernumber__number -->
+  
+                          </div><!-- /.ordernumber -->
+                        </div><!-- /.orderinfo__number -->
+  
+                      </div><!-- /.orderinfo -->
+                    </div><!-- /.confirmpage__info -->
+                  </div><!-- /.confirmpage__content -->
+                </div><!-- /.confirmpage__left -->
+                
+                <div class="confirmpage__right">
+                  <img src="#" data-src="img/conf.svg" alt="" title="" >
+                </div><!-- /.confirmpage__right -->
+              </div><!-- /.confirmpage__wrapper -->
+            </div><!-- /.confirmpage__bg -->
+          </div><!-- /.container -->
+        </div>
+
+        </div>
+
+      </main>
+      <%= _.template(require('../includes/footer.html').default)(data) %>
